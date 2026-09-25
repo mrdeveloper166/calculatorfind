@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title> Fahrenheit to Celsius | Celsius to Fahrenheit conversion</title>
+    <script async src="tagmng3.js"></script>
+
+
+
+    <meta name="keywords" content="fahrenheit to celsius, fahrenheit celsius,f to c,fahrenheit to celsius,celsius to fahrenheit converter,celsius to fahrenheit conversion,convert celsius to fahrenheit,convert c to f,degrees celsius,how to convert celsius to fahrenheit,convert c to f,celsius to fahrenheit formula">
+    <meta name="description" content="Fahrenheit &deg;F to Celsius &deg;C converter, how to convert Fahrenheit to Celsius and you can also learn formula of conversion F to C.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fahrenheit to Celsius | Celsius to Fahrenheit conversion" />
+    <meta property="og:description" content=" Fahrenheit &deg;F to Celsius &deg;C converter, how to convert Fahrenheit to Celsius and you can also learn formula of conversion F to C" />
+    <meta property="og:url" content="https://www.calculatorfind.com/fahrenheit-to-celsius.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .calc2 textarea {
+            width: 220px;
+            font-size: large;
+        }
+        
+        @media all and (max-width: 576px) {
+            h1 {
+                font-size: 20px;
+            }
+            .calc2 {
+                width: 100%;
+            }
+            .calc2 button {
+                padding: 7px 5px;
+            }
+            .calc2 input[type=text],
+            .calc2 input[type=number] {
+                width: 100%;
+                padding: 5px;
+            }
+            .calc2 textarea {
+                width: 100%;
+            }
+            .calc2 tr td:nth-child(2) {
+                width: calc(100% - 35px);
+            }
+            .calc2 tr:nth-child(2) td:nth-child(2) {
+                width: 100%;
+            }
+        }
+        /*
+@media all and (max-width:360px) {
+	.calc2 button:nth-child(3) img { display:none; }
+}*/
+        
+        .ntable th {
+            position: sticky;
+            top: 0;
+            background: #f0f0f0;
+        }
+        
+        .ntable td:nth-child(1),
+        .ntable td:nth-child(2) {
+            width: 90px
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Fahrenheit to Celsius conversion or calculator</h1>
+                <br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table>
+                        <tr>
+                            <td><label for="x" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Fahrenheit:</label></td>
+                            <td><input type="text" inputmode="numeric" id="x" name="x" class="form-control" required autofocus></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2"><br>
+                                <div class="form-group">
+                                    <button type="button" title="Convert" class="btn btn-success" tabindex="2" onclick="calc()"><i class="material-icons">autorenew</i>  Convert</button>
+                                    <button type="reset" title="Reset" class="btn btn-danger"><i class="material-icons">clear</i> Reset</button>
+                                    <button type="button" title="Swap conversion" class="btn btn-secondary" tabindex="4" onclick="location.href='celsius-to-fahrenheit.html';"><i class="material-icons">swap_vert</i>Swap</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Celsius:</td>
+                            <td><input type="text" name="y" class="form-control" readonly tabindex="5" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&deg;C</td>
+                        </tr>
+                        <tr id="pf1">
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation:</td>
+                            <td><br><textarea name="TA" rows="4" cols="90" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <h2> Celsius (°C) to Fahrenheit (°F) conversion/converter</h2>
+                <br>
+                <p style="font-size:16px; text-align:justify;">Celsius to Fahrenheit conversion °C to °F conversion is actually quite easy – just double the °C figure and add 30. This should be reasonably accurate for weather temperatures. On the Fahrenheit scale, the melting point of water is 32°F
+                    and the boiling point is 212°F (at standard atmospheric pressure). This puts the boiling and freezing points of water 180 degrees apart. Therefore, a degree on the Fahrenheit scale is 1⁄180 of the interval between the freezing point
+                    and the boiling point. On the Celsius scale, the freezing and boiling points of water are 100 degrees apart. A temperature interval of 1 °F is equal to an interval of 5⁄9 degrees Celsius. </p>
+                <br><br>
+
+                <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td colspan="3">
+                            <p align="center"><strong>Fahrenheit    temperature conversion formulae</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <p align="center"><strong>from Fahrenheit</strong></p>
+                        </td>
+                        <td>
+                            <p align="center"><strong>to Fahrenheit</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p align="center"><strong>Celsius</strong><strong> </strong></p>
+                        </td>
+                        <td>
+                            <p>[°C]&nbsp;=&nbsp;([°F]&nbsp;−&nbsp;32)&nbsp;×&nbsp;5⁄9 </p>
+                        </td>
+                        <td>
+                            <p>[°F]&nbsp;=&nbsp;[°C]&nbsp;×&nbsp;9⁄5&nbsp;+&nbsp;32</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p align="center"><strong>Kelvin</strong><strong> </strong></p>
+                        </td>
+                        <td>
+                            <p>[K]&nbsp;=&nbsp;([°F]&nbsp;+&nbsp;459.67)&nbsp;×&nbsp;5⁄9 </p>
+                        </td>
+                        <td>
+                            <p>[°F]&nbsp;=&nbsp;[K]&nbsp;×&nbsp;9⁄5&nbsp;−&nbsp;459.67</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p align="center"><strong>Rankine</strong><strong> </strong></p>
+                        </td>
+                        <td>
+                            <p>[°R]&nbsp;=&nbsp;[°F]&nbsp;+&nbsp;459.67</p>
+                        </td>
+                        <td>
+                            <p>[°F]&nbsp;=&nbsp;[°R]&nbsp;−&nbsp;459.67</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p align="center">For temperature&nbsp;<em>intervals</em>&nbsp;rather than specific temperatures,<br> 1&nbsp;°F = 1&nbsp;°R =&nbsp;5⁄9&nbsp;°C =&nbsp;5⁄9&nbsp;K<br>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <h2>
+                    <a></a>How to convert Fahrenheit to Celsius</h2>
+                <p>0 degrees Fahrenheit is equal to -17.77778 degrees Celsius:</p>
+                <p class="math">0 &deg;F = -17.77778 &deg;C</p>
+                <p>The temperature <i>T</i> in degrees Celsius (&deg;C) is equal to the temperature <i>T</i> in degrees Fahrenheit (&deg;F) minus 32, times 5/9:</p>
+                <p class="math"><i>T</i><sub>(&deg;C)</sub> = (<i>T</i><sub>(&deg;F)</sub> - 32) &times; 5/9</p>
+                <p>or</p>
+                <p class="math"><i>T</i><sub>(&deg;C)</sub> = (<i>T</i><sub>(&deg;F)</sub> - 32) / (9/5)</p>
+                <p>or</p>
+                <p class="math"><i>T</i><sub>(&deg;C)</sub> = (<i>T</i><sub>(&deg;F)</sub> - 32) / 1.8</p>
+                <h4>Example</h4>
+                <p>Convert 68 degrees Fahrenheit to degrees Celsius:</p>
+                <p class="math"><i>T</i><sub>(&deg;C)</sub> = (68&deg;F - 32) &times; 5/9 = 20 &deg;C</p>
+                <h2>
+                    <a id="table"></a>Fahrenheit to Celsius conversion table</h2>
+                <table class="ntable">
+                    <thead>
+                        <tr>
+                            <th>Fahrenheit (&deg;F)</th>
+                            <th>Celsius (&deg;C)</th>
+
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-459.67 &deg;F</td>
+                            <td>-273.15 &deg;C</td>
+                            <td style="text-align:left">absolute zero temperature</td>
+                        </tr>
+                        <tr>
+                            <td>-50 &deg;F</td>
+                            <td>-45.56 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>-40 &deg;F</td>
+                            <td>-40.00 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>-30 &deg;F</td>
+                            <td>-34.44 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>-20 &deg;F</td>
+                            <td>-28.89 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>-10 &deg;F</td>
+                            <td>-23.33 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>0 &deg;F</td>
+                            <td>-17.78 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>10 &deg;F</td>
+                            <td>-12.22 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>20 &deg;F</td>
+                            <td>-6.67 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>30 &deg;F</td>
+                            <td>-1.11 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="background:#f8f8f8;">32 &deg;F</td>
+                            <td style="background:#f8f8f8;">0 &deg;C</td>
+                            <td style="background:#f8f8f8; text-align:left">freezing/melting point&nbsp;of water</td>
+                        </tr>
+                        <tr>
+                            <td>40 &deg;F</td>
+                            <td>4.44 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>50 &deg;F</td>
+                            <td>10.00 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>60 &deg;F</td>
+                            <td>15.56 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>70 &deg;F</td>
+                            <td>21.11 &deg;C</td>
+                            <td style="text-align:left">room temperature</td>
+                        </tr>
+                        <tr>
+                            <td>80 &deg;F</td>
+                            <td>26.67 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>90 &deg;F</td>
+                            <td>32.22 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>98.6 &deg;F</td>
+                            <td>37 &deg;C</td>
+                            <td style="text-align:left">average body temperature</td>
+                        </tr>
+                        <tr>
+                            <td>100 &deg;F</td>
+                            <td>37.78 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>110 &deg;F</td>
+                            <td>43.33 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>120 &deg;F</td>
+                            <td>48.89 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>130 &deg;F</td>
+                            <td>54.44 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>140 &deg;F</td>
+                            <td>60.00 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>150 &deg;F</td>
+                            <td>65.56 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>160 &deg;F</td>
+                            <td>71.11 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>170 &deg;F</td>
+                            <td>76.67 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>180 &deg;F</td>
+                            <td>82.22 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>190 &deg;F</td>
+                            <td>87.78 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>200 &deg;F</td>
+                            <td>93.33 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>212 &deg;F</td>
+                            <td>100 &deg;C</td>
+                            <td style="text-align:left">boiling point of water</td>
+                        </tr>
+                        <tr>
+                            <td>300 &deg;F</td>
+                            <td>148.89 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>400 &deg;F</td>
+                            <td>204.44 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>500 &deg;F</td>
+                            <td>260.00 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>600 &deg;F</td>
+                            <td>315.56 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>700 &deg;F</td>
+                            <td>371.11 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>800 &deg;F</td>
+                            <td>426.67 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>900 &deg;F</td>
+                            <td>482.22 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>1000 &deg;F</td>
+                            <td>537.78 &deg;C</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function convert(x) {
+            var y = (parseFloat(x) - 32.0) * 5.0 / 9.0;
+            var yy = roundresult(y);
+            var txt = "(" + x + "\u00B0F-32)\u00D75/9\n";
+            txt += "= " + yy + "\u00B0C";
+            document.calcform.TA.value = txt;
+            return (y);
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="euc-kr">
+
+
+    <title>Interest calculator| calculator on loan</title>
+
+    <meta name="keywords" content="interest calculator,interest calculator on loan,interest calculator on mortgage,interest calculator on credit card,interest calculator saving,compound interest,interest calculator car loan,interest calculaotr car,intrest calculator for saving account">
+    <meta name="description" content="interest calculator to calculate simple and compound interest. Simply, enter the details of the principal amount, interest rate, period, and much more.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Interest calculator| calculator on loan" />
+    <meta property="og:description" content="interest calculator to calculate simple and compound interest. Simply, enter the details of the principal amount, interest rate, period, and much more." />
+    <meta property="og:url" content="https://www.calculatorfind.com/simple-interest.html" />
+
+
+
+    <script async src="tagmng3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        #mycalcform {
+            padding: 20px;
+            max-width: 700px;
+            background: #20aea8;
+            border-radius: 7px;
+            border: solid 1px black;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>Simple interest calculator with Definition</h1>
+
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="mycalcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select currency:</td>
+                            <td style="width:40px">&nbsp;</td>
+                            <td><select name="Select1" onchange="OnCurrencyChange()" style="font-size:medium" autofocus class="form-control">
+					<option selected="selected">Dollar ($)</option>
+					<option>Pound (&pound;)</option>
+					<option>Euro (&euro;)</option>
+					<option>Krona (kr)</option>
+					<option>Leu (L)</option>
+					<option>Lira (t)</option>
+					<option>Peso (P)</option>
+					<option>Ringgit (RM)</option>
+					<option>Rupee (R)</option>
+					<option>Rupee (Rs)</option>
+					<option>Shekel (&#8362;)</option>
+					<option>Zloty (zl)</option>
+					<option>- other -</option>
+				</select></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Principal amount:</td>
+                            <td class="math" id="cur1" style="text-align:right;color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">$</td>
+                            <td class="math"><input id="Text1" name="Text1" type="number" class="intext form-control" style="width:140px" value="1000"></td>
+                            <td><input type="button" value="&times;" style="font-size:medium" onclick="OnClear(0)" class="btn btn-default"></td>
+                            <td>&nbsp;</td>
+
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Annual interest rate:</td>
+                            <td>&nbsp;</td>
+                            <td class="math" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"><input id="Text2" name="Text2" type="number" min="0" max="100" class="intext form-control" value="4"> %</td>
+                            <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">per year</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Period:</td>
+                            <td>&nbsp;</td>
+
+
+                            <td class="math" colspan="3">
+                                <input id="Text3" name="Text3" type="number" min="1" max="100" class="intext form-control" style="width:140px" value="10"></td>
+                            <td> <select id="Select2" name="Select2" style="font-size:medium" class="form-control">
+						<option>Days</option>
+						<option>Weeks</option>
+						<option>Months</option>
+						<option>Quarters</option>
+						<option selected="selected">Years</option>
+					</select></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <input onclick="OnCalc()" type="button" value="Calculate" class="btn btn-success" style="font-size:medium; width:120px; padding:5px"></td>
+                            <td><input onclick="OnClear(1)" type="button" value="Clear" class="btn btn-danger" style="font-size:medium; width:120px; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Interest amount:</td>
+                            <td class="math" id="cur2" style="text-align:right;color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">$</td>
+                            <td class="math"><input id="Text6" name="Text6" type="text" class="outtext form-control" style="width:140px;color: green; font-weight: bold; background-color: white;" readonly="readonly"></td>
+                            <td class="math">&nbsp;</td>
+                            <td class="math">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Total amount:</td>
+                            <td class="math" id="cur3" style="text-align:right;color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">$</td>
+                            <td class="math"><input id="Text7" name="Text7" type="text" class="outtext form-control" style="width:140px;color: green; font-weight: bold; background-color: white;" readonly="readonly"></td>
+                            <td class="math">&nbsp;</td>
+                            <td class="math">&nbsp;</td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is Simple Interest?</h2>
+
+
+                <p>
+                    The rate at which you borrow or lend money is called the simple interest. If a borrower takes money from a lender, an extra amount of money is paid back to the lender. The borrowed money which is given for a specific period is called the principal. The
+                    extra amount which is paid back to the lender for using the money is called the interest.
+
+                </p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script>
+        function OnClear(n) {
+            if (n == 0) {
+                document.getElementById("Text1").value = '';
+            } else {
+                document.getElementById("Text1").value = '';
+                document.getElementById("Text2").value = '';
+                document.getElementById("Text3").value = '';
+                document.getElementById("Text6").value = '';
+                document.getElementById("Text7").value = '';
+            }
+        }
+
+        function OnCurrencyChange() {
+            c_look = ['$', '&pound;', '&euro;', 'kr', 'L', 't', 'P', 'RM', 'R', 'Rs', '&#8362;', 'zl', ''];
+            i = document.calcform.Select1.selectedIndex;
+            c = c_look[i];
+            document.getElementById("cur1").innerHTML = c;
+            document.getElementById("cur2").innerHTML = c;
+            document.getElementById("cur3").innerHTML = c;
+        }
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function OnCalc() {
+            x0 = document.getElementById("Text1").value;
+            rate = document.getElementById("Text2").value;
+            period = document.getElementById("Text3").value;
+            i = document.getElementById("Select2").selectedIndex;
+            ilook = [365, 52, 12, 4, 1];
+            rate /= ilook[i];
+            if (x0 == '') x0 = '0';
+            x0 = parseFloat(x0);
+            Is = x0 * rate * period / 100;
+            y = x0 + Is;
+            Is = Is.toFixed(2);
+            y = y.toFixed(2);
+            Is = numberWithCommas(Is);
+            y = numberWithCommas(y);
+            document.getElementById("Text6").value = Is;
+            document.getElementById("Text7").value = y;
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

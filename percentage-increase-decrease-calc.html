@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="euc-kr">
+
+    <title>Percentage increase/decrease calculator</title>
+
+    <meta name="keywords" content="percentage increase and decrease calculator,percentage increase formulas,percentage decrease formulas">
+    <meta name="description" content="To calculate percentage decrease: First: work out the difference (decrease) between the two numbers you are comparing.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Percentage increase/decrease calculator" />
+    <meta property="og:description" content="To calculate percentage decrease: First: work out the difference (decrease) between the two numbers you are comparing." />
+    <meta property="og:url" content="https://www.calculatorfind.com/percentage-increase-decrease-calc.html" />
+
+
+
+   
+
+
+    <script async src="tagmng3.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .calc2 textarea {
+            width: 220px;
+            font-size: large;
+        }
+        
+        @media all and (max-width: 576px) {
+            .calc2 {
+                width: 100%;
+                margin: 0px;
+            }
+            .calc2 input[type=text],
+            .calc2 input[type=number],
+            .calc2 textarea {
+                width: 250px
+            }
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Percentage increase/decrease calculator</h1>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Initial amount:</td>
+                            <td><input type="number" step="any" name="e" tabindex="1" autofocus class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Final amount:</td>
+                            <td><input type="number" step="any" name="f" tabindex="2" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <button type="button" title="Calculate" class="btn btn-success" onclick="calc()" tabindex="3"><b>=</b> Calculate</button>
+                                <button type="reset" title="Reset" class="btn btn-danger" tabindex="4"><b>X</b> Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Percentage increase/decrease:</td>
+                            <td><input type="text" name="result3" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" tabindex="5" readonly></td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation:</td>
+                            <td><textarea rows="3" name="out3" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" tabindex="6" readonly></textarea></td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Initial amount:</td>
+                            <td><input type="number" step="any" name="x" tabindex="7" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Percentage increase/decrease:</td>
+                            <td><input type="text" name="p" tabindex="8" class="form-control"><b style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</b></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <button type="button" title="Calculate" class="btn btn-success" onclick="calc0()" tabindex="9"><b>=</b> Calculate</button>
+                                <button type="reset" title="Reset" class="btn btn-danger" tabindex="10"><b>X</b> Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Absolute difference:</td>
+                            <td><input type="text" name="c" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" tabindex="11" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Final amount:</td>
+                            <td><input type="text" name="y" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" tabindex="12" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation:</td>
+                            <td><textarea rows="3" id="y2" name="y2" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" tabindex="13" readonly></textarea></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <h2>Percentage increase/decrease calculation</h2>
+                <p>The percentage increase/decrease from old value (V<sub>old</sub>) to new value (V<sub>new</sub>) is equal to the old and new values difference divided by the old value times 100%:</p>
+                <p class="math">percentage increase/decrease = (<em>V</em><sub>new</sub> - <em>V</em><sub>old</sub>) / <em>V</em><sub>old</sub> &times; 100%</p>
+                <h4>Example #1</h4>
+                <p>Price percentage increase from old value of $1000 to new value of $1200 is caluclated by:</p>
+                <p class="math">percentage increase = ($1200 - $1000) / $1000 &times; 100%</p>
+                <p class="math">&nbsp;= 0.2 &times; 100% = 20%</p>
+                <h4>Example #2</h4>
+                <p>Price percentage decrease from old value of $1000 to new value of $800 is caluclated by:</p>
+                <p class="math">percentage decrease = ($800 - $1000) / $1000 &times; 100%</p>
+                <p class="math">&nbsp;= -0.2 &times; 100% = -20%</p>
+                <h2>Difference and final value calculation</h2>
+                <p>The difference d is equal to the initial value <em>V</em><sub>0</sub> times the percentage increase/decrease p divided by 100:</p>
+                <p class="math"><em>d</em> = <em>V</em><sub>0</sub> &times; <em>p</em> / 100</p>
+                <p>The final value <em>V</em><sub>1</sub> is equal to the initial value <em>V</em><sub>0</sub> plus the difference d:</p>
+                <p class="math"> <em>V</em><sub>1</sub> = <em>V</em><sub>0</sub> + <em>d</em></p>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script>
+        function calc0() {
+            x = document.calcform.x.value;
+            p = document.calcform.p.value;
+            c = x * p / 100;
+            y = parseFloat(x) + parseFloat(c);
+            document.calcform.c.value = c;
+            document.calcform.y.value = y;
+            //out = '[('+b+' - '+a+') / '+a+'] \u00D7 100% = '+(y/100)+' \u00D7 100% = '+y+'%';
+            out = x + ' \u00D7 ' + p + ' / 100 = ' + c + '\n' + x + ' + ' + c + ' = ' + y;
+            document.calcform.y2.value = out;
+        }
+
+        function calc() {
+            a = document.calcform.e.value;
+            b = document.calcform.f.value;
+            y = (b - a) / a * 100;
+            document.calcform.result3.value = y;
+            out = '[(' + b + ' - ' + a + ') / ' + a + '] \u00D7 100% = ' + (y / 100) + ' \u00D7 100% = ' + y + '%';
+            document.calcform.out3.value = out;
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

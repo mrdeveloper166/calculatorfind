@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+
+    <title>Binary calculator | Bitwise calculator</title>
+
+    <meta name="keywords" content="binary calculator,decimal to binary calculator,binary calculator addition,binary calculator subtraction,binary calculator division,binary calculator hex,hex binary calculator,bitwise calculator">
+    <meta name="description" content="This is a free mathematical calculator, which is able to add, subtract, multiply and divide numbers in binary format. Any number can be represented by any sequence of bits 
+                , they are commonly written using the symbols 0 and 1. Best math tool for school and college!This free binary calculator can add, subtract, multiply, and divide binary values, as well as convert between binary and decimal values. Learn more about the use of binary, or
+                explore hundreds of other calculators addressing math, finance, health, and fitness, and more.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Binary calculator | Bitwise calculator" />
+    <meta property="og:description" content="This is a free mathematical calculator, which is able to add, subtract, multiply and divide numbers in binary format. Any number can be represented by any sequence of bits 
+                , they are commonly written using the symbols 0 and 1. Best math tool for school and college!This free binary calculator can add, subtract, multiply, and divide binary values, as well as convert between binary and decimal values. Learn more about the use of binary, or
+                explore hundreds of other calculators addressing math, finance, health, and fitness, and more." />
+    <meta property="og:url" content="https://www.calculatorfind.com/binary-calculator.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <style>
+        * {
+            font-size: 16px;
+        }
+        
+        td {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        textarea {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>Binary Calculator or conversion</h1> <br>
+                <form id="calcform" class="box float" id="calcform" name="calcform" autocomplete="off">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">First number:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="x1" name="x1" class="form-control input-lg" autofocus></td>
+                                <td><select id="b1" class="form-control input-lg">
+            <option>Binary</option>
+            <option>Decimal</option>
+            <option>Hex</option>
+        </select></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Operation:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <select id="op" onchange="selchange()" class="form-control input-lg">
+               <option>add (+)</option>
+               <option>sub (-)</option>
+               <option>mult (&times;)</option>
+               <option>div (&div;)</option>
+               <option>pow (^)</option>
+               <option>and (&amp;)</option>
+               <option>or (|)</option>
+               <option>not (~)</option>
+               <option>xor (^)</option>
+               <option>left shift (&lt;&lt;)</option>
+               <option>right shift (&gt;&gt;)</option>
+              
+            </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Second number:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="x2" name="x2" class="form-control input-lg"></td>
+                                <td><select id="b2" class="form-control input-lg">
+            <option>Binary</option>
+            <option>Decimal</option>
+            <option>Hex</option>
+        </select></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="button" title="Calculate" class="btn btn-default btn-lg btn-success" onclick="calc()"><b>=</b> Calculate</button>
+                                    <button type="reset" title="Reset" class="btn btn-default btn-lg btn-danger"><b>X</b> Reset</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Binary number result:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea rows="2" id="y1" class="form-control input-lg" readonly style="font-weight: bolder;color: green;"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Decimal number result:</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea rows="2" id="y2" class="form-control input-lg" readonly style="font-weight: bolder;color: green;"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Hex number result:</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea rows="2" id="y3" class="form-control input-lg" readonly style="font-weight: bolder;color: green;"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>What is Binary Calculator</h2><br>
+                <p>This is a free mathematical calculator, which is able to add, subtract, multiply and divide numbers in binary format. Any number can be represented by any sequence of bits , they are commonly written using the symbols 0 and 1. Best math
+                    tool for school and college!This free binary calculator can add, subtract, multiply, and divide binary values, as well as convert between binary and decimal values. Learn more about the use of binary, or explore hundreds of other calculators
+                    addressing math, finance, health, and fitness, and more.</p>
+
+
+            </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="bignumber9.0.0.min.js"></script>
+    <script>
+        "use strict"
+        $(document).ready(function() {
+            $("#x1").on("input", function(e) {
+                var s = $("#x1").val();
+                var dec = /[2-9]/.test(s);
+                var hex = /[A-F]/i.test(s);
+                if (dec) $("#b1")[0].selectedIndex = 1;
+                if (hex) $("#b1")[0].selectedIndex = 2;
+            });
+            $("#x2").on("input", function(e) {
+                var s = $("#x2").val();
+                var dec = /[2-9]/.test(s);
+                var hex = /[A-F]/i.test(s);
+                if (dec) $("#b2")[0].selectedIndex = 1;
+                if (hex) $("#b2")[0].selectedIndex = 2;
+            });
+        });
+
+        function copy() {
+            $("#y").select();
+            document.execCommand('copy');
+        }
+
+        function selchange() {
+            var op = $("#op")[0].selectedIndex;
+            if (op == 6) {
+                //$("#x2").prop("disabled", true);
+                //$("#b2").prop("disabled", true);
+                $(".calc tr:nth-child(5)").hide();
+                $(".calc tr:nth-child(6)").hide();
+            } else {
+                //$("#x2").prop("disabled", false);
+                //$("#b2").prop("disabled", false);
+                $(".calc tr:nth-child(5)").show();
+                $(".calc tr:nth-child(6)").show();
+            }
+            if (op >= 8)
+                $("#b2")[0].selectedIndex = 1;
+        }
+
+        function calc() {
+            var op = $("#op")[0].selectedIndex;
+            var x1 = $("#x1").val();
+            var x2 = $("#x2").val();
+            var b1 = $("#b1")[0].selectedIndex;
+            var b2 = $("#b2")[0].selectedIndex;
+            var bx1, bx2, y, y1, y2, y3;
+            b1 = [2, 10, 16][b1];
+            b2 = [2, 10, 16][b2];
+            try {
+                bx1 = new BigNumber(x1, b1);
+                $("#x1").css("background-color", "white");
+            } catch (err) {
+                $("#x1").css("background-color", "#fff0f0");
+                $("#x1").focus();
+                $("#y1").val("");
+                $("#y2").val("");
+                $("#y3").val("");
+                return;
+            }
+            try {
+                bx2 = new BigNumber(x2, b2);
+                $("#x2").css("background-color", "white");
+            } catch (err) {
+                $("#x2").css("background-color", "#fff0f0");
+                $("#x2").focus();
+                $("#y1").val("");
+                $("#y2").val("");
+                $("#y3").val("");
+                return;
+            }
+            if (op > 4) {
+                x1 = parseInt(x1, b1);
+                x2 = parseInt(x2, b2);
+            }
+            switch (op) {
+                case 0:
+                    //y = bx1.plus(bx2).toString(2);
+                    y = bx1.plus(bx2);
+                    break;
+                case 1:
+                    //y = x1.minus(x2).toString(2);
+                    y = bx1.minus(bx2);
+                    break;
+                case 2:
+                    //y = x1.times(x2).toString(2);
+                    y = bx1.times(bx2);
+                    break;
+                case 3:
+                    //y = x1.div(x2).toString(2);
+                    //n = n.pow
+                    y = bx1.div(bx2);
+                    break;
+                case 4:
+                    //y = x1.div(x2).toString(2);
+                    //n = n.pow
+                    if (x2 != Math.round(x2)) {
+                        alert("Please enter integer exponent");
+                        return;
+                    }
+                    y = bx1.pow(bx2);
+                    break;
+                case 5: //and
+                    y = x1 & x2;
+                    //var bin1=bx1.toString(2);
+                    //var bin2=bx2.toString(2);
+                    break;
+                case 6: //or
+                    y = x1 | x2;
+                    break;
+                case 7: //not
+                    y = ~x1;
+                    break;
+                case 8: //xor
+                    y = x1 ^ x2;
+                    break;
+                case 8: //shl
+                    //y = x1 << x2;
+                    var n = new BigNumber(2);
+                    n = n.pow(x2);
+                    y = bx1.times(n);
+                    break;
+                case 9: //shr signed
+                    //y = x1 >> x2;
+                    var n = new BigNumber(2);
+                    n = n.pow(x2);
+                    y = bx1.div(n);
+                    break;
+                    //case 10: //shr zerofill
+                    //      //var n = Math.pow(2,x2);
+                    //y = bx1.div(n).toString(2);
+                    //      y = x1 >>> x2;
+                    //      break;
+            }
+            BigNumber.set({
+                DECIMAL_PLACES: 16
+            });
+            y1 = y.toString(2);
+            y2 = y.toString(10);
+            y3 = y.toString(16).toUpperCase();
+            $("#y1").val(y1);
+            $("#y2").val(y2);
+            $("#y3").val(y3);
+        }
+    </script>
+
+
+
+</body>
+
+
+
+</html>

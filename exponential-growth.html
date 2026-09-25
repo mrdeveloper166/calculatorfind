@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <title>Exponential Growth Calculator</title>
+    <meta name="keywords" content="Exponential Growth/Decay Calculator,Exponential Growth and Decay Calculator,Exponential Growth Calculator,Exponential Decay Calculator,Exponential Growth Calculator graph,how to find exponential growth">
+    <meta name="description" content="The exponential growth calculator calculates the final value of some quantity, given its initial value, rate of growth and elapsed time. ... An alternative way of writing the exponential growth equation. Example on how to use the formula for exponential decay.">
+    <meta charset="UTF-8">
+
+    <script async src="tagmng3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Exponential Growth Calculator" />
+    <meta property="og:description" content="The exponential growth calculator calculates the final value of some quantity, given its initial value, rate of growth and elapsed time. ... An alternative way of writing the exponential growth equation. Example on how to use the formula for exponential decay."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/exponential-growth.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .calc {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        * {
+            font-size: 18px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Exponential Growth/Decay Calculator with formulas</h1> <br>
+
+
+                <form name="calcform" class="box float" id="calcform" autocomplete="off">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td>Enter initial value<i> </i>(<i>x</i><sub style="font-size: 0.8em">0</sub>):</td>
+                                <td><input type="number" step="any" name="x1" class="intext form-control" autofocus></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter growth/decay rate (<i>r</i>):</td>
+                                <td><input type="number" step="any" name="x2" class="intext form-control"></td>
+                                <td>%</td>
+                            </tr>
+                            <tr>
+                                <td>Enter time (<i>t</i>):</td>
+                                <td><input type="number" step="any" name="x3" class="intext form-control"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="calcfunc()" type="button" value="= Calculate" class="btn btn-success">
+                                    <input onclick="setfocus()" type="reset" value="X Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Value at time t (<i>x</i>(t)):</td>
+                                <td><input type="text" id="y" name="y" class="outtext form-control" style="color: green;font-weight: bolder;background-color: white;" readonly></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <h2><b>Example</b></h2><br>
+                <p class="math"><i>x</i><sub><span style="font-size: 0.8em">0</span></sub> = 50</p><br>
+                <p class="math"><i>r</i> = 4% = 0.04</p><br>
+                <p class="math"><i>t</i> = 90 hours</p><br>
+                <p class="math"><i>x</i>(<i>t</i>) = <i>x</i><sub><span style="font-size: 0.8em">0</span></sub><i> </i> &times; (1 + <i>r</i>)<sup><i> t</i></sup> = 50&times;(1+0.04)<sup><span style="font-size: 0.8em">90</span></sup> = 1706</p>
+                <br><br>
+
+                <h2>Online exponential growth/decay calculator.</h2><br>
+                <p>The exponential growth calculator calculates the final value of some quantity, given its initial value, rate of growth and elapsed time. .. . An alternative way of writing the exponential growth equation. Example on how to use the formula
+                    for exponential decay.</p>
+                <br>
+                <h2><b>Exponential growth/decay formula</b></h2><br>
+                <p class="math"><i>x</i>(<i>t</i>) = <i>x</i><sub style="font-size: 0.8em">0</sub> &times; (1 + <i>r</i>)<sup><i> t</i></sup></p><br>
+                <p><i>x</i>(t) is the value at time t.</p><br>
+                <p><i>x</i><sub><span style="font-size: 0.8em">0</span></sub> is the initial value at time t=0.</p><br>
+                <p>r is the growth rate when r&gt;0 or decay rate when r&lt;0, in percent.</p><br>
+                <p>t is the time in discrete intervals and selected time units.</p><br>
+                <h2>Exponential growth calculator</h2><br>
+                <p>Enter the initial value <i>x</i><sub style="font-size: 0.8em">0</sub>, growth rate r and time interval t and press the <span style="font-size: 1.5em">=</span> button:</p><br>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="calc2.js"></script>
+    <script>
+        function calcfunc() {
+            var x0 = document.calcform.x1.value;
+            var r = document.calcform.x2.value;
+            var t = document.calcform.x3.value;
+            var x = (1 + r / 100);
+            y = x0 * Math.pow(x, t);
+            y = roundresult(y);
+            document.calcform.y.value = y;
+        }
+    </script>
+
+</body>
+
+
+
+</html>

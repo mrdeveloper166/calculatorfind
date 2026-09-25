@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <title>Final Grade Calculator</title>
+
+    <meta name="keywords" content="final grade calculator, final grade, final grades, final grade with exam calculator, final grade in class calculator, how much does grading cost, final grade excavating.">
+    <meta name="description" content="Final grade calculator tell how much grade you need to get in final grade result. It describes you the formula too how it calculates the final grade. ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GPA Calculator" />
+    <meta property="og:description" content="Final grade calculator tell how much grade you need to get in final grade result. It describes you the formula too how it calculates the final grade." />
+    <meta property="og:url" content="https://www.calculatorfind.com/final-grade.html" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/lib/pcircle/percircle.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br> <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h2>Final Grade Calculator</h2>
+                <br><br>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="grade-calculator.html">Grade calculator</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#fcalc">Final grade calculator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gpa-calculator.html">GPA calculator</a></li>
+                </ul>
+                <br>
+                <h4>Calculate final exam grade</h4>
+                <br>
+                <form id="calcform" class="box float" autocomplete="off">
+                    <div class="form-group">
+                        <label for="avg0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Current grade</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="avg0" class="form-control" autofocus>
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="total0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Target class grade</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="total0" class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Final exam weight</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="weight0" class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="calcbtn0" onclick="OnCalc0()" title="Calculate" class="btn btn-success"><b>=</b> Calculate</button>
+                        <button type="reset" id="resetbtn0" title="Reset" class="btn btn-danger"><b>X</b> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="final0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Final exam grade needed to get target class grade</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="final0" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <br><br>
+                <h4 class="mt-3">Calculate final exam grade with multiple grades</h4>
+                <br><br>
+                <form id="calcform" class="box float" autocomplete="off">
+                    <div class="form-group">
+                        <label for="gradetype1" class="row ml-0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select grade type</label>
+                        <div class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+            <input type="radio" name="gradetype" id="gradetype1" checked> Percentage
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="gradetype" id="gradetype2"> Letter
+         </label>
+                            <!--
+         <label class="btn btn-secondary">
+            <input type="radio" name="gradetype" id="gradetype3"> GPA
+         </label>
+         -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <table id="tbl">
+                            <tbody>
+                                <tr style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                    <td>On</td>
+                                    <td>Current grade (letter)</td>
+                                    <td>Current grade (%)</td>
+                                    <td>Weight</td>
+                                </tr>
+                                <tr style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                    <td>&nbsp;</td>
+                                    <td>Target grade (letter)</td>
+                                    <td>Target grade (%)</td>
+                                    <td>Total weights</td>
+                                </tr>
+                                <tr id="sum">
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <select id="rgsel" class="form-control">
+               <option selected>--</option>
+               <option>A+</option>
+               <option>A</option>
+               <option>A-</option>
+               <option>B+</option>
+               <option>B</option>
+               <option>B-</option>
+               <option>C+</option>
+               <option>C</option>
+               <option>C-</option>
+               <option>D+</option>
+               <option>D</option>
+               <option>D-</option>
+               <option>F</option>
+            </select>
+                                    </td>
+                                    <td><input type="number" min="0" step="any" id="rg" class="form-control"></td>
+                                    <td><input type="number" min="0" step="any" id="rgw" class="form-control" placeholder="100"></td>
+                                </tr>
+                                <tr style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                    <td>&nbsp;</td>
+                                    <td>Final exam grade</td>
+                                    <td>Final exam grade</td>
+                                    <td>Final exam weight</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><input type="text" id="fgl" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                                    <td><input type="number" min="0" step="any" id="fg" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                                    <td><input type="number" min="0" step="any" id="fgw" class="form-control"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="calcbtn" onclick="OnCalc()" title="Calculate" class="btn btn-success"><b>=</b> Calculate</button>
+                        <button type="reset" id="resetbtn" title="Reset" class="btn btn-danger"><b>X</b>Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="fg" id="fglabel" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Final exam grade needed to get target grade</label>
+                        <div class="input-group">
+                            <input type="text" id="fg2" class="form-control mr-2" readonly style="color: green; font-weight: bold; background-color: white;">
+                            <input type="text" id="fgl2" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div id="finalcircle" class="red small mb-3"></div>
+                    </div>
+                    <div id="tbldiv" class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Grade options table</label>
+                        <table class="table" id="tbl2">
+                            <tr style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                <td>Current<br>Grade (%)</td>
+                                <td>Final Exam<br>Grade (%)</td>
+                                <td>Class Grade (%)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br>
+                <h4>Calculate total class grade</h4>
+                <br><br>
+                <form id="calcform" class="box float" autocomplete="off">
+                    <div class="form-group">
+                        <label for="avg2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Current average grade</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="avg2" class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="final2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Final exam grade</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="final2" class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Final exam weight</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="weight2" class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="calcbtn2" onclick="OnCalc2()" title="Calculate" class="btn btn-success"><b>=</b>Calculate</button>
+                        <button type="reset" id="resetbtn2" title="Reset" class="btn btn-danger"><b>X</b> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="total2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Total class grade</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="total2" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <!-- #BeginEditable "doctext2" -->
+                <h2>Final grade calculation</h2>
+
+                <h4>Example #1</h4>
+                <p>Current grade is 70% (or C-).</p>
+                <p>Final exam weight is 50%.</p>
+                <p>Required grade is 80% (or B-).</p>
+                <h5>Calculation:</h5>
+                <p>The final exam grade is equal to the required grade, minus 100% minus the final exam weight (w) times the current grade (g), divided by the final exam weight (w):</p>
+                <p class="mathsymbol">Final exam grade =</p>
+                <p class="mathsymbol">= ( <em>required grade</em> - (100% - <em>w</em>)&times;<em>current grade</em> ) / <em>w</em></p>
+                <p class="mathsymbol">= ( 80% - (100% - 50%)&times;70% ) / 50% = 90%</p>
+                <p>So the final exam grade should be 90% (or A-).</p>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <h4>Example #2</h4>
+                <p>Assigment 1: weight1=50%, grade1=16 out of 20.</p>
+                <p>Assigment 2: weight2=30%, max grade=30.</p>
+                <p>Assigment 3: weight3=20%, max grade=40.</p>
+                <p>Find average grade in assignments 2 and 3 needed to get class grade of 85%.</p>
+                <h5>Calculation:</h5>
+                <p class="mathsymbol">Current grade = Assignment 1 grade = grade1 / max grade1 = 16/20 = 0.8 = 80%</p>
+                <p class="mathsymbol">Required grade = 85%</p>
+                <p class="mathsymbol">Final exam weight = <i>w = weight2+weight3</i> = 30%+20% = 50%</p>
+                <p class="mathsymbol">Final exam grade =</p>
+                <p class="mathsymbol">= ( <i>required grade</i> - (100% - <i>w</i>)&times;<i>current grade</i> ) / <i>w</i></p>
+                <p class="mathsymbol">= ( 85% - 50%&times;80% ) / 50% = 90%</p>
+                <p>This mean that you have to get an average grade of 90% in assignments 2 and 3 in order to get class grade of 85%.</p>
+                <p class="mathsymbol">Assignment 2 grade = 90% &times; <i>max grade</i> = 90% &times; 30 = 27</p>
+                <p class="mathsymbol">Assignment 3 grade = 90% &times; <i>max grade</i> = 90% &times; 40 = 36</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/lib/pcircle/percircle.js" defer></script>
+    <!--<script src="https://www.gstatic.com/charts/loader.js" defer></script>-->
+    <script>
+        var rows = 0;
+        $(document).ready(function() {
+            /*
+            var params=GetURLParams();
+            if( !jQuery.isEmptyObject(params) ) {
+               $("#cg").val(params.grade);
+               $("#cgw").val(100-params.weight);
+            }
+            */
+            $("#tbldiv").hide();
+            $('input[type=radio][name=gradetype]').change(function() {
+                onGradeType();
+            });
+            $("#addrow").click(AddRow);
+            //$('#tbl > tbody > tr > td:nth-child(3) input').on('input', oncgwinput);
+            //$('#tbl > tbody > tr > td:nth-child(4) input').prop('id', 'cgw');
+            //$("#cgw").on('input', oncgwinput);
+            $("#rgw").on('input', onrgwinput);
+            $("#fgw").on('input', onfgwinput);
+            AddRow();
+            $("#tbl tr>td:nth-child(2)").hide();
+            //setTimeout(function(){$("#tbl > tbody > tr:nth-child(2) > td:nth-child(3) > input").focus();},500);
+        });
+
+        function GetURLParams() {
+            var url = window.location.href;
+            var regex = /[?&]([^=#]+)=([^&#]*)/g,
+                //url = "www.domain.com/?v=123&p=hello",
+                params = {},
+                match;
+            while (match = regex.exec(url)) {
+                params[match[1]] = match[2];
+            }
+            return params;
+        }
+
+        function OnCalc0() {
+            var avg = $("#avg0").val();
+            var total = $("#total0").val();
+            var weight = $("#weight0").val();
+            var final = (total - avg * (100.0 - weight) / 100.0) / (weight / 100.0);
+            $("#final0").val(final.toFixed(2));
+        }
+
+        function OnCalc2() {
+            var avg = $("#avg2").val();
+            var final = $("#final2").val();
+            var weight = $("#weight2").val();
+            var total = (avg * (100.0 - weight) + final * weight) / 100.0;
+            $("#total2").val(total.toFixed(2));
+        }
+
+        function AddRow() {
+            $('#tbl > tbody > tr button').remove();
+            $('#tbl > tbody > tr').eq(rows++).after("<tr>\
+         <td><input type='checkbox' checked></td>\
+         <td><select name='lgrade[]' class='form-control'>\
+            <option selected>--</option>\
+            <option>A+</option>\
+            <option>A</option>\
+            <option>A-</option>\
+            <option>B+</option>\
+            <option>B</option>\
+            <option>B-</option>\
+            <option>C+</option>\
+            <option>C</option>\
+            <option>C-</option>\
+            <option>D+</option>\
+            <option>D</option>\
+            <option>D-</option>\
+            <option>F</option>\
+         </select></td>\
+         <td><input type='number' name='grade[]' min='0' step='any' class='form-control'></td>\
+         <td><input type='number' name='weight[]' min='0' step='any' class='form-control'></td>\
+         <td><button type='button' title='Add Row' class='btn btn-outline-secondary'><i class='material-icons'>add</i></button></td>\
+      </tr>");
+            $('#tbl > tbody > tr button').click(function() {
+                AddRow();
+            });
+            if (rows == 1)
+                $("#tbl tr:nth-child(2) input[type=checkbox]").prop('disabled', true);
+            else
+                $("#tbl tr:nth-child(2) input[type=checkbox]").prop('disabled', false);
+
+            if (rows == 1) {
+                $('#tbl > tbody > tr:nth-child(2) > td:nth-child(4) input').prop('id', 'cgw');
+                $("#cgw").on('input', oncgwinput);
+            }
+
+            var k = rows + 1;
+            //var radioButtons = $("input[type=radio][name='gradetype']");
+            //var i = radioButtons.index(radioButtons.filter(':checked'));
+            var i = getGradeType();
+            if (i == 1)
+                $("#tbl tr:nth-child(" + k + ")>td:nth-child(3)").css("display", "none");
+            else
+                $("#tbl tr:nth-child(" + k + ")>td:nth-child(2)").css("display", "none");
+        }
+
+        function onGradeType() {
+            //var radioButtons = $("input[type=radio][name='gradetype']");
+            //var i = radioButtons.index(radioButtons.filter(':checked'));
+            var i = getGradeType();
+            if (i == 0) {
+                $("#tbl tr>td:nth-child(2)").css("display", "none");
+                $("#tbl tr>td:nth-child(3)").css("display", "");
+            } else {
+                $("#tbl tr td:nth-child(2)").css("display", "");
+                $("#tbl tr>td:nth-child(3)").css("display", "none");
+            }
+        }
+
+        function getGradeType() {
+            var radioButtons = $("input[type=radio][name='gradetype']");
+            var i = radioButtons.index(radioButtons.filter(':checked'));
+            return i;
+        }
+
+        function oncgwinput() {
+            if (rows > 1) return;
+            var cgw = $("#cgw").val();
+            var rgw = $("#rgw").val();
+            if (cgw == '') return;
+            if (rgw == '') rgw = 100;
+            var fgw = (rgw - cgw).toFixed(1);
+            $("#fgw").val(fgw);
+        }
+
+        function onrgwinput() {
+            var rgw = $("#rgw").val();
+        }
+
+        function onfgwinput() {
+            var fgw = $('#fgw').val();
+            var rgw = $("#rgw").val();
+            if (fgw == '') return;
+            if (rgw == '') rgw = 100;
+            var cgw = (rgw - fgw).toFixed(1);
+            $("#cgw").val(cgw);
+        }
+
+        function OnCalc() {
+            var i = getGradeType();
+            if (i == 0)
+                CalcPercent();
+            else
+                CalcLetter();
+        }
+
+        function CalcPercent() {
+            var checked, grade, weight;
+            var sum = 0,
+                wsum = 0;
+            for (var i = 0; i < rows; i++) {
+                var k = i + 2;
+                checked = $("#tbl > tbody > tr:nth-child(" + k + ") > td:nth-child(1) > input").is(":checked");
+                grade = $("#tbl > tbody > tr:nth-child(" + k + ") > td:nth-child(3) > input").val();
+                weight = $("#tbl > tbody > tr:nth-child(" + k + ") > td:nth-child(4) > input").val();
+                grade = parseFloat(grade);
+                weight = parseFloat(weight);
+                if (checked && grade >= 0 && weight >= 0) {
+                    sum += grade * weight;
+                    wsum += weight;
+                }
+            }
+            if (sum == 0 || wsum == 0) {
+                alert("Please enter current grade & weight!");
+                $("#tbl > tbody > tr:nth-child(3) > td:nth-child(3) > input").focus();
+                return;
+            }
+            var cg = sum / wsum;
+            var cgw = wsum;
+            var rg = $("#rg").val();
+            var rgw = $("#rgw").val();
+            var fgw = $("#fgw").val();
+            if (rgw == '') rgw = 100;
+            fgw = parseFloat(fgw);
+            rgw = parseFloat(rgw);
+            if (rgw != cgw + fgw) {
+                alert("Sum of weights should not equal to total weights!");
+                return;
+            }
+            var fg = (rgw * rg - cgw * cg) / fgw;
+            fg = fg.toFixed(2);
+            $("#fg").val(fg);
+            $("#fg2").val(fg);
+            $("#fgl2").val(GetLetterFromPercent(fg));
+
+            DrawTable(cg, cgw, fgw);
+            //DrawGraph();
+            var final = $("#fg").val();
+            if (final > 100) final = 100;
+            $("#finalcircle").percircle({
+                percent: final,
+                text: final + "%"
+            });
+            $("#finalcircle").show();
+            /*
+            var url="grade-calculator.html?grade1="+cg+"&grade2="+rg+"&weight1="+(100-w);
+            if( w<=0 || w>=100 ) url=undefined;
+            SetGradeURL(url);
+            */
+        }
+
+        function DrawTable(cg, cgw, fgw) {
+            var grade;
+            $("#tbl2").find("tr:gt(0)").remove();
+            for (var i = 0, g = 50; g <= 100; i++, g += 5) {
+                grade = (cgw * cg + fgw * g) / (cgw + fgw);
+                grade = grade.toFixed(0);
+                $('#tbl2 tr').eq(i).after("<tr>\
+            <td>" + cg + "</td>\
+            <td>" + g + "</td>\
+            <td>" + grade + "</td>\
+         </tr>");
+            }
+            $(".calc tr:nth-child(n+12)").show();
+            $("#tbldiv").show();
+        }
+
+        function CalcLetter() {
+            var glook = [-1, 4.33, 4.00, 3.67, 3.33, 3.00, 2.67, 2.33, 2.00, 1.67, 1.33, 1.00, 0.67, 0];
+            var letter = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'];
+            var checked, grade, weight;
+            var sum = 0,
+                wsum = 0;
+            for (var i = 0; i < rows; i++) {
+                var k = i + 2;
+                checked = $("#tbl > tbody > tr:nth-child(" + k + ") > td:nth-child(1) > input").is(":checked");
+                grade = $("#tbl > tbody > tr:nth-child(" + k + ") > td:nth-child(2) > select")[0].selectedIndex;
+                weight = $("#tbl > tbody > tr:nth-child(" + k + ") > td:nth-child(4) > input").val();
+                grade = glook[grade];
+                grade = parseFloat(grade);
+                weight = parseFloat(weight);
+                if (checked && grade >= 0 && weight >= 0) {
+                    sum += grade * weight;
+                    wsum += weight;
+                }
+            }
+            if (sum == 0 || wsum == 0) {
+                alert("Please enter current grade & weight!");
+                $("#tbl > tbody > tr:nth-child(3) > td:nth-child(2) > select").focus();
+                return;
+            }
+            var cg = sum / wsum;
+            var cgw = wsum;
+            var rg = $("#rgsel")[0].selectedIndex;
+            rg = glook[rg];
+            var rgw = $("#rgw").val();
+            var fgw = $("#fgw").val();
+            if (rgw == '') rgw = 100;
+            fgw = parseFloat(fgw);
+            rgw = parseFloat(rgw);
+            if (rgw != cgw + fgw) {
+                alert("Sum of wights should not equal to total weights!");
+                return;
+            }
+            var fg = (rgw * rg - cgw * cg) / fgw;
+            if (fg < 0) fg = 0;
+            var imin = 0;
+            var d, dmin = 99;
+            for (var i = 1; i <= 13; i++) {
+                d = Math.abs(glook[i] - fg);
+                if (d < dmin) {
+                    dmin = d;
+                    imin = i;
+                }
+            }
+            if (imin == 0) return;
+            var l = letter[imin - 1];
+            $('#fgl').val(l);
+            $("#fg2").val(l);
+            $("#fgl2").val(fg.toFixed(2));
+
+            //DrawTable(cg,cgw,fgw);
+            DrawLetterTable(cg, cgw, fgw);
+            //DrawGraph();
+            var letter = $("#fg2").val();
+            var gpa = 100 * $("#fgl2").val() / 4.0;
+            if (gpa > 100) gpa = 100;
+            $("#finalcircle").percircle({
+                percent: gpa,
+                text: letter
+            });
+            $("#finalcircle").show();
+        }
+
+        function DrawLetterTable(cg, cgw, fgw) {
+            var gpa = [0.67, 1.00, 1.33, 1.67, 2.00, 2.33, 2.67, 3.00, 3.33, 3.67, 4.00, 4.33];
+            var grade;
+            $("#tbl2").find("tr:gt(0)").remove();
+            for (var i = 0; i < 12; i++) {
+                var g = gpa[i];
+                //grade=((100-w)*cg+w*g)/100;
+                grade = (cgw * cg + fgw * g) / (cgw + fgw);
+                //grade = grade.toFixed(0);
+                $('#tbl2 tr').eq(i).after("<tr>\
+            <td>" + GetLetterFromGPA(cg) + "</td>\
+            <td>" + GetLetterFromGPA(g) + "</td>\
+            <td>" + GetLetterFromGPA(grade) + "</td>\
+         </tr>");
+            }
+            $(".calc tr:nth-child(n+12)").show();
+            $("#tbldiv").show();
+        }
+
+        function GetLetterFromPercent(percent) {
+            var letter = "";
+            var lettertbl = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'];
+            var percenttbl = [97, 93, 90, 87, 83, 80, 77, 73, 70, 67, 63, 60, 0];
+            //percent=Math.round(percent);
+            for (var i = 0; i < percenttbl.length; i++)
+                if (percent >= percenttbl[i]) {
+                    letter = lettertbl[i];
+                    break;
+                }
+            return letter;
+        }
+
+        function GetLetterFromGPA(gpa) {
+            var letter = "";
+            var lettertbl = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'];
+            var gpatbl = [4.33, 4.00, 3.67, 3.33, 3.00, 2.67, 2.33, 2.00, 1.67, 1.33, 1.00, 0.67, 0];
+            for (var i = 0; i < gpatbl.length; i++)
+                if (gpa >= gpatbl[i]) {
+                    letter = lettertbl[i];
+                    break;
+                }
+            return letter;
+        }
+
+
+        /*
+           function CalcGPA()
+           {
+              var cgpa=parseFloat($("#curgpa").val());
+              var tgpa=parseFloat($("#tgpa").val());
+              var chours=parseFloat($("#curhours").val());
+              var ahours=parseFloat($("#ahours").val());
+              var h=chours+ahours;
+              //tgpa=(cgpa*chours+fgpa*ahours)/h
+              var fgpa=(h*tgpa-chours*cgpa)/ahours;
+              var flet=GetLetterFromGPA(fgpa);
+              $("#fg").val(fgpa.toFixed(2));
+              $("#fgl").val(flet);
+              var percent=25*fgpa;
+              if( percent>100 ) percent=100;
+              $("#finalcircle").percircle({percent: percent,text: flet});
+              $("#finalcircle").show();
+        }
+           function GetLetterFromGPA(gpa)
+           {
+              var letter="";
+              var lettertbl=['A+','A','A-','B+','B','B-','C+','C','C-','D+','D','D-','F'];
+              var gpatbl=[4.33,4.00, 3.67, 3.33, 3.00, 2.67, 2.33, 2.00, 1.67, 1.33, 1.00, 0.67, 0];
+              for(var i=0; i<gpatbl.length; i++)
+                 if( gpa>=gpatbl[i] )
+                 {
+                    letter = lettertbl[i];
+                    break;
+                 }
+              return letter;
+           }
+           function SetGradeURL(url)
+           {
+              if( url===undefined ) url="grade-calculator.html";
+              $("#grade1").prop("href",url);
+              $("#grade2").prop("href",url);
+           }
+           function DrawTable(cg,w)
+           {
+              var grade;
+              $("#tbl").find("tr:gt(0)").remove();
+              for(var i=0,g=50; g<=100; i++,g+=5) {
+                 grade=((100-w)*cg+w*g)/100;
+                 grade = grade.toFixed(0);
+                 $('#tbl tr').eq(i).after("<tr>\
+                    <td>"+cg+"</td>\
+                    <td>"+g+"</td>\
+                    <td>"+grade+"</td>\
+                 </tr>");
+              }
+              $(".calc tr:nth-child(n+12)").show();
+              $("#tbldiv").show();
+           }
+           function DrawLetterTable(cg,w)
+           {
+              var gpa=[0.67,1.00,1.33,1.67,2.00,2.33,2.67,3.00,3.33,3.67,4.00,4.33];
+              var grade;
+              $("#tbl").find("tr:gt(0)").remove();
+              for(var i=0; i<12; i++) {
+                 var g=gpa[i];
+                 grade=((100-w)*cg+w*g)/100;
+                 //grade = grade.toFixed(0);
+                 $('#tbl tr').eq(i).after("<tr>\
+                    <td>"+GetLetterFromGPA(cg)+"</td>\
+                    <td>"+GetLetterFromGPA(g)+"</td>\
+                    <td>"+GetLetterFromGPA(grade)+"</td>\
+                 </tr>");
+              }
+              $(".calc tr:nth-child(n+12)").show();
+              $("#tbldiv").show();
+           }
+           function DrawGraph()
+           {
+              google.charts.load('current', {'packages':['corechart']});
+              google.charts.setOnLoadCallback(drawVisualization);
+           }
+           function drawVisualization() {
+              var cg=parseInt(document.calcform.cg.value);
+              var w=parseInt(document.calcform.cgw.value);
+              var rg=parseInt(document.calcform.rg.value);
+              var fg=parseInt(document.calcform.fg.value);
+              var data = google.visualization.arrayToDataTable([
+                 ['', '', { role: 'style' }],
+                 ['Current grade',  cg, ''],
+                 ['Final exam grade',  fg, ''],
+                 ['Class grade',  rg, '#00a000']
+              ]);
+              var options = {
+                 legend: {position: 'none'},
+                 title : 'Grades graph',
+                 vAxis: {title: 'Grade [%]'},
+                 hAxis: {title: ''},
+                 seriesType: 'bars',
+                 width:300
+                 //series: {1: {type: 'line'}}
+                 //series: {1: {
+                 //type: "steppedArea", 
+                 //color: '#FF0000', 
+                 //visibleInLegend: false, 
+                 //areaOpacity: 0}
+                 //}
+              };
+              
+              var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+              chart.draw(data, options);
+           }
+           /*
+           function drawCircle(obj, percent)
+           {
+              google.charts.load("current", {packages:["corechart"]});
+              google.charts.setOnLoadCallback(drawChart2);
+           }
+           function drawChart2() {
+              var data = google.visualization.arrayToDataTable([
+                 ['Task', 'Hours per Day'],
+                 ['Work',     11],
+                 ['Eat',      2],
+                 ['Commute',  2],
+                 ['Watch TV', 2],
+                 ['Sleep',    7]
+              ]);
+
+              var options = {
+                 title: 'My Daily Activities',
+                 pieHole: 0.4,
+              };
+
+              var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+              chart.draw(data, options);
+           }
+           */
+    </script>
+    <!--
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["WebPage","FAQPage"],
+  "name": "Final Grade Calculator",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How to calculate my final exam grade (%)?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The final exam grade is equal to the required grade, minus (100% minus the final exam weight) times the current grade, divided by the final exam weight.</p>
+               <p><a href='https://www.rapidtables.com/calc/grade/final-grade-calculator.html'>Read more</a></p>"
+    }
+  }, {
+    "@type": "Question",
+    "name": "How to calculate my final exam grade (letter)?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<ol>
+         <li>Convert the current and required grades from letter to percentage.</li>
+         <li>Calculate the final exam grade (%): The final exam grade is equal to the required grade, minus (100% minus the final exam weight) times the current grade, divided by the final exam weight.</li>
+         <li>Convert the final exam grade from percentage to letter.</li>
+      </ol>
+      <p><a href='https://www.rapidtables.com/calc/grade/final-grade-calculator.html'>Read more</a></p>"
+    }
+  }, {
+    "@type": "Question",
+    "name": "How do I calculate my average grade?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The average grade is equal to the sum of each grade, times the weight of each grade, divided by the sum of the weights.</p>
+      <p><a href='https://www.rapidtables.com/calc/grade/final-grade-calculator.html'>Read more</a></p>"
+    }
+  }, {
+    "@type": "Question",
+    "name": "How do I calculate average grade of 80 and 90?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The average grade is equal to the sum of each grade, times the weight of each grade, divided by the sum of the weights.</p>
+      <p>Average grade = (50%*80+50%*90) = (80+90)/2 = 85</p>
+      <p><a href='https://www.rapidtables.com/calc/grade/final-grade-calculator.html'>Read more</a></p>"
+    }
+  }]
+}*/
+</script>
+-->
+    <!-- #EndEditable -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

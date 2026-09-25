@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Watts to lumens (lm) conversion calculator</title>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <meta name="keywords" content="watts to lumens calculator,watts to lumens conversion,watts to lumens calculator chart,how to convert watts to lumens,watts vs lumens,60 watts to lumens,how many watts in 500 lumens">
+    <meta name="description" content="Watts to Lumens Calculator Electric power in watts (W) to luminous flux in lumens (lm) calculator and how to calculate.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Watts to lumens (lm) conversion calculator" />
+    <meta property="og:description" content="Watts to Lumens Calculator Electric power in watts (W) to luminous flux in lumens (lm) calculator and how to calculate." />
+    <meta property="og:url" content="https://www.calculatorfind.com/watts-to-lumens.html" />
+
+    
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>Watts to lumens calculator or conversion</h1>
+                <br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter power in watts:</td>
+                            <td class="math"><input type="number" min="0" step="any" name="x1" class="intext form-control" style="width:220px" autofocus></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">W</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter light source:</td>
+                            <td colspan="2">
+                                <select name="type" style="font-size:medium" onchange="OnTypeChange()" class="form-control">
+				<option>-- select light source --</option>
+				<option>Tungsten incandescent light bulb</option>
+				<option>Halogen lamp</option>
+				<option>Fluorescent lamp</option>
+				<option>LED lamp</option>
+				<option>Metal halide lamp</option>
+				<option>High pressure sodium vapor lamp</option>
+				<option>Low pressure sodium vapor lamp</option>
+				<option>Mercury vapor lamp</option>
+			</select></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Or enter luminous efficacy in lumens per watt:</td>
+                            <td class="math"><input type="number" name="x2" class="intext form-control" style="width:220px"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">lm/W</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input onclick="calc3()" type="button" value="= Calculate" class="btn btn-success">
+                                <input onclick="setfocus()" type="reset" value="X Reset" class="btn btn-danger"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Luminous flux result in lumens:</td>
+                            <td class="math"><input type="text" name="y" class="outtext form-control" readonly="readonly" style="width:220px"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">lm</td>
+                        </tr>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12"></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+
+                <h2>Watts to lumens calculation/conversion</h2>
+                <p>Energy saving lamps have high luminous efficacy (more lumens per watt).</p>
+                <p>The luminous flux <i>&#934;</i><sub><span style="font-size: 0.6em">V</span></sub> in lumens (lm) is equal to the power P in watts (W), times the luminous efficacy <i> &#951;</i> in lumens per watt (lm/W):</p>
+                <p class="math"><b> <i>&#934;</i><sub><span style="font-size: 0.6em">V</span>(lm)</sub> = <i>P</i><sub>(W)</sub> &times; <i>&#951;</i><sub>(lm/W)</sub></b></p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnTypeChange() {
+            var type = document.calcform.type.selectedIndex;
+            switch (type) {
+                case 0:
+                    document.calcform.x2.value = '';
+                    break;
+                case 1:
+                    document.calcform.x2.value = 15;
+                    break;
+                case 2:
+                    document.calcform.x2.value = 20;
+                    break;
+                case 3:
+                    document.calcform.x2.value = 60;
+                    break;
+                case 4:
+                    document.calcform.x2.value = 90;
+                    break;
+                case 5:
+                    document.calcform.x2.value = 87;
+                    break;
+                case 6:
+                    document.calcform.x2.value = 117;
+                    break;
+                case 7:
+                    document.calcform.x2.value = 150;
+                    break;
+                case 8:
+                    document.calcform.x2.value = 50;
+                    break;
+            }
+        }
+
+        function convert(x1, x2) {
+            return x1 * x2;
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

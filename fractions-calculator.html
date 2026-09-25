@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <title>Fractions Calculator</title>
+
+    <meta name="keywords" content="fractions calculator,calculator for fractions,to fractions calculator,with fractions calculator,equivalent fractions calculator,decimals to fractions calculator,simplifying fractions calculator,fractions calculator algebra,fractions calculator improper">
+    <meta name="description" content="What is Fractions Calculator :- Below are multiple fraction calculators capable of addition, subtraction, multiplication, division, simplification, and conversion between fractions and decimals. Fields above the solid black line represent the numerator, while fields below represent the denominator.">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fractions Calculator" />
+    <meta property="og:description" content="What is Fractions Calculator :- Below are multiple fraction calculators capable of addition, subtraction, multiplication, division, simplification, and conversion between fractions and decimals. Fields above the solid black line represent the numerator, while fields below represent the denominator."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/fractions-calculator.html" />
+    <script async src="tagmng3.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        .calc {
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+      <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+        <br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+
+                <h2>Fractions Calculator or converter</h2> <br>
+
+                <form id="calcform" name="calcform" class="box float calc" autocomplete="off">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+         <input type="radio" name="fractype" id="sf" checked> Simple Fractions
+      </label>
+                        <label class="btn btn-secondary">
+         <input type="radio" name="fractype" id="mf"> Mixed Fractions
+      </label>
+                    </div>
+                    <div class="form-group mt-3">
+                        <table>
+                            <tr>
+                                <td id="td11" rowspan="2"><input type="number" step="1" id="x1" class="form-control form-control-lg"></td>
+                                <td id="td12"><input type="number" step="1" id="n1" class="form-control" autofocus></td>
+                                <td id="td13" rowspan="2" class="pl-2 pr-2">
+                                    <select id="op" class="form-control form-control-lg">
+               <option selected>+</option>
+               <option>-</option>
+               <option>&times;</option>
+               <option>&divide;</option>
+            </select>
+                                </td>
+                                <td id="td14" rowspan="2"><input type="number" step="1" id="x2" class="form-control form-control-lg"></td>
+                                <td id="td15"><input type="number" step="1" id="n2" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td id="td21"><input type="number" step="1" id="d1" class="form-control"></td>
+                                <td id="td22"><input type="number" step="1" id="d2" class="form-control"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Calculate" class="btn btn-secondary btn-success" onclick="fcalc()"><span>=</span> Calculate</button>
+                        <button type="reset" title="Reset" class="btn btn-secondary btn-danger" onclick="freset()"><span>&times;</span> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label>Result</label>
+                        <table>
+                            <tr>
+                                <td id="td31"><input type="text" id="n3" class="form-control" readonly></td>
+                                <td id="td32" rowspan="2" class="pl-2 pr-2">=</td>
+                                <td id="td33" rowspan="2"><input type="text" id="x3" class="form-control" readonly></td>
+                                <td id="td34"><input type="text" id="n4" class="form-control" readonly></td>
+                            </tr>
+                            <tr>
+                                <td id="td41"><input type="text" id="d3" class="form-control" readonly></td>
+                                <td id="td42"><input type="text" id="d4" class="form-control" readonly></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="form-group ml-3">
+                        <label class="row">View</label>
+                        <div id="fracdiv" class="row">
+                            <canvas id="frac"></canvas>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="area">Calculation</label>
+                        <textarea rows="7" id="area" class="form-control" readonly></textarea>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>Fractions Calculator with formulas and how to use this calculator</h2>
+                <p>Below are multiple fraction calculators capable of addition, subtraction, multiplication, division, simplification, and conversion between fractions and decimals. Fields above the solid black line represent the numerator, while fields
+                    below represent the denominator.</p>
+                <br>
+                <h4>Adding fractions example</h4>
+                <p class="math">1/2 + 1/3 = (1&times;3+1&times;2) / (2&times;3) = 5/6</p>
+                <h4>Subtracting fractions example</h4>
+                <p class="math">1/2 - 1/3 = (1&times;3 - 1&times;2) / (2&times;3) = 1/6</p>
+                <h4>Multiplying fractions example</h4>
+                <p class="math">1/2 &times; 1/3 = (1&times;1) / (2&times;3) = 1/6</p>
+                <h4>Dividing fractions example</h4>
+                <p class="math">1/2 &divide; 1/3 = 1/2 &times; 3/1 = (1&times;3) / (2&times;1) = 3 / 2 = 1 1/2</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="calc2.js" defer></script>
+    <script src=<script src="number.js"></script>
+    <script src="mathview.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#td11').hide();
+            $('#td14').hide();
+            $('#td32').hide();
+            $('#td33').hide();
+            $('#td34').hide();
+            $('#td42').hide();
+            $('#mf').toggleClass("active");
+            $('#sf').click(function() {
+                $('#td11').hide();
+                $('#td14').hide();
+                $('#x1').val('');
+                $('#x2').val('');
+                $('#n1').focus();
+            });
+            $('#mf').click(function() {
+                $('#td11').show();
+                $('#td14').show();
+                $('#x1').focus();
+            });
+        });
+
+        function freset() {
+            var obj = document.getElementById("frac");
+            ClearView(obj);
+        }
+
+        function fcalc() {
+            var out1 = out2 = '';
+            var s1 = s2 = s3 = 1;
+            var w1 = $('#x1').val();
+            var n1 = $('#n1').val();
+            var d1 = $('#d1').val();
+            var w2 = $('#x2').val();
+            var n2 = $('#n2').val();
+            var d2 = $('#d2').val();
+            var op = $('#op').prop('selectedIndex');
+            if (n1 == '' || d1 == '' || n2 == '' || d2 == '') {
+                alert("Please enter 2 fractions");
+                return;
+            }
+            if (w1 == '-') {
+                s1 = -1;
+                w1 = '0';
+            }
+            if (w2 == '-') {
+                s2 = -1;
+                w2 = '0';
+            }
+            if (w1 == '') w1 = '0';
+            if (w2 == '') w2 = '0';
+            w1 = parseInt(w1);
+            n1 = parseInt(n1);
+            d1 = parseInt(d1);
+            w2 = parseInt(w2);
+            n2 = parseInt(n2);
+            d2 = parseInt(d2);
+            op = parseInt(op);
+
+            if (w1 == 0 && (n1 / d1) < 0) s1 = -1;
+            if (w2 == 0 && (n2 / d2) < 0) s2 = -1;
+            n1 = Math.abs(n1);
+            d1 = Math.abs(d1);
+            n2 = Math.abs(n2);
+            d2 = Math.abs(d2);
+            if (w1 != 0 || w2 != 0) {
+                $('#n1').val(n1);
+                $('#d1').val(d1);
+                $('#n2').val(n2);
+                $('#d2').val(d2);
+            }
+            if (w1 < 0) {
+                s1 = -1;
+                w1 = -w1;
+            }
+            if (w2 < 0) {
+                s2 = -1;
+                w2 = -w2;
+            }
+
+            _n1 = s1 * (n1 + w1 * d1);
+            _n2 = s2 * (n2 + w2 * d2);
+
+            if (op == 0) // +
+            {
+                n3 = _n1 * d2 + _n2 * d1;
+                d3 = d1 * d2;
+            } else if (op == 1) // -
+            {
+                n3 = _n1 * d2 - _n2 * d1;
+                d3 = d1 * d2;
+            } else if (op == 2) // x
+            {
+                n3 = _n1 * _n2;
+                d3 = d1 * d2;
+            } else {
+                n3 = _n1 * d2;
+                d3 = d1 * _n2;
+            }
+            if ((n3 / d3) < 0) s3 = -1;
+            n3 = Math.abs(n3);
+            d3 = Math.abs(d3);
+            g = gcd(n3, d3);
+            n3 /= g;
+            d3 /= g;
+            var sn3 = s3 * n3;
+            var sd3 = d3;
+            //out1 = sn3+'/'+sd3;
+            var sign = '';
+            if (n3 > d3) {
+                i = Math.floor(n3 / d3);
+                j = n3 - i * d3;
+                if (j > 0) {
+                    if (s3 == -1) sign = '-';
+                }
+            }
+            $('#n3').val(sn3);
+            $('#d3').val(sd3);
+            if (n3 > d3) {
+                $('#x3').val(sign + i);
+                $('#n4').val(j);
+                $('#d4').val(d3);
+                $('#td32').show();
+                $('#td33').show();
+                $('#td34').show();
+                $('#td42').show();
+            } else {
+                $('#td32').hide();
+                $('#td33').hide();
+                $('#td34').hide();
+                $('#td42').hide();
+            }
+
+            ops = [' + ', ' - ', ' \u00D7 ', ' / '][op];
+            out = '';
+            if (w1 != '') out += w1 + ' ';
+            out += (s1 * n1) + '/' + d1;
+            out += ops;
+            if (w2 != '') out += w2 + ' ';
+            out += (s2 * n2) + '/' + d2;
+            if (w1 != 0 || w2 != 0) {
+                out += '\n= ';
+                out += (n1 + d1 * w1) + '/' + d1;
+                out += ops;
+                out += (n2 + d2 * w2) + '/' + d2;
+            }
+            d4 = d1 * d2 / gcd(d1, d2);
+            out += '\n= ';
+            if (op == 0 || op == 1) {
+                out += (_n1 * d4 / d1) + '/' + d4 + ops + (_n2 * d4 / d2) + '/' + d4;
+                if (op == 0) {
+                    a = (_n1 * d4 / d1 + _n2 * d4 / d2);
+                    b = d4;
+                } else {
+                    a = (_n1 * d4 / d1 - _n2 * d4 / d2);
+                    b = d4;
+                }
+            } else if (op == 2) {
+                out += '(' + _n1 + '\u00D7' + _n2 + ') / (' + d1 + '\u00D7' + d2 + ')';
+                a = (_n1 * _n2);
+                b = (d1 * d2);
+            } else {
+                out += '(' + _n1 + '\u00D7' + d2 + ') / (' + d1 + '\u00D7' + _n2 + ')';
+                a = (_n1 * d2);
+                b = (d1 * _n2);
+            }
+            out += '\n= ';
+            out += a + '/' + b;
+            g = gcd(a, b);
+            if (g > 1) {
+                a /= g;
+                b /= g;
+                out += '\n= ';
+                out += a + '/' + b;
+            }
+            out += '\n= ';
+            out += roundresult(a / b);
+
+            $('#area').val(out);
+
+            var w3 = 0;
+            if (n3 > d3) {
+                w3 = Math.floor(n3 / d3);
+                n3 -= w3 * d3;
+            }
+            var obj = document.getElementById("frac");
+            CircNumber(obj, {
+                n: w3,
+                num: n3,
+                den: d3,
+                radius: 20,
+                fillColor: "rgb(80,192,0)",
+                lineWidth: 1
+            });
+        }
+    </script>
+
+</body>
+
+
+
+</html>

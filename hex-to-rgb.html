@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hex to RGB Color Converter</title>
+    <meta name="keywords" content="hex to rgb,hex rgb converter,rgba hex,hex to rgb converter,hex to rgb color,how to convert,hex to rgb color converter">
+    <meta name="description" content="Hex to RGB color code conversion.how to convertIf you want to convert HEX to RGB, copy the HEX color and enter it in the first field and copy the RGB color from the second field. And if you want to convert RGB to HEX color then copy RGB color in this format rgb(255, 255, 255) and insert it into the second field and copy the HEX color from the first field.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hex to RGB Color Converter" />
+    <meta property="og:description" content="Hex to RGB color code conversion.how to convert If you want to convert HEX to RGB, copy the HEX color and enter it in the first field and copy the RGB color from the second field. And if you want to convert RGB to HEX color then copy RGB color in this format rgb(255, 255, 255) and insert it into the second field and copy the HEX color from the first field."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/hex-to-rgb.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script async src="tagmng3.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #calcform button img {
+            filter: invert(1);
+        }
+        
+        * {
+            font-size: 20px;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Hex to RGB Color Converter or conversion</h1>
+                <p><b>How to convert : </b> Enter 6 digits hex color code and press the <i>Convert</i> button:</p>
+                <br><br>
+                <form id="calcform" class="box float" name="calcform" autocomplete="off">
+                    <div class="form-group">
+                        <label for="hex" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Hex color code (#RRGGBB)</label>
+                        <input type="text" id="hex" name="hex" placeholder="000000" minlength="3" maxlength="8" class="form-control form-control-lg" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Convert" class="btn btn-primary" onclick="calc()"><img src="glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+                        <button type="reset" title="Reset" class="btn btn-danger" onclick="clr()"><img src="glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="r" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Red color (R)</label>
+                        <input type="text" id="r" name="r" class="form-control form-control-lg" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                    <div class="form-group">
+                        <label for="g" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Green color (G)</label>
+                        <input type="text" id="g" name="g" class="form-control form-control-lg" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                    <div class="form-group">
+                        <label for="b" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Blue color (B)</label>
+                        <input type="text" id="b" name="b" class="form-control form-control-lg" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                    <div class="form-group">
+                        <label for="css" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">CSS color</label>
+                        <input type="text" id="css" name="css" class="form-control form-control-lg" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                    <div class="form-group">
+                        <label for="color" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Color preview</label>
+                        <input type="text" id="color" name="color" class="form-control" style="height:70px; border:1px solid black; color: green; font-weight: bold; background-color: white;" readonly>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>How to convert Hex to RGB and how to use it </h2><br>
+                <p>If you want to convert HEX to RGB, copy the HEX color and enter it in the first field and copy the RGB color from the second field. And if you want to convert RGB to HEX color then copy RGB color in this format rgb(255, 255, 255) and insert
+                    it into the second field and copy the HEX color from the first field.</p><br>
+                <h3>Hex to RGB conversion</h3>
+                <br>
+                <ol>
+                    <li>Get the 2 left digits of the hex color code and convert to decimal value to get the red color level.</li><br>
+                    <li>Get the 2 middle digits of the hex color code and convert to decimal value to get the green color level.</li><br>
+                    <li>Get the 2 right digits of the hex color code and convert to decimal value to get the blue color level.</li><br>
+                </ol>
+                <br>
+                <h4><b><i>Example #1</i></b></h4>
+                <br>
+                <p>Convert red hex color code FF0000 to RGB color:</p>
+                <br>
+                <p class="math"><b><i>Hex</i> = FF0000</b></p><br>
+                <p>So the RGB colors are:</p><br>
+                <p class="math"><b><i>R</i> = FF<sub><span style="font-size: 0.8em">16</span></sub> = 255<sub><span style="font-size: 0.8em">10</span></sub></b></p><br>
+                <p class="math"><b><i>G</i> = 00<sub><span style="font-size: 0.8em">16</span></sub> = 0<sub><span style="font-size: 0.8em">10</span></sub></b></p><br>
+                <p class="math"><b><i>B</i> = 00<sub><span style="font-size: 0.8em">16</span></sub> = 0<sub><span style="font-size: 0.8em">10</span></sub></b></p><br>
+                <p>Or</p><br><br><br>
+                <p class="math"><b><i>RGB</i> = (255, 0, 0)</b></p><br><br>
+                <h4><b><i>Example #2</i></b></h4><br>
+                <p>Convert gold hex color code FFD700 to RGB color:</p><br>
+                <p class="math"><b><i>Hex</i> = FFD700</b></p><br>
+                <p>So the RGB colors are:</p><br>
+                <p class="math"><b><i>R</i> = FF<sub><span style="font-size: 0.8em">16</span></sub> = 255<sub><span style="font-size: 0.8em">10</span></sub></b></p><br>
+                <p class="math"><b><i>G</i> = D7<sub><span style="font-size: 0.8em">16</span></sub> = 215<sub><span style="font-size: 0.8em">10</span></sub></b></p><br>
+                <p class="math"><b><i>B</i> = 00<sub><span style="font-size: 0.8em">16</span></sub> = 0<sub><span style="font-size: 0.8em">10</span></sub></b></p><br>
+                <p>Or</p><br>
+                <p class="math"><b><i>RGB</i> = (255, 215, 0)</b></p>
+                <br><br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <h2>Hex to RGB color table</h2>
+                <br>
+                <table align="center" class="table table-striped">
+                    <tr>
+                        <th>Color</th>
+                        <th>Color
+                            <p>name</th>
+                        <th>Hex</th>
+                        <th>(R,G,B)</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#000000">&nbsp;</td>
+                        <td>Black</td>
+                        <td>#000000</td>
+                        <td>(0,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FFFFFF">&nbsp;</td>
+                        <td>White</td>
+                        <td>#FFFFFF</td>
+                        <td>(255,255,255)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FF0000">&nbsp;</td>
+                        <td>Red</td>
+                        <td>#FF0000</td>
+                        <td>(255,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#00FF00">&nbsp;</td>
+                        <td>Lime</td>
+                        <td>#00FF00</td>
+                        <td>(0,255,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#0000FF">&nbsp;</td>
+                        <td>Blue</td>
+                        <td>#0000FF</td>
+                        <td>(0,0,255)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FFFF00">&nbsp;</td>
+                        <td>Yellow</td>
+                        <td>#FFFF00</td>
+                        <td>(255,255,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#00FFFF">&nbsp;</td>
+                        <td>Cyan</td>
+                        <td>#00FFFF</td>
+                        <td>(0,255,255)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FF00FF">&nbsp;</td>
+                        <td>Magenta</td>
+                        <td>#FF00FF</td>
+                        <td>(255,0,255)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#C0C0C0">&nbsp;</td>
+                        <td>Silver</td>
+                        <td>#C0C0C0</td>
+                        <td>(192,192,192)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#808080">&nbsp;</td>
+                        <td>Gray</td>
+                        <td>#808080</td>
+                        <td>(128,128,128)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#800000">&nbsp;</td>
+                        <td>Maroon</td>
+                        <td>#800000</td>
+                        <td>(128,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#808000">&nbsp;</td>
+                        <td>Olive</td>
+                        <td>#808000</td>
+                        <td>(128,128,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#008000">&nbsp;</td>
+                        <td>Green</td>
+                        <td>#008000</td>
+                        <td>(0,128,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#800080">&nbsp;</td>
+                        <td>Purple</td>
+                        <td>#800080</td>
+                        <td>(128,0,128)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#008080">&nbsp;</td>
+                        <td>Teal</td>
+                        <td>#008080</td>
+                        <td>(0,128,128)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#000080">&nbsp;</td>
+                        <td>Navy</td>
+                        <td>#000080</td>
+                        <td>(0,0,128)</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+
+<div id="myseealso"></div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script>
+        function clr() {
+            document.calcform.reset();
+            document.calcform.color.style.backgroundColor = "#FFFFFF";
+        }
+
+        function calc() {
+            var r, g, b, a = "";
+            hex = document.calcform.hex.value;
+            if (hex == "") hex = "000000";
+            if (hex.charAt(0) == "#") hex = hex.substring(1, hex.length);
+            if (hex.length != 6 && hex.length != 8 && hex.length != 3) {
+                alert("Please enter 6 digits color code !");
+                return;
+            }
+            if (hex.length == 3) {
+                r = hex.substring(0, 1);
+                g = hex.substring(1, 2);
+                b = hex.substring(2, 3);
+                r = r + r;
+                g = g + g;
+                b = b + b;
+            } else {
+                r = hex.substring(0, 2);
+                g = hex.substring(2, 4);
+                b = hex.substring(4, 6);
+            }
+            if (hex.length == 8) {
+                a = hex.substring(6, 8);
+                a = (parseInt(a, 16) / 255.0).toFixed(2);
+            }
+            r = parseInt(r, 16);
+            g = parseInt(g, 16);
+            b = parseInt(b, 16);
+            var css = "rgb(" + r + ", " + g + ", " + b + ")";
+            if (hex.length == 8)
+                css = "rgba(" + r + ", " + g + ", " + b + ", " + a + ")";
+
+            document.calcform.r.value = r;
+            document.calcform.g.value = g;
+            document.calcform.b.value = b;
+            document.calcform.css.value = css;
+            document.calcform.color.style.backgroundColor = '#' + hex;
+        }
+    </script>
+
+</body>
+
+
+
+</html>

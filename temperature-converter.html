@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <script async src="tagmng3.js"></script>
+
+
+    <title>Temperature Converter Calculator</title>
+
+    <meta name="keywords" content="temperature calculator,temperature converter calculator,convert, degrees, Fahrenheit, Celsius, Kelvin, Rankine">
+    <meta name="description" content="The temperature calculator allows you to convert temperature degrees between Celsius, Fahrenheit, Kelvin, Rankine, Delisle, Newton, Réaumur and Rømer. Enter a value in any field to see the other values.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Temperature Converter Calculator - CalculatorFind.com" />
+    <meta property="og:description" content="The temperature calculator allows you to convert temperature degrees between Celsius, Fahrenheit, Kelvin, Rankine, Delisle, Newton, Réaumur and Rømer. Enter a value in any field to see the other values." />
+    <meta property="og:url" content="https://www.calculatorfind.com/temperature-converter.html" />
+  
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Temperature Conversion Converter</h1>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table>
+                        <tr>
+                            <td><label for="f" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Fahrenheit:</label></td>
+                            <td class="math"><input type="text" id="f" name="f" min="-459.67" tabindex="1" class="form-control" style="color: green; font-weight: bold; background-color: white;" autofocus></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&deg;F</td>
+                            <td>
+
+
+                                <button type="button" onclick="ConvertFahrenheit()" value="Convert" title="Convert" class="btn btn-success" tabindex="2"><i class="material-icons">autorenew</i>  Convert</button>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><label for="r" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Rankine:</label></td>
+                            <td class="math"><input type="number" id="r" name="r" min="0" tabindex="3" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&deg;R</td>
+                            <td>
+
+
+                                <button type="button" onclick="ConvertRankine()" value="Convert" title="Convert" class="btn btn-success" tabindex="4"><i class="material-icons">autorenew</i>  Convert</button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="cel" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Celsius:</label></td>
+                            <td class="math"><input type="text" id="cel" name="cel" min="-273.15" tabindex="5" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&deg;C</td>
+                            <td>
+
+                                <button type="button" onclick="ConvertCelsius()" value="Convert" title="Convert" class="btn btn-success" tabindex="6"><i class="material-icons">autorenew</i>  Convert</button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="cen" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Centigrade:</label></td>
+                            <td class="math"><input type="text" id="cen" name="cen" min="-273" tabindex="7" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&deg;C</td>
+                            <td>
+                                <button type="button" onclick="ConvertCentigrade()" value="Convert" title="Convert" class="btn btn-success" tabindex="8"><i class="material-icons">autorenew</i>  Convert</button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="k" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Kelvin:</label></td>
+                            <td class="math"><input type="number" id="k" name="k" min="0" tabindex="9" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">K</td>
+                            <td>
+                                <button type="button" onclick="ConvertKelvin()" value="Convert" title="Convert" class="btn btn-success" tabindex="10"><i class="material-icons">autorenew</i>  Convert</button>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><button type="reset" title="Reset" value="Reset" class="btn btn-danger"><i class="material-icons">clear</i> Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12" style="font-size:16px;">
+                <br><br>
+                <h2>Temperature Conversion Calculator and formulas</h2><br>
+                <p>Temperature degrees conversions of Fahrenheit (&deg;F), Celsius (&deg;C), Kelvin (K), Rankine (&deg;R).</p>
+                <p>Enter the temperature in one of the text boxes and press the <i>Convert</i> button:</p>
+                <p>The temperature calculator allows you to convert temperature degrees between Celsius, Fahrenheit, Kelvin, Rankine, Delisle, Newton, Réaumur and Rømer. Enter a value in any field to see the other values.</p>
+                <br>
+                <h2>Formulas for Converting Temperature Scales:</h2>
+                <br>
+                <table class="table-bordered" style="text-align: center;border: 1px solid black">
+                    <thead>
+                        <th colspan="2"> Celsius Temperature Conversion Formula</th>
+                    </thead>
+                    <tr>
+                        <td>Celsius to Fahrenheit Conversion</td>
+                        <td>[&deg;F] = [&deg;C] &times; 9/5 + 32</td>
+                    </tr>
+                    <tr>
+                        <td>Celsius to Kelvin Conversion</td>
+                        <td>[K] = [&deg;C] + 273.15</td>
+                    </tr>
+                    <tr>
+                        <td>Celsius to Rankine Conversion</td>
+                        <td>[&deg;R] = [&deg;C] &times; 9/5 + 491.67</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <table class="table-bordered" style="text-align: center;border: 1px solid black">
+                    <th colspan="2"> Fahrenheit Temperature Conversion Formula</th>
+                    <tr>
+                        <td>Fahrenheit to Celsius Conversion</td>
+                        <td>[&deg;C] = ([&deg;F] &minus; 32) &times; 5/9</td>
+                    </tr>
+                    <tr>
+                        <td>Fahrenheit to Kelvin Conversion</td>
+                        <td>[K] = ([&deg;F] + 459.67) &times; 5/9</td>
+                    </tr>
+                    <tr>
+                        <td>Fahrenheit to Rankine Conversion</td>
+                        <td>[&deg;R] = [&deg;F] + 459.67</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+
+                <table class="table-bordered" style="text-align: center;border: 1px solid black">
+                    <th colspan="2"> Kelvin Temperature Conversion Formula</th>
+                    <tr>
+                        <td>Kelvin to Celsius Conversion</td>
+                        <td>[&deg;C] = [K] &minus; 273.15</td>
+                    </tr>
+                    <tr>
+                        <td>Kelvin to Fahrenheit Conversion</td>
+                        <td>[&deg;F] = [K] &times; 9/5 &minus; 459.67</td>
+                    </tr>
+                    <tr>
+                        <td>Kelvin to Rankine Conversion</td>
+                        <td>[&deg;R] = [K] &times; 9/5</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <table class="table-bordered" style="text-align: center;border: 1px solid black">
+                    <th colspan="2"> Rankine Temperature Conversion Formula</th>
+                    <tr>
+                        <td>Rankine to Celsius Conversion</td>
+                        <td>[&deg;C] = [&deg;R] &times; 5/9 &minus; 273.15</td>
+                    </tr>
+                    <tr>
+                        <td>Rankine to Fahrenheit Conversion</td>
+                        <td>[&deg;F] = [&deg;R] &minus; 459.67</td>
+                    </tr>
+                    <tr>
+                        <td>Rankine to Kelvin Conversion</td>
+                        <td>[K] = [&deg;R] &times; 5/9</td>
+                    </tr>
+                </table>
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+<div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        //if (elem.addEventListener)  // W3C DOM
+        //	elem.addEventListener(evnt,func,false);
+        //else if (elem.attachEvent) { // IE DOM
+        //	elem.attachEvent("on"+evnt, func);
+        //}
+        /*
+	window.addEventListener('load', function() {
+		alert(1);
+		var input = document.querySelectorAll("input[type=number]");
+		for(var i=0; i<input.length; i++)
+        	input.type = "text";
+	}, true);
+	window.onload=function() {
+		alert(2);
+	};*/
+        function creset() {
+            document.calcform.f.style.backgroundColor = "white";
+            document.calcform.r.style.backgroundColor = "white";
+            document.calcform.cel.style.backgroundColor = "white";
+            document.calcform.cen.style.backgroundColor = "white";
+            document.calcform.k.style.backgroundColor = "white";
+        }
+
+        function ConvertFahrenheit() {
+            t = document.calcform.f.value;
+            if (t == '') return;
+            t = parseFloat(t);
+            if (t < -459.67) {
+                document.calcform.f.style.backgroundColor = "#ffdddd";
+                return;
+            }
+            creset();
+            document.calcform.f.value = roundnum(t, 4);
+            document.calcform.r.value = roundnum((t + 459.67), 4);
+            document.calcform.cel.value = roundnum((t - 32) * 5 / 9, 4);
+            document.calcform.cen.value = roundnum((t - 32) * 5 / 9, 4);
+            document.calcform.k.value = roundnum((t + 459.67) * 5 / 9, 4);
+        }
+
+        function ConvertRankine() {
+            t = document.calcform.r.value;
+            if (t == '') return;
+            t = parseFloat(t);
+            if (t < 0) {
+                document.calcform.r.style.backgroundColor = "#ffdddd";
+                return;
+            }
+            creset();
+            document.calcform.f.value = roundnum((t - 459.67), 4);
+            document.calcform.r.value = roundnum(t, 4);
+            document.calcform.cel.value = roundnum((t - 491.67) * 5 / 9, 4);
+            document.calcform.cen.value = roundnum((t - 491.67) * 5 / 9, 4);
+            document.calcform.k.value = roundnum((t * 5 / 9), 4);
+        }
+
+        function ConvertCelsius() {
+            t = document.calcform.cel.value;
+            if (t == '') return;
+            t = parseFloat(t);
+            if (t < -273.15) {
+                document.calcform.cel.style.backgroundColor = "#ffdddd";
+                return;
+            }
+            creset();
+            document.calcform.f.value = roundnum((t * 9 / 5 + 32), 4);
+            document.calcform.r.value = roundnum((t + 273.15) * 9 / 5, 4);
+            document.calcform.cel.value = roundnum(t, 4);
+            document.calcform.cen.value = roundnum(t, 4);
+            document.calcform.k.value = roundnum((t + 273.15), 4);
+        }
+
+        function ConvertCentigrade() {
+            t = document.calcform.cen.value;
+            if (t == '') return;
+            t = parseFloat(t);
+            if (t < -273.15) {
+                document.calcform.cen.style.backgroundColor = "#ffdddd";
+                return;
+            }
+            creset();
+            document.calcform.f.value = roundnum((t * 9 / 5 + 32), 4);
+            document.calcform.r.value = roundnum((t + 273.15) * 9 / 5, 4);
+            document.calcform.cel.value = roundnum(t, 4);
+            document.calcform.cen.value = roundnum(t, 4);
+            document.calcform.k.value = roundnum((t + 273.15), 4);
+        }
+
+        function ConvertKelvin() {
+            t = document.calcform.k.value;
+            if (t == '') return;
+            t = parseFloat(t);
+            if (t < 0) {
+                document.calcform.k.style.backgroundColor = "#ffdddd";
+                return;
+            }
+            creset();
+            document.calcform.f.value = roundnum((t * 9 / 5 - 459.67), 4);
+            document.calcform.r.value = roundnum((t * 9 / 5), 4);
+            document.calcform.cel.value = roundnum((t - 273.15), 4);
+            document.calcform.cen.value = roundnum((t - 273.15), 4);
+            document.calcform.k.value = roundnum(t, 4);
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

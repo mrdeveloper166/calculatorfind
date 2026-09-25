@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="euc-kr">
+    <title>Standard deviation calculator (&#963;)</title>
+    <script async src="tagmng3.js"></script>
+    <meta name="keywords" content="standard deviation calculator,standard deviation calculator from mean,standard deviation calculator in excel,standard deviation calculator excel,standard of deviation calculator,standard deviation calculator online,Discrete random variable standard deviation calculator">
+    <meta name="description" content="Standard deviation in statistics, typically denoted by is a measure of variation or dispersion between values in a set of data.A discrete random variable has a countable number of possible values. The probability of each value of a discrete random variable is between 0 and 1, and the sum of all the probabilities is equal to 1. A continuous random variable takes on all the values in some interval of numbers.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Standard deviation calculator (&#963;)" />
+    <meta property="og:description" content="Standard deviation in statistics, typically denoted by is a measure of variation or dispersion between values in a set of data.A discrete random variable has a countable number of possible values. The probability of each value of a discrete random variable is between 0 and 1, and the sum of all the probabilities is equal to 1. A continuous random variable takes on all the values in some interval of numbers."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/standard-deviation-calculator.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        #mycalcform {
+            padding: 20px;
+            width: 100%;
+            background: #20aea8;
+            border-radius: 7px;
+            border: solid 1px black;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+
+
+
+
+    <div class="container">
+        <br>
+       <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h2>Standard Deviation Calculator and formulas</h2>
+                <p>Standard deviation (&sigma;) calculator with mean value &amp; variance online.</p>
+                <h2>Population and sampled standard deviation calculator</h2>
+                <p><b>How to use :-</b>Enter data values delimited with commas (e.g: 3,2,9,4) or spaces (e.g: 3 2 9 4) and press the <em>Calculate</em> button.</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="mycalcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter data values:</td>
+                            <td><textarea cols="40" name="TextArea1" rows="5" placeholder="1 3 5" class="form-control"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&nbsp;</td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                <input name="Button1" type="button" value="= Calculate" class="btn btn-success" onclick="OnCalc()" style="padding:5px">&nbsp;
+                                <input name="Reset1" type="reset" value="&#10008; Reset" class="btn btn-danger" style="padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Population standard deviation:</td>
+                            <td><input name="pstd" type="text" class="outtext form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Sample standard deviation:</td>
+                            <td><input name="sstd" type="text" class="outtext form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Population variance:</td>
+                            <td><input name="pvar" type="text" class="outtext form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Sample variance:</td>
+                            <td><input name="svar" type="text" class="outtext form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Mean:</td>
+                            <td><input name="mean" type="text" class="outtext form-control"></td>
+                        </tr>
+                    </table>
+                </form>
+                <br><br>
+                <h3>Discrete random variable standard deviation calculator</h3>
+                <p><b>HOw to use :-</b>Enter probability or weight and data number in each row:</p>
+                <br><br>
+                <form class="box float" id="calcform">
+                    <table id="tbl" class="calc">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Probability</td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Data number</td>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td><input type="number" step="any" name="weight[]" autofocus></td>
+                                <td><input type="number" step="any" name="data[]"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="button" id="calc" value="= Calculate" class="btn btn-success">
+                                    <input type="reset" id="reset" value="&#10008; Reset" class="btn btn-danger">
+                                    <input type="button" id="addrow" value="&#10010; Add row" class="btn btn-dark">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table id="tbl2">
+                                        <tr>
+                                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Standard deviation:</td>
+                                            <td><input type="text" id="std" class="outtext form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Variance:</td>
+                                            <td><input type="text" id="var" class="outtext form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Mean:</td>
+                                            <td><input type="text" id="mean" class="outtext form-control"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="row1" style="display:none">
+                                <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation:</td>
+                            </tr>
+                            <tr id="row2" style="display:none">
+                                <td colspan="2"><textarea rows="4" id="TA1" tabindex="5" style="width:100%;" class="outtext mathsymbol" readonly cols="20" name="S1"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Standard Deviation Calculator and conversion</h2><br>
+                <p>It is a Population Sample. Related Probability Calculator Sample Size Calculator Statistics Calculator. Standard deviation in statistics, typically denoted by ,is a measure of variation or dispersion between values in a set of data.
+                </p><br>
+                <h2>Discrete random variable standard deviation calculator</h2><br>
+                <p>A discrete random variable has a countable number of possible values. The probability of each value of a discrete random variable is between 0 and 1, and the sum of all the probabilities is equal to 1. A continuous random variable takes
+                    on all the values in some interval of numbers.</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script src="jquery.min.js"></script>
+    <script src="calc2.js"></script>
+    <script>
+        var irow = 0;
+
+        $(document).ready(function() {
+            $("#calc").click(Calc);
+            $("#addrow").click(AddRow);
+            for (i = 0; i < 3; i++)
+                AddRow();
+        });
+
+        function OnCalc() {
+            var num = new Array();
+            txt = document.calcform.TextArea1.value;
+            if (txt == "") txt = "1 3 5";
+            txt = txt.replace(/\054/g, " ");
+            txt = txt.replace(/\r\n/g, " ");
+            txt = txt.replace(/\n/g, " ");
+            if (txt.charAt(txt.length - 1) == " ")
+                txt = txt.substring(0, txt.length - 1);
+            n = txt.split(" ");
+            for (i = 0; i < n.length; i++)
+                num[i] = parseFloat(n[i]);
+            m = 0;
+            for (i = 0; i < num.length; i++)
+                m += num[i];
+            m /= num.length;
+            v = 0;
+            for (i = 0; i < num.length; i++)
+                v += (num[i] - m) * (num[i] - m);
+            pvar = v / num.length;
+            svar = v / (num.length - 1);
+            pstd = Math.sqrt(pvar);
+            sstd = Math.sqrt(svar);
+            document.calcform.pstd.value = roundresult(pstd);
+            document.calcform.sstd.value = roundresult(sstd);
+            document.calcform.pvar.value = roundresult(pvar);
+            document.calcform.svar.value = roundresult(svar);
+            document.calcform.mean.value = roundresult(m);
+        }
+
+        function Calc() {
+            var avg = 0;
+            var v = 0;
+            var sum = 0;
+            var txt = "\u03BC = ";
+            var txt1 = txt2 = '';
+            for (var i = 1; i <= irow + 1; i++) {
+                weight = $("#tbl > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > input").val();
+                weight = parseFloat(weight);
+                data = $("#tbl > tbody > tr:nth-child(" + i + ") > td:nth-child(2) > input").val();
+                if (weight >= 0) {
+                    avg += weight * data;
+                    sum += weight;
+                    txt1 += weight + "\u00D7" + data + "+";
+                    txt2 += weight + "+";
+                }
+            }
+            avg /= sum;
+            var avg0 = avg;
+            avg = roundnum2(avg, 8);
+            txt += "(" + txt1 + ") / (" + txt2 + ") = " + avg;
+            txt1 = '';
+            for (var i = 1; i <= irow + 1; i++) {
+                weight = $("#tbl > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > input").val();
+                weight = parseFloat(weight);
+                data = $("#tbl > tbody > tr:nth-child(" + i + ") > td:nth-child(2) > input").val();
+                if (weight >= 0) {
+                    v += weight * (data - avg0) * (data - avg0);
+                    txt1 += weight + "\u00D7(" + data + "-" + avg + ")\u00B2+";
+                }
+            }
+            v /= sum;
+            std = Math.sqrt(v)
+            v = roundnum2(v, 8);
+            std = roundnum2(std, 8);
+            txt += "\n\u03C3 = \u221A( (" + txt1 + ") / (" + txt2 + ") ) = " + std;
+            txt = txt.replace(/\u002B\u0029/g, ")");
+            $("#var").val(v);
+            $("#mean").val(avg);
+            $("#std").val(std);
+            $("#TA1").val(txt);
+            $("#row1").show();
+            $("#row2").show();
+
+        }
+
+        function AddRow() {
+            $('#tbl > tbody > tr').eq(++irow).after("<tr>\
+				<td><input type='number' name='weight[]'></td>\
+				<td><input type='number' name='data[]'></td>\
+			</tr>");
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

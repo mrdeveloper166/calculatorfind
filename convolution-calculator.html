@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <title>Convolution calculator</title>
+
+    <meta name="keywords" content="convolution calculator,convolution integral calculator,convolution calculator online,convolution calculator formula,circular convolution calculator">
+    <meta name="description" content="What is Convolution Calculator :- This online discrete Convolution Calculator combines two data sequences into a single data sequence. You can paste the input data copied from a spreadsheet or csv-file or enter manually using comma, space or enter as separators.">
+
+    <script async src="tagmng3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Convolution calculator" />
+    <meta property="og:description" content="What is Convolutio Calculator :- This online discrete Convolution Calculator combines two data sequences into a single data sequence. You can paste the input data copied from a spreadsheet or csv-file or enter manually using comma, space or enter as separators."
+    />
+    <meta charset="UTF-8">
+
+    <meta property="og:url" content="https://www.calculatorfind.com/convolution-calculator.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-size: 16px;
+        }
+        
+        .calc {
+            color: white;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <!-- #BeginEditable "doctext" -->
+                <h1>Convolution calculator with formulas and table</h1> <br>
+                <form name="calcform" class="box float" id="calcform" autocomplete="off">
+                    <table class="calc">
+                        <tr>
+                            <td>Enter first data sequence:</td>
+                        </tr>
+                        <tr>
+                            <td><textarea id="TA1" name="TA1" tabindex="1" autofocus class="form-control">1 1 1 0 0 0</textarea></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Enter second data sequence:</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><textarea id="TA2" name="TA2" tabindex="2" class="form-control">0.5 0.2 0.3</textarea></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" title="Calculate" class="btn btn-success" onclick="OnCalc()" tabindex="3"><b>=</b> Calculate</button>
+                                <button type="reset" title="Reset" class="btn btn-danger" tabindex="4"><b>X</b> Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Result data sequence:</td>
+                        </tr>
+                        <tr>
+                            <td><textarea id="TA3" name="TA3" class="outtext form-control" readonly tabindex="5" style="color: green;font-weight: bolder;background-color: white;"></textarea></td>
+                        </tr>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <h2>Convolution calculation with formula</h2>
+                <p>The sequence y(n) is equal to the convolution of sequences x(n) and h(n):</p>
+                <p><img alt="y(n)=x(n)*h(n)=\sum_{k=-\infty }^{\infty }x(k)h(n-k)" height="61" src="conv1.gif" width="373"></p>
+                <p>For finite sequences x(n) with M values and h(n) with N values:</p>
+                <p><img alt="y(n)=\sum_{k=0 }^{N }x(n+k)h(N-1-k)" height="65" src="conv2.gif" width="308"></p>
+                <p class="math">&nbsp;For <em>n</em> = 0 .. <em>M</em>+<em>N</em>-2</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script>
+        function OnCalc() {
+            var x = new Array();
+            var h = new Array();
+            var y = new Array();
+            x1 = document.calcform.TA1.value;
+            x2 = document.calcform.TA2.value;
+            x1 = x1.replace(/[ ]*,[ ]*|[ ]+/g, ' ');
+            x2 = x2.replace(/[ ]*,[ ]*|[ ]+/g, ' ');
+            x1 = x1.split(' ');
+            x2 = x2.split(' ');
+            Nx = x1.length;
+            Nh = x2.length;
+            Ny = Nx + Nh - 1;
+
+            for (i = 0; i < Nh - 1; i++)
+                x[i] = 0;
+            for (i = 0; i < Nx; i++)
+                x[i + Nh - 1] = parseFloat(x1[i]);
+            for (i = Nx + Nh - 1; i < Nx + 2 * (Nh - 1); i++)
+                x[i] = 0;
+            for (i = 0; i < Nh; i++)
+                h[i] = parseFloat(x2[i]);
+
+            for (i = 0; i < Ny; i++) {
+                y[i] = 0;
+                for (j = 0; j < Nh; j++)
+                    y[i] += x[i + j] * h[Nh - 1 - j];
+            }
+
+            //xx = '';
+            yy = '';
+            for (i = 0; i < Ny; i++) {
+                yy += String(y[i]) + ' ';
+                //xx+=String(x[i])+' ';
+            }
+            document.calcform.TA3.value = yy;
+            /*			*/
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

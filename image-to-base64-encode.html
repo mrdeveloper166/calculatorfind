@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Image to Base64 Encode | image converter</title>
+    <script async src="tagmng3.js"></script>
+    <meta name="keywords" content="base64 encode,base64 encoding,base64 encode online,base64 encode javascript,base64 encode image,base64 encode decode,base64 encode file,convert base64 encode">
+<meta name="description" content=" Image Encoding Overview. An encoder writes image data to a stream. Encoders can compress, encrypt, and alter the image pixels in a number of ways prior to writing them to the stream.">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Image to Base64 Encode | image converter" />
+    <meta property="og:description" content=" Image Encoding Overview. An encoder writes image data to a stream. Encoders can compress, encrypt, and alter the image pixels in a number of ways prior to writing them to the stream." />
+    <meta property="og:url" content="https://www.calculatorfind.com/image-to-base64-encode.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 1.6rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+        }
+        
+        #calcform button i {
+            vertical-align: middle;
+        }
+        
+        #imgdiv {
+            border: 10px dashed white;
+            padding: 10px;
+            width: 100%;
+            height: 130px;
+            text-align: center;
+        }
+        
+        #imgdiv i {
+            margin-top: 30px;
+            color: #ccc;
+            font-size: xx-large;
+        }
+        
+        #imgdiv img {
+            /*user-drag:none;*/
+            /*ok*/
+            -webkit-user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        
+        #imgdiv.draghover {
+            border: 10px dashed #888;
+        }
+        
+        @media all and (max-width: 576px) {
+            #doc>p>textarea {
+                width: 100%;
+            }
+            #doc>p {
+                width: 100%;
+                word-wrap: break-word;
+            }
+        }
+        
+        @media all and (min-width: 577px) {}
+        
+        #msg {
+            color: red;
+        }
+        
+        .cursor {
+            cursor: progress !important;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>Image to Base64 Encode</h1>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="base64-decode.html">Base64 Decode</a></li>
+                    <li class="nav-item"><a class="nav-link" href="base64-encode.html">Base64 Encode</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Image to Base64</a></li>
+                    <li class="nav-item"><a class="nav-link" href="base64-to-imagedecode.html">Base64 to Image</a></li>
+                </ul>
+                <br>
+                <form id="calcform" class="box float" name="calcform">
+                    <div class="form-group">
+                        <button type="button" title="Open File" aria-label="Open File" onclick="OnOpen()" class="btn btn-secondary"><i class="material-icons">folder_open</i> Open Image</button>
+                        <!--<input type="file" id="fileElem" name="fileElem[]" accept="image/*,.pdf" multiple style="visibility:hidden; width:30px" onchange="OnFile()">-->
+                        <input type="file" id="fileElem" name="fileElem[]" accept="image/*" style="visibility:hidden; width:30px" onchange="OnFile()">
+                    </div>
+                    <div class="form-group">
+                        <label for="dropElem" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Drag & drop image here:</label>
+                        <div id="imgdiv"><i class="material-icons">photo</i><img style="display:none"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Encode" class="btn btn-success" onclick="OnEncode()"><i class="material-icons">settings</i> Encode</button>
+                        <button type="reset" title="Reset" class="btn btn-danger" onclick="OnReset()"><i class="material-icons">clear</i> Reset</button>
+                        <button type="button" title="Swap" class="btn btn-secondary" onclick="location.href='base64-to-imagedecode.html';"><i class="material-icons">swap_vert</i> Swap</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="out1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Base64 code:</label>
+                        <textarea id="out1" rows="5" cols="60" readonly class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="OnCopy(1)" class="btn btn-secondary"><i class="material-icons">content_copy</i> Copy</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="out2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">HTML image code:</label>
+                        <textarea id="out2" rows="4" cols="60" readonly class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="OnCopy(2)" class="btn btn-secondary"><i class="material-icons">content_copy</i> Copy</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="out3" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">CSS image code:</label>
+                        <textarea id="out3" rows="4" cols="60" readonly class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="OnCopy(3)" class="btn btn-secondary"><i class="material-icons">content_copy</i> Copy</button>
+                        <!--<button type="button" onclick="OnSave()" class="btn btn-secondary" title="Save to File"><i class="material-icons">save_alt</i> Save</button>-->
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is the use of converting image to Base64 ? </h2>
+                <br>
+                <p>Base64 is particularly prevalent on the World Wide Web where its uses include the ability to embed image files or other binary assets inside textual assets such as HTML and CSS files. Base64 is also widely used for sending e-mail attachments</p>
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="utils.js"></script>
+    <script src="Blob.js"></script>
+    <script src="FileSaver.js"></script>
+    <script src="jquery.min55.js"></script>
+    <script>
+        var imgh, imgw;
+        $(document).ready(function() {
+            $("#imgdiv").on("dragover", function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).addClass('draghover');
+                return false;
+            });
+            $("#imgdiv").on("dragleave dragend", function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).removeClass('draghover');
+                return false;
+            });
+            $("#imgdiv").on("drop", function(event) {
+                event.preventDefault();
+                //event.stopPropagation();
+                $(this).removeClass('draghover');
+                var file = event.originalEvent.dataTransfer.files[0]
+                fileLoad(file);
+            });
+        });
+
+        function OnReset() {
+            $("#imgdiv img").hide();
+            $("#imgdiv i").show();
+            $("#imgdiv").css("text-align", "center");
+        }
+
+        function OnOpen() {
+            $("#fileElem").click();
+        }
+
+        function OnFile() {
+            var file = document.getElementById("fileElem").files[0];
+            document.getElementById("fileElem").value = "";
+            fileLoad(file);
+        }
+
+        function OnSave() {
+            var file = $("#file").val();
+            if (file == "") file = "file.txt";
+            fileSave(file);
+        }
+
+        function fileLoad(file) {
+            var reader = new FileReader();
+            $("#imgdiv img").prop("title", file);
+            reader.onloadend = function(e) {
+                //if( e.target.readyState==FileReader.DONE ) {
+                var data = e.target.result;
+                $("#imgdiv img").prop("src", data);
+                $("#imgdiv img").on("load", function(event) {
+                    var divwidth = $("#imgdiv").prop("clientWidth");
+                    var divheight = $("#imgdiv").prop("clientHeight") - 20;
+                    var imgheight = $("#imgdiv img").css("height");
+                    var imgwidth = divwidth * divheight / imgheight;
+                    imgh = imgheight;
+                    imgw = $("#imgdiv img").css("width");
+                    //imgh=imgh.replace("px","");
+                    //imgw=imgw.replace("px","");
+                    imgwidth += "px";
+                    divheight += "px";
+                    $("#imgdiv").css("text-align", "left");
+                    $("#imgdiv img").css("width", imgwidth);
+                    $("#imgdiv img").css("height", divheight);
+                    $("#imgdiv i").hide();
+                    $("#imgdiv img").show();
+                });
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function fileSave(filename) {
+            var txt = $("#txt").val();
+            if (txt == "") return;
+            var blob = new Blob([txt], {
+                type: "text/plain;charset=utf-8"
+            });
+            //FileSaver.saveAs(blob, "file.txt");
+            saveAs(blob, filename);
+        }
+
+        function OnEncode() {
+            var base64 = $("#imgdiv img").prop("src");
+            var i = base64.indexOf(";base64,") + 8;
+            var b = base64.substring(i, base64.length);
+            //console.log("got b");
+            $("#out1").val(b);
+            $("#out2").val("<img width=\"" + imgw + "\" height=\"" + imgh + "\" alt=\"\" src=\"" + base64 + "\">");
+            $("#out3").val("background-image: url(\"" + base64 + "\");");
+        }
+
+        function OnSelect() {
+            $("#out1").select();
+        }
+
+        function OnCopy(n) {
+            if (n == 1) $("#out1").select();
+            if (n == 2) $("#out2").select();
+            if (n == 3) $("#out3").select();
+            document.execCommand("copy");
+        }
+    </script>
+    <!-- #EndEditable -->
+
+    </div>
+
+    </div>
+
+</body>
+
+
+
+</html>

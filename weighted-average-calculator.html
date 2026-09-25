@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Weighted Average Calculator</title>
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="weighted average calculator,weighted average calculator excel,how nav calculated,weighted average calculator,weighted average,weighted average formula,weighted average cost of capital,weighted average method">
+    <meta name="description" content="Weight average in mathematics and statistics, you calculate weighted average by multiplying each value in the set by its weight, then you add up the products and divide the products' sum by the sum of all weights. As you see, a normal average grade (75.4) and weighted average (73.5) are different values.">
+
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Weighted Average Calculator" />
+    <meta property="og:description" content="Weight average in mathematics and statistics, you calculate weighted average by multiplying each value in the set by its weight, then you add up the products and divide the products' sum by the sum of all weights. As you see, a normal average grade (75.4) and weighted average (73.5) are different values.">
+
+    <meta property="og:url" content="https://www.calculatorfind.com/weighted-average-calculator.html" />
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+    <header id="myheader"></header>
+
+
+
+
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Weighted Average Calculator or Conversion</h1>
+                <p>Weighted average calculator and calculation. Weighted mean calculator.</p>
+                <br><br>
+                <form class="box float" id="calcform">
+                    <table id="tbl" class="calc">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Weight</td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Number</td>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td><input type="number" step="any" name="weight[]" autofocus></td>
+                                <td><input type="text" name="data[]"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="button" id="calc" title="Calculate" class="btn btn-success"><b>=</b> Calculate</button>
+                                    <button type="reset" id="reset" title="Reset" class="btn btn-danger"><b>X</b> Reset</button>
+                                    <button type="button" id="addrow" title="Add row" class="btn btn-dark"><b>+</b> Add row</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Weighted average:</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2"><input type="text" id="avg" class="outtext form-control" style="width:100%; padding:5px; font-size:large"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Total of weights:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" id="sum" class="outtext form-control" style="width:100%; padding:5px; font-size:large"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="row1">
+                                <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation:</td>
+                            </tr>
+                            <tr id="row2">
+                                <td colspan="2"><textarea rows="3" id="TA1" tabindex="5" style="width:100%;" class="outtext mathsymbol form-control" readonly></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <h2>Weighted average calculation and formulas</h2><br>
+                <p>The weighted average (<em>x</em>) is equal to the sum of the product of the weight (w<sub>i</sub>) times the data number (x<sub>i</sub>) divided by the sum of the weights:</p><br>
+                <b>Weighted Average Formula :-</b><br><br>
+                <p><img alt="weighted average" height="54" src="weighted-average.png" width="417"></p>
+                <br>
+                <h3>Example</h3>
+                <p>Find the weighted average of class grades (with equal weight) 70,70,80,80,80,90:</p>
+                <p>Since the weight of all grades are equal, we can calculate these grades with simple average or we can cound how many times each grade apear and use weighted average.</p>
+                <p class="mathsymbol">2&times;70,3&times;80,1&times;90</p>
+                <p class="math"><span class="auto-style1"><em>x</em></span> = (2&times;70+3&times;80+1&times;90) / (2+3+1) = 470 / 6 = 78.33333</p>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="jquery.min.js"></script>
+    <script src="calc2.js"></script>
+    <script>
+        var irow = 0;
+
+        $(document).ready(function() {
+            $("#calc").click(Calc);
+            $("#addrow").click(AddRow);
+            for (i = 0; i < 5; i++)
+                AddRow();
+        });
+
+        function Calc() {
+            var avg = 0;
+            var sum = 0;
+            var txt = txt1 = txt2 = '';
+            for (var i = 1; i <= irow + 1; i++) {
+                weight = $("#tbl > tbody > tr:nth-child(" + i + ") > td:nth-child(1) > input").val();
+                weight = parseFloat(weight);
+                data = $("#tbl > tbody > tr:nth-child(" + i + ") > td:nth-child(2) > input").val();
+                if (weight >= 0) {
+                    avg += weight * data;
+                    sum += weight;
+                    txt1 += weight + "\u00D7" + data + "+";
+                    txt2 += weight + "+";
+                }
+            }
+            avg /= sum;
+            avg = roundnum2(avg, 8);
+            txt = "(" + txt1 + ") / (" + txt2 + ") = " + avg;
+            txt = txt.replace("+)", ")");
+            txt = txt.replace("+)", ")");
+            $("#avg").val(avg);
+            $("#sum").val(sum);
+            $("#TA1").val(txt);
+            $("#row1").show();
+            $("#row2").show();
+
+        }
+
+        function AddRow() {
+            $('#tbl > tbody > tr').eq(++irow).after("<tr>\
+				<td><input type='number' name='weight[]'></td>\
+				<td><input type='text' name='data[]'></td>\
+			</tr>");
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

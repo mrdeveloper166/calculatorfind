@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Watts to kVA conversion calculator</title>
+
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="watts to kVA, watts in kVA, watts to kVA converter, watts and kVA, watts to kVA conversion, watts to kVA calculator, watts and kVA, how to get watts to kVA.">
+    <meta name="description" content="Watts to kVA converter convert the watts into kilovolt amps. It calculate a particular watts value and give you the exact answer in kilovolt amps. S(kVA) =  P(W) / (1000 × PF)">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Watts to kVA conversion calculator" />
+    <meta property="og:description" content="Watts to kVA converter convert the watts into kilovolt amps. It calculate a particular watts value and give you the exact answer in kilovolt amps. S(kVA) =  P(W) / (1000 × PF)" />
+    <meta property="og:url" content="https://www.calculatorfind.com/watts-to-kilovolt-amps.html" />
+    <link rel="canonical" href="https://www.calculatorfind.com/watts-to-kilovolt-amps.html">    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Watts to kVA Conversion Calculator</h1>
+                <p>Watts (W) to kilovolt-amps (kVA) calculator.</p>
+                <p><b>HOw to calculate :- </b>Enter real power in watts and power factor and press the <i>Calculate</i> button to get the apparent power in kilovolt-amps:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td>Enter watts:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x1" class="intext form-control" autofocus></td>
+                                <td class="mathsymbol">W</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter power factor:</td>
+                                <td class="math"><input type="number" min="0" step="0.01" name="x2" class="intext form-control"></td>
+                                <td class="mathsymbol">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="calc3()" type="button" value="Calculate" class="btn btn-success"> <input onclick="setfocus()" type="reset" value="Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Result in kilovolt-amps:</td>
+                                <td class="math"><input type="text" name="y" class="outtext form-control" readonly></td>
+                                <td class="mathsymbol">kVA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Watts to kVA calculation formula</h2>
+                <p>The apparent power S in kilovolt-amps (kVA) is equal to the real power P in watts (W), divided by 1000 times the power factor PF:</p>
+                <p class="math"><i>S</i><sub>(kVA)</sub> = <i>&nbsp;P</i><sub>(W)</sub> / (1000 &times; <i>PF</i>)</p>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function convert(x1, x2) {
+            return x1 / x2 / 1000;
+        }
+    </script>
+
+</body>
+
+</html>

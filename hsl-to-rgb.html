@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>HSL to RGB conversion | color conversion</title>
+
+    <meta name="keywords" content="hsl to rgb, convert rgb to hsl,hsl vs rgb,hsl to rgb formula,hsl to rgb converter,hsl to rgb conversion,how to convert,how to convert hsl to rgb,color conversion">
+    <meta name="description" content="HSL to RGB color space converter and conversion formula.RGB is a way to describe a color in a cube, where Red, Green and Blue are on the different axis. HSL is another way to describe a color. Here we use Hue , Saturation and Lightness.">
+    <script async src="tagmng3.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HSL to RGB conversion | color conversion" />
+    <meta property="og:description" content="HSL to RGB color space converter and conversion formula.RGB is a way to describe a color in a cube, where Red, Green and Blue are on the different axis. HSL is another way to describe a color. Here we use Hue , Saturation and Lightness."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/hsl-to-rgb.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        #mycalcform {
+            padding: 20px;
+            max-width: 400px;
+            background: #20aea8;
+            border-radius: 7px;
+            border: solid 1px black;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>HSL to RGB color conversion or converter</h1>
+                <!--
+	<p>HSL to RGB color space converter and conversion formula.</p>
+	<h2>HSL to RGB converter</h2>
+	-->
+                <p>Enter hue in degrees (&deg;), saturation and lightness (0..100%) and press the <i>Convert</i> button:</p>
+                <br><br>
+                <form name="calcform" id="mycalcform" class="box float">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter hue (H):</td>
+                            <td class="math"><input type="number" min="0" step="any" name="h" id="h" class="intext form-control" style="width:150px" placeholder="0"><b style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"> &deg;</b></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter saturation (S):</td>
+                            <td class="math"><input type="number" min="0" step="any" name="s" id="s" class="intext form-control" style="width:150px" placeholder="0"><b style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</b></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter lightness (L):</td>
+                            <td class="math"><input type="number" min="0" step="any" name="l" id="l" class="intext form-control" style="width:150px" placeholder="0"><b style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</b></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input onclick="calc()" type="button" value="Convert" class="btn btn-success"> <input onclick="clr()" type="button" value="Reset" class="btn btn-danger"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">RGB hex code (#):</td>
+                            <td class="math"><input type="text" name="hex" class="outtext form-control" style="width:150px" readonly></td>
+                            <td class="math">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Red color (R):</td>
+                            <td class="math"><input type="text" name="r" class="outtext form-control" style="width:150px" readonly></td>
+                            <td class="math">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Green color (G):</td>
+                            <td class="math"><input type="text" name="g" class="outtext form-control" style="width:150px" readonly></td>
+                            <td class="math">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Blue color (B):</td>
+                            <td class="math"><input type="text" name="b" class="outtext form-control" style="width:150px" readonly></td>
+                            <td class="math">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Color preview:</td>
+                            <td class="math"><input name="color" style="height:50px; width:150px; border:1px solid black" readonly></td>
+                            <td class="math">&nbsp;</td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is the difference between RGB & HSL and how to use it</h2><br>
+                <p>Hex and rgb are just two different ways of defining a color, so the syntax is the only thing that differs. ... HSL stands for 'Hue, Saturation, Lightness' - it builds on RGB and let's you create a model of a color that consists of not
+                    just the hue (the 'color'), but also the saturation and lightness.</p><br>
+
+                <h2>HSL to RGB conversion formula with chart</h2>
+                <br>
+                <p><b>When 0 &#8804; <i>H</i> &lt; 360, 0 &#8804; <i>S</i> &#8804; 1 and 0 &#8804; <i>L</i> &#8804; 1:</b></p><br>
+                <p class="math"><b><i>C</i> = (1 - |2L - 1|) &times; <i>S</i></p><br>
+                <p class="math"><b><i>X</i> = <i>C</i> &times; (1 - |(<i>H</i> / 60&deg;) mod 2 - 1|)</b></p><br>
+                <p class="math"><b><i>m</i> = <i>L</i> - <i>C/2</i></b></p><br>
+                <p class="math">
+                    <img src="hsltorgb.png" width="413" height="160"></p><br>
+                <p class="math"><b>(<i>R</i>,<i>G</i>,<i>B</i>) = ((R'+<i>m</i>)&times;255, (G'+<i>m</i>)&times;255,(<i>B</i>'+<i>m</i>)&times;255)</b></p><br>
+                <br><br><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <h2>HSL to RGB color table</h2>
+                <br>
+                <table align="center" class="table table-striped">
+                    <tr>
+                        <th>Color</th>
+                        <th>Color
+                            <p>name</th>
+                        <th>(H,S,L)</th>
+                        <th>Hex</th>
+                        <th>(R,G,B)</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#000000">&nbsp;</td>
+                        <td>Black</td>
+                        <td>(0&deg;,0%,0%)</td>
+                        <td>#000000</td>
+                        <td>(0,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FFFFFF">&nbsp;</td>
+                        <td>White</td>
+                        <td>(0&deg;,0%,100%)</td>
+                        <td>#FFFFFF</td>
+                        <td>(255,255,255)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FF0000">&nbsp;</td>
+                        <td>Red</td>
+                        <td>(0&deg;,100%,50%)</td>
+                        <td>#FF0000</td>
+                        <td>(255,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#00FF00">&nbsp;</td>
+                        <td>Lime</td>
+                        <td>(120&deg;,100%,50%)</td>
+                        <td>#00FF00</td>
+                        <td>(0,255,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#0000FF">&nbsp;</td>
+                        <td>Blue</td>
+                        <td>(240&deg;,100%,50%)</td>
+                        <td>#0000FF</td>
+                        <td>(0,0,255)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FFFF00">&nbsp;</td>
+                        <td>Yellow</td>
+                        <td>(60&deg;,100%,50%)</td>
+                        <td>#FFFF00</td>
+                        <td>(255,255,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#00FFFF">&nbsp;</td>
+                        <td>Cyan</td>
+                        <td>(180&deg;,100%,50%)</td>
+                        <td>#00FFFF</td>
+                        <td>(0,255,255)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FF00FF">&nbsp;</td>
+                        <td>Magenta</td>
+                        <td>(300&deg;,100%,50%)</td>
+                        <td>#FF00FF</td>
+                        <td>(255,0,255)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#BFBFBF">&nbsp;</td>
+                        <td>Silver</td>
+                        <td>(0&deg;,0%,75%)</td>
+                        <td>#BFBFBF</td>
+                        <td>(191,191,191)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#808080">&nbsp;</td>
+                        <td>Gray</td>
+                        <td>(0&deg;,0%,50%)</td>
+                        <td>#808080</td>
+                        <td>(128,128,128)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#800000">&nbsp;</td>
+                        <td>Maroon</td>
+                        <td>(0&deg;,100%,25%)</td>
+                        <td>#800000</td>
+                        <td>(128,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#808000">&nbsp;</td>
+                        <td>Olive</td>
+                        <td>(60&deg;,100%,25%)</td>
+                        <td>#808000</td>
+                        <td>(128,128,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#008000">&nbsp;</td>
+                        <td>Green</td>
+                        <td>(120&deg;,100%,25%)</td>
+                        <td>#008000</td>
+                        <td>(0,128,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#800080">&nbsp;</td>
+                        <td>Purple</td>
+                        <td>(300&deg;,100%,25%)</td>
+                        <td>#800080</td>
+                        <td>(128,0,128)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#008080">&nbsp;</td>
+                        <td>Teal</td>
+                        <td>(180&deg;,100%,25%)</td>
+                        <td>#008080</td>
+                        <td>(0,128,128)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#000080">&nbsp;</td>
+                        <td>Navy</td>
+                        <td>(240&deg;,100%,25%)</td>
+                        <td>#000080</td>
+                        <td>(0,0,128)</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script>
+        function clr() {
+            document.calcform.reset();
+            document.calcform.h.value = "0";
+            document.calcform.s.value = "0";
+            document.calcform.v.value = "0";
+            document.calcform.color.style.backgroundColor = "#FFFFFF";
+        }
+
+        function calc() {
+            h = document.calcform.h.value;
+            s = document.calcform.s.value;
+            l = document.calcform.l.value;
+            if (h == "") h = 0;
+            if (s == "") s = 0;
+            if (l == "") l = 0;
+            h = parseFloat(h);
+            s = parseFloat(s);
+            l = parseFloat(l);
+            if (h < 0) h = 0;
+            if (s < 0) s = 0;
+            if (l < 0) l = 0;
+            if (h >= 360) h = 359;
+            if (s > 100) s = 100;
+            if (l > 100) l = 100;
+            s /= 100;
+            l /= 100;
+            C = (1 - Math.abs(2 * l - 1)) * s;
+            hh = h / 60;
+            X = C * (1 - Math.abs(hh % 2 - 1));
+            r = g = b = 0;
+            if (hh >= 0 && hh < 1) {
+                r = C;
+                g = X;
+            } else if (hh >= 1 && hh < 2) {
+                r = X;
+                g = C;
+            } else if (hh >= 2 && hh < 3) {
+                g = C;
+                b = X;
+            } else if (hh >= 3 && hh < 4) {
+                g = X;
+                b = C;
+            } else if (hh >= 4 && hh < 5) {
+                r = X;
+                b = C;
+            } else {
+                r = C;
+                b = X;
+            }
+            m = l - C / 2;
+            r += m;
+            g += m;
+            b += m;
+            r *= 255.0;
+            g *= 255.0;
+            b *= 255.0;
+            r = Math.round(r);
+            g = Math.round(g);
+            b = Math.round(b);
+            hex = r * 65536 + g * 256 + b;
+            hex = hex.toString(16, 6);
+            len = hex.length;
+            if (len < 6)
+                for (i = 0; i < 6 - len; i++)
+                    hex = '0' + hex;
+            document.calcform.hex.value = hex.toUpperCase();
+            document.calcform.r.value = r;
+            document.calcform.g.value = g;
+            document.calcform.b.value = b;
+            document.calcform.color.style.backgroundColor = '#' + hex;
+        }
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Energy consumption calculator | kWh calculator</title>
+
+    <meta name="keywords" content="energy consumption, energy consumption calculator, calculator for energy consumption, energy consumption global, energy consumption us, energy consumption formula.">
+    <meta name="description" content="Energy consumption calculator is calculate the consumption of electricity of hours a day, kwh a day. kwh a moth, kwh a year. E(kWh/day) = P(W) × t(h/day) / 1000(W/kW). ">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Energy consumption calculator | kWh calculator" />
+    <meta property="og:description" content="Energy consumption calculator is calculate the consumption of electricity of hours a day, kwh a day. kwh a moth, kwh a year. E(kWh/day) = P(W) × t(h/day) / 1000(W/kW)." />
+    <meta property="og:url" content="https://www.calculatorfind.com/energy-consumption.html" />
+    <script async src="tagmng3.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .calc2 input[type=number],
+        .calc2 input[type=text] {
+            width: 170px
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Energy Consumption Calculator</h1>
+                <p>Energy consumption calculator. kWh calculator.</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Typical appliance:</td>
+                            <td colspan="2">
+                                <select name="Select4" onchange="OnSetPower()" autofocus class="form-control">
+				<option>-- select --</option>
+				<option>Air conditioner</option>
+				<option>Clothes dryer</option>
+				<option>Clothes iron</option>
+				<option>Dishwasher</option>
+				<option>Electric kettle</option>
+				<option>Fan</option>
+				<option>Heater</option>
+				<option>Microwave oven</option>
+				<option>Desktop computer</option>
+				<option>Laptop computer</option>
+				<option>Refrigerator</option>
+				<option>Stereo receiver</option>
+				<option>Television</option>
+				<option>Toaster oven</option>
+				<option>Vacuum cleaner</option>
+				<option>Washing machine</option>
+				<option>Water heater</option>
+			</select></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Power consumption:</td>
+                            <td class="math"><input name="Text1" type="number" class="intext form-control"></td>
+                            <td><select name="Select2" class="form-control">
+				<option selected="selected">watts (W)</option>
+				<option>kilowatts (kW)</option>
+			</select></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Hours of use per day:</td>
+                            <td class="math"><input name="Text2" type="number" class="intext form-control"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">h/day</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2"><input onclick="OnEnergyCalc()" type="button" value="= Calculate" class="btn btn-success"> <input type="reset" value="X Reset" class="btn btn-danger"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Energy consumed per day:</td>
+                            <td class="math"><input name="Text8" type="text" class="outtext form-control" readonly></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">kWh/day</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Energy consumed per month:</td>
+                            <td class="math"><input name="Text9" type="text" class="outtext form-control" readonly></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">kWh/month</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Energy consumed per year:</td>
+                            <td class="math"><input name="Text10" type="text" class="outtext form-control" readonly></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">kWh/year</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                
+                <br>
+                <br>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Energy consumption calculation</h2>
+                <p>The energy E in kilowatt-hours (kWh) per day is equal to the power P in watts (W) times number of usage hours per day t divided by 1000 watts per kilowatt:</p>
+                <p class="math"><em>E</em><sub>(kWh/day)</sub> = <em>P</em><sub>(W)</sub> &times; <em>t</em><sub>(h/day)</sub> / 1000<sub>(W/kW)</sub></p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnSetPower() {
+            look = [600, 3000, 2400, 1600, 2000, 70, 2000, 800, 100, 50, 200, 200, 70, 1000, 1600, 2000, 4000];
+            i = document.calcform.Select4.selectedIndex;
+            if (i == 0) return;
+            document.calcform.Text1.value = look[i - 1];
+            document.calcform.Select2.selectedIndex = 0;
+        }
+
+        function OnEnergyCalc() {
+            i2 = document.calcform.Select2.selectedIndex;
+            p = document.calcform.Text1.value;
+            h = document.calcform.Text2.value;
+            if (p == '' || h == '') return;
+            if (i2 == 0) p /= 1000;
+            kwh_day = p * h;
+            kwh_month = kwh_day * 30;
+            kwh_year = kwh_day * 365;
+            kwh_day = roundnum(kwh_day, 5);
+            kwh_month = roundnum(kwh_month, 5);
+            kwh_year = roundnum(kwh_year, 5);
+            document.calcform.Text8.value = kwh_day;
+            document.calcform.Text9.value = kwh_month;
+            document.calcform.Text10.value = kwh_year;
+        }
+    </script>
+
+
+</body>
+
+
+</html>

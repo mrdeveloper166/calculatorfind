@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="amps to volt, amps to voltage, how many amps in avolt, amps to volt calculator, how to convert amps to volt, amps to volt converter, amps to volt conversion, how many amps in 1 volt.">
+    <meta name="description" content="Amps to volt - The calculator amps to volt use to convert ampere to volt easily. It calculate the apms to volt with watts and  amps to volt with ohms.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Amps to volts (V) conversion calculator" />
+    <meta property="og:description" content="Amps to volt - The calculator amps to volt use to convert ampere to volt easily. It calculate the apms to volt with watts and  amps to volt with ohms." />
+    <meta property="og:url" content="https://www.calculatorfind.com/amps-to-volts.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Amps to volts (V) conversion calculator</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Amps to volts calculator (conversion)</h1>
+                <p>Amps (A) tovolts (V) calculator.</p>
+                <p>Select calculation type, enter amps and watts or ohms and press the <i>Calculate</i> button to get volts:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="float box" id="calcform">
+                    <table class="calc2">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select calculation:</td>
+                                <td><select name="C1" onchange="OnSelChange()" autofocus class="form-control">
+			<option>amps to volts with watts</option>
+			<option>amps to volts with ohms</option>
+		</select></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter amps:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x1" class="intext form-control"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">A</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="w1">
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter watts:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x2" class="intext form-control"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">W</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="o1" style="display:none">
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter ohms:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x3" class="intext form-control"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&#937;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="calc4()" type="button" value="=Calculate" class="btn btn-success"> <input onclick="setfocus()" type="reset" value="X Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Result in volts:</td>
+                                <td class="math"><input type="text" name="y" class="outtext form-control" readonly></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">V</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+                <h3>Amps to volts calculation</h3>
+                <p>The voltage <i>V</i> in volts (V) is equal to the power <i>P</i> in watts (W), divided by the current <i>I</i> in amps (A):</p>
+                <p class="math"><i>V</i><sub>(V)</sub> = <i>P</i><sub>(W)</sub><i> </i>/<i> I</i><sub>(A)</sub></p>
+                <p>The voltage <i>V</i> in volts (V) is equal to the current<em> I</em> in amps (A), times the resistance <em>R</em> in ohms (&#937;):</p>
+                <p class="math"><i>V</i><sub>(V)</sub> = <i> I</i><sub>(A)</sub> &times; <i>R</i><sub>(&#937;)</sub></p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnSelChange() {
+            var isel = document.calcform.C1.selectedIndex;
+            var w1 = document.getElementById("w1");
+            var o1 = document.getElementById("o1");
+            if (isel == 0) {
+                w1.style.display = '';
+                o1.style.display = 'none';
+            } else {
+                w1.style.display = 'none';
+                o1.style.display = '';
+            }
+        }
+
+        function convert(x1, x2, x3) {
+            var isel = document.calcform.C1.selectedIndex;
+            var v;
+            if (isel == 0)
+                v = x2 / x1;
+            else
+                v = x3 * x1;
+            return v;
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>

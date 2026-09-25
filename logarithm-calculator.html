@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+
+    <title>Logarithm Calculator | log(x) Calculator</title>
+
+
+    <meta name="keywords" content="logarithm calculator,logarithmic differentiation calculator,logarithmic form calculator,logarithm formula claculator,logarithm change of base calculator,antilogarithm calculator,anti-logarithm calculator,log calculator,log antilog calculator,log calculator base 2,log calculator base 10,log natural calculator,anti log calculator">
+    <meta name="description" content="Log function on a graphing or scientific calculator is a key that allows you to work with logarithms. ... For example, using the Log function on the number 10 would reveal that you have to multiply your base number of 10 by itself one time to equal the number 10.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Logarithm Calculator | log(x) Calculator" />
+    <meta property="og:description" content="Log function on a graphing or scientific calculator is a key that allows you to work with logarithms. ... For example, using the Log function on the number 10 would reveal that you have to multiply your base number of 10 by itself one time to equal the number 10.">
+    <meta property="og:url" content="https://www.calculatorfind.com/logarithm-calculator.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        .calc {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Logarithm Converter Calculator</h1>
+                <p>Calculate logarithm of a number to any base:</p>
+                <br><br>
+                <form name="calcform1" autocomplete="off" class="box float calc" id="calcform">
+                    <div class="form-row">
+                        <div id="coefdiv1a" class="col-2">
+                            <input id="c1" type="number" step="any" placeholder="1" class="form-control">
+                        </div>
+                        <div id="coefdiv1b" class="col-auto mt-2">&times;</div>
+                        <div id="log" class="col-auto">log</div>
+                        <div id="bdiv" class="col-3 mt-4 input-group">
+                            <input id="b" type="text" class="form-control" autofocus>
+                            <button type="button" id="drop" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <span class="sr-only">Toggle Dropdown</span>
+      </button>
+                            <div id="bdrop" class="dropdown-menu">
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">e</a>
+                                <a class="dropdown-item" href="#">10</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="number" min="0" step="any" id="x" name="x" class="form-control">
+                        </div>
+                    </div>
+                    <div id="opdiv" class="form-group">
+                        <select id="opsel" class="form-control">
+         <option>+</option>
+         <option>-</option>
+         <option>&times;</option>
+         <option>&divide;</option>
+      </select>
+                    </div>
+                    <div id="logdiv2" class="form-row">
+                        <div id="coefdiv2a" class="col-2">
+                            <input id="c2" type="number" step="any" placeholder="1" class="form-control">
+                        </div>
+                        <div id="coefdiv2b" class="col-auto mt-2">&times;</div>
+                        <div id="log2" class="col-auto">log</div>
+                        <div id="bdiv2" class="col-3 mt-4 input-group">
+                            <input id="b2" type="text" class="form-control">
+                            <button type="button" id="drop2" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <span class="sr-only">Toggle Dropdown</span>
+      </button>
+                            <div id="bdrop2" class="dropdown-menu">
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">e</a>
+                                <a class="dropdown-item" href="#">10</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="number" min="0" step="any" id="x2" name="x2" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group mt-4">
+                        <button onclick="calcA()" type="button" class="btn btn-success"><span>=</span> Calculate</button>
+                        <button onclick="onReset()" type="reset" class="btn btn-danger"><span>&times;</span> Reset</button>
+                        <button onclick="onExpand()" type="button" class="btn btn-secondary" id="expandbtn"><span>+</span> Expand more</button>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <input type="text" id="y" name="y" readonly class="form-control form-control-lg">
+                            <div class="input-group-append">
+                                <button type="button" title="Copy" onclick="OnCopy()" class="btn btn-lg btn-outline-secondary"><i class="material-icons">content_copy</i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="txt" readonly class="form-control form-control-lg"></textarea>
+                    </div>
+                    <div class="form-group" id="graph">
+                        <label>log(x) graph</label>
+                        <div id="chart_div"></div>
+                    </div>
+                </form>
+                <br><br>
+                <p>* Use e for scientific notation. E.g: 5e3, 4e-8, 1.45e12</p>
+                <p>When:</p>
+                <p class="math"><i>b<sup> y</sup> = x</i></p>
+                <p>Then the base b logarithm of a number x:</p>
+                <p class="math">log<i><sub>b </sub>x</i> = <i>y</i></p>
+
+                <h2>Logarithm change of base calculator</h2>
+                <br><br>
+                <form name="calcform3" class="box float calc" id="calcform">
+                    <div class="form-row">
+                        <div id="log3" class="col-auto">log</div>
+                        <div id="bdiv3" class="col-3 mt-4 input-group">
+                            <input id="b3" type="text" class="form-control">
+                            <button type="button" id="drop3" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <span class="sr-only">Toggle Dropdown</span>
+      </button>
+                            <div id="bdrop3" class="dropdown-menu">
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">e</a>
+                                <a class="dropdown-item" href="#">10</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="number" min="0" step="any" id="n" name="n" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="newb">Base to change to</label>
+                        <input type="number" min="0" step="any" id="newb" placeholder="10" class="form-control">
+                    </div>
+                    <div class="form-group mt-4">
+                        <button onclick="calcC()" type="button" class="btn btn-success"><span>=</span> Calculate</button>
+                        <button type="reset" class="btn btn-danger"><span>&times;</span> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="txt3" readonly class="form-control form-control-lg"></textarea>
+                    </div>
+                </form>
+                <br><br>
+                <h2>Anti-logarithm calculator</h2>
+                <p>In order to calculate log<sup>-1</sup>(y) on the calculator, enter the base b (10 is the default value, enter e for e constant), enter the logarithm value y and press the = or <i>calculate</i> button:</p>
+                <br><br>
+                <form id="calcform2" name="calcform2" class="box float" id="calcform">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td rowspan="2"><input type="text" id="x3" name="x3" value="10" class="form-control form-control-lg" style="text-align:right;"></td>
+                                <td><input type="number" step="any" id="x4" name="x4" style="width:80px;" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button onclick="calcB()" type="button" value="Calculate" class="btn btn-success"><span>=</span> Calculate</button>
+                                    <button onclick="$('#x3').focus()" type="reset" value="Reset" class="btn btn-danger"><span>&times;</span> Reset</button>
+                                </td>
+                                <tr>
+                                    <td colspan="2">Result:</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input type="text" name="y0" class="form-control form-control-lg" readonly></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <p>When</p>
+                <p class="math"><i>y</i> = log<i><sub>b </sub>x</i></p>
+                <p>The anti logarithm (or inverse logarithm) is calculated by raising the base b to the logarithm y:</p>
+                <p class="math"><i>x</i> = log<i><sub>b</sub></i><sup>-1</sup>(<i>y</i>) = <i>b<sup> y</sup></i></p>
+                <h3>Logarithm rules</h3>
+                <h4>Logarithm product rule</h4>
+                <p class="math">log<i><sub>b</sub></i>(<i>x</i> &times; <i>y</i>) = log<i><sub>b</sub></i>(<i>x</i>)<i> + </i>log<i><sub>b</sub></i>(<i>y</i>)</p>
+                <h4>Logarithm quotient rule</h4>
+                <p class="math">log<i><sub>b</sub></i>(<i>x / y</i>) = log<i><sub>b</sub></i>(<i>x</i>)<i> - </i>log<i><sub>b</sub></i>(<i>y</i>)</p>
+                <h4>Logarithm power rule</h4>
+                <p class="math">log<i><sub>b</sub></i>(<i>x <sup>y</sup></i>) = <i>y</i> &times; <i></i>log<i><sub>b</sub></i>(<i>x</i>)</p>
+                <h4>Logarithm base switch rule</h4>
+                <p class="math">log<i><sub>b</sub></i>(<i>c</i>) = 1 / log<i><sub>c</sub></i>(<i>b</i>)</p>
+                <h4>Logarithm change of base rule</h4>
+                <p class="math">log<i><sub>b</sub></i>(<i>x</i>) = log<i><sub>c</sub></i>(<i>x</i>)<i> </i>/<i> </i>log<i><sub>c</sub></i>(<i>b</i>)</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+<div  id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/charts/loader.js" defer></script>
+
+    <script src="calc2.js"></script>
+    <script>
+        "use strict"
+        var arr, px, py, pb;
+        var expandState = false;
+        $(document).ready(function() {
+            $("#coefdiv1a").hide();
+            $("#coefdiv1b").hide();
+            $("#opdiv").hide();
+            $("#logdiv2").hide();
+            $("#bdrop a").click(function(e) {
+                e.preventDefault();
+                var selText = $(this).text();
+                $("#b").val(selText);
+            });
+            $("#bdrop2 a").click(function(e) {
+                e.preventDefault();
+                var selText = $(this).text();
+                $("#b2").val(selText);
+            });
+            $("#bdrop3 a").click(function(e) {
+                e.preventDefault();
+                var selText = $(this).text();
+                $("#b3").val(selText);
+            });
+        });
+
+        function onReset() {
+            expandState = false;
+            $('#b').focus();
+            $("#coefdiv1a").hide();
+            $("#coefdiv1b").hide();
+            $("#opdiv").hide();
+            $("#logdiv2").hide();
+            $("#expandbtn").html("<span>+</span> Expand more");
+        }
+
+        function onExpand() {
+            if (expandState == false) {
+                expandState = true;
+                $('#b2').focus();
+                $("#coefdiv1a").show();
+                $("#coefdiv1b").show();
+                $("#opdiv").show();
+                $("#logdiv2").show();
+                $("#expandbtn").html("<span>-</span> Expand less");
+            } else {
+                expandState = false;
+                $('#b').focus();
+                $("#coefdiv1a").hide();
+                $("#coefdiv1b").hide();
+                $("#opdiv").hide();
+                $("#logdiv2").hide();
+                $("#expandbtn").html("<span>+</span> Expand more");
+            }
+        }
+
+        function undernum(x) {
+            var x = x.toString();
+            var s = "";
+            for (var i = 0; i < x.length; i++) {
+                var d = x.charCodeAt(i) - 0x30;
+                if (x.charCodeAt(i) == 0x2e) //.
+                    s += ".";
+                else if (x.charCodeAt(i) == 0x2d) //-
+                    s += String.fromCharCode(8331);
+                else if (x.charCodeAt(i) == 0x65) //e
+                    s += String.fromCharCode(8337);
+                else
+                    s += String.fromCharCode(d + 8320);
+            }
+            return s;
+        }
+
+        function calcA() {
+            var y, txt;
+            if (expandState == false) {
+                var b = document.getElementById("b").value;
+                var x = document.getElementById("x").value;
+                if (b == 'e') b = Math.E;
+                y = Math.log(x) / Math.log(b);
+                y = roundnum(y, 10);
+                document.getElementById("y").value = y;
+                pb = parseFloat(b);
+                px = parseFloat(x);
+                py = parseFloat(y);
+                txt = "The base " + b + " logarithm of " + x + " is " + y;
+                txt += '\nlog' + undernum(b) + '(' + x + ') = ' + y;
+                $("#txt").val(txt);
+                google.charts.load('current', {
+                    'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(drawChart);
+                document.getElementById("graph").style.display = "block";
+            } else {
+                var c1 = document.getElementById("c1").value;
+                var b1 = document.getElementById("b").value;
+                var x1 = document.getElementById("x").value;
+                var c2 = document.getElementById("c2").value;
+                var b2 = document.getElementById("b2").value;
+                var x2 = document.getElementById("x2").value;
+                var op = document.getElementById("opsel").selectedIndex;
+                if (b1 == 'e') b1 = Math.E;
+                if (b2 == 'e') b2 = Math.E;
+                if (c1 == '') c1 = 1;
+                if (c2 == '') c2 = 1;
+                var log1 = Math.log(x1) / Math.log(b1);
+                var log2 = Math.log(x2) / Math.log(b2);
+                var l1 = c1 * log1;
+                var l2 = c2 * log2;
+                if (op == 0)
+                    y = l1 + l2;
+                else if (op == 1)
+                    y = l1 - l2;
+                else if (op == 2)
+                    y = l1 * l2;
+                else
+                    y = l1 / l2;
+                y = roundnum(y, 10);
+                document.getElementById("y").value = y;
+                var optbl = ['+', '-', '\u00D7', ')/('];
+                var s1 = '',
+                    s2 = '';
+                if (op == 3) {
+                    s1 = '(';
+                    s2 = ')';
+                }
+                log1 = roundnum(log1, 10).toString();
+                log2 = roundnum(log2, 10).toString();
+                txt = s1 + c1 + '\u00D7log' + undernum(b1) + '(' + x1 + ') ' + optbl[op] + ' ' + c2 + '\u00D7log' + undernum(b2) + '(' + x2 + ')' + s2 + ' =\n';
+                txt += s1 + c1 + '\u00D7' + log1 + optbl[op] + c2 + '\u00D7' + log2 + s2 + ' = ' + y;
+                $("#txt").val(txt);
+                document.getElementById("graph").style.display = "none";
+            }
+        }
+
+        function calcB() {
+            var x3 = document.calcform2.x3.value;
+            var x4 = document.calcform2.x4.value;
+            if (x3 == 'e') x3 = Math.E;
+            var y0 = Math.pow(x3, x4);
+            y0 = roundnum(y0, 10);
+            document.calcform2.y0.value = y0;
+        }
+
+        function calcC() {
+            var b = document.getElementById("b3").value;
+            var x = document.getElementById("n").value;
+            var b2 = document.getElementById("newb").value;
+            if (b == 'e') b = Math.E;
+            if (b2 == 'e') b2 = Math.E;
+            if (b2 == '') b2 = 10;
+            var log1 = Math.log(x) / Math.log(b2);
+            var log2 = Math.log(b) / Math.log(b2);
+            log1 = roundnum(log1, 11);
+            log2 = roundnum(log2, 11);
+            var txt = 'log' + undernum(b) + '(' + x + ')' + ' = log' + undernum(b2) + '(' + x + ')' + ' / log' + undernum(b2) + '(' + b + ')\n= ' + log1 + " / " + log2 + " = " + roundnum(log1 / log2, 10);
+            $("#txt3").val(txt);
+        }
+
+        function addPoint(x) {
+            if (px != null && px <= x) {
+                arr.push([px, py, py]);
+                px = null;
+            }
+            var y = Math.log(x) / Math.log(pb);
+            x = parseFloat(roundresult(x));
+            y = parseFloat(roundresult(y));
+            arr.push([x, y, null]);
+        }
+
+        function addRange(x1, x2, step) {
+            for (var x = x1; x < x2; x += step)
+                addPoint(x);
+        }
+
+        function drawChart() {
+            pb = document.calcform1.b.value;
+            px = document.calcform1.x.value;
+            if (pb == 'e') pb = Math.E;
+            arr = [];
+            arr[0] = ['x', 'y', 'y'];
+            var n = Math.ceil(Math.log10(px));
+            var x1, x2;
+            for (var i = -3; i < 0; i++) {
+                x1 = Math.pow(10, n + i);
+                x2 = Math.pow(10, n + i + 1);
+                addRange(x1, x2, x1);
+            }
+            if (px != null)
+                arr.push([px, py, py]);
+            var data = google.visualization.arrayToDataTable(arr);
+            var ticks = [0, 2, 4, 6, 8];
+            for (var i = 0; i < ticks.length; i++)
+                ticks[i] *= Math.pow(10, n - 1);
+            var t = 'log' + undernum(pb) + '(x)';
+            var options = {
+                //title: 'y = log x',
+                title: t,
+                curveType: 'function',
+                legend: 'none',
+                pointSize: 10,
+                pointsVisible: false,
+                //trendlines: { 0: { color: 'white', visibleInLegend: false, pointSize: 0, pointsVisible: false }, 1: { pointsVisible: true } },
+                series: {
+                    0: {
+                        pointSize: 0,
+                        pointsVisible: false
+                    },
+                    1: {
+                        pointsVisible: true
+                    }
+                },
+                hAxis: {
+                    title: 'x',
+                    //ticks: [0, 2, 4, 6, 8]
+                    ticks: ticks
+                },
+                vAxis: {
+                    title: 'y'
+                },
+                crosshair: {
+                    trigger: 'both'
+                },
+                explorer: {
+                    actions: ['dragToZoom', 'rightClickToReset'],
+                    axis: 'horizontal',
+                    keepInBounds: true,
+                    maxZoomIn: 4.0
+                },
+            };
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+
+        function OnCopy() {
+            document.getElementById("y").select();
+            document.execCommand("copy");
+        }
+    </script>
+    <!-- #EndEditable -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

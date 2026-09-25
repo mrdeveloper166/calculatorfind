@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Height Converter | Convert cm, feet & inches</title>
+
+
+
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta name="keywords" content="height conversion,conversion height,conversion of height table,conversion table of height,height conversion units, centimeters to decmeters, feet to inch converter">
+    <meta name="description" content="height converter calculator for converting units including feet, Meters, and Inches,millimeters,decimeters,etc.">
+    <script async src="tagmng3.js"></script>
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Height Converter | Convert cm, feet & inches" />
+    <meta property="og:description" content="height converter calculator for converting units including feet, Meters, and Inches,millimeters,decimeters,etc." />
+    <meta property="og:url" content="https://www.calculatorfind.com/height-converter.html" />
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            font-size: 20px;
+        }
+        
+        #calcform {
+            max-width: 400px;
+        }
+        
+        #calcform label {
+            margin-bottom: 0;
+        }
+        
+        #calcform button img {
+            filter: invert(100%);
+        }
+        
+        .calc {
+            padding: 10px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+
+                <h1>Height Converter or calcuator</h1>
+                <br>
+                <form class="box float" id="calcform" name="calcform" autocomplete="off">
+                    <table class="calc">
+                        <tr>
+                            <td><label for="ftin1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Feet+Inches:</label></td>
+                        </tr>
+                        <tr>
+                            <td class="form-group">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="number" min="0" step="any" id="ftin1" name="ftin1" class="form-control" style="color: green; font-weight: bold; font-size: 20px; background-color: white;" oninput="ConvertFtin()" autofocus>
+                                    </div>
+                                    <span class="mt-2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">ft</span>
+                                    <div class="col">
+                                        <input type="number" min="0" step="any" id="ftin2" name="ftin2" class="form-control" style="color: green; font-weight: bold; font-size: 20px; background-color: white;" oninput="ConvertFtin()">
+                                    </div>
+                            </td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">in</td>
+                        </tr>
+                        <tr>
+                            <td><label for="ft" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Feet:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" min="0" step="any" id="ft" name="ft" class="form-control" style="color: green; font-weight: bold; font-size: 20px; background-color: white;" oninput="ConvertFt()"></td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">ft</td>
+                        </tr>
+                        <tr>
+                            <td><label for="in" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Inches:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" min="0" step="any" id="in" name="in" class="form-control" style="color: green; font-weight: bold; font-size: 20px; background-color: white;" oninput="ConvertIn()"></td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">in</td>
+                        </tr>
+                        <tr>
+                            <td><label for="mcm1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Meters+Centimeters:</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="number" min="0" step="any" id="mcm1" name="mcm1" class="form-control" style="color: green; font-weight: bold; font-size: 20px; background-color: white;" oninput="ConvertMcm()">
+                                    </div>
+                                    <span class="mt-2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">m</span>
+                                    <div class="col">
+                                        <input type="number" min="0" step="any" id="mcm2" name="mcm2" class="form-control" style="color: green; font-weight: bold; font-size: 20px; background-color: white;" oninput="ConvertMcm()">
+                                    </div>
+                            </td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">cm</td>
+                        </tr>
+                        <tr>
+                            <td><label for="m" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Meters:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" min="0" step="any" id="m" name="m" class="form-control" style="color: green; font-weight: bold; font-size: 20px; background-color: white;" oninput="ConvertM()"></td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">m</td>
+                        </tr>
+                        <tr>
+                            <td><label for="cm" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Centimeters:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" min="0" step="any" id="cm" name="cm" class="form-control" style="color: green; font-weight: bold; font-size: 20px; background-color: white;" oninput="ConvertCm()"></td>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">cm</td>
+                        </tr>
+                        <tr>
+                            <td><button type="reset" title="Reset" class="btn btn-danger mt-2" style="font-size: 20px;"><img src="glyphicons_halflings_013_remove.png" alt=""> Reset</button></td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+
+
+
+                <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                </div>
+
+
+                <div class="row ">
+
+
+                    <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+
+
+                        <br>
+                        <h2>Height conversion or calculator</h2>
+                        <br>
+                        <h3>Feet to Inches conversion</h3>
+                        <p>One feet is equal to 12 inches:</p>
+                        <p class="math">1ft = 12&Prime;</p>
+                        <h3>Inches to centimeters conversion</h3>
+                        <p>One inch is equal to 2.54 centimeters:</p>
+                        <p class="math">1&Prime; = 2.54cm</p>
+                        <h3>Centimeters to meters conversion</h3>
+                        <p>One centimeter is equal to 0.01 meter:</p>
+                        <p class="math">1cm = 0.01m</p>
+                        <p>One meter is equal to 100 centimeters:</p>
+                        <p class="math">1m = 100cm</p>
+                        <h2>Height conversion table</h2>
+                        <table class="table" id="tbl">
+                            <thead>
+                                <th scope="col">Cm</th>
+                                <th scope="col">Feet</th>
+                                <th scope="col">Feet+Inches</th>
+                            </thead>
+                            <tbody>
+                            </tbody>
+
+                        </table>
+
+
+                    </div>
+
+
+
+
+                    <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                        <div id="myseealso"></div>
+                        
+                        
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <br><br><br><br>
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+            <script src="convert.js"></script>
+            <script>
+                window.onload = function() {
+                    var tableRef = document.getElementById('tbl').getElementsByTagName('tbody')[0];
+                    var row, cell, txt, ft, inch;
+                    var rows = tableRef.rows.height;
+                    for (var cm = 100; cm <= 200; cm++) {
+                        row = tableRef.insertRow(tableRef.rows.height);
+                        cell = row.insertCell(0);
+                        txt = document.createTextNode(cm + "cm");
+                        cell.appendChild(txt);
+                        cell = row.insertCell(1);
+                        ft = cm / 30.48;
+                        txt = document.createTextNode(ft.toFixed(2) + "ft");
+                        cell.appendChild(txt);
+                        cell = row.insertCell(2);
+                        inch = ((ft - Math.floor(ft)) * 12).toFixed(2);
+                        ft = Math.floor(ft);
+                        txt = document.createTextNode(ft + "ft + " + inch + "in");
+                        cell.appendChild(txt);
+                    }
+                };
+
+                function ConvertCm() {
+                    d = document.calcform.cm.value;
+                    if (d == '') return;
+                    d = parseFloat(d);
+                    mcm1 = Math.floor(d / 100);
+                    d2 = d / 2.54;
+                    ftin1 = Math.floor(d2 / 12);
+                    //document.calcform.cm.value		= roundnum(d,		6);
+                    document.calcform.m.value = roundnum(d / 100, 6);
+                    document.calcform.in.value = roundnum(d / 2.54, 6);
+                    document.calcform.ft.value = roundnum(d / 2.54 / 12, 6);
+                    document.calcform.mcm1.value = roundnum(mcm1, 6);
+                    document.calcform.mcm2.value = roundnum(d - mcm1 * 100, 6);
+                    document.calcform.ftin1.value = roundnum(ftin1, 6);
+                    document.calcform.ftin2.value = roundnum(d2 - ftin1 * 12, 6);
+                }
+
+                function ConvertM() {
+                    d = document.calcform.m.value;
+                    if (d == '') return;
+                    d = parseFloat(d);
+                    cm = d * 100;
+                    d1 = Math.floor(cm / 100);
+                    d2 = d / 0.0254;
+                    ftin1 = Math.floor(d2 / 12);
+                    document.calcform.cm.value = roundnum(d * 100, 6);
+                    //document.calcform.m.value		= roundnum(d,			6);
+                    document.calcform.in.value = roundnum(d / 0.0254, 6);
+                    document.calcform.ft.value = roundnum(d / 0.0254 / 12, 6);
+                    document.calcform.mcm1.value = roundnum(d1, 6);
+                    document.calcform.mcm2.value = roundnum(cm - d1 * 100, 6);
+                    document.calcform.ftin1.value = roundnum(ftin1, 6);
+                    document.calcform.ftin2.value = roundnum(d2 - ftin1 * 12, 6);
+                }
+
+                function ConvertMcm() {
+                    d1 = document.calcform.mcm1.value;
+                    d2 = document.calcform.mcm2.value;
+                    if (d1 == '' || d2 == '') return;
+                    d1 = parseFloat(d1);
+                    d2 = parseFloat(d2);
+                    cm = d1 * 100 + d2;
+                    d3 = cm / 2.54;
+                    ftin1 = Math.floor(d3 / 12);
+                    document.calcform.cm.value = roundnum(d1 * 100 + d2, 6);
+                    document.calcform.m.value = roundnum(d1 + d2 / 100, 6);
+                    document.calcform.in.value = roundnum(cm / 2.54, 6);
+                    document.calcform.ft.value = roundnum(cm / 2.54 / 12, 6);
+                    //document.calcform.mcm1.value	= roundnum(d1,			6);
+                    //document.calcform.mcm2.value	= roundnum(d2,			6);
+                    document.calcform.ftin1.value = roundnum(ftin1, 6);
+                    document.calcform.ftin2.value = roundnum(d3 - ftin1 * 12, 6);
+                }
+
+                function ConvertIn() {
+                    d = document.calcform.in.value;
+                    if (d == '') return;
+                    d = parseFloat(d);
+                    d1 = Math.floor(d / 12);
+                    cm = d * 2.54;
+                    d2 = Math.floor(cm / 100);
+                    document.calcform.cm.value = roundnum(d * 2.54, 6);
+                    document.calcform.m.value = roundnum(d * 0.0254, 6);
+                    //document.calcform.in.value		= roundnum(d,			6);
+                    document.calcform.ft.value = roundnum(d / 12, 6);
+                    document.calcform.mcm1.value = roundnum(d2, 6);
+                    document.calcform.mcm2.value = roundnum(cm - d2 * 100, 6);
+                    document.calcform.ftin1.value = roundnum(d1, 6);
+                    document.calcform.ftin2.value = roundnum(d - d1 * 12, 6);
+                }
+
+                function ConvertFt() {
+                    d = document.calcform.ft.value;
+                    if (d == '') return;
+                    d = parseFloat(d);
+                    d1 = Math.floor(d);
+                    cm = d * 30.48;
+                    d2 = Math.floor(cm / 100);
+                    document.calcform.cm.value = roundnum(d * 30.48, 6);
+                    document.calcform.m.value = roundnum(d * 0.3048, 6);
+                    document.calcform.in.value = roundnum(d * 12, 6);
+                    //document.calcform.ft.value		= roundnum(d,			6);
+                    document.calcform.mcm1.value = roundnum(d2, 6);
+                    document.calcform.mcm2.value = roundnum(cm - d2 * 100, 6);
+                    document.calcform.ftin1.value = roundnum(d1, 6);
+                    document.calcform.ftin2.value = roundnum((d - d1) * 12, 6);
+                }
+
+                function ConvertFtin() {
+                    d1 = document.calcform.ftin1.value;
+                    d2 = document.calcform.ftin2.value;
+                    if (d1 == '' || d2 == '') return;
+                    d1 = parseFloat(d1);
+                    d2 = parseFloat(d2);
+                    cm = d1 * 30.48 + d2 * 2.54;
+                    d3 = Math.floor(cm / 100);
+                    document.calcform.cm.value = roundnum(cm, 6);
+                    document.calcform.m.value = roundnum(cm / 100, 6);
+                    document.calcform.in.value = roundnum(d1 * 12 + d2, 6);
+                    document.calcform.ft.value = roundnum(d1 + d2 / 12, 6);
+                    document.calcform.mcm1.value = roundnum(d3, 6);
+                    document.calcform.mcm2.value = roundnum(cm - d3 * 100, 6);
+                }
+            </script>
+
+
+</body>
+
+
+</html>

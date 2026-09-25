@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+    <title>Energy cost calculator</title>
+    <meta name="keywords" content="enegry cost calculator, energy cost in watts, energy cost in kilowats, energy cost for refrigerator, energy cost hour per day, energy cost kWh day, how to calculate energy cost, energy cost converter.">
+    <meta name="description" content="Energy cost converter convert the energy cost  of power consumption in hours a day, kWh a day. It calculates the energy cost per month and energy cost per year also. E(kWh/day) = P(W) × t(h/day) / 1000(W/kW). ">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Energy cost calculator" />
+    <meta property="og:description" content="Energy cost converter convert the energy cost  of power consumption in hours a day, kWh a day. It calculates the energy cost per month and energy cost per year also. E(kWh/day) = P(W) × t(h/day) / 1000(W/kW)."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/energy-cost-calculator.html" />
+    <script async src="tagmng3.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Energy cost calculator or converter</h1>
+                <p>Electrical energy cost calculator and how to calculate.</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select country:</td>
+                            <td><select name="Select1" onchange="OnCountryChange()" autofocus class="form-control">
+				<option>Australia</option>
+				<option>Canada</option>
+				<option>France</option>
+				<option>Germany</option>
+				<option>India</option>
+				<option>Phillipine</option>
+				<option>Singapore</option>
+				<option>United Kingdom</option>
+				<option selected="selected">United States</option>
+				<option>Other country</option>
+			</select></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Typical appliance:</td>
+                            <td colspan="2">
+                                <select name="Select4" onchange="OnSetPower()" class="form-control">
+				<option>-- select --</option>
+				<option>Air conditioner</option>
+				<option>Clothes dryer</option>
+				<option>Clothes iron</option>
+				<option>Dishwasher</option>
+				<option>Electric kettle</option>
+				<option>Fan</option>
+				<option>Heater</option>
+				<option>Microwave oven</option>
+				<option>Desktop computer</option>
+				<option>Laptop computer</option>
+				<option>Refrigerator</option>
+				<option>Stereo receiver</option>
+				<option>Television</option>
+				<option>Toaster oven</option>
+				<option>Vacuum cleaner</option>
+				<option>Washing machine</option>
+				<option>Water heater</option>
+			</select></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Power consumption:</td>
+                            <td class="math"><input name="Text1" type="text" class="intext form-control" style="width:120px" onblur="OnEnergyCalc()"></td>
+                            <td><select name="Select2" onchange="OnEnergyCalc()" class="form-control">
+				<option selected="selected">watts (W)</option>
+				<option>kilowatts (kW)</option>
+			</select></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Hours of use per day:</td>
+                            <td class="math"><input name="Text2" type="text" class="intext form-control" style="width:120px" onblur="OnEnergyCalc()"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">h/day</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Energy consumed per day:</td>
+                            <td class="math"><input name="Text8" type="text" class="intext form-control" style="width:120px"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">kWh/day</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">1 kilowatt-hour (kWh) cost:</td>
+                            <td class="math"><input name="Text3" type="text" class="intext form-control" value="12" style="width:120px"></td>
+                            <td><select name="Select3" class="form-control">
+				<option selected="selected">cent</option>
+				<option>pence</option>
+				<option>rupee</option>
+				<option>peso</option>
+				<option> </option>
+			</select></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2"><input onclick="OnCalcCost()" type="button" value="= Calculate" class="btn btn-success"> <input onclick="OnReset()" type="reset" value="X  Reset" class="btn btn-danger"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Energy cost per day:</td>
+                            <td class="math"><input name="Text5" type="text" class="outtext form-control" style="width:120px" readonly="readonly"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Energy cost per month:</td>
+                            <td class="math"><input name="Text6" type="text" class="outtext form-control" style="width:120px" readonly="readonly"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Energy cost per year:</td>
+                            <td class="math"><input name="Text7" type="text" class="outtext form-control" style="width:120px" readonly="readonly"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Energy cost calculation with formulas</h2>
+                <h4>Energy consumption calculation</h4>
+                <p>The energy E in kilowatt-hours (kWh) per day is equal to the power P in watts (W) times number of usage hours per day t divided by 1000 watts per kilowatt:</p>
+                <p class="math"><em>E</em><sub>(kWh/day)</sub> = <em>P</em><sub>(W)</sub> &times; <em>t</em><sub>(h/day)</sub> / 1000<sub>(W/kW)</sub></p>
+                <h4>Energy cost calculation</h4>
+                <p>The energy cost per day in dollars is equal to the energy consumption E in kWh per day times the energy cost of 1 kWh in cents/kWh divided by 100 cents per dollar:</p>
+                <p class="math">Cost<sub>($/day)</sub> = <em>E</em><sub>(kWh/day)</sub> &times; Cost<sub>(cent/kWh)</sub> / 100<sub>(cent/$)</sub></p>
+                <br>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        var c = "$";
+
+        function OnCountryChange() {
+            i = document.calcform.Select1.selectedIndex;
+            clook = ['$', '$', '\u20AC', '\u20AC', 'R', 'P', '$', '\u00A3', '$', ' '];
+            dlook = [0, 0, 0, 0, 2, 3, 0, 1, 0, 4];
+            c = clook[i];
+            document.calcform.Select3.selectedIndex = dlook[i];
+        }
+
+        function OnSetPower() {
+            look = [600, 3000, 2400, 1600, 2000, 70, 2000, 800, 100, 50, 200, 200, 70, 1000, 1600, 2000, 4000];
+            i = document.calcform.Select4.selectedIndex;
+            if (i == 0) return;
+            document.calcform.Text1.value = look[i - 1];
+            document.calcform.Select2.selectedIndex = 0;
+        }
+
+        function OnEnergyCalc() {
+            i2 = document.calcform.Select2.selectedIndex;
+            p = document.calcform.Text1.value;
+            h = document.calcform.Text2.value;
+            if (p == '' || h == '') return;
+            if (i2 == 0) p /= 1000;
+            kwh = p * h;
+            kwh = roundnum(kwh, 5);
+            document.calcform.Text8.value = kwh;
+        }
+
+        function OnCalcCost() {
+            i3 = document.calcform.Select3.selectedIndex;
+            kwh_cost = document.calcform.Text3.value;
+            kwh = document.calcform.Text8.value;
+            if (kwh == '') OnEnergyCalc();
+            kwh = document.calcform.Text8.value;
+            if (i3 > 1) kwh_cost *= 100;
+            day_cost = kwh * kwh_cost / 100;
+            month_cost = day_cost * 30;
+            year_cost = day_cost * 365;
+            day_cost = roundnum(day_cost, 5);
+            month_cost = roundnum(month_cost, 5);
+            year_cost = roundnum(year_cost, 5);
+            document.calcform.Text5.value = c + day_cost;
+            document.calcform.Text6.value = c + month_cost;
+            document.calcform.Text7.value = c + year_cost;
+        }
+
+        function OnReset() {
+            c = '$';
+        }
+    </script>
+
+
+</body>
+
+
+</html>

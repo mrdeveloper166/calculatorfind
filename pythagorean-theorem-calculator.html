@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>Pythagorean Theorem calculator</title>
+
+
+    <meta name="keywords" content="pythagorean theorem calculator,pythagorean theorem calculator angle,pythagorean theorem calculator find b,the pythagorean theorem calculator,pythagorean theorem,pythagorean theorem formula,pythagorean theorem proof,proof for pythagorean theorem,what is the theorem of pythagoras,pythagorean theorem">
+    <meta name="description" content="In mathematics, the Pythagorean theorem, or Pythagoras's theorem, is a fundamental relation in Euclidean geometry among the three sides of a right triangle. It states that the area of the square whose side is the hypotenuse is equal to the sum of the areas of the squares on the other two sides.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pythagorean Theorem calculator" />
+    <meta property="og:description" content="In mathematics, the Pythagorean theorem, or Pythagoras's theorem, is a fundamental relation in Euclidean geometry among the three sides of a right triangle. It states that the area of the square whose side is the hypotenuse is equal to the sum of the areas of the squares on the other two sides."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/pythagorean-theorem-calculator.html" />
+  
+    <script async src="tagmng3.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        @media all and (max-width: 576px) {
+            .calc2 {
+                width: 100%;
+                padding: 8px;
+            }
+            .calc2 input[type=number],
+            .calc2 input[type=text] {
+                width: 100%;
+            }
+        }
+        
+        * {
+            font-size: 16px;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Pythagorean theorem conversion calculator</h1>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <p style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Hypotenuse (c) calculation:</p>
+                    <table class="calc2">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter leg (a):</td>
+                                <td><input type="number" name="a1" min="0" step="any" oninput="calc_c()" autofocus class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter leg (b):</td>
+                                <td><input type="number" name="b1" min="0" step="any" oninput="calc_c()" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Hypotenuse (c) result:</td>
+                                <td><input type="number" step="any" name="c1" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" readonly></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Leg (a) calculation:</p>
+                    <table class="calc2">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter leg (b):</td>
+                                <td><input type="number" name="b2" id="b2" min="0" step="any" oninput="calc_lega()" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter Hypotenuse (c):</td>
+                                <td><input type="number" name="c2" id="c2" min="0" step="any" oninput="calc_lega()" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Leg (a) result:</td>
+                                <td><input type="number" step="any" name="a2" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" readonly></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Leg (b) calculation:</p>
+                    <table class="calc2">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter leg (a):</td>
+                                <td><input type="number" name="a3" id="a3" min="0" step="any" oninput="calc_legb()" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter hypotenuse (c):</td>
+                                <td><input type="number" name="c3" id="c3" min="0" step="any" oninput="calc_legb()" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Leg (b) result:</td>
+                                <td><input type="number" step="any" name="b3" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" readonly></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Pythagorean Theorem Formula and how to use</h2><br>
+                <p>Pythagorean Theorem Formula Using the Pythagorean Theorem formula for right triangles you can find the length of the third side if you know the length of any two other sides. Read below to see solution formulas derived from the Pythagorean
+                    Theorem formula:</p><br>
+                <h1 style="text-align: center;"><b style="font-size:25px;">a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup></b></h1>
+                <br>
+                <h2>What is the proof of the Pythagorean Theorem ? </h2>
+                <p>The proof of Pythagorean Theorem in mathematics is very important. In a right angle, the square of the hypotenuse is equal to the sum of the squares of the other two sides. States that in a right triangle that, the square of a (a2) plus
+                    the square of b (b2) is equal to the square of c (c2).</p>
+                <br>
+                <h2>Pythagorean Theorem for Right Triangles</h2>
+                <p>
+                    <img src="pythagorean-triangle.png" alt="Pythagorean Theorem Triangle" title="Pythagorean Theorem Triangle" width="150" height="150" />
+                    <br> a = side leg a
+                    <br> b = side leg b
+                    <br> c = hypotenuse
+                    <br> A = area
+                </p>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+            </div>
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="calc2.js" defer></script>
+    <script>
+        function calc_c() {
+            var a = document.calcform.a1.value;
+            var b = document.calcform.b1.value;
+            var c = Math.sqrt(a * a + b * b);
+            document.calcform.c1.value = roundresult(c);
+        }
+
+        function calc_lega() {
+            var b = document.calcform.b2.value;
+            var c = document.calcform.c2.value;
+            b = parseFloat(b);
+            c = parseFloat(c);
+            if (b == "" || c == "") return;
+            if (c < b) {
+                document.getElementById("b2").style.backgroundColor = "#ffdddd";
+                document.getElementById("c2").style.backgroundColor = "#ffdddd";
+                document.calcform.a2.value = "";
+                return;
+            }
+            document.getElementById("b2").style.backgroundColor = "white";
+            document.getElementById("c2").style.backgroundColor = "white";
+            var a = Math.sqrt(c * c - b * b);
+            document.calcform.a2.value = roundresult(a);
+        }
+
+        function calc_legb() {
+            var a = document.calcform.a3.value;
+            var c = document.calcform.c3.value;
+            b = parseFloat(b);
+            c = parseFloat(c);
+            if (a == "" || c == "") return;
+            if (c < a) {
+                document.getElementById("a3").style.backgroundColor = "#ffdddd";
+                document.getElementById("c3").style.backgroundColor = "#ffdddd";
+                document.calcform.b3.value = "";
+                return;
+            }
+            document.getElementById("a3").style.backgroundColor = "white";
+            document.getElementById("c3").style.backgroundColor = "white";
+            var b = Math.sqrt(c * c - a * a);
+            document.calcform.b3.value = roundresult(b);
+        }
+    </script>
+
+</body>
+
+
+
+</html>

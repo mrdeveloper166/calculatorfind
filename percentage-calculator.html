@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Percentage calculator</title>
+
+    <meta name="keywords" content="percentage calculator,percentage increase calculator,percentage change calculator,percentage calculator grade,percentage calculator growth,percentage calculator decrease,percentage yied calculator,decimal to percentage calculator,percentage calculator with fractions.">
+    <meta name="description" content="Percentage calculator- percentage difference between two values is calculated by dividing the absolute value of the difference between two numbers.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Percentage calculator" />
+    <meta property="og:description" content="Percentage calculator- percentage difference between two values is calculated by dividing the absolute value of the difference between two numbers." />
+    <meta property="og:url" content="https://www.calculatorfind.com/percentage-calculator.html" />
+  
+
+    <script async src="tagmng3.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        #mycalcform {
+            padding: 20px;
+            background: #20aea8;
+            border-radius: 7px;
+            border: solid 1px black;
+        }
+        
+        .calc2 {
+            width: 100%;
+            margin: 10px auto;
+        }
+        
+        .calc2 input[type=number],
+        .calc2 input[type=text] {
+            font-size: large;
+        }
+        
+        #tbl0 tr:nth-child(2) td,
+        #tbl1 tr:nth-child(2) td,
+        #tbl2 tr:nth-child(2) td,
+        #tbl3 tr:nth-child(2) td,
+        #tbl4 tr:nth-child(3) td {
+            width: 100%;
+        }
+        
+        #tbl0 {
+            font-size: medium;
+        }
+        
+        #tbl0 input[type=number],
+        #tbl0 input[type=text] {
+            width: 100px;
+        }
+        
+        #tbl1 {
+            font-size: medium;
+        }
+        
+        #tbl1 input[type=text],
+        #tbl1 input[type=number] {
+            width: 110px;
+        }
+        
+        #tbl1 textarea {
+            width: 100%;
+            font-size: medium;
+        }
+        
+        #tbl2 {
+            font-size: medium;
+            table-layout: fixed;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        #tbl2 td {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        #tbl2 input[type=number] {
+            width: 95px;
+        }
+        
+        #tbl2 input[type=text] {
+            width: 95px;
+        }
+        
+        #tbl2 textarea {
+            width: 100%;
+            font-size: medium;
+        }
+        
+        #tbl3 {
+            font-size: medium;
+        }
+        
+        #tbl3 input[type=number] {
+            width: 100px;
+        }
+        
+        #tbl3 input[type=text] {
+            width: 110px;
+        }
+        
+        #tbl3 textarea {
+            width: 100%;
+            font-size: medium;
+        }
+        
+        #tbl4 {
+            font-size: medium;
+        }
+        
+        #tbl4 input[type=number] {
+            width: 100px;
+        }
+        
+        #tbl4 input[type=text] {
+            width: 120px;
+        }
+        
+        #tbl4 textarea {
+            width: 100%;
+            font-size: medium;
+        }
+        
+        #tbl5 {
+            border: 0
+        }
+        
+        #tbl5 input[type=number],
+        #tbl5 input[type=text] {
+            width: 100px;
+            text-align: center;
+        }
+        
+        #tbl5 button {
+            font-weight: bold;
+        }
+        
+        #tbl5 tr:nth-child(2) td:nth-child(4) {
+            border-bottom: 2px #666 solid
+        }
+        
+        @media all and (max-width: 640px) {
+            .calc {
+                padding: 15px 5px;
+            }
+            .calc2 {
+                display: block;
+            }
+            .calc2 tr {
+                line-height: 40px
+            }
+            .calc2 td {
+                display: inline-block;
+            }
+            .calc2 td:nth-child(2) {
+                clear: none;
+            }
+            .calc2 tr td:nth-child(3) {
+                padding-top: inherit;
+            }
+            #tbl0,
+            #tbl1,
+            #tbl2,
+            #tbl3,
+            #tbl4 {
+                font-size: small;
+            }
+            #tbl0 td {
+                float: none;
+            }
+            /*#tbl1 textarea,#tbl2 textarea,#tbl3 textarea,#tbl4 textarea { width:290px; }*/
+            #tbl1 tr:first-child td:nth-child(8) {
+                display: none;
+            }
+            #tbl1 input[type=text],
+            #tbl1 input[type=number] {
+                width: 85px;
+            }
+            #tbl1 td:nth-child(7) input[type=text],
+            #tbl1 td:nth-child(7) input[type=number] {
+                width: 120px;
+            }
+            #tbl2 input[type=text] {
+                width: 75px;
+            }
+            #tbl2 td:nth-child(6) input[type=text] {
+                width: 120px;
+            }
+            #tbl3 td:nth-child(5) {
+                display: none;
+            }
+            #tbl4 input[type=text] {
+                width: 90px;
+            }
+            #tbl4 td:nth-child(7) input[type=text] {
+                width: 120px;
+            }
+            #tbl5 {
+                font-size: small;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            #tbl5 td:nth-child(2) {
+                padding-left: 0;
+            }
+            #tbl5 button {
+                font-size: medium;
+            }
+            #tbl5 input[type=number],
+            #tbl5 input[type=text] {
+                width: 53px;
+            }
+            #tbl5 tr td:nth-child(n+7) {
+                display: none;
+            }
+        }
+        
+        @media all and (min-width: 641px) {
+            .calc {
+                padding: 15px;
+            }
+            .calc2 tr {
+                display: flex;
+            }
+            .calc2 tr td:last-child {
+                flex: 1;
+            }
+            #tbl5 {
+                font-size: medium;
+            }
+            #tbl1 tr:nth-child(2) td:nth-child(2) {
+                max-width: 44px;
+            }
+            #tbl2 tr:nth-child(2) td:nth-child(2) {
+                max-width: 44px;
+            }
+            #tbl3 tr:nth-child(2) td:nth-child(2) {
+                max-width: 44px;
+            }
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+        <br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12">
+
+
+                <h2>Percentage Calculator or converter</h2>
+                <br>
+                <div class="box float" id="mycalcform">
+                    <form name="calcform1">
+                        <table class="calc2" id="tbl1">
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">What is</td>
+                                <td><input type="text" name="a" class="form-control"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">% of</td>
+                                <td><input type="text" name="b" class="form-control"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px; ">?</td>
+                                <td><button type="button" title="Calculate" class="btn btn-success" onclick="calcp1()"><b>=</b> Calculate</button></td>
+                                <td><input type="text" name="result1" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                                <td style="width:100%">&nbsp;</td>
+                            </tr>
+                            <tr id="pf1" style="display:none">
+                                <td id="td1" colspan="8"><textarea rows="1" name="out1" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea></td>
+                                <!--<td><button type="reset" title="Reset" class="btn btn-default" onclick="reset1	()">&nbsp;<img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt="">&nbsp;</button></td>-->
+                            </tr>
+                        </table>
+                    </form>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <form name="calcform2">
+                        <table class="calc2" id="tbl2">
+                            <tr>
+                                <td><input type="text" name="c" class="form-control"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;padding-right: 10px;padding-left: 10px;">is what percent of</td>
+                                <td><input type="text" name="d" class="form-control"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;padding-right: 10px;padding-left: 10px;">?</td>
+                                <td><button type="button" title="Calculate" class="btn btn-success" onclick="calcp2()"><b>=</b> Calculate</button></td>
+                                <td><input type="text" name="result2" class="form-control" readonly style="color: green; font-weight: bold; background-color: white; margin-left: 20px;"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</td>
+                            </tr>
+                            <tr id="pf3" style="display:none">
+                                <td id="td2" colspan="7"><textarea rows="1" name="out2" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea></td>
+                                <!--<td><button type="reset" title="Reset" class="btn btn-default" onclick="reset2()">&nbsp;<img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt="">&nbsp;</button></td>-->
+                            </tr>
+                        </table>
+                    </form>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <form name="calcform3">
+                        <table class="calc2" id="tbl3">
+                            <tr>
+                                <td><input type="text" name="x3" class="form-control"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px; padding-left: 20px; padding-right: 20px;">is</td>
+                                <td><input type="text" name="y3" class="form-control"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;padding-left: 20px;padding-right: 20px;">of what?</td>
+                                <td><button type="button" title="Calculate" class="btn btn-success" onclick="calcp3()"><b>=</b> Calculate</button></td>
+                                <td><input type="text" name="result3" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;margin-left: 20px;"></td>
+                            </tr>
+                            <tr id="pf5" style="display:none">
+                                <td id="td3" colspan="7"><textarea rows="1" name="out3" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea></td>
+                                <!--<td><button type="reset" title="Reset" class="btn btn-default" onclick="reset3()">&nbsp;<img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt="">&nbsp;</button></td>-->
+                            </tr>
+                        </table>
+                    </form>
+
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <form name="calcform4">
+                        <table class="calc" id="tbl4">
+                            <tr>
+                                <td colspan="8" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">What is the percentage change</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">from</td>
+                                <td><input type="text" name="e" class="form-control"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">to</td>
+                                <td><input type="text" name="f" class="form-control"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">?</td>
+                                <td><button type="button" title="Calculate" class="btn btn-success" onclick="calcp4()"><b>=</b> Calculate</button></td>
+                                <td><input type="text" name="result4" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</td>
+                            </tr>
+                            <tr id="pf7" style="display:none">
+                                <td id="td4" colspan="8"><textarea rows="1" name="out4" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea></td>
+                                <!--<td><button type="reset" title="Reset" class="btn btn-default" onclick="reset4()">&nbsp;<img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt="">&nbsp;</button></td>-->
+                            </tr>
+                        </table>
+                    </form>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <form name="calcform5">
+                        <table class="calc" id="tbl5" style="width:100%; padding:0; margin-top:10px;">
+
+
+
+                            <table class="calc" id="tbl5a" style="width:100%; padding:0; margin-top:10px;" name="calcform5">
+
+                                <tr style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                    <td>Percent:</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>Fraction:</td>
+                                    <td>&nbsp;</td>
+                                    <td>Decimal:</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2"><input type="text" name="c1" tabindex="1" id="per" class="form-control"></td>
+                                    <td rowspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</td>
+                                    <td rowspan="2"><button type="button" title="Convert" onclick="convert()" tabindex="2" class="btn btn-success">&nbsp;=&nbsp;</button></td>
+                                    <td><input type="text" name="c2" tabindex="3" class="form-control"></td>
+                                    <td rowspan="2"><button type="button" title="Convert" onclick="convert()" tabindex="5" class="btn btn-success">&nbsp;=&nbsp;</button></td>
+                                    <td rowspan="2"><input type="text" name="c4" tabindex="6" id="dec" class="form-control"></td>
+                                    <td rowspan="2"><button type="reset" title="Reset" id="calcform5reset" class="btn btn-danger"><b>X</b></button></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="c3" tabindex="4" class="form-control"></td>
+                                </tr>
+
+                            </table>
+                        </table>
+
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2> Percentage Formula and calculatoin with example</h2>
+                Although the percentage formula can be written in different forms, it is essentially an algebraic equation involving three values.
+
+
+
+                <h2>Percentage calculations and method</h2>
+                <h4>Percentage of a value calculation</h4>
+                <p>What is 20% of $60?</p>
+                <p>20% is mutiplied by $60:</p>
+                <p class="math">20% &times; $60 = (20/100) &times; $60 = 0.2 &times; $60 = $12</p>
+                <h4>Percentage calculation</h4>
+                <p>$12 is what percent of $60?</p>
+                <p>$12 is divided by $60 and multiplied by 100%:</p>
+                <p class="math">($12 / $60) &times; 100% = 20%</p>
+                <h4>Whole value calculation</h4>
+                <p>$12 is 20% of what?</p>
+                <p>$12 is divided by 20%:</p>
+                <p class="math">$12 / 20% = ($12 / 20) &times; 100 = $60</p>
+                <h4>Percentage change calculation</h4>
+                <p>What is the percentage change from $40 to $50?</p>
+                <p>The difference between $50 and $40 is divided by $40 and multiplied by 100%:</p>
+                <p class="math">[($50 - $40) / $40] &times; 100% = 0.25 &times; 100% = 25%</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="calc2.js"></script>
+    <script src="number.js"></script>
+    <script>
+        var lastin = -1;
+        var lastout = -1;
+        var gcd2 = function(a, b, f) {
+            if (f) {
+                if (b <= 1)
+                    return a;
+            } else {
+                if (!b)
+                    return a;
+            }
+            return gcd2(b, a % b, f);
+        };
+
+        function onblur0() {
+            lastin = -1;
+        }
+
+        function calcp0(i) {
+            var p = document.calcform0.p0.value;
+            var n = document.calcform0.n0.value;
+            var h = document.calcform0.h0.value;
+            var y;
+            if (p == '' && n == '') return;
+            if (p == '' && h == '') return;
+            if (n == '' && h == '') return;
+            if (p != '' && n != '' && h != '' && lastin == i) {
+                if (lastout == 1) p = '';
+                if (lastout == 2) n = '';
+                if (lastout == 3) h = '';
+            }
+            if (p == '') {
+                lastout = 1;
+                y = h / n * 100;
+                y = roundnum(y, 6);
+                document.calcform0.p0.value = y;
+            }
+            if (n == '') {
+                lastout = 2;
+                y = h / p * 100;
+                y = roundnum(y, 6);
+                document.calcform0.n0.value = y;
+            }
+            if (h == '') {
+                lastout = 3;
+                y = p / 100 * n;
+                y = roundnum(y, 6);
+                document.calcform0.h0.value = y;
+            }
+            lastin = i;
+            //out = a+'% \u00D7 '+b+' = ';
+            //out+= '('+a+'/100)'+' \u00D7 '+b+' = '+y;
+            //document.calcform0.out0.value = out;
+            //row1.style.display = '';
+        }
+
+        function calcp1() {
+            var row1 = document.getElementById("pf1");
+            //var row2 = document.getElementById("pf2");
+            a = document.calcform1.a.value;
+            b = document.calcform1.b.value;
+            y = a * b / 100;
+            y = roundnum(y, 6);
+            document.calcform1.result1.value = y;
+            out = a + '% \u00D7 ' + b + ' = ';
+            out += '(' + a + '/100)' + ' \u00D7 ' + b + ' = ' + y;
+            document.calcform1.out1.value = out;
+            row1.style.display = '';
+        }
+
+        function calcp2() {
+            var row1 = document.getElementById("pf3");
+            a = document.calcform2.c.value;
+            b = document.calcform2.d.value;
+            y = a * 100 / b;
+            y = roundnum(y, 6);
+            document.calcform2.result2.value = y;
+            out = '(' + a + ' / ' + b + ') \u00D7 100%' + ' = ' + y + '%';;
+            document.calcform2.out2.value = out;
+            row1.style.display = '';
+        }
+
+        function calcp3() {
+            var row1 = document.getElementById("pf5");
+            a = document.calcform3.x3.value;
+            b = document.calcform3.y3.value;
+            y = a / b * 100;
+            y = roundnum(y, 6);
+            document.calcform3.result3.value = y;
+            out = a + ' / ' + b + '% = ';
+            out += '(' + a + ' / ' + b + ') \u00D7 100 = ' + y;
+            document.calcform3.out3.value = out;
+            row1.style.display = '';
+        }
+
+        function calcp4() {
+            var row1 = document.getElementById("pf7");
+            a = document.calcform4.e.value;
+            b = document.calcform4.f.value;
+            y = (b - a) / a * 100;
+            y = roundnum(y, 6);
+            document.calcform4.result4.value = y;
+            out = '[(' + b + ' - ' + a + ') / ' + a + '] \u00D7 100% = ' + y + '%';
+            document.calcform4.out4.value = out;
+            row1.style.display = '';
+        }
+
+        function convert() {
+            var percent = document.calcform5.c1.value;
+            var num = document.calcform5.c2.value;
+            var den = document.calcform5.c3.value;
+            var dec = document.calcform5.c4.value;
+            if (percent != "") {
+                var sign = '';
+                var sign2 = '+';
+                x = percent;
+                x2 = parseFloat(x / 100);
+                var absx = Math.abs(x2);
+                //var y=Math.floor(absx);
+                var y = 0;
+                var frac = roundresult(absx - y);
+                if (x2 < 0) sign = sign2 = '-';
+                d = digits_after_period(absx);
+                den = Math.round(Math.pow(10, d));
+                num = Math.round(frac * den);
+                var len = num.toString().length;
+                var f = false;
+                if (len > 8) f = true;
+                g = gcd2(num, den, f);
+                num2 = Math.round(num / g);
+                den2 = Math.round(den / g);
+                document.calcform5.c2.value = num2;
+                document.calcform5.c3.value = den2;
+                document.calcform5.c4.value = roundresult(x2);
+            } else if (num != "" && den != "") {
+                x = num / den;
+                document.calcform5.c1.value = roundresult(x * 100);
+                document.calcform5.c4.value = roundresult(x);
+            } else {
+                var sign = '';
+                var sign2 = '+';
+                x = dec;
+                x2 = parseFloat(x);
+                var absx = Math.abs(x2);
+                //var y=Math.floor(absx);
+                var y = 0;
+                var frac = roundresult(absx - y);
+                if (x2 < 0) sign = sign2 = '-';
+                d = digits_after_period(absx);
+                den = Math.round(Math.pow(10, d));
+                num = Math.round(frac * den);
+                var len = num.toString().length;
+                var f = false;
+                if (len > 8) f = true;
+                g = gcd2(num, den, f);
+                num2 = Math.round(num / g);
+                den2 = Math.round(den / g);
+                document.calcform5.c2.value = num2;
+                document.calcform5.c3.value = den2;
+                document.calcform5.c1.value = roundresult(x2 * 100);
+            }
+
+        }
+
+        function reset1() {
+            var row1 = document.getElementById("pf1");
+            row1.style.display = 'none';
+        }
+
+        function reset2() {
+            var row1 = document.getElementById("pf3");
+            row1.style.display = 'none';
+        }
+
+        function reset3() {
+            var row1 = document.getElementById("pf5");
+            row1.style.display = 'none';
+        }
+
+        function reset4() {
+            var row1 = document.getElementById("pf7");
+            row1.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+
+
+</html>

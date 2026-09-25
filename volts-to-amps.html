@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Volts to amps (A) conversion calculator</title>
+    <script async src="tagmng3.js"></script>
+    <meta name="keywords" content="volt to amps, volt to amps conversion, volt to amps conversion calculator, volt amps converter, volt in amps, how many amps in a volt. ">
+    <meta name="description" content=" volt to amps conversion is used to convert volt value into amps. With the help of this calculator you can find the answer the result. amps = watts / volts.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Volts to amps (A) conversion calculator" />
+    <meta property="og:description" content=" volt to amps conversion is used to convert volt value into amps. With the help of this calculator you can find the answer the result. amps = watts / volts." />
+    <meta property="og:url" content="https://www.calculatorfind.com/volts-to-amps.html" />
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Volts to amps conversion calculator</h1>
+                <p>Volts (V) to amps (A) calculator.</p>
+                <p>Select calculation type, enter volts and watts or ohms and press the <i>Calculate</i> button to get amps:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td>Select calculation:</td>
+                                <td><select name="C1" onchange="OnSelChange()" autofocus>
+					<option>volts to amps with watts</option>
+					<option>volts to amps with ohms</option>
+				</select></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter volts:</td>
+                                <td class="math"><input type="number" min="0" step="any" id="x1" name="x1" class="intext form-control"></td>
+                                <td class="mathsymbol">V</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="w1">
+                                <td>Enter watts:</td>
+                                <td class="math"><input type="number" min="0" step="any" id="x2" name="x2" class="intext form-control"></td>
+                                <td class="mathsymbol">W</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="o1" style="display:none">
+                                <td>Enter ohms:</td>
+                                <td class="math"><input type="number" min="0" step="any" id="x3" name="x3" class="intext form-control"></td>
+                                <td class="mathsymbol">&#937;</td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="calc4()" type="button" value="Calculate" class="btn btn-success"> <input onclick="setfocus()" type="reset" value="Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Result in amps:</td>
+                                <td class="math"><input type="text" name="y" class="outtext form-control" readonly></td>
+                                <td class="mathsymbol">A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnSelChange() {
+            var isel = document.calcform.C1.selectedIndex;
+            var w1 = document.getElementById("w1");
+            var o1 = document.getElementById("o1");
+            if (isel == 0) {
+                w1.style.display = '';
+                o1.style.display = 'none';
+            } else {
+                w1.style.display = 'none';
+                o1.style.display = '';
+            }
+        }
+
+        function convert(x1, x2, x3) {
+            var isel = document.calcform.C1.selectedIndex;
+            var i;
+            if (isel == 0)
+                i = x2 / x1;
+            else
+                i = x1 / x3;
+            return i;
+        }
+    </script>
+
+
+</body>
+
+
+</html>

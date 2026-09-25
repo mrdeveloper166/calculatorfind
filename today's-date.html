@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Today's Date | What is the Date Today ?</title>
+    <meta name="keywords" content="current time and date,current date and time,current time and date in usa,current date and time in usa,current time date,current time and date in dubai,current time & date,current time and date in australia,today's date,today's date in numbers,what is today's date and time,today's date usa,today date,today date and day,today date and time,today date in india,today date in hindi,today date in nepal,today date of chand,today date and month">
+    <meta name="description" content="Date The international standard recommends writing the date as year, then month, then the day: YYYY-MM-DD. So if both the Australian and American used this, they would both write the date as 2019-02-03. Writing the date this way avoids confusion by placing the year first.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Today's Date | What is the Date Today ?" />
+    <meta property="og:description" content="Date The international standard recommends writing the date as year, then month, then the day: YYYY-MM-DD. So if both the Australian and American used this, they would both write the date as 2019-02-03. Writing the date this way avoids confusion by placing the year first."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/today's-date.html" />
+
+    <link rel="stylesheet" href="jquery.mobile.min.css" />
+    <link rel="stylesheet" href="jquery.mobile.datepicker.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <style>
+        #time,
+        #date {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        #cal {
+            margin: 0 auto;
+            max-width: 340px;
+        }
+        
+        @media all and (max-width: 640px) {
+            #date {
+                font-size: 7vw;
+            }
+            #time {
+                font-size: 7vw;
+            }
+        }
+        
+        @media all and (min-width: 641px) {
+            #date {
+                font-size: 3vw;
+            }
+            #time {
+                font-size: 3vw;
+            }
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="js.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-2665076-2');
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="cookieconsent.min.css" />
+    <script src="cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f0f0d0",
+                        "text": "#333333"
+                    },
+                    "button": {
+                        "background": "#b0b080",
+                        "text": "#333"
+                    }
+                },
+                "content": {
+                    "dismiss": "OK",
+                    "message": "This website uses cookies to improve your experience, analyze traffic and display ads.",
+                    "href": "https://www.rapidtables.com/about/privacy.html"
+                }
+            })
+        });
+    </script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.mobile.min.js"></script>
+    <script src="jquery.ui.datepicker.js"></script>
+    <script id="mobile-datepicker" src="jquery.mobile.datepicker.js"></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+    <div data-role="page" class="ui-responsive-panel">
+        <div data-role="header" id="header">
+            <h1>Today's Date</h1>
+        </div>
+
+        <div role="main" class="ui-content" id="main">
+            <div id="box">
+                <div id="date"></div>
+                <div id="time"></div>
+                <div id="cal"><input type="text" data-role="date" data-inline="true" style="display:none"></div>
+            </div>
+        </div>
+
+        <script>
+            $(document).on('pagecreate', function() {
+                $(":jqmData(role='page')").attr("data-title", document.title);
+                var myVar = setInterval(function() {
+                    myTimer();
+                }, 1000);
+            });
+
+            function myTimer() {
+                var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                var d = new Date();
+                var time = d.toLocaleTimeString();
+                var wday = days[d.getDay()];
+                var month = months[d.getMonth()];
+                var day = d.getDate();
+                var year = d.getFullYear();
+                //var date = wday+' '+d.toLocaleDateString();
+                var date = wday + ", " + month + " " + day + ", " + year;
+                $("#time").html(time);
+                $("#date").html(date);
+            }
+        </script>
+</body>
+
+</html>

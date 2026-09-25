@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="tagmng3.js"></script>
+    <title>Kilowatts to amps (A) conversion calculator</title>
+
+    <meta name="keywords" content="kilowatts to amps, kilowatts to amp converter, kilowatts to amps convert calculator, kilowatts to amps online calculator, kilowatts to amps formula, kilowatts to amps conversion, kilowatts to amps chart, how many amps in a kilowatts.">
+    <meta name="description" content="kilowatts to amps calculator is a converter to calculate the kilowatts  value into volt amps value. It calculate the value and also tell you the method or formula of calculation. I(A) = 1000 × P(kW) / V(V).">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kilowatts to amps (A) conversion calculator" />
+    <meta property="og:description" content="kilowatts to amps calculator is a converter to calculate the kilowatts  value into volt amps value. It calculate the value and also tell you the method or formula of calculation. I(A) = 1000 × P(kW) / V(V)." />
+    <meta property="og:url" content="https://www.calculatorfind.com/kilowatts-to-amps.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Kilowatts to Amps Conversion Calculator</h1>
+                <br><br>
+                <form id="calcform" name="calcform" autocomplete="off">
+                    <div class="form-group">
+                        <label for="phase" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select current type</label>
+                        <select id="phase" name="phase" onchange="OnPhaseChange()" class="form-control" autofocus>
+			<option>DC</option>
+			<option>AC - Single phase</option>
+			<option>AC - Three phase</option>
+		</select>
+                    </div>
+                    <div class="form-group">
+                        <label for="x1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter power in watts</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="x1" name="x1" class="form-control" required>
+                            <div class="input-group-append">
+                                <select id="wunitsel" class="input-group-text">
+            <option>mW</option>
+            <option>W</option>
+            <option selected>kW</option>
+         </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="pf0" style="display:none">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select voltage type</label>
+                        <select name="volt" class="form-control">
+			<option>Line to line voltage</option>
+			<option>Line to neutral voltage</option>
+		</select>
+                    </div>
+                    <div class="form-group">
+                        <label for="x2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter voltage in volts</label>
+                        <div class="input-group">
+                            <input type="number" min="0" step="any" id="x2" name="x2" class="form-control" required>
+                            <div class="input-group-append">
+                                <select id="vunitsel" class="input-group-text">
+            <option>mV</option>
+            <option selected>V</option>
+            <option>kV</option>
+         </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="pf1" style="display:none">
+                        <label for="pf" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter power factor</label>
+                        <input type="number" min="0" max="1" step="any" id="pf" name="pf" class="form-control" disabled>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Calculate" class="btn btn-success" onclick="convert()"><b>=</b> Calculate</button>
+                        <button type="reset" title="Reset" class="btn btn-danger" onclick="setfocus()"><b>X</b> Reset</button>
+                        <button type="button" title="Swap conversion" class="btn btn-secondary" onclick="location.href='amps-to-kilowatts.html';"><img src="glyphicons_halflings_114_retweet.png" alt=""> Swap</button>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Current result in amps</label>
+                        <div class="input-group">
+                            <input type="text" id="y" name="y" class="form-control" readonly>
+                            <div class="input-group-append">
+                                <span class="input-group-text">A</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Current result in milliamps</label>
+                        <div class="input-group">
+                            <input type="text" id="y2" name="y2" class="form-control" readonly>
+                            <div class="input-group-append">
+                                <span class="input-group-text">mA</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>DC kilowatts to amps Conversion calculation</h2><br>
+                <p>The current <em>I</em> in amps (A) is equal to 1000 times the power <em>P</em> in kilowatts (kW), divided by the voltage <em>V</em> in volts (V):</p>
+                <p class="math"><i> I</i><sub>(A)</sub> = 1000<i> </i>&times;<i> P</i><sub>(kW)</sub> / <i> V</i><sub>(V)</sub></p>
+                <h2>AC single phase kilowatts to amps calculation</h2>
+                <p>The phase current <em>I</em> in amps (A) is equal to 1000 times the power <em>P</em> in kilowatts (kW), divided by the power factor <em>PF</em> times the RMS voltage <em>V</em> in volts (V):</p>
+                <p class="math"><i> I</i><sub>(A)</sub> = 1000<i> </i>&times;<i> P</i><sub>(kW)</sub> / (<i>PF</i> &times; <i> V</i><sub>(V)</sub><i> </i> )
+                </p>
+                <h2>AC three phase kilowatts to amps calculation</h2>
+                <h4>Calculation with line to line voltage</h4>
+                <p>The phase current <em>I</em> in amps (A) is equal to 1000 times the power <em>P</em> in kilowatts (kW), divided by square root of 3 times the power factor <em>PF</em> times the line to line RMS voltage <em>V</em><sub>L-L</sub> in volts
+                    (V):
+                </p>
+                <p class="math"><i> I</i><sub>(A)</sub> = 1000<i> </i>&times;<i> P</i><sub>(kW)</sub> / (<i>&#8730;</i><span style="text-decoration: overline">3</span> &times; <i> PF</i> &times; <i> V</i><sub><span class="auto-style2">L-L</span>(V)</sub><i> </i>)</p>
+                <h4>Calculation with line to neutral voltage</h4>
+                <p>The phase current <em>I</em> in amps (A) is equal to 1000 times the power <em>P</em> in kilowatts (kW), divided by 3 times the power factor <em>PF</em> times the line to neutral RMS voltage <em>V</em><sub>L-N</sub> in volts (V):</p>
+                <p class="math"><i> I</i><sub>(A)</sub> = 1000<i> </i>&times;<i> P</i><sub>(kW)</sub> / (3 &times; <i> PF</i> &times; <i> V</i><sub><span class="auto-style2">L-N</span>(V)</sub><i> </i>)</p>
+                <h2>Typical power factor values</h2>
+                <p>Do not use typical power factor values for accurate calculations.</p>
+                <table class="dtable">
+                    <tr>
+                        <th>Device</th>
+                        <th>Typical power factor</th>
+                    </tr>
+                    <tr>
+                        <td>Resistive load</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Fluorescent lamp</td>
+                        <td>0.95</td>
+                    </tr>
+                    <tr>
+                        <td>Incandescent lamp</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Induction motor full load</td>
+                        <td>0.85</td>
+                    </tr>
+                    <tr>
+                        <td>Induction motor no load</td>
+                        <td>0.35</td>
+                    </tr>
+                    <tr>
+                        <td>Resistive oven</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Synchronous motor</td>
+                        <td>0.9</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+
+<div id="myseealso"></div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnPhaseChange() {
+            var iphase = document.calcform.phase.selectedIndex;
+            var row0 = document.getElementById("pf0");
+            var row1 = document.getElementById("pf1");
+            if (iphase == 0) {
+                document.calcform.pf.disabled = true;
+                document.calcform.pf.style.backgroundColor = "#f0f0f0";
+                row0.style.display = 'none';
+                row1.style.display = 'none';
+            } else if (iphase == 1) {
+                document.calcform.pf.disabled = false;
+                document.calcform.pf.style.backgroundColor = "#ffffff";
+                row0.style.display = 'none';
+                row1.style.display = '';
+            } else {
+                document.calcform.pf.disabled = false;
+                document.calcform.pf.style.backgroundColor = "#ffffff";
+                row0.style.display = '';
+                row1.style.display = '';
+            }
+        }
+
+        function convert() {
+            var x1 = document.calcform.x1.value;
+            var x2 = document.calcform.x2.value;
+            var iwunit = document.getElementById("wunitsel").selectedIndex;
+            var ivunit = document.getElementById("vunitsel").selectedIndex;
+            var iphase = document.calcform.phase.selectedIndex;
+            var ivolt = document.calcform.volt.selectedIndex;
+            var pf = document.calcform.pf.value;
+            if (iwunit == 0) x1 /= 1000000;
+            if (iwunit == 1) x1 /= 1000;
+            if (ivunit == 0) x2 /= 1000;
+            if (ivunit == 2) x2 *= 1000;
+            var a = 1000 * x1 / x2;
+            if (pf < 0 || pf > 1) {
+                alert('Please enter power factor from 0 to 1');
+                document.calcform.pf.focus();
+                return;
+            }
+            if (iphase == 1)
+                a /= pf;
+            else if (iphase == 2) {
+                if (ivolt == 0)
+                    a /= (pf * Math.sqrt(3));
+                else
+                    a /= (pf * 3);
+            }
+            document.getElementById("y").value = a;
+            document.getElementById("y2").value = 1000 * a;
+        }
+    </script>
+
+
+</body>
+
+
+</html>

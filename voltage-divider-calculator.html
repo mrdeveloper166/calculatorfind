@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Voltage Divider Conversion Calculator</title>
+
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="voltage divider, voltage divider calculator, voltage divider conversion, voltage divider formula, voltage divider conversion calculator, formula for voltage divider, voltage divider equation.">
+    <meta name="description" content="voltage divider calculator is a passive linear circuit that produces an result voltage that is a fraction of its input voltage. Voltage division is the result of distributing the input voltage among the components of the divider."
+    />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Voltage Divider Calculator" />
+    <meta property="og:description" content="voltage divider calculator is a passive linear circuit that produces an result voltage that is a fraction of its input voltage. Voltage division is the result of distributing the input voltage among the components of the divider."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/voltage-divider-calculator.html" />
+    
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .calc select {
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        
+        @media all and (max-width: 576px) {
+            .calc {
+                padding: 5px;
+            }
+            .calc td {
+                float: left;
+            }
+            .calc td:nth-child(1) {
+                padding-top: 10px;
+            }
+            .calc td:nth-child(2) {
+                display: none;
+            }
+            .calc td:nth-child(3) {
+                display: none;
+            }
+            .calc td:nth-child(4) {
+                clear: left;
+            }
+            .calc td:nth-child(5) {
+                padding-top: 10px;
+            }
+            .calc input[type=text],
+            .calc input[type=number],
+            .calc input[type=url] {
+                width: 160px;
+                font-size: x-large;
+            }
+        }
+        
+        @media all and (min-width: 577px) {
+            .calc {
+                padding: 15px;
+            }
+            .calc tr {
+                line-height: 30px;
+            }
+            .calc td:nth-child(1) {
+                width: 200px;
+            }
+            .calc input[type=text],
+            .calc input[type=number],
+            .calc input[type=url] {
+                width: 220px;
+                font-size: x-large;
+            }
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Voltage Divider Conversion Calculator</h1>
+                <p>Voltage divider calculator: calculates the voltage drops on each resistor load, when connected in series.</p>
+                <p><b>How to calculate :-</b>Enter total voltage supply and press the <i>Calculate</i> button:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td>Enter total voltage:</td>
+                                <td class="math"><i>V<sub><span style="font-size: 0.8em">T</span></sub></i></td>
+                                <td class="math">=</td>
+                                <td class="math"><input type="number" min="0" step="any" name="v" class="intext form-control" autofocus></td>
+                                <td class="mathsymbol">Volts [V]</td>
+                            </tr>
+                            <tr>
+                                <td>Enter resistance of first load:</td>
+                                <td class="math"><i>R</i><sub><span style="font-size: 0.8em">1</span></sub></td>
+                                <td class="math">=</td>
+                                <td class="math"><input type="number" min="0" step="any" name="r1" class="intext form-control"></td>
+                                <td class="mathsymbol">Ohms [&#937;]</td>
+                            </tr>
+                            <tr>
+                                <td>Enter resistance of second load:</td>
+                                <td class="math"><i>R</i><sub><span style="font-size: 0.8em">2</span></sub></td>
+                                <td class="math">=</td>
+                                <td class="math"><input type="number" min="0" step="any" name="r2" class="intext form-control"></td>
+                                <td class="mathsymbol">Ohms [&#937;]</td>
+                            </tr>
+                            <tr>
+                                <td>Enter resistance of third load:
+                                    <p>(optional)</td>
+                                <td class="math"><i>R</i><sub><span style="font-size: 0.8em">3</span></sub></td>
+                                <td class="math">=</td>
+                                <td class="math"><input type="number" min="0" step="any" name="r3" class="intext form-control"></td>
+                                <td class="mathsymbol">Ohms [&#937;]</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td class="mathsymbol"><input onclick="calc()" type="button" value="Calculate" class="btn btn-success">
+                                    <input type="reset" value="Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Voltage drop of R1:</td>
+                                <td class="math"><i>V</i><sub><span style="font-size: 0.8em">1</span></sub></td>
+                                <td class="math">=</td>
+                                <td class="math"><input type="text" name="v1" class="outtext form-control" readonly></td>
+                                <td class="mathsymbol">Volts [V]</td>
+                            </tr>
+                            <tr>
+                                <td>Voltage drop of R2:</td>
+                                <td class="math"><i>V</i><sub><span style="font-size: 0.8em">2</span></sub></td>
+                                <td class="math">=</td>
+                                <td class="math"><input type="text" name="v2" class="outtext form-control" readonly></td>
+                                <td class="mathsymbol">Volts [V]</td>
+                            </tr>
+                            <tr>
+                                <td>Voltage drop of R3:</td>
+                                <td class="math"><i>V</i><sub><span style="font-size: 0.8em">3</span></sub></td>
+                                <td class="math">=</td>
+                                <td class="math"><input type="text" name="v3" class="outtext form-control" readonly></td>
+                                <td class="mathsymbol">Volts [V]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Voltage divider rule and formulas</h2>
+                <p>For a DC circuit with constant voltage source V<sub>T</sub> and resistors in series, the voltage drop V<sub>i</sub> in resistor R<sub>i</sub> is given by the formula:</p>
+                <p class="math"><img border="0" src="voltage_division.gif" width="252" height="51" alt="V_i=V_T\: \frac{R_i}{R_1+R_2+R_3+...}"></p>
+                <br>
+                <br>
+                <br>
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script>
+        function setfocus() {
+            document.calcform.v.focus();
+        }
+
+        function calc() {
+            v = document.calcform.v.value;
+            r1 = document.calcform.r1.value;
+            r2 = document.calcform.r2.value;
+            r3 = document.calcform.r3.value;
+            v = parseFloat(v);
+            r1 = parseFloat(r1);
+            r2 = parseFloat(r2);
+            r = r1 + r2;
+            if (r3 == "") {
+                document.calcform.v1.value = v * r1 / r;
+                document.calcform.v2.value = v * r2 / r;
+                document.calcform.v3.value = "";
+            } else {
+                r3 = parseFloat(r3);
+                r += r3;
+                document.calcform.v1.value = v * r1 / r;
+                document.calcform.v2.value = v * r2 / r;
+                document.calcform.v3.value = v * r3 / r;
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>

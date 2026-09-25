@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Inches to Feet (in to ft) conversion calculator or converter</title>
+
+    <meta name="keywords" content="feet to inch, inch to feet, feet to inches, feet and inch calculator, feet to inches chart, inch in feet,feet or inch, feet to inch converter, feet to inch conversion">
+    <meta name="description" content="Feet to inch - Feet to inch conversion is easy to calculate with calculatorfind.com. It calculates the given feet into inches and shows the final result. You can also see the calculation formula on the page below. ">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Feet to Inches (ft to in) conversion calculator  " />
+    <meta property="og:description" content="Feet to inch - Feet to inch conversion is easy to calculate with calculatorfind.com. It calculates the given feet into inches and shows the final result. You can also see the calculation formula on the page below."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/inch-to-feet.html" />
+   
+    <script async src="tagmng3.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        p {
+            font-size: 16px;
+        }
+        
+        @media all and (max-width: 576px) {
+            h1 {
+                font-size: 20px;
+            }
+            .calc button {
+                padding: 7px 2px;
+            }
+            .calc input[type=text],
+            .calc input[type=number] {
+                width: 100%;
+            }
+            .calc tr td:nth-child(2) {
+                width: 240px;
+                width: calc(100% - 50px);
+            }
+            .calc td {
+                float: left;
+            }
+            .calc td:nth-child(2) {
+                clear: left;
+            }
+            .calc tr td:nth-child(3) {
+                padding-top: 10px;
+            }
+            #tbl3 input {
+                width: 105px;
+            }
+            .calc tr:nth-child(n+4):nth-child(-n+5) td:nth-child(3) {
+                padding-top: 20px;
+            }
+            #tbl3 tr td:nth-child(2) {
+                padding-top: 10px !important;
+            }
+            #tbl1 td {
+                float: none;
+                clear: none;
+            }
+            .calc tr:nth-child(4) td:first-child {
+                padding: 0;
+                padding-top: 10px;
+            }
+        }
+        
+        @media all and (min-width: 577px) {
+            #tbl3 input {
+                width: 129px;
+            }
+        }
+        
+        #tbl {
+            border: 0px;
+            line-height: 1;
+        }
+        
+        #tbl td {
+            text-align: center
+        }
+        
+        #tbl tr:last-child td {
+            border-top: #000 2px solid;
+        }
+        
+        #tbl1 input[type=text] {
+            width: 2em;
+            text-align: center;
+            font-size: 1em;
+        }
+        
+        #x {
+            font-size: 1.5em;
+        }
+        
+        #td11 {
+            padding-left: 0;
+        }
+        
+        #td12 {
+            padding: 0px;
+            line-height: 1px;
+        }
+        
+        #td21 {
+            border-top: #000 2px solid;
+            padding: 2px 0px;
+        }
+        
+        #tbl3 {
+            border: 0;
+            line-height: 1
+        }
+        
+        #tbl3 tr td {
+            padding-left: 0;
+        }
+        
+        #tbl3 td:nth-child(n+1) {
+            float: none;
+        }
+        
+        #tbl3 tr td:nth-child(2) {
+            padding-top: 15px;
+        }
+        
+        #tbl3 tr td:nth-child(3) {
+            padding-top: 0;
+        }
+        
+        .calc {
+            padding: 15px;
+        }
+        
+        .calc tr td input[type=text] {
+            padding: 5px;
+        }
+        
+        .calc tr:nth-child(1) td:nth-child(2) {
+            padding-bottom: 10px;
+        }
+        
+        .calc tr:nth-child(4) td {
+            padding: 10px 2px;
+            padding-top: 10px;
+        }
+        
+        .calc tr:nth-child(5) td:nth-child(2) {
+            padding-left: 0;
+        }
+        
+        .calc td textarea {
+            font-size: large;
+            width: 100%;
+        }
+        
+        .calc ul {
+            list-style-type: none;
+            margin: 0 0 0px 0;
+            padding: 0;
+            overflow: hidden;
+            font: bold 1.2em;
+        }
+        
+        .calc li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            border: 1px #ddd solid;
+            background: #fff;
+        }
+        
+        .calc li a {
+            display: block;
+            text-decoration: none;
+            padding: 8px;
+        }
+        
+        .calc li a:hover {
+            background: #fff;
+        }
+        
+        .active {
+            background: #eee;
+            color: #000 !important;
+        }
+        /*.ntable td:nth-child(1) { width:100px }*/
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Inches to Feet conversion</h1><br>
+                <p>Enter the length in inches (&Prime;) and press the <i>Convert</i> button:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc">
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <ul>
+                                    <li><a href="javascript:void(0)" id="frac" class="btn btn-secondary">Fraction</a></li>
+                                    <li><a href="javascript:void(0)" id="dec">Decimal</a></li>
+                                </ul>
+                            </td>
+
+
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><label for="x" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter inches:</label></td>
+                            <td>
+                                <table id="tbl1">
+                                    <tr>
+                                        <td id="td11" rowspan="2" class="math"><input type="text" id="x" name="x" tabindex="1" autofocus class="form-control" style="width: 50px;height: 50px;"></td>
+                                        <td id="td12" class="math"><input type="text" id="n" name="n" tabindex="2" class="form-control" style="width: 50px;height: 50px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td21" class="math"><input type="text" id="d" name="d" tabindex="3" class="form-control" style="width: 50px;height: 50px;"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2">
+                                <button type="button" id="calc" title="Convert" class="btn btn-success" tabindex="2" onclick="calc0()"><img src="glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+                                <button type="reset" id="reset" title="Reset" class="btn btn-danger" tabindex="3"><img src="glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+                                <button type="button" title="Swap conversion" class="btn btn-secondary" tabindex="4" onclick="location.href='ft-to-inch.html';"><img src="glyphicons_halflings_114_retweet.png" alt=""> Swap</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Feet result:</td>
+                            <td class="math"><input type="text" id="y" class="outtext form-control" readonly tabindex="5" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">ft</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Feet+inches result:</td>
+                            <td>
+                                <table id="tbl3">
+                                    <tr>
+                                        <td class="math"><input type="text" id="y2" class="outtext form-control" readonly tabindex="6" style="color: green; font-weight: bold; background-color: white;"></td>
+                                        <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">ft</td>
+                                        <td class="math"><input type="text" id="y3" class="outtext form-control" readonly tabindex="7" style="color: green; font-weight: bold; background-color: white;"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&Prime;</td>
+                        </tr>
+                        <tr id="pf1">
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation:</td>
+                            <td><textarea id="TA" rows="3" class="outtext form-control" readonly tabindex="8" style="color: green; font-weight: bold; background-color: white;"></textarea></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+
+                <h2>How to use</h2>
+                <p style="text-align:justify;">The calcuator inch to feet is used to convert the inch value into feet value. The Inch to Feet Calculator is an online tool that converts the value of the length in Inch unit to equivalent Feet unit. The online unit converter calculator
+                    makes calculations, simple and interesting. This calculator will also describe you the method of calculation. Here you can learn how many feets in the particular inches. </p>
+                <p style="text-align:justify;">For using this calculator put your inches value whether it is fraction value or decimal and then click on calculate button and it will display the result. See the method of calculation below.</p>
+
+                <h2>
+                    <a id="how"></a>How to convert inches to feet</h2>
+                <p>1 inch is equal to 1/12 feet:</p>
+                <p class="math">1&#8243; = 1/12ft = 0.083333ft</p>
+                <p>The distance <em>d</em> in feet (ft) is equal to the distance <i>d</i> in inches (&Prime;) divided by 12:</p>
+                <p class="math"><em>d</em><sub>(ft)</sub> = <em>d</em><sub>(&Prime;)</sub> / 12 </p>
+                <h4>Example</h4>
+                <p>Convert 20 inches to feet:</p>
+                <p class="math"><em>d</em><sub>(ft)</sub> = 20&Prime; / 12 = 1.667ft</p>
+                <h2>
+                    <a id="table"></a>Inches to feet conversion table</h2>
+                <table class="ntable">
+                    <thead>
+                        <tr>
+                            <th>Inches (")</th>
+                            <th>Feet (ft)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0.01 &Prime;</td>
+                            <td>0.000833333 ft</td>
+                        </tr>
+                        <tr>
+                            <td>1/64 &#8243;</td>
+                            <td>0.001302083 ft</td>
+                        </tr>
+                        <tr>
+                            <td>1/32 &#8243;</td>
+                            <td>0.002604167 ft</td>
+                        </tr>
+                        <tr>
+                            <td>1/16 &#8243;</td>
+                            <td>0.005208333 ft</td>
+                        </tr>
+                        <tr>
+                            <td>0.1 &Prime;</td>
+                            <td>0.008333333 ft</td>
+                        </tr>
+                        <tr>
+                            <td>1/8 &#8243;</td>
+                            <td>0.010416667 ft</td>
+                        </tr>
+                        <tr>
+                            <td>1/4 &#8243;</td>
+                            <td>0.020833333 ft</td>
+                        </tr>
+                        <tr>
+                            <td>1/2 &#8243;</td>
+                            <td>0.041666667 ft</td>
+                        </tr>
+                        <tr>
+                            <td>1 &Prime;</td>
+                            <td>0.0833 ft</td>
+                        </tr>
+                        <tr>
+                            <td>2 &Prime;</td>
+                            <td>0.1667 ft</td>
+                        </tr>
+                        <tr>
+                            <td>3 &Prime;</td>
+                            <td>0.2500 ft</td>
+                        </tr>
+                        <tr>
+                            <td>4 &Prime;</td>
+                            <td>0.3333 ft</td>
+                        </tr>
+                        <tr>
+                            <td>5 &Prime;</td>
+                            <td>0.4167 ft</td>
+                        </tr>
+                        <tr>
+                            <td>6 &Prime;</td>
+                            <td>0.5000 ft</td>
+                        </tr>
+                        <tr>
+                            <td>7 &Prime;</td>
+                            <td>0.5833 ft</td>
+                        </tr>
+                        <tr>
+                            <td>8 &Prime;</td>
+                            <td>0.6667 ft</td>
+                        </tr>
+                        <tr>
+                            <td>9 &Prime;</td>
+                            <td>0.7500 ft</td>
+                        </tr>
+                        <tr>
+                            <td>10 &Prime;</td>
+                            <td>&nbsp;0.8333 ft</td>
+                        </tr>
+                        <tr>
+                            <td>20 &Prime;</td>
+                            <td>1.6667 ft</td>
+                        </tr>
+                        <tr>
+                            <td>30 &Prime;</td>
+                            <td>2.5000 ft</td>
+                        </tr>
+                        <tr>
+                            <td>40 &Prime;</td>
+                            <td>3.3333 ft</td>
+                        </tr>
+                        <tr>
+                            <td>50 &Prime;</td>
+                            <td>4.1667 ft</td>
+                        </tr>
+                        <tr>
+                            <td>60 &Prime;</td>
+                            <td>5.0000 ft</td>
+                        </tr>
+                        <tr>
+                            <td>70 &Prime;</td>
+                            <td>5.8333 ft</td>
+                        </tr>
+                        <tr>
+                            <td>80 &Prime;</td>
+                            <td>6.6667 ft</td>
+                        </tr>
+                        <tr>
+                            <td>90 &Prime;</td>
+                            <td>7.5000 ft</td>
+                        </tr>
+                        <tr>
+                            <td>100 &Prime;</td>
+                            <td>8.3333 ft</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="convert.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#x').css("fontSize", "1.5em");
+            $('#dec').toggleClass("active");
+            $('#frac').click(function() {
+                if ($(this).hasClass("active")) {
+                    $(this).toggleClass("active");
+                    $('#dec').toggleClass("active");
+                    $('#td12').show();
+                    $('#td21').show();
+                    $('#x').val('');
+                    $('#x').css("width", "2em");
+                    $('#x').css("text-align", "center");
+                    $('#x').css("fontSize", "1.5em");
+                    $('#x').focus();
+                }
+            });
+            $('#dec').click(function() {
+                if ($(this).hasClass("active")) {
+                    $(this).toggleClass("active");
+                    $('#frac').toggleClass("active");
+                    $('#td12').hide();
+                    $('#td21').hide();
+                    $('#n').val('');
+                    $('#d').val('');
+                    if ($(window).width() <= 576)
+                        $('#x').css("width", "100%");
+                    else
+                        $('#x').css("width", 280);
+                    $('#x').css("text-align", "left");
+                    $('#x').css("fontSize", "1em");
+                    $('#x').focus();
+                }
+            });
+        });
+
+        function calc0() {
+            var x = $("#x").val();
+            var n = $("#n").val();
+            var d = $("#d").val();
+            if ($.isNumeric(x))
+                x = parseFloat(x);
+            else
+                x = 0;
+            if ($.isNumeric(n) && $.isNumeric(d)) {
+                n = parseInt(n);
+                d = parseInt(d);
+                if (d != 0)
+                    x += n / d;
+            }
+
+            var y = roundresult(x / 12);
+            var y2 = Math.floor(y);
+            var y3 = roundresult(x - y2 * 12);
+            var txt = x + "\" / 12\n";
+            txt += "= " + y + 'ft';
+            $("#y").val(y);
+            $("#y2").val(y2);
+            $("#y3").val(y3);
+            $("#TA").val(txt);
+        }
+    </script>
+
+
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Volt-amps (VA) to amps (A) conversion calculator</title>
+
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="volt amps to amps, volt amps to amps conversion, voltamps to amps conversion calculator, how to convert volt amps tp amps, online volt amps to amps conversion . ">
+    <meta name="description" content="This free calculator is used to volt amps in amps. You also can learn the formula of converting volt amps in amps.  ">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Volt-amps (VA) to amps (A) conversion calculator" />
+    <meta property="og:description" content="This free calculator is used to volt amps in amps. You also can learn the formula of converting volt amps in amps." />
+    <meta property="og:url" content="https://www.calculatorfind.com/volt-amps-to-amps.html" />
+    
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>VA to amps conversion calculator</h1>
+                <p>Volt-amps (VA) to amps (A) calculator and how to calculate.</p>
+                <p>Enter phase number, the apparent power in volt-amps, voltage in volts and press the <i>Calculate</i> button,</p>
+                <p>to get the current in amps:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td>Enter phase #:</td>
+                                <td><select name="phase" autofocus class="form-control">
+					<option>Single phase</option>
+					<option>Three phase</option>
+				</select></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter volt-amps:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x1" class="intext form-control"></td>
+                                <td class="mathsymbol">VA</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter line to line volts:</td>
+                                <td class="math"><input type="number" step="any" name="x2" class="intext form-control"></td>
+                                <td class="mathsymbol">V</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="calc3()" type="button" value="Calculate" class="btn btn-success"> <input onclick="setfocus()" type="reset" value="Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Result in amps:</td>
+                                <td class="math"><input type="text" name="y" class="outtext form-control" readonly="readonly"></td>
+                                <td class="mathsymbol">A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function convert(x1, x2) {
+            var iphase = document.calcform.phase.selectedIndex;
+            var amps = x1 / x2;
+            if (iphase == 1)
+                amps /= Math.sqrt(3);
+            return amps;
+        }
+    </script>
+
+</body>
+
+
+</html>

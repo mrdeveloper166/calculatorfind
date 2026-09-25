@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>Compound Interest Calculator | compound interest formulas</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+
+
+    <meta name="keywords" content="compound interest,compound interest calculator,compound interest formula,compound interest daily calculator,compound interest formula calculator,euation for compound interest,compound interest definition">
+    <meta name="description" content="compound interest Calculator-  calculate how much your money can grow using the power of compound interest with the using compound interest calculator.">
+    <script async src="tagmng3.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Compound Interest Calculator | compound interest formulas" />
+    <meta property="og:description" content="compound interest Calculator-  calculate how much your money can grow using the power of compound interest with the using compound interest calculator." />
+    <meta property="og:url" content="https://www.calculatorfind.com/compound-interest-calculator.html" />
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+      <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h2>Compound Interest Calculator and formulas</h2>
+                <br>
+                <form id="calcform" name="calcform" autocomplete="off" class="box float">
+                    <div class="form-group">
+                        <label for="Select1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select currency</label>
+                        <select id="Select1" onchange="OnCurrencyChange()" class="form-control">
+         <option selected>Dollar ($)</option>
+         <option>Pound (&pound;)</option>
+         <option>Euro (&euro;)</option>
+         <option>Baht (&#3647;)</option>
+         <option>Krona (kr)</option>
+         <option>Leu (L)</option>
+         <option>Lira (t)</option>
+         <option>Peso (&#8369;)</option>
+         <option>Rand (R)</option>
+         <option>Real (R$)</option>
+         <option>Ringgit (RM)</option>
+         <option>Rupee (R)</option>
+         <option>Rupee (Rs)</option>
+         <option>Shekel (&#8362;)</option>
+         <option>Zloty (z&#322;)</option>
+         <option>- other -</option>
+		</select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Text1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Present value</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="cur1">$</span>
+                            </div>
+                            <input type="number" min="0" step="any" id="Text1" placeholder="1000" class="form-control" autofocus>
+                            <div class="input-group-append">
+                                <button type="button" onclick="OnClear(0)" class="btn btn-outline-secondary">&times;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Text2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Annual interest rate</label>
+                        <div class="input-group">
+                            <input type="number" step="any" id="Text2" class="form-control" placeholder="4">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                            <div class="input-group-append ml-1">
+                                <select id="Select2" class="form-control">
+               <option>compounded monthly</option>
+               <option>compounded quarterly</option>
+               <option selected>compounded yearly</option>
+            </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Text4" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Period</label>
+                        <div class="input-group">
+                            <input type="number" min="1" step="any" id="Text4" class="form-control" placeholder="10">
+                            <div class="input-group-append ml-1">
+                                <select id="Select4" name="Select4" class="form-control">
+            <option>Days</option>
+            <option>Weeks</option>
+            <option>Months</option>
+            <option>Quarters</option>
+            <option selected="selected">Years</option>
+         </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Text3" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Additional payments (optional)</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="cur2">$</span>
+                            </div>
+                            <input type="number" step="any" id="Text3" placeholder="0" class="form-control">
+                            <div class="input-group-append">
+                                <button type="button" onclick="OnClear(1)" class="btn btn-outline-secondary">&times;</button>
+                            </div>
+                            <div class="input-group-append ml-1">
+                                <select id="Select3" class="form-control">
+               <!--<option>weekly</option>-->
+               <option selected>monthly</option>
+               <option>quarterly</option>
+               <option>yearly</option>
+            </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="addpaydiv" class="form-group mb-3">
+                        <label for="addpay-start" class="row ml-0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Add payment at compounding period</label>
+                        <div class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+         <input type="radio" name="addpay" id="addpay-start" checked> Start
+      </label>
+                            <label class="btn btn-secondary">
+         <input type="radio" name="addpay" id="addpay-end"> End
+      </label>
+                        </div>
+                    </div>
+                    <div class="form-group mt-4">
+                        <button type="button" onclick="OnCalc()" class="btn btn-success"><i class="material-icons">settings</i> Calculate</button>
+                        <button type="button" onclick="OnClear(2)" class="btn btn-danger"><i class="material-icons">clear</i> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Future value</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="cur5">$</span>
+                            </div>
+                            <input type="text" id="Text7" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Total deposits amount</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="cur3">$</span>
+                            </div>
+                            <input type="text" id="Text5" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Total interest amount</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="cur4">$</span>
+                            </div>
+                            <input type="text" id="Text6" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Total yield</label>
+                        <div class="input-group">
+                            <input type="text" id="Text8" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Final future value</label>
+                        <div id="piechart" style="width:100%; height: 200px;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Future values by time</label>
+                        <div id="columnchart" style="width:100%; height: 200px;"></div>
+                    </div>
+                    <div id="tbldiv" class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Compound interest table</label>
+                        <table class="table" id="tbl" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                            <tr>
+                                <th>Period<br>No.</th>
+                                <th>Payment</th>
+                                <th>Balance</th>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <br>
+                <h2>Compound interest calculation with formulas and how to calculate compound interest</h2>
+                <p>The amount after n years A<sub>n</sub> is equal to the initial amount A<sub>0</sub> times one plus the annual interest rate r divided by the number of compounding periods in a year m raised to the power of m times n:</p>
+
+                <p>A<sub>n</sub> is the amount after n years (future value).</p>
+                <p>A<sub>0</sub> is the initial amount (present value).</p>
+                <p>r is the nominal annual interest rate.</p>
+                <p>m is the number of compounding periods in one year.</p>
+                <p>n is the number of years.</p>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <h4>Example #1:</h4>
+                <p>Calculate the future value after 10 years present value of $5,000 with annual interest of 4%.</p>
+                <p>Solution:</p>
+                <p class="mathsymbol"><em>A</em><sub>0</sub> = $5,000</p>
+                <p class="mathsymbol"><em>r</em> = 4% = 4/100 = 0.04</p>
+                <p class="mathsymbol"><em>m</em> = 1</p>
+                <p class="mathsymbol"><em>n</em> = 10</p>
+                <p class="math"><em>A</em><sub>10</sub> = $5,000&middot;(1+0.04/1)<sup>(1&middot;10)</sup> = $7,401.22</p>
+                <h4>Example #2:</h4>
+                <p>Calculate the future value after 8 years present value of $35,000 with annual interest of 3% compounded monthly.</p>
+                <p>Solution:</p>
+                <p class="mathsymbol"><em>A</em><sub>0</sub> = $35,000</p>
+                <p class="mathsymbol"><em>r</em> = 3% = 3/100 = 0.03</p>
+                <p class="mathsymbol"><em>m</em> = 12</p>
+                <p class="mathsymbol"><em>n</em> = 8</p>
+                <p class="math"><em>A</em><sub>8</sub> = $35,000&middot;(1+0.03/12)<sup>(12&middot;8)</sup> = $44,480.40</p>
+                <p>&nbsp;</p>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        "use strict"
+        var depamount, intamount;
+        var val, pay;
+        window.onload = function() {
+            $("#calcform>div:nth-child(n+12)").hide();
+        };
+
+        function OnClear(n) {
+            if (n == 0) {
+                document.getElementById("Text1").value = '';
+                document.getElementById("Text1").focus();
+            } else if (n == 1) {
+                document.getElementById("Text3").value = '';
+                document.getElementById("Text3").focus();
+            } else {
+                document.getElementById("Text1").value = '';
+                document.getElementById("Text2").value = '';
+                document.getElementById("Text5").value = '';
+                document.getElementById("Text6").value = '';
+                document.getElementById("Text7").value = '';
+                document.getElementById("Text8").value = '';
+                document.getElementById("Text1").focus();
+            }
+        }
+
+        function OnCurrencyChange() {
+            var c_look = ['$', '&pound;', '&euro;', '&#3647;', 'kr', 'L', 't', '&#8369;', 'R', 'R$', 'RM', 'R', 'Rs', '&#8362;', 'z&#322;', ''];
+            var i = document.getElementById("Select1").selectedIndex;
+            var c = c_look[i];
+            document.getElementById("cur1").innerHTML = c;
+            document.getElementById("cur2").innerHTML = c;
+            document.getElementById("cur3").innerHTML = c;
+            document.getElementById("cur4").innerHTML = c;
+            document.getElementById("cur5").innerHTML = c;
+        }
+
+        function DrawTable(v, pay, ratio) {
+            var c_look = ['$', '&pound;', '&euro;', '&#3647;', 'kr', 'L', 't', '&#8369;', 'R', 'R$', 'RM', 'R', 'Rs', '&#8362;', 'z&#322;', ''];
+            var i = document.getElementById("Select1").selectedIndex;
+            var c = c_look[i];
+            var value, p, n, f;
+            $("#tbl").find("tr:gt(0)").remove();
+            n = v.length;
+            for (var i = 0; i < n; i++) {
+                p = 0;
+                f = (i + 1) / ratio;
+                //if( (i>0) && (f==Math.round(f)) )
+                if (f == Math.round(f))
+                    p = pay;
+                p = numberWithCommas(p);
+                value = numberWithCommas(v[i].toFixed(2));
+                $('#tbl tr').eq(i).after("<tr>\
+            <td>" + i + "</td>\
+            <td>" + c + p + "</td>\
+            <td>" + c + value + "</td>\
+         </tr>");
+            }
+            $(".calc tr:nth-child(n+12)").show();
+            $("#tbldiv").show();
+        }
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function CompoundCalc(PV, i, dV, n1, n2, n, iaddpay) {
+            //FV = PV*Math.pow((1+i/100),n);
+            var f;
+            //var v=[];
+            var prevv = PV;
+            var v = [prevv];
+            if (iaddpay == 0) v[0] = prevv + dV;
+            //for(var k=0; k<n; k++)
+            for (var k = 1; k <= n; k++) {
+                v[k] = prevv;
+                f = (k + 1) / n2;
+                if (f == Math.round(f) && iaddpay == 0)
+                    v[k] += dV;
+                f = (k + 1) / n1;
+                if (f == Math.round(f))
+                    v[k] = v[k] * (1 + i / 100.0);
+                f = (k + 1) / n2;
+                if (f == Math.round(f) && iaddpay == 1)
+                    v[k] += dV;
+                prevv = v[k];
+            }
+            return v;
+        }
+
+        function OnCalc() {
+            var x0 = document.getElementById("Text1").value;
+            var rate = document.getElementById("Text2").value;
+            var i1 = document.getElementById("Select2").selectedIndex;
+            var x1 = document.getElementById("Text3").value;
+            var i2 = document.getElementById("Select3").selectedIndex;
+            var period = document.getElementById("Text4").value;
+            var i3 = document.getElementById("Select4").selectedIndex;
+            var addpayButtons = $("#addpaydiv input:radio[name='addpay']");
+            var iaddpay = addpayButtons.index(addpayButtons.filter(':checked'));
+
+            if (x0 == '') x0 = '1000';
+            if (x1 == '') x1 = '0';
+            if (rate == '') rate = '4';
+            if (period == '') period = '10';
+
+            var x0 = parseFloat(x0);
+            var x1 = parseFloat(x1);
+            if (x0 == 0) x0 = x1;
+            rate = parseFloat(rate);
+            period = parseFloat(period);
+            i1 = parseInt(i1);
+            i2 = parseInt(i2);
+            i3 = parseInt(i3);
+            if (x1 == 0) i2 = 2;
+
+            //var rlook=[52,12,4,1];
+            var rlook = [12, 4, 1];
+            var rlook4 = [365, 52, 12, 4, 1];
+            var n1 = rlook[i1];
+            var n2 = rlook[i2];
+            var n3 = rlook4[i3];
+            period /= n3; // convert to years
+            var period1 = period * n1;
+            var period2 = period * n2;
+            rate /= n1;
+            var ratio = n2 / n1;
+            var maxperiod = period1 > period2 ? period1 : period2;
+            var f1 = 12 / n1;
+            var f2 = 12 / n2;
+            if ((f1 >= f2) && ((f1 / f2) == Math.round(f1 / f2))) {
+                f1 /= f2;
+                f2 = 1;
+            } else if ((f2 > f1) && ((f2 / f1) == Math.round(f2 / f1))) {
+                f2 /= f1;
+                f1 = 1;
+            }
+            var v = CompoundCalc(x0, rate, x1, f1, f2, maxperiod, iaddpay);
+            var y2 = v[v.length - 1];
+            var y0 = x0 + x1 * period2;
+            var p = y2 - y0;
+            var total;
+            if (y0 > 0)
+                total = y2 / y0 * 100.0 - 100.0;
+            else
+                total = 0;
+
+            y0 = y0.toFixed(2);
+            p = (Math.round(100 * p) / 100).toFixed(2);
+            y2 = y2.toFixed(2);
+            total = (Math.round(100 * total) / 100).toFixed(2);
+
+            depamount = parseFloat(y0);
+            intamount = parseFloat(p);
+
+            y0 = numberWithCommas(y0);
+            p = numberWithCommas(p);
+            y2 = numberWithCommas(y2);
+            total = numberWithCommas(total);
+
+            document.getElementById("Text5").value = y0;
+            document.getElementById("Text6").value = p;
+            document.getElementById("Text7").value = y2;
+            document.getElementById("Text8").value = total;
+
+            google.charts.load('current', {
+                'packages': ['corechart']
+            });
+            val = v;
+            pay = x1;
+            google.charts.setOnLoadCallback(drawChart);
+
+            DrawTable(v, x1, f2);
+            $("#calcform>div:nth-child(n+12)").show();
+        }
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Name', 'Amount'],
+                ['Total deposites amount', depamount],
+                ['Total interest amount', intamount]
+            ]);
+            var options = {};
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+
+            var arr = [
+                ['Time', 'Principal', 'Cumulative Interest', {
+                    role: 'annotation'
+                }],
+                /*['2010', 10, 24, 20, 32, 18, 5, ''],
+                ['2020', 16, 22, 23, 30, 16, 9, ''],
+                ['2030', 28, 19, 29, 30, 12, 13, '']*/
+            ];
+            var p = val[0],
+                interest = 0;
+            for (var i = 0; i < val.length; i++) {
+                if (i > 0) {
+                    p += pay;
+                    interest = val[i] - p;
+                    arr.push([i, p, interest, '']);
+                } else {
+                    arr.push([i, p, 0, '']);
+                }
+            }
+            var data2 = google.visualization.arrayToDataTable(arr);
+            var options2 = {
+                //width: 600,
+                //height: 400,
+                legend: {
+                    position: 'top',
+                    maxLines: 3
+                },
+                bar: {
+                    groupWidth: '75%'
+                },
+                isStacked: true,
+            };
+            var chart2 = new google.visualization.ColumnChart(document.getElementById("columnchart"));
+            chart2.draw(data2, options2);
+        }
+    </script>
+    <!-- #EndEditable -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

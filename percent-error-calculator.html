@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+    <title>Percent Error calculator</title>
+
+    <meta name="keywords" content="percent error,percentage error,percent error formula,percent error calculator,percent error equation">
+    <meta name="description" content="Percent error is the difference between estimated value and the actual value in comparison to the actual value and is expressed as a percentage.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Percent Error calculator" />
+    <meta property="og:description" content="Percent error is the difference between estimated value and the actual value in comparison to the actual value and is expressed as a percentage." />
+    <meta property="og:url" content="https://www.calculatorfind.com/percent-error-calculator.html" />
+
+  
+
+
+
+
+    <script async src="tagmng3.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        @media all and (max-width: 576px) {
+            .calc2 {
+                width: 100%;
+                padding: 8px;
+            }
+            .calc2 input[type=number],
+            .calc2 input[type=text] {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Percent error calculator or converter</h1>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Approximated/measured value:</td>
+                            <td><input type="number" step="any" name="v1" tabindex="1" autofocus class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Exact/actual value:&nbsp;</td>
+                            <td><input type="number" step="any" name="v2" tabindex="2" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <button type="button" title="Calculate" class="btn btn-success" onclick="calc0()" tabindex="3"><b>=</b> Calculate</button>
+                                <button type="reset" title="Reset" class="btn btn-danger" tabindex="4"><b>X</b> Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Percent error:</td>
+                            <td><input type="text" name="perr" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" tabindex="5" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Percent error non absolute:</td>
+                            <td><input type="text" name="naperr" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" tabindex="6" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Absolute error:</td>
+                            <td><input type="text" name="aerr" class="outtext form-control" style="color: green; font-weight: bold; background-color: white;" tabindex="7" readonly></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2> Percent error conversion or formula</h2>
+                Percent error is the difference between estimated value and the actual value in comparison to the actual value and is expressed as a percentage. In other words, the percent error is the relative error multiplied by 100.
+                <h2>Percent error calculation</h2>
+                <p>The absolute error is equal to the absolute value of the difference between the exact value and the approximated value:</p>
+                <p class="math">&epsilon; = | <em>V</em><sub>exact</sub> - <em>V</em><sub>approx</sub> |</p>
+                <p>The percent error is equal to the 100% times the absolute error divided by the exact value:</p>
+                <p class="math">&#948; = 100% &times; | <em>V</em><sub>exact</sub> - <em>V</em><sub>approx</sub> | / | <em>V</em><sub>exact</sub> |</p>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="calc2.js" defer></script>
+    <script>
+        function calc0() {
+            v1 = document.calcform.v1.value;
+            v2 = document.calcform.v2.value;
+            aerr = Math.abs(v1 - v2);
+            naperr = roundresult((v1 - v2) / v2 * 100);
+            perr = Math.abs(naperr);
+            document.calcform.perr.value = perr + "%";
+            document.calcform.naperr.value = naperr + "%";
+            document.calcform.aerr.value = aerr;
+        }
+    </script>
+
+</body>
+
+
+
+</html>

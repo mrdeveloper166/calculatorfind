@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <title>Root calculator (&#8730;) | nth root calculator</title>
+    <meta name="keywords" content="root calculator,square root calculator,cubic root calculator,root calculator polynomial,root test calculator,square root with calculator,how is root calculator,nth root calculator,how to find the nth root">
+    <meta name="description" content="A root is a number that is multiplied by itself the root number of times. For example, the square root (root 2) of 16 (16) is 4, as 42 (4 x 4) = 16. The cubed root (root 3) of 27 (3��27) is 3, as 33 (3 x 3 x 3) = 27.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Root calculator (&#8730;) | nth root calculator" />
+    <meta property="og:description" content="A root is a number that is multiplied by itself the root number of times. For example, the square root (root 2) of 16 (16) is 4, as 42 (4 x 4) = 16. The cubed root (root 3) of 27 (3��27) is 3, as 33 (3 x 3 x 3) = 27."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/root-calculator.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        h1 {
+            font-size: 1.6rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+        }
+        
+        #calcform .btn span {
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        #radical,
+        #radical2 {
+            font-size: 3em;
+            padding-top: 0px;
+            margin-right: -5px;
+            color: white;
+        }
+        
+        #num,
+        #num2 {
+            border-top: 2px solid white;
+            padding-top: 5px;
+            margin-top: 12px;
+            width: calc(100% - 30px);
+        }
+        
+        #inappend {
+            width: calc(100% - 120px);
+        }
+        
+        #n {
+            width: 70px;
+            flex: unset;
+        }
+        
+        #calcform .btn span,
+        #calcform2 .btn span {
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        * {
+            font-size: 16px;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Root Conversion Calculator</h1>
+                <p>The square root of x is given by the formula:</p>
+                <p class="math"><b>Formula :- </b><i>square root</i> = &#8730;<span style="text-decoration: overline"><i>x</i></span></p>
+                <br>
+                <br><br>
+                <form class="box float" id="calcform" name="calcform" autocomplete="off">
+                    <div class="form-group input-group">
+                        <span id="radical">&#8730;</span>
+                        <span id="num">
+      <input type="number" min="0" step="any" id="x" name="x" class="form-control" autofocus>
+      </span>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="oncalc()" class="btn btn-success"><span>=</span> Calculate</button>
+                        <button type="reset" class="btn btn-danger"><span>&times;</span> Reset</button>
+                    </div>
+                    <div class="form-group input-group">
+                        <input type="text" id="y" name="y" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                        <div class="input-group-append">
+                            <button type="button" id="copybtn" title="Copy" onclick="oncopy1()" class="btn btn-outline-secondary input-group-text"><i class="material-icons">content_copy</i></button>
+                        </div>
+                    </div>
+                </form>
+                <br><br>
+                <h2 class="mt-2">nth root calculator</h2>
+                <p>The nth root of x is given by the formula:</p>
+                <p class="math"><b>Formula :- </b><i>nth root</i> = <sup><i>n</i></sup>&#8730;<span style="text-decoration: overline"><i>x</i></span></p><br>
+                <form id="calcform2" name="calcform2" autocomplete="off">
+                    <div class="form-group input-group">
+                        <input type="number" min="2" step="1" id="n" name="n" class="form-control w-25">
+                        <div id="inappend" class="input-group-append">
+                            <span id="radical2">&#8730;</span>
+                            <span id="num2">
+      <input type="number" step="any" id="x2" name="x2" class="form-control">
+      </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="oncalc2()" class="btn btn-success"><span>=</span> Calculate</button>
+                        <button type="reset" class="btn btn-danger"><span>&times;</span> Reset</button>
+                    </div>
+                    <div class="form-group input-group">
+                        <input type="text" id="y2" name="y2" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                        <div class="input-group-append">
+                            <button type="button" id="copybtn2" title="Copy" onclick="oncopy2()" class="btn btn-outline-secondary input-group-text"><i class="material-icons">content_copy</i></button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is Root Calculator</h2><br>
+                <p>A root is a number that is multiplied by itself the root number of times. For example, the square root (root 2) of 16 (16) is 4, as 42 (4 x 4) = 16. The cubed root (root 3) of 27 (3 ,27) is 3, as 33 (3 x 3 x 3) = 27.</p>
+                <br>
+                <h2>What is nth Root Calculator</h2><br>
+                <p>nth Root Calculator is a free online tool that displays the nth root of the given number. online nth Root calculator tool makes the calculation faster and it displays the specified root value in a fraction of seconds.</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script src="calc2.js"></script>
+    <script>
+        function oncalc() {
+            document.getElementById("y").value = '';
+            var x = document.getElementById("x").value;
+            if (x < 0) return;
+            var y = Math.pow(x, 0.5);
+            y = roundresult(y);
+            if (x > 0) y = '\u00B1' + y;
+            document.getElementById("y").value = y;
+        }
+
+        function oncalc2() {
+            document.getElementById("y2").value = '';
+            var n = document.getElementById("n").value;
+            var x = document.getElementById("x2").value;
+            if (n != Math.round(n)) return;
+            if (x < 0 && (n % 2) == 0) return;
+            var minus = false;
+            if (x < 0) {
+                x = Math.abs(x);
+                minus = true;
+            }
+            var y = Math.pow(x, 1 / n);
+            y = roundresult(y);
+            if (minus == false && (n % 2) == 0) y = '\u00B1' + y;
+            if (minus) y = '-' + y;
+            document.getElementById("y2").value = y;
+        }
+
+        function oncopy1() {
+            const elem = document.getElementById('y');
+            elem.focus();
+            elem.select();
+            var y = elem.value;
+            if (typeof navigator.clipboard === "object")
+                if (typeof navigator.clipboard.writeText === "function") {
+                    navigator.clipboard.writeText(y);
+                    y = null;
+                }
+            if (y != null) {
+                document.execCommand('copy');
+            }
+        }
+
+        function oncopy2() {
+            const elem = document.getElementById('y2');
+            elem.focus();
+            elem.select();
+            var y = elem.value;
+            if (typeof navigator.clipboard === "object")
+                if (typeof navigator.clipboard.writeText === "function") {
+                    navigator.clipboard.writeText(y);
+                    y = null;
+                }
+            if (y != null) {
+                document.execCommand('copy');
+            }
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

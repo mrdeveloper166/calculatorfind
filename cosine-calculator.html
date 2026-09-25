@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+
+
+    <title>Cosine Calculator | cos(x) calculator | Inverse Cosine Calculator</title>
+
+    <meta name="keywords" content="cosine calculator,arc cosine calculator,cosine similarity calculator,cosine on calculator,cosine calculator triangle,cosine equation calculator,inverse cosine calculator,inverse trigonometric functions calculator,inverse of cosine calculator,Inverse Cosine Definition">
+    <meta name="description" content="Consine Calculator :- The cosine function, along with sine and tangent, is one of the three most common trigonometric functions. In any right triangle, the cosine of an angle is the length of the adjacent side (A) divided by the length of the hypotenuse (H). ... Use your calculator to find the cosine of 30��">
+
+    <meta charset="UTF-8">
+    <script async src="tagmng3.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cosine Calculator | cos(x) calculator | Inverse Cosine Calculator" />
+    <meta property="og:description" content="Consine Calculator :- The cosine function, along with sine and tangent, is one of the three most common trigonometric functions. In any right triangle, the cosine of an angle is the length of the adjacent side (A) divided by the length of the hypotenuse (H). ... Use your calculator to find the cosine of 30��"
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/cosine-calculator.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <style>
+        * {
+            font-size: 16px;
+        }
+        
+        .calc {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+
+
+
+
+                <h2>Cosine Calculator with formula and chart</h2>
+                <p>Trigonometric cosine calculator.</p>
+                <h2>Cosine calculator</h2>
+                <p><b>How to use :- </b> In order to calculate cos(x) on the calculator:</p>
+                <ol>
+                    <li>Enter the input angle.</li>
+                    <li>Select angle type of degrees (&deg;) or radians (rad) in the combo box.</li>
+                    <li>Press the <span style="font-size: 1.5em">=</span>&nbsp;button to calculate the result.</li>
+                </ol>
+                <br><br>
+                <form name="calcform" class="box float" id="calcform" autocomplete="off">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td><span>cos</span></td>
+                                <td><input type="number" step="any" name="x" class="intext form-control" tabindex="1"></td>
+                                <td>
+                                    <select id="degtype" class="form-control">
+			<option selected>&deg;</option>
+			<option>rad</option>
+		</select></td>
+                                <td><input type="button" value=" = " class="btn btn-success" onclick="calc()"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <!--<td colspan="4"><input type="button" value="Calculate" class="btn" onclick="calc()"> <input type="reset" value=" &times; " class="btn" onclick="setfocus()"></td>-->
+                                <td colspan="4">
+                                    <button type="button" title="Calculate" class="btn btn-success" tabindex="2" onclick="calc()"><b>=</b> Calculate</button>
+                                    <button type="reset" title="Reset" class="btn btn-danger" tabindex="3" onclick="setfocus()"><b>X</b> Reset</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+
+                                <td colspan="4">Result:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><input type="text" name="y" class="outtext form-control" readonly tabindex="4"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <br><br>
+                <h2>Inverse cosine calculator</h2>
+                <p><b>How to use :- </b> Enter the cosine value, select degrees (&deg;) or radians (rad) and press the <span style="font-size: 1.5em">=</span>&nbsp; button:</p>
+                <br><br>
+                <form name="calcform2" class="box float" id="calcform">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td><span>cos<sup style="font-size: 0.8em">-1</sup></span></td>
+                                <td><input type="number" step="any" name="x" class="intext form-control" tabindex="5"></td>
+                                <td><input onclick="calc_a()" type="button" value=" = " class="btn btn-success"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <!--<td colspan="3"><input onclick="calc_a()" type="button" value="Calculate" class="btn"> <input onclick="setfocus()" type="reset" value=" &times; " class="btn"></td>-->
+                                <td colspan="4">
+                                    <button type="button" title="Calculate" class="btn btn-success" tabindex="6" onclick="calc_a()"><b>=</b> Calculate</button>
+                                    <button type="reset" title="Reset" class="btn btn-danger" tabindex="7" onclick="setfocus()"><b>X</b> Reset</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Result:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><input type="text" id="y2" name="y" class="outtext" tabindex="8">
+                                    <select id="degtypea" class="mathsymbol" onchange="OnSelChange()" name="D1">
+			<option selected>&deg;</option>
+			<option>rad</option>
+		</select></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Cosine Calculator or converter</h2><br>
+                <p>The cosine function, along with sine and tangent, is one of the three most common trigonometric functions. In any right triangle, the cosine of an angle is the length of the adjacent side (A) divided by the length of the hypotenuse (H).
+                    ... Use your calculator to find the cosine of 30/p>
+                <br>
+                <h2>Inverse Cosine Definition</h2><br>
+                <p>The Inverse Cosine function is the inverse of the Cosine function and is used to obtain the value of angles for a right-angled triangle.</p>
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="calc2.js"></script>
+    <script>
+        function calcfunc(x) {
+            var degtype = document.getElementById("degtype");
+            var i = degtype.selectedIndex;
+            if (i == 0)
+                x *= Math.PI / 180;
+            y = Math.cos(x);
+            y = roundnum2(y, 8);
+            return y;
+        }
+
+        function calcfunc_a(x) {
+            var degtype = document.getElementById("degtypea");
+            var i = degtype.selectedIndex;
+            var y = Math.acos(x);
+            if (i == 0)
+                y *= 180 / Math.PI;
+            y = roundnum2(y, 8);
+            return y;
+        }
+
+        function OnSelChange() {
+            calc_a();
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

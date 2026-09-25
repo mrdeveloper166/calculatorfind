@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <script async src="tagmng3.js"></script>
+    <title>Color code converter | color conversion</title>
+    <meta name="keywords" content="color conversion,color conversion from hex to rgb,dmc color conversion chart,color conversion fromula,color conversion panton,Color code converter">
+    <meta name="description" content="Color code converter. Color codes chart. Color conversions.Color space conversion is the translation of the representation of a color from one basis to another.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Color code converter | color conversion" />
+    <meta property="og:description" content="Color code converter. Color codes chart. Color conversions.Color space conversion is the translation of the representation of a color from one basis to another." />
+    <meta property="og:url" content="https://www.calculatorfind.com/color-code-converter.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        @media all and (max-width: 576px) {
+            .dtable tr th:nth-child(2),
+            .dtable tr td:nth-child(2),
+            .dtable tr th:nth-child(3),
+            .dtable tr td:nth-child(3),
+            .dtable tr th:nth-child(6),
+            .dtable tr td:nth-child(6) {
+                display: none;
+            }
+            #doc p img {
+                max-width: 100%;
+            }
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Color conversion with chart and formulas</h1>
+                <p>Color code converter. Color codes chart. Color conversions.</p>
+                <h3>Color code converter</h3>
+                <p>HEX value is 6 digits (rrggbb).</p>
+                <p>RGB values are in range of 0..255.</p>
+                <p>HSV values are in range of Hue:0..359&deg;, Saturation:0..100%, Value:0..100%.</p>
+                <p>HSL values are in range of Hue:0..359&deg;, Saturation:0..100%, Lightness:0..100%.</p>
+                <p>Enter one color code and press the <i>Convert</i> button:</p>
+                <br><br>
+                <form name="calcform" class="yui3-skin-sam box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Hex (#):</td>
+                            <td class="math"><input name="hex" id="hex" class="intext form-control" style="width:110px" placeholder="000000" autofocus></td>
+                            <td style="padding-left:10px"><input onclick="calc_hex()" type="button" value="Convert" class="btn btn-success form-control"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">RGB (R,G,B):</td>
+                            <td class="math">
+                                <input type="number" min="0" max="255" step="1" value="0" name="r" class="intext" style="width:70px; background:#ffd0d0" placeholder="0" oninput="calc_rgb()"><b style="color: white;font-size: 16px; font-weight: bold;margin-bottom: 15px;"> ,</b>
+                                <input type="number" min="0" max="255" step="1" value="0" name="g" class="intext" style="width:70px; background:#d0ffd0" placeholder="0" oninput="calc_rgb()">&nbsp;&nbsp;&nbsp; <b style="color: white;font-size: 16px; font-weight: bold;margin-bottom: 15px;"> ,</b>
+                                <input type="number" min="0" max="255" step="1" value="0" name="b" class="intext" style="width:70px; background:#d0d0ff" placeholder="0" oninput="calc_rgb()">
+                            </td>
+                            <td style="padding-left:10px"><input onclick="calc_rgb()" type="button" value="Convert" class="btn btn-success form-control"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">HSV (H,S,V):</td>
+                            <td class="math">
+                                <input type="number" name="h" min="0" step="any" max="359" value="0" class="intext" style="width:70px" oninput="calc_hsv()"><b style="color: white;font-size: 16px; font-weight: bold;margin-bottom: 15px;">&deg;,</b>
+                                <input type="number" name="s" min="0" step="any" max="100" value="0" class="intext" style="width:70px" oninput="calc_hsv()"><b style="color: white;font-size: 16px; font-weight: bold;margin-bottom: 15px;">%,</b>
+                                <input type="number" name="v" min="0" step="any" max="100" value="0" class="intext" style="width:70px" oninput="calc_hsv()"><b style="color: white;font-size: 16px; font-weight: bold;margin-bottom: 15px;">%</b>
+                            </td>
+                            <td style="padding-left:10px"><input onclick="calc_hsv()" type="button" value="Convert" class="btn btn-success form-control"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">HSL (H,S,L):</td>
+                            <td class="math">
+                                <input type="number" name="h2" min="0" step="any" max="359" value="0" class="intext" style="width:70px" oninput="calc_hsl()"><b style="color: white;font-size: 16px; font-weight: bold;margin-bottom: 15px;">&deg;,</b>
+                                <input type="number" name="s2" min="0" step="any" max="100" value="0" class="intext" style="width:70px" oninput="calc_hsl()"><b style="color: white;font-size: 16px; font-weight: bold;margin-bottom: 15px;">%,</b>
+                                <input type="number" name="l" min="0" step="any" max="100" value="0" class="intext" style="width:70px" oninput="calc_hsl()"><b style="color: white;font-size: 16px; font-weight: bold;margin-bottom: 15px;">%</b>
+                            </td>
+                            <td style="padding-left:10px"><input onclick="calc_hsl()" type="button" value="Convert" class="btn btn-success form-control"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Color preview:</td>
+                            <td class="math"><input name="color" style="height:50px; width:260px; border:1px solid black" readonly="readonly"></td>
+                            <td style="padding-left:10px"><input type="reset" value="Reset" class="btn btn-danger" class="form-control"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is Color Conversion</h2><br>
+                <p>Changing one type of color-encoded signal into another. Converting from RGB to YUV and back to RGB are common color space conversions when working with video formats (see YUV). Converting from the display color space (RGB) to the printer
+                    color space (CMYK) is another common example.</p><br>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+                <h2>Color codes chart</h2>
+                <p>Hex / RGB / HSV / HSL:</p>
+                <br>
+                <table align="center" class="table table-striped">
+                    <tr>
+                        <th>Color</th>
+                        <th>Color
+                            <p>name</th>
+                        <th>Hex</th>
+                        <th>(R,G,B)</th>
+                        <th>(H,S,V)</th>
+                        <th>(H,S,L)</th>
+                    </tr>
+                    <tr>
+                        <td style="background:#000000">&nbsp;</td>
+                        <td>Black</td>
+                        <td>#000000</td>
+                        <td>(0,0,0)</td>
+                        <td>(0&deg;,0%,0%)</td>
+                        <td>(0&deg;,0%,0%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#FFFFFF">&nbsp;</td>
+                        <td>White</td>
+                        <td>#FFFFFF</td>
+                        <td>(255,255,255)</td>
+                        <td>(0&deg;,0%,100%)</td>
+                        <td>(0&deg;,0%,100%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#FF0000">&nbsp;</td>
+                        <td>Red</td>
+                        <td>#FF0000</td>
+                        <td>(255,0,0)</td>
+                        <td>(0&deg;,100%,100%)</td>
+                        <td>(0&deg;,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#00FF00">&nbsp;</td>
+                        <td>Lime</td>
+                        <td>#00FF00</td>
+                        <td>(0,255,0)</td>
+                        <td>(120&deg;,100%,100%)</td>
+                        <td>(120&deg;,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#0000FF">&nbsp;</td>
+                        <td>Blue</td>
+                        <td>#0000FF</td>
+                        <td>(0,0,255)</td>
+                        <td>(240&deg;,100%,100%)</td>
+                        <td>(240&deg;,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#FFFF00">&nbsp;</td>
+                        <td>Yellow</td>
+                        <td>#FFFF00</td>
+                        <td>(255,255,0)</td>
+                        <td>(60&deg;,100%,100%)</td>
+                        <td>(60&deg;,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#00FFFF">&nbsp;</td>
+                        <td>Cyan</td>
+                        <td>#00FFFF</td>
+                        <td>(0,255,255)</td>
+                        <td>(180&deg;,100%,100%)</td>
+                        <td>(180&deg;,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#FF00FF">&nbsp;</td>
+                        <td>Magenta</td>
+                        <td>#FF00FF</td>
+                        <td>(255,0,255)</td>
+                        <td>(300&deg;,100%,100%)</td>
+                        <td>(300&deg;,100%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#C0C0C0">&nbsp;</td>
+                        <td>Silver</td>
+                        <td>#C0C0C0</td>
+                        <td>(192,192,192)</td>
+                        <td>(0&deg;,0%,75%)</td>
+                        <td>(0&deg;,0%,75%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#808080">&nbsp;</td>
+                        <td>Gray</td>
+                        <td>#808080</td>
+                        <td>(128,128,128)</td>
+                        <td>(0&deg;,0%,50%)</td>
+                        <td>(0&deg;,0%,50%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#800000">&nbsp;</td>
+                        <td>Maroon</td>
+                        <td>#800000</td>
+                        <td>(128,0,0)</td>
+                        <td>(0&deg;,100%,50%)</td>
+                        <td>(0&deg;,100%,25%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#808000">&nbsp;</td>
+                        <td>Olive</td>
+                        <td>#808000</td>
+                        <td>(128,128,0)</td>
+                        <td>(60&deg;,100%,50%)</td>
+                        <td>(60&deg;,100%,25%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#008000">&nbsp;</td>
+                        <td>Green</td>
+                        <td>#008000</td>
+                        <td>(0,128,0)</td>
+                        <td>(120&deg;,100%,50%)</td>
+                        <td>(120&deg;,100%,25%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#800080">&nbsp;</td>
+                        <td>Purple</td>
+                        <td>#800080</td>
+                        <td>(128,0,128)</td>
+                        <td>(300&deg;,100%,50%)</td>
+                        <td>(300&deg;,100%,25%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#008080">&nbsp;</td>
+                        <td>Teal</td>
+                        <td>#008080</td>
+                        <td>(0,128,128)</td>
+                        <td>(180&deg;,100%,50%)</td>
+                        <td>(180&deg;,100%,25%)</td>
+                    </tr>
+                    <tr>
+                        <td style="background:#000080">&nbsp;</td>
+                        <td>Navy</td>
+                        <td>#000080</td>
+                        <td>(0,0,128)</td>
+                        <td>(240&deg;,100%,50%)</td>
+                        <td>(240&deg;,100%,25%)</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="color.js"></script>
+    <script>
+        function calc_hex() {
+            hex = document.calcform.hex.value;
+            rgb = hex2rgb(hex);
+            r = rgb[0];
+            g = rgb[1];
+            b = rgb[2];
+            hsv = rgb2hsv(r, g, b);
+            hsl = rgb2hsl(r, g, b);
+            document.calcform.r.value = r;
+            document.calcform.g.value = g;
+            document.calcform.b.value = b;
+            document.calcform.h.value = hsv[0];
+            document.calcform.s.value = hsv[1];
+            document.calcform.v.value = hsv[2];
+            document.calcform.h2.value = hsl[0];
+            document.calcform.s2.value = hsl[1];
+            document.calcform.l.value = hsl[2];
+            set_color(hex);
+        }
+
+        function calc_rgb() {
+            r = document.calcform.r.value;
+            g = document.calcform.g.value;
+            b = document.calcform.b.value;
+            hex = rgb2hex(r, g, b);
+            hsv = rgb2hsv(r, g, b);
+            hsl = rgb2hsl(r, g, b);
+            document.calcform.hex.value = hex;
+            document.calcform.h.value = hsv[0];
+            document.calcform.s.value = hsv[1];
+            document.calcform.v.value = hsv[2];
+            document.calcform.h2.value = hsl[0];
+            document.calcform.s2.value = hsl[1];
+            document.calcform.l.value = hsl[2];
+            set_color(hex);
+        }
+
+        function calc_hsv() {
+            h = document.calcform.h.value;
+            s = document.calcform.s.value;
+            v = document.calcform.v.value;
+            rgb = hsv2rgb(h, s, v);
+            r = rgb[0];
+            g = rgb[1];
+            b = rgb[2];
+            hex = rgb2hex(r, g, b);
+            hsl = rgb2hsl(r, g, b);
+            document.calcform.hex.value = hex;
+            document.calcform.r.value = r;
+            document.calcform.g.value = g;
+            document.calcform.b.value = b;
+            document.calcform.h2.value = hsl[0];
+            document.calcform.s2.value = hsl[1];
+            document.calcform.l.value = hsl[2];
+            set_color(hex);
+        }
+
+        function calc_hsl() {
+            h = document.calcform.h2.value;
+            s = document.calcform.s2.value;
+            l = document.calcform.l.value;
+            rgb = hsl2rgb(h, s, l);
+            r = rgb[0];
+            g = rgb[1];
+            b = rgb[2];
+            hex = rgb2hex(r, g, b);
+            hsv = rgb2hsv(r, g, b);
+            document.calcform.hex.value = hex;
+            document.calcform.r.value = r;
+            document.calcform.g.value = g;
+            document.calcform.b.value = b;
+            document.calcform.h.value = hsv[0];
+            document.calcform.s.value = hsv[1];
+            document.calcform.v.value = hsv[2];
+            set_color(hex);
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

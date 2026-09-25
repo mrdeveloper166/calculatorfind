@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+
+    <title>Natural log calculator | ln(x) calculator</title>
+
+
+
+    <meta name="keywords" content="natural logarithm calculator,natural logarithm on calculator,natural log calculator">
+    <meta name="description" content="Natural log calculator determines the logarithm to the base of a famous mathematical constant, e, an irrational number with an approximate value of e = 2.71828 . ... This is the power the number e has to be raised to in order to result in a given number x.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Natural log calculator | ln(x) calculator" />
+    <meta property="og:description" content="Natural log calculator determines the logarithm to the base of a famous mathematical constant, e, an irrational number with an approximate value of e = 2.71828 . ... This is the power the number e has to be raised to in order to result in a given number x."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/natural-log-calculator.html" />
+   
+    <script async src="tagmng3.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        .calc {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+
+
+                <h1>Natural Logarithm conversion Calculator and how to use</h1>
+                <p>The natural logarithm of x is the base e logarithm of x:</p>
+                <p class="math"><b>ln<i><sub> </sub>x</i> = log<sub><i>e</i></sub> <i>x</i> = <i>y</i></b></p><br>
+                <form id="calcform" name="calcform" class="box float calc" id="calcform">
+                    <div class="form-group">
+                        <label>Enter the input number and press the <i>= Calculate</i> button</label>
+                        <div class="form-row">
+                            <div id="ln" class="col-1">ln</div>
+                            <div class="col">
+                                <input type="number" min="0" step="any" id="x" name="x" class="form-control form-control-lg" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="lncalc()" class="btn btn-lg btn-secondary btn-success">= Calculate</button>
+                        <button type="reset" onclick="onreset2()" class="btn btn-lg btn-secondary btn-danger">&times; Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="y">Result</label>
+                        <div class="input-group mb-3">
+                            <input type="text" id="y" class="form-control form-control-lg" readonly>
+                            <div class="input-group-append">
+                                <button type="button" title="Copy" onclick="OnCopy()" class="btn btn-lg btn-outline-secondary btn-warning"><i class="material-icons">content_copy</i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="graph">
+                        <label>ln(x) graph</label>
+                        <div id="chart_div"></div>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Natural Log conversion Calculator </h2><br>
+                <p>The natural log calculator determines the logarithm to the base of a famous mathematical constant, e, an irrational number with an approximate value of e = 2.71828 . ... This is the power the number e has to be raised to in order to result
+                    in a given number x.</p>
+                <br>
+                <h2>Natural Log Formula </h2><br>
+                <p>The general formula for computing Ln(x) with the Log function is <b>Ln(x) = Log(x)/Log(e)</b>, or equivalently<b> Ln(x) = Log(x)/0.4342944819.</b></p>
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="calc2.js"></script>
+    <script>
+        "use strict"
+        var arr, px, py, ip, chart;
+
+        function onreset2() {
+            document.getElementById("graph").style.display = "none";
+        }
+
+        function lncalc() {
+            var x = document.getElementById("x").value;
+            if (x == "") return;
+            if (x == "e") x = Math.E;
+            var y = Math.log(x);
+            px = parseFloat(x);
+            py = parseFloat(y);
+            document.getElementById("y").value = y;
+            google.charts.load('current', {
+                'packages': ['corechart']
+            });
+            google.charts.setOnLoadCallback(drawChart);
+            document.getElementById("graph").style.display = "block";
+        }
+
+        function addPoint(x) {
+            if (px != null && px <= x) {
+                arr.push([px, py, py]);
+                ip = arr.length - 1;
+                px = null;
+            }
+            var y = Math.log(x);
+            x = parseFloat(roundresult(x));
+            y = parseFloat(roundresult(y));
+            arr.push([x, y, null]);
+        }
+
+        function addRange(x1, x2, step) {
+            for (var x = x1; x < x2; x += step)
+                addPoint(x);
+        }
+
+        function drawChart() {
+            arr = [];
+            arr[0] = ['x', 'y', 'y'];
+            var n = Math.ceil(Math.log10(px));
+            var x1, x2;
+            for (var i = -3; i < 0; i++) {
+                x1 = Math.pow(10, n + i);
+                x2 = Math.pow(10, n + i + 1);
+                addRange(x1, x2, x1);
+            }
+            if (px != null)
+                arr.push([px, py, py]);
+            var data = google.visualization.arrayToDataTable(arr);
+            var ticks = [0, 2, 4, 6, 8];
+            for (var i = 0; i < ticks.length; i++)
+                ticks[i] *= Math.pow(10, n - 1);
+            var options = {
+                title: 'y = ln x',
+                curveType: 'function',
+                legend: 'none',
+                pointSize: 10,
+                pointsVisible: false,
+                //trendlines: { 0: { color: 'white', visibleInLegend: false, pointSize: 0, pointsVisible: false }, 1: { pointsVisible: true } },
+                series: {
+                    0: {
+                        pointSize: 0,
+                        pointsVisible: false
+                    },
+                    1: {
+                        pointsVisible: true
+                    }
+                },
+                hAxis: {
+                    title: 'x',
+                    //ticks: [0, 2, 4, 6, 8]
+                    ticks: ticks
+                },
+                vAxis: {
+                    title: 'y'
+                },
+                crosshair: {
+                    trigger: 'both'
+                },
+                explorer: {
+                    actions: ['dragToZoom', 'rightClickToReset'],
+                    axis: 'horizontal',
+                    keepInBounds: true,
+                    maxZoomIn: 4.0
+                },
+            };
+
+            chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            //google.visualization.events.addListener(chart, 'ready', readyHandler);
+            chart.draw(data, options);
+        }
+
+        function readyHandler(e) {
+            chart.setSelection([{
+                row: ip - 1,
+                column: 2
+            }]);
+        }
+
+        function OnCopy() {
+            document.getElementById("y").select();
+            document.execCommand("copy");
+        }
+    </script>
+
+
+</body>
+
+
+
+</html>

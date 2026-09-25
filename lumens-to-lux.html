@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <title>Lumens to lux (lx) conversion calculator</title>
+
+    <meta name="keywords" content="lumens to lux, lumens to lux conversion, lumens to lux converter, lumens into lux, lumens lux converter, lumens vs lux, lux and lumens, lumens vs lux projector, ">
+    <meta name="description" content="Lumens (lm) to lux (lx) conversion calculator and how to calculate.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lumens to lux (lx) conversion calculator" />
+    <meta property="og:description" content="Lumens (lm) to lux (lx) conversion calculator and how to calculate." />
+    <meta property="og:url" content="https://www.calculatorfind.com/lumens-to-lux.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>Lumens to lux conversion calculator with formulas</h1>
+                <p>Luminous flux in lumens (lm) to illuminance in lux (lx) calculator and how to calculate.</p>
+                <p>Enter the luminous flux in lumens, select area unit type, enter radius in meters for spherical light source or surface area</p>
+                <p>in square meters for any light source and press the <i>Calculate</i> button to get the illuminance in lux:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter luminous flux in lumens:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x1" class="intext form-control" style="width:200px" autofocus></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">lm</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select area unit type:</td>
+                                <td><select name="cb1" class="mathsymbol form-control" style="width:200px" onchange="OnChange0()">
+			<option>Area in square feet</option>
+			<option>Area in square meters</option>
+		</select></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter spherical radius:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x3" class="intext form-control" style="width:200px" onchange="OnChange1()"></td>
+                                <td><input type="text" id="td1" name="td1" class="mathsymbol form-control" style="padding-left:3px; width:35px; background-color:#e0f0e0;" value="ft" readonly="readonly"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Or enter surface area:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x2" class="intext form-control" style="width:200px" onchange="OnChange2()"></td>
+                                <td><input type="text" id="td2" name="td2" class="mathsymbol form-control" style="padding-left:3px; width:35px; background-color:#e0f0e0;" value="ft&sup2;" readonly="readonly"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="calc3()" type="button" value="= Calculate" class="btn btn-success">
+                                    <input onclick="setfocus()" type="reset" value="X Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Illuminance result in lux:</td>
+                                <td class="math"><input type="text" name="y" class="outtext form-control" readonly="readonly" style="width:200px"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">lx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+
+                <h2>Lumens to lux conversion formula</h2>
+                <h4>Calculation with area in square feet</h4>
+                <p>The illuminance <i>E</i><sub>v</sub> in lux (lx) is equal to 10.76391 times the luminous flux <i>&#934;</i><sub><span style="font-size: 0.6em">V</span></sub> in lumens (lm) divided by the surface area <i>A</i> in square feet (ft<sup>2</sup>):</p>
+                <p class="math"><i>E</i><sub>v(lx)</sub> = 10.76391 &times;<i> &#934;</i><sub><span style="font-size: 0.6em">V</span>(lm)</sub> / <i>A</i><sub>(ft</sub>2<sub>)</sub></p>
+                <p>&nbsp;</p>
+                <p>The illuminance <i>E</i><sub>v</sub> in lux (lx) is equal to 10.76391 times the luminous flux <i>&#934;</i><sub><span style="font-size: 0.6em">V</span></sub> in lumens (lm) divided by 4 times pi times the squared sphere radius r in feet
+                    (ft):
+                </p>
+                <p class="math"><i>E</i><sub>v(lx)</sub> = 10.76391 &times;<i> &#934;</i><sub><span style="font-size: 0.6em">V</span>(lm)</sub><i> </i> /
+                    <i> </i>(4&sdot;&#960;&sdot;<i>r</i><sub>(ft)</sub><sup>2</sup>)</p>
+                <h4>&nbsp;</h4>
+                <h4>Calculation with area in square meters</h4>
+                <p>The illuminance <i>E</i><sub>v</sub> in lux (lx) is equal to the luminous flux <i>&#934;</i><sub><span style="font-size: 0.6em">V</span></sub> in lumens (lm) divided by the surface area <i>A</i> in square meters (m<sup>2</sup>):</p>
+                <p class="math"><i>E</i><sub>v(lx)</sub> = <i>&#934;</i><sub><span style="font-size: 0.6em">V</span>(lm)</sub><i> </i> /
+                    <i> A</i><sub>(m</sub>2<sub>)</sub></p>
+                <p>&nbsp;</p>
+                <p>The illuminance <i>E</i><sub>v</sub> in lux (lx) is equal to the luminous flux <i>&#934;</i><sub><span style="font-size: 0.6em">V</span></sub> in lumens (lm) divided by 4 times pi times the squared sphere radius r in meters (m):</p>
+                <p class="math"><i>E</i><sub>v(lx)</sub> = <i>&#934;</i><sub><span style="font-size: 0.6em">V</span>(lm)</sub><i> </i> /
+                    <i> </i>(4&sdot;&#960;&sdot;<i>r </i><sup>2</sup><sub>(m</sub>2<sub>)</sub>)</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnChange0() {
+            i = document.calcform.cb1.selectedIndex;
+            if (i == 0) {
+                document.calcform.td1.value = "ft";
+                document.calcform.td2.value = "ft\u00B2";
+            } else {
+                document.calcform.td1.value = "m";
+                document.calcform.td2.value = "m\u00B2";
+            }
+        }
+
+        function OnChange1() {
+            x3 = document.calcform.x3.value;
+            x2 = 4 * Math.PI * x3 * x3;
+            document.calcform.x2.value = roundresult(x2);
+        }
+
+        function OnChange2() {
+            x2 = document.calcform.x2.value;
+            x3 = Math.sqrt(x2 / (4 * Math.PI));
+            document.calcform.x3.value = roundresult(x3);
+        }
+
+        function convert(x1, x2) {
+            i = document.calcform.cb1.selectedIndex;
+            y = x1 / x2;
+            if (i == 0) y *= 10.76391;
+            return (y);
+        }
+    </script>
+
+</body>
+
+
+
+</html>

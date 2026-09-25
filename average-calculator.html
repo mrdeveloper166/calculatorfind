@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <script async src="tagmng3.js"></script>
+
+    <title>Average Calculator</title>
+    <meta name="keywords" content="average calculator,average calculator in excel,average calculator stock,average calculator online,average calculator formula">
+    <meta name="description" content="Calculate the average of a set of numbers. Mean calculator finds the mean by adding all numbers and dividing by the count. Free online statistics calculators.">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Average Calculator" />
+    <meta property="og:description" content="Calculate the average of a set of numbers. Mean calculator finds the mean by adding all numbers and dividing by the count. Free online statistics calculators." />
+    <meta property="og:url" content="https://www.calculatorfind.com/average-calculator.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Average Calculator or converter</h1> <br> <br>
+                <form autocomplete="off" class="box float" id="calcform">
+                    <div class="form-group">
+                        <label for="data" style="font-weight: bold; color:white;">Enter data values</label>
+                        <textarea rows="3" id="data" class="form-control" autofocus>1 2 5</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="del" style="color:white; font-weight:bold;">Numbers delimiter</label>
+                        <div class="row">
+                            <div class="col">
+                                <select id="seldel" class="form-control" onchange="seldelchange()">
+         <option value=" ">Space</option>
+         <option value=",">Comma</option>
+         <option value="">User Defined</option>
+      </select>
+                            </div>
+                            <div class="col">
+                                <input type="text" id="del" value=" " class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="calc" title="Calculate" class="btn btn-secondary btn-success"><b>=</b> Calculate</button>
+                        <button type="reset" id="reset" title="Reset" class="btn btn-secondary btn-danger"><b>X</b> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="avg" style="color:white;font-weight:bold;">Average (mean)</label>
+                        <input type="text" id="avg" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="cnt" style="color:white;font-weight:bold;">Count</label>
+                        <input type="text" id="cnt" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="sum" style="color:white;font-weight:bold;">Sum</label>
+                        <input type="text" id="sum" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="mdn" style="color:white;font-weight:bold;">Median</label>
+                        <input type="text" id="med" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="mod" style="color:white;font-weight:bold;">Mode</label>
+                        <input type="text" id="mod" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="pstd" style="color:white;font-weight:bold;">Population SD</label>
+                        <input type="text" id="pstd" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="sstd" style="color:white;font-weight:bold;">Sample SD:</label>
+                        <input type="text" id="sstd" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="min" style="color:white;font-weight:bold;">Min value</label>
+                        <input type="text" id="min" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="max" style="color:white;font-weight:bold;">Max value</label>
+                        <input type="text" id="max" class="form-control" style="color:green;font-weight:bold;" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="ran" style="color:white;font-weight:bold;">Range</label>
+                        <input type="text" style="color:green;font-weight:bold;" id="ran" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="calc" style="color:white;font-weight:bold;">Average calculation</label>
+                        <textarea rows="3" id="avgcalc" style="color:green;font-weight:bold;" class="form-control" readonly></textarea>
+                    </div>
+                    <div class="form-group" id="cdiv">
+                        <label for="" style="color:white;font-weight:bold;">Distribution graph</label>
+                        <div id="chart_div"></div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <h2>Average calculation and how to use average calculator</h2>
+                <p>The average (arithmetic mean) is equal to the sum of the n numbers divided by n:</p>
+                <p class="math"><i>Average</i> = (<i>a</i><sub>1</sub>+<i>a</i><sub>2</sub>+...+<i>a<sub>n</sub></i>) / <i>n</i></p>
+                <h4>Example</h4>
+                <p>The average of 1,2,5 is:</p>
+                <p class="math"><b><i>Average</i> = (1+2+5) / 3 = 2.667</b></p>
+                <br>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+                <h2>What is Average Calculator</h2>
+                <br>
+                <p>The average of a set of numbers is simply the sum of the numbers divided by the total number of values in the set. For example, suppose we want the average of 24 , 55 , 17 , 87 and 100 . Simply find the sum of the numbers: 24 + 55 + 17
+                    + 87 + 100 = 283 and divide by 5 to get 56.6 .</p><br>
+                <h2>Mean Formula</h2>
+                <p>The mean
+                    <em>x&#772; </em>of a data set is the sum of all of the data values divided by the count or size
+                    <em>n</em>.</p>
+                <img src="average-formula.jpg" alt="average formula" title="Average-Formula">
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+
+    <!--     <tr>
+                                <td>&nbsp;</td>
+                            </tr> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="calc2.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        var dist, avg;
+        $(document).ready(function() {
+            $("#del").prop("disabled", true);
+            $("#calc").click(Calc);
+            $("#cdiv").hide();
+        });
+
+        function Calc() {
+            var txt = $("#data").val().trim();
+            var del = $("#del").val();
+            var num = txt.split(del);
+            if (!num) return;
+            if (num.length == 0) return;
+            num = num.map(Number);
+            var sum = 0;
+            var min = Math.min(...num);
+            var max = Math.max(...num);
+            var len = num.length;
+            num.sort();
+            for (var i = 0; i < len; i++) {
+                sum += num[i];
+            }
+            dist = [];
+            var prevnum = null;
+            for (var i = 0, k = -1; i < len; i++) {
+                if (num[i] != prevnum) {
+                    prevnum = num[i];
+                    k++;
+                    dist[k] = {};
+                    dist[k].num = num[i];
+                    dist[k].count = 1;
+                } else
+                    dist[k].count++;
+            }
+            var countmax = -1;
+            for (var i = 0; i < dist.length; i++) {
+                if (dist[i].count > countmax)
+                    countmax = dist[i].count;
+            }
+            var mod = "";
+            for (var i = 0; i < dist.length; i++) {
+                if (dist[i].count == countmax)
+                    mod += dist[i].num + ", ";
+            }
+            mod = mod.slice(0, -2);
+            avg = roundresult(sum / len);
+            var std = 0;
+            for (var i = 0; i < dist.length; i++) {
+                std += dist[i].count * Math.pow((dist[i].num - avg), 2);
+            }
+            var pstd = roundresult(Math.sqrt(std / len));
+            var sstd = roundresult(Math.sqrt(std / (len - 1)));
+            var i1 = Math.floor((len + 1) / 2) - 1;
+            var i2 = Math.floor((len + 2) / 2) - 1;
+            var med = roundresult((num[i1] + num[i2]) / 2);
+            var range = roundresult(max - min);
+            sum = roundresult(sum);
+            txt = "(";
+            for (var i = 0; i < len - 1; i++)
+                txt += num[i] + "+";
+            txt += num[len - 1] + ") / " + len + " = " + avg;
+            $("#avg").val(avg);
+            $("#med").val(med);
+            $("#mod").val(mod);
+            $("#pstd").val(pstd);
+            $("#sstd").val(sstd);
+            $("#cnt").val(len);
+            $("#sum").val(sum);
+            $("#min").val(min);
+            $("#max").val(max);
+            $("#ran").val(range);
+            $("#avgcalc").val(txt);
+            DrawGraph();
+        }
+
+        function seldelchange() {
+            var del = $("#seldel").val();
+            $("#del").val(del);
+            if ($("#seldel")[0].selectedIndex == 2)
+                $("#del").prop("disabled", false);
+            else
+                $("#del").prop("disabled", true);
+        }
+
+        function DrawGraph() {
+            google.charts.load('current', {
+                'packages': ['corechart']
+            });
+            google.charts.setOnLoadCallback(drawVisualization);
+        }
+
+        function drawVisualization() {
+            var d = [
+                ['', '', {
+                    role: 'style'
+                }]
+            ];
+            for (var i = 0; i < dist.length; i++)
+            //d.push(['',  dist[i], '']);
+                d.push([dist[i].num, dist[i].count, '']);
+            var data = google.visualization.arrayToDataTable(d);
+
+            var options = {
+                width: 448,
+                legend: {
+                    position: 'none'
+                },
+                title: 'Numbers distribution with average',
+                vAxis: {
+                    title: '# of occurrences',
+                    viewWindow: {
+                        min: 0
+                    }
+                },
+                hAxis: {
+                    title: 'Number'
+                },
+                seriesType: 'bars',
+            };
+            var viewportWidth = $(window).width(); //$("body").innerWidth();
+            if (viewportWidth <= 320)
+                options.width = 245;
+            if (viewportWidth <= 800)
+                options.width = 292;
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+            var n = Math.round(avg * 100) / 100;
+            drawVAxisLine(chart, n);
+            $("#cdiv").show();
+            $("#doc").css("cursor", "default");
+        }
+
+        function drawVAxisLine(chart, value) {
+            var layout = chart.getChartLayoutInterface();
+            var chartArea = layout.getChartAreaBoundingBox();
+
+            var svg = chart.getContainer().getElementsByTagName('svg')[0];
+            var xLoc = layout.getXLocation(value)
+            svg.appendChild(createLine(xLoc, chartArea.top + chartArea.height, xLoc, chartArea.top, '#00cccc', 4)); // axis line 
+        }
+
+        function createLine(x1, y1, x2, y2, color, w) {
+            var line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', x1);
+            line.setAttribute('y1', y1);
+            line.setAttribute('x2', x2);
+            line.setAttribute('y2', y2);
+            line.setAttribute('stroke', color);
+            line.setAttribute('stroke-width', w);
+            return line;
+        }
+
+        function clearform() {
+            $("#cdiv").hide();
+        }
+    </script>
+
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

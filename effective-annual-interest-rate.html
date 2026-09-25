@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <title>Effective annual interest rate calculator</title>
+
+    <meta name="keywords" content="Effective annual interest rate calculato">
+    <meta name="description" content="The effective period interest rate is equal to the nominal annual interest rate divided by the number of periods per year n.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Effective annual interest rate calculato" />
+    <meta property="og:description" content="The effective period interest rate is equal to the nominal annual interest rate divided by the number of periods per year n." />
+    <meta property="og:url" content="https://www.calculatorfind.com/effective-annual-interest-rate.html" />
+
+    <script async src="tagmng3.js"></script>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<header id="myheader"></header>
+
+<div class="container">
+    <br>
+    <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+    <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+    <a href="index.html" title="Back to Home">
+        <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+    </a>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+            <h2>Effective interest rate calculator or converter with the formulas and chart</h2>
+            <p>Effective annual interest rate or annual equivalent rate calculator.</p>
+            <br>
+            <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                <table>
+                    <tr>
+                        <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Nominal annual interest rate:</td>
+                        <td class="math"><input id="Text1" name="Text1" type="number" min="0" max="100" step="0.25" class="intext form-control" style="width:120px" value="4"> <span style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</span></td>
+                        <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">per year</td>
+                    </tr>
+                    <tr>
+                        <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Compounding period:</td>
+                        <td><select id="Select1" name="Select1" onchange="OnPeriodChange()" class="form-control">
+						<option>Days</option>
+						<option>Weeks</option>
+						<option selected="selected">Months</option>
+						<option>Quarters</option>
+						<option>Other</option>
+					</select></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <td>Compounding periods per year:</td>
+                        <td class="math"><input id="Text2" name="Text2" type="number" min="1" max="365" class="intext form-control" style="width:120px" value="12" onchange="OnPeriodNumChange()"></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="3">
+                            <input type="button" value="Calculate" style="font-size:medium; width:120px; padding:5px" onclick="OnCalc()" class="btn btn-success">
+                            <input type="reset" value="Clear" style="font-size:medium; width:120px; padding:5px" class="btn btn-danger">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Effective period interest rate:</td>
+                        <td class="math"><input id="Text6" name="Text6" type="text" class="outtext form-control" style="width:120px" readonly style="color: green; font-weight: bold; background-color: white;"><span style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">%</span></td>
+                        <td colspan="2" id="td1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;width: 70px;">per month</td>
+                    </tr>
+                    <tr>
+                        <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Effective annual interest rate:</td>
+                        <td class="math"><input id="Text7" name="Text7" type="text" class="outtext form-control" style="width:120px" readonly style="color: green; font-weight: bold; background-color: white;"><span style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"></span></td>
+                        <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">per year</td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+
+
+        <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    </div>
+
+
+    <div class="row ">
+
+
+        <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+            <br><br><br>
+
+
+            <h2>Effective interest rate calculation and how calculate effective interest rate</h2>
+            <h4>Effective period interest rate calculation</h4>
+            <p>The <em>effective period interest rate</em> is equal to the <em>nominal annual interest rate</em> divided by the number of periods per year <em>n:</em></p>
+            <p><em class="math"><em>Effective Period Rate</em> = Nominal Annual Rate / n</em>
+            </p>
+            <h4>Effective annual interest rate calculation</h4>
+            <p>The effective interest rate is equal to 1 plus the nominal interest rate in percent divided by the number of compounding persiods per year n, to the power of n, minus 1.</p>
+            <p class="math"><em>Effective Rate</em> = (1 + <em>Nominal Rate</em> / <em>n</em>)<sup><em>n</em></sup> - 1</p>
+
+
+        </div>
+
+
+
+
+        <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+        </div>
+
+    </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</div>
+
+
+
+
+
+<br><br><br><br>
+
+<footer id="myfooter"></footer>
+<script src="myload.js"></script>
+
+
+
+<script>
+    function OnPeriodChange() {
+        i = document.getElementById("Select1").selectedIndex;
+        plook = [365, 52, 12, 4];
+        tlook = ['per day', 'per week', 'per month', 'per quarter', ''];
+        document.getElementById("Text2").value = plook[i];
+        document.getElementById("td1").innerHTML = tlook[i];
+    }
+
+    function OnPeriodNumChange() {
+        nperiod = document.getElementById("Text2").value;
+        txt = '';
+        i = 4;
+        if (nperiod == '365') {
+            txt = 'per day';
+            i = 0;
+        }
+        if (nperiod == '52') {
+            txt = 'per week';
+            i = 1;
+        }
+        if (nperiod == '12') {
+            txt = 'per month';
+            i = 2;
+        }
+        if (nperiod == '4') {
+            txt = 'per quarter';
+            i = 3;
+        }
+        document.getElementById("td1").innerHTML = txt;
+        document.getElementById("Select1").selectedIndex = i;
+    }
+
+    function OnCalc() {
+        i = document.getElementById("Text1").value;
+        n = document.getElementById("Text2").value;
+        i = parseFloat(i) / 100;
+        imonth = i / n * 100;
+        iyear = (Math.pow((1 + i / n), n) - 1) * 100;
+        document.getElementById("Text6").value = imonth.toFixed(3);
+        document.getElementById("Text7").value = iyear.toFixed(3);
+    }
+</script>
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

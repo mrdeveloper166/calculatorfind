@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <title>Scientific Notation Calculator</title>
+
+
+    <meta name="keywords" content="scientific notation calculator,in scientific notation calculator,scientific notation calculator with steps,scientific notation calculator multiplication,scientific notation converter,scientific notation converter calculator">
+    <meta name="description" content=" scientific notation is a x 10^b where a is a number or decimal number such that the absolute value of a is greater than or equal to one and less than ten or, 1  |a| < 10. b is the power of 10 required so that the scientific notation is mathematically equivalent to the original number.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Scientific Notation Calculator" />
+    <meta property="og:description" content=" scientific notation is a x 10^b where a is a number or decimal number such that the absolute value of a is greater than or equal to one and less than ten or, 1  |a| < 10. b is the power of 10 required so that the scientific notation is mathematically equivalent to the original number."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/scientific-notation-calculator.html" />
+   
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        * {
+            font-size: 16px;
+        }
+        
+        h1,
+        h2 {
+            font-size: 1.6rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+        }
+        
+        #calcform .btn span {
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        #calcform .input-group input[type=number]:first-child {
+            margin-top: 20px;
+        }
+        
+        #calcform .input-group input[type=text]:first-child {
+            margin-top: 20px;
+        }
+        
+        #calcform .input-group span {
+            margin-top: 25px;
+        }
+        
+        #calcform select {
+            font-weight: bold;
+        }
+        
+        #calcform .btn img {
+            filter: invert(1);
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Scientific Notation Converter Calculator</h1>
+                <br><br>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="#" class="nav-link active">Scientific notation calculator</a></li>
+                    <li class="nav-item"><a href="scientific-notation-converter.html" class="nav-link">Scientific notation converter</a></li>
+                </ul>
+                <br>
+                <form class="box float" id="calcform" name="calcform" autocomplete="off">
+                    <div class="form-group">
+                        <label for="n1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">First number</label>
+                        <div class="input-group">
+                            <input type="text" inputmode="numeric" class="form-control" id="n1" name="n1" autofocus>
+                            <span class="math" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&times;10&nbsp;</span>
+                            <input type="text" inputmode="numeric" class="form-control" id="e1" name="e1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="op" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Operation</label>
+                        <select class="form-control" id="op" name="op">
+			<option>+</option>
+			<option>-</option>
+			<option>&times;</option>
+			<option>&divide;</option>
+		</select>
+                    </div>
+                    <div class="form-group">
+                        <label for="n2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Second number</label>
+                        <div class="input-group">
+                            <input type="text" inputmode="numeric" class="form-control" id="n2" name="n2">
+                            <span class="math" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&times;10&nbsp;</span>
+                            <input type="text" inputmode="numeric" class="form-control" id="e2" name="e2">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Calculate" class="btn btn-success" onclick="Calc0()"><span>=</span> Calculate</button>
+                        <button type="reset" title="Reset" class="btn btn-danger" onclick="setfocus()"><span>&times;</span> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="sci" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Scientific notation</label>
+                        <div class="input-group">
+                            <input type="text" id="sci" name="sci" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                            <span class="math" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&times;10&nbsp;</span>
+                            <input type="text" id="sci2" name="sci2" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="e" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">E notation</label>
+                        <input type="text" id="e" name="e" class="form-control outtext" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                    <div class="form-group">
+                        <label for="dec" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Decimal notation</label>
+                        <input type="text" id="dec" name="dec" class="form-control outtext" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Scientific notation calculations with formulas</h2>
+                <p> scientific notation is a x 10^b where a is a number or decimal number such that the absolute value of a is greater than or equal to one and less than ten or, 1 |a|
+                    < 10. b is the power of 10 required so that the scientific notation is mathematically equivalent to the original number.</p><br>
+                        <p>For 2 number x1 and x2:</p><br>
+                        <p class="math"><em>x</em><sub>1</sub> = <em>a</em><sub>1</sub> &times; 10<sup><em>b</em>1</sup></p><br>
+                        <p class="math"><em>x</em><sub>2</sub> = <em>a</em><sub>2</sub> &times; 10<sup><em>b</em>2</sup></p><br>
+                        <h4>Scientific notations addition</h4><br>
+                        <p class="math"><em>x</em><sub>1</sub> +
+                            <em>x</em><sub>2</sub> = <em>a</em><sub>1</sub> &times; 10<sup><em>b</em>1</sup> + <em>a</em><sub>2</sub> &times; 10<sup><em>b</em>2</sup></p><br>
+                        <h4>Scientific notations subtraction</h4><br>
+                        <p class="math"><em>x</em><sub>1</sub> - <em>x</em><sub>2</sub> = <em>a</em><sub>1</sub> &times; 10<sup><em>b</em>1</sup> - <em>a</em><sub>2</sub> &times; 10<sup><em>b</em>2</sup></p><br>
+                        <h4>Scientific notations multiplication</h4><br>
+                        <p class="math"><em>x</em><sub>1</sub> &times; <em>x</em><sub>2</sub> = <em>a</em><sub>1</sub><em>a</em><sub>2</sub> &times; 10<sup><em>b</em>1+<em>b</em>2</sup></p><br>
+                        <h4>Scientific notations division</h4><br>
+                        <p class="math"><em>x</em><sub>1</sub> / <em>x</em><sub>2</sub> = (<em>a</em><sub>1</sub>/<em>a</em><sub>2</sub>) &times; 10<sup><em>b</em>1-<em>b</em>2</sup></p><br>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+<div id="myseealso"></div>
+<br><br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<br><br>
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script src="calc2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        function Calc0() {
+            n1 = document.calcform.n1.value;
+            e1 = document.calcform.e1.value;
+            n2 = document.calcform.n2.value;
+            e2 = document.calcform.e2.value;
+            i = document.calcform.op.selectedIndex;
+            e1 = parseInt(e1);
+            e2 = parseInt(e2);
+
+            dec1 = n1 * Math.pow(10, e1);
+            dec2 = n2 * Math.pow(10, e2);
+            if (i == 0) {
+                dec = dec1 + dec2;
+                en = dec.toExponential();
+                n = en;
+                e = 0;
+                i = en.indexOf('e');
+                if (i != -1) {
+                    n = en.substring(0, i);
+                    e = en.substring(i + 1, en.length);
+                }
+                e = parseInt(e);
+            } else if (i == 1) {
+                dec = dec1 - dec2;
+                en = dec.toExponential();
+                n = en;
+                e = 0;
+                i = en.indexOf('e');
+                if (i != -1) {
+                    n = en.substring(0, i);
+                    e = en.substring(i + 1, en.length);
+                }
+                e = parseInt(e);
+            } else if (i == 2) {
+                n = n1 * n2;
+                e = e1 + e2;
+                dec = n * Math.pow(10, e);
+            } else {
+                n = n1 / n2;
+                e = e1 - e2;
+                dec = n * Math.pow(10, e);
+            }
+            if (n == 0)
+                f = 0;
+            else
+                f = Math.floor(Math.log(Math.abs(n)) * Math.LOG10E);
+            norm = n / Math.pow(10, f);
+            norm = roundnum(norm, 10);
+            norm2 = parseInt(e) + f;
+            sign = "";
+            if (norm2 >= 0) sign = "+";
+            en = norm + "e" + sign + norm2;
+
+            document.calcform.dec.value = dec;
+            document.calcform.e.value = en;
+            document.calcform.sci.value = norm;
+            document.calcform.sci2.value = norm2;
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

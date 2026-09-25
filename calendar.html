@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Calendar | Calendar Online</title>
+    <meta name="keywords" content="calendar,calendar 2020,calendar 2021,calendar google,calendar for 2021,calendar photo,calendar year,calendar today,calendar date,calendar this month,calendar week,calendar with holidays,calendar to print,calendar birthday,calendar spelling,calendar hindu,calendar india,calendar urdu,calendar thakur prasad,calendar 1995,calendar 1993,calendar in hindi,calendar hindi">
+    <meta name="description" content="Calendar is a chart or device which displays the date and the day of the week, and often the whole of a particular year divided up into months, weeks, and days. ... A calendar is a particular system for dividing time into periods such as years, months, and weeks, often starting from a particular point in history.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Calendar | Calendar Online" />
+    <meta property="og:description" content="Calendar is a chart or device which displays the date and the day of the week, and often the whole of a particular year divided up into months, weeks, and days. ... A calendar is a particular system for dividing time into periods such as years, months, and weeks, often starting from a particular point in history."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/calendar.html" />
+
+
+    <link rel="stylesheet" href="jquery.mobile.min.css" />
+    <link rel="stylesheet" href="jquery.mobile.datepicker.css" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <style>
+        #date {
+            margin: 5% auto;
+            max-width: 340px;
+        }
+        /*
+	#time, #date { text-align:center; font-size:30px; }
+	@media all and (max-width: 640px) {
+		#date { font-size:15vw; }
+		#time { font-size:12vw; }
+	}
+	@media all and (min-width: 641px) {
+		#date { font-size:8vw; }
+		#time { font-size:6vw; }
+	}
+*/
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="js.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-2665076-2');
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="cookieconsent.min.css" />
+    <script src="cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f0f0d0",
+                        "text": "#333333"
+                    },
+                    "button": {
+                        "background": "#b0b080",
+                        "text": "#333"
+                    }
+                },
+                "content": {
+                    "dismiss": "OK",
+                    "message": "This website uses cookies to improve your experience, analyze traffic and display ads.",
+                    "href": "https://www.calculatorfind.com/about/privacy_policy.html"
+                }
+            })
+        });
+    </script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.mobile.min.js"></script>
+    <script src="jquery.ui.datepicker.js"></script>
+    <script id="mobile-datepicker" src="jquery.mobile.datepicker.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+    <div data-role="page" class="ui-responsive-panel">
+        <div data-role="header" id="header">
+            <a id="barsbtn" href="#toc_panel" data-role="button" data-icon="bars" title="Panel" data-iconpos="notext"></a>
+            <h1>Calendar
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </h1>
+        </div>
+
+        <div role="main" class="ui-content" id="main">
+            <div id="date"><input type="text" data-role="date" data-inline="true"></div>
+        </div>
+
+
+        <script>
+            $(document).on('pagecreate', function() {
+                $(":jqmData(role='page')").attr("data-title", document.title);
+            });
+        </script>
+</body>
+
+</html>

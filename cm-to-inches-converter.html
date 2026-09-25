@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CM to Inches | Inches to CM Converter</title>
+
+    <script async src="tagmng3.js"></script>
+
+
+    <meta name="keywords" content="cm to inch, cm to inches, inch to cm, inch to cm conversion, cm to inch converter, how many cm in an inch, convert inch to cm, cm to inches calculator">
+    <meta name="description" content="CM to inches - This calculator converts centimeters into inches and tells how many inches are in the given value of the centimeter. It calculates the cm value quickly and tells the answer in inches. You can also know how many inches in given cm value.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:locale" content="en_US" />
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CM to Inches | Inches to CM Converter" />
+    <meta property="og:description" content="CM to inches - This calculator converts centimeters into inches and tells how many inches are in the given value of the centimeter. It calculates the cm value quickly and tells the answer in inches. You can also know how many inches in given cm value."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/cm-to-inches-converter.html" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+
+<br>
+        <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h2>Centimeters to Inches Converter or calculator</h2>
+                <br>
+                <form name="calcform" id="calcform" autocomplete="off" class="box float">
+                    <div class="form-group">
+                        <label for="x" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter centimeters</label>
+                        <div class="input-group">
+                            <!--<input type="number" min="0" step="any" id="x" name="x" class="form-control" required autofocus>-->
+                            <input type="text" id="x" name="x" class="form-control" required autofocus>
+                            <div class="input-group-append">
+                                <select id="unitsel1" onchange="unitchange1()" class="input-group-text">
+                    <option>mm</option>
+                    <option selected>cm</option>
+                    <option>ft</option>
+                    <option>m</option>
+                 </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Convert" onclick="OnCalc()" class="btn btn-success"><i class="material-icons">autorenew</i> Convert</button>
+                        <button type="reset" title="Reset" class="btn btn-danger"><i class="material-icons">clear</i> Reset</button>
+                        <button type="button" title="Swap conversion" class="btn btn-secondary" onclick="location.href='inches-to-cm-converter.html';"><i class="material-icons">swap_vert</i> Swap</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="y" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Inches decimal result</label>
+                        <div class="input-group">
+                            <input type="text" id="y" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <select id="unitsel2" onchange="unitchange2()" class="input-group-text">
+                    <option>mm</option>
+                    <option selected>in</option>
+                    <option>ft</option>
+                 </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="y1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Inches fractional result</label>
+                        <div class="input-group">
+                            <input type="text" id="y1" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <span class="input-group-text">in</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="y2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Feet+Inches result</label>
+                        <div class="input-group">
+                            <input type="text" id="y2" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append mr-2">
+                                <span class="input-group-text">ft</span>
+                            </div>
+                            <input type="text" id="y3" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <span class="input-group-text">in</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="TA" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation</label>
+                        <textarea id="TA" rows="3" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+
+                <br>
+
+                <h2>CM to inches conversion with formulas and converison chart</h2>
+                <p style="font-size:16px; text-align:justify;">The calculator centimeter to inches is used to convert the centimeter into inches. To convert centimeters into inches, multiply the given centimeter value by 0.393701 inches. For example, 20 cm to inches is equal to 7.874 inches. (i.e.)
+                    20 x 0.393701 = 7.874. </p>
+                <p style="font-size:16px; text-align:justify;">It will display the method of calculation of your query. For using this calculator just put your centimeter value in the given input and click on calculate. It will show the result in integer or decimal. You can also see the answer in
+                    fraction value also.</p>
+
+
+                <h2>
+                    <a id="how"></a>How to convert centimeters to inches and how to use this calculator.</h2>
+                <p>1 centimeter is equal to 0.3937007874 inches:</p>
+                <p class="math">1cm = (1/2.54)&Prime; = 0.3937007874&Prime;</p>
+                <p>The distance <em>d</em> in inches (&Prime;) is equal to the distance <i>d</i> in centimeters (cm) divided by 2.54:</p>
+                <p class="math"><em>d</em><sub>(&Prime;)</sub> = <em>d</em><sub>(cm)</sub> / 2.54 </p>
+                <h4>Example</h4>
+                <p>Convert 20 cm to inches:</p>
+                <p class="math"><em>d</em><sub>(&Prime;)</sub> = 20cm / 2.54 = 7.874&Prime;</p>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <h2>
+                    <a id="table"></a>Centimeters to inches conversion table</h2>
+                <p>The fraction inches are rounded to 1/64 resolution.</p>
+                <table class="ntable">
+                    <thead>
+                        <tr>
+                            <th>Centimeters (cm)</th>
+                            <th>Inches (")<br>(decimal)</th>
+                            <th>Inches (")<br>(fraction)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0.01 cm</td>
+                            <td>0.0039 in</td>
+                            <td>0 in</td>
+                        </tr>
+                        <tr>
+                            <td>0.1 cm</td>
+                            <td>0.0394 in</td>
+                            <td>3/64 in</td>
+                        </tr>
+                        <tr>
+                            <td>1 cm</td>
+                            <td>0.3937 in</td>
+                            <td>25/64 in</td>
+                        </tr>
+                        <tr>
+                            <td>2 cm</td>
+                            <td>0.7874 in</td>
+                            <td>25/32 in</td>
+                        </tr>
+                        <tr>
+                            <td>3 cm</td>
+                            <td>1.1811 in</td>
+                            <td>1 3/16 in</td>
+                        </tr>
+                        <tr>
+                            <td>4 cm</td>
+                            <td>1.5748 in</td>
+                            <td>1 37/64 in</td>
+                        </tr>
+                        <tr>
+                            <td>5 cm</td>
+                            <td>1.9685 in</td>
+                            <td>1 31/32 in</td>
+                        </tr>
+                        <tr>
+                            <td>6 cm</td>
+                            <td>2.3622 in</td>
+                            <td>2 23/64 in</td>
+                        </tr>
+                        <tr>
+                            <td>7 cm</td>
+                            <td>2.7559 in</td>
+                            <td>2 3/4 in</td>
+                        </tr>
+                        <tr>
+                            <td>8 cm</td>
+                            <td>3.1496 in</td>
+                            <td>3 5/32 in</td>
+                        </tr>
+                        <tr>
+                            <td>9 cm</td>
+                            <td>3.5433 in</td>
+                            <td>3 35/64 in</td>
+                        </tr>
+                        <tr>
+                            <td>10 cm</td>
+                            <td>3.9370 in</td>
+                            <td>3 15/16 in</td>
+                        </tr>
+                        <tr>
+                            <td>20 cm</td>
+                            <td>7.8740 in</td>
+                            <td>7 7/8 in</td>
+                        </tr>
+                        <tr>
+                            <td>30 cm</td>
+                            <td>11.8110 in</td>
+                            <td>11 13/16 in</td>
+                        </tr>
+                        <tr>
+                            <td>40 cm</td>
+                            <td>15.7840 in</td>
+                            <td>15 3/4 in</td>
+                        </tr>
+                        <tr>
+                            <td>50 cm</td>
+                            <td>19.6850 in</td>
+                            <td>19 11/16 in</td>
+                        </tr>
+                        <tr>
+                            <td>60 cm</td>
+                            <td>23.6220 in</td>
+                            <td>23 5/8 in</td>
+                        </tr>
+                        <tr>
+                            <td>70 cm</td>
+                            <td>27.5591 in</td>
+                            <td>27 9/16 in</td>
+                        </tr>
+                        <tr>
+                            <td>80 cm</td>
+                            <td>31.4961 in</td>
+                            <td>31 1/2 in</td>
+                        </tr>
+                        <tr>
+                            <td>90 cm</td>
+                            <td>35.4331 in</td>
+                            <td>35 7/16 in</td>
+                        </tr>
+                        <tr>
+                            <td>100 cm</td>
+                            <td>39.3701 in</td>
+                            <td>39 3/8 in</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+    <script src="convert.js"></script>
+    <script src="number.js"></script>
+    <script>
+        /*
+                                                                                                                                                                                                                                                                                                window.onload = function() {
+                                                                                                                                                                                                                                                                                                    document.getElementById("unitsel1").selectedIndex=0;
+                                                                                                                                                                                                                                                                                                    document.getElementById("unitsel2").selectedIndex=1;
+                                                                                                                                                                                                                                                                                                    var params=GetURLParams();
+                                                                                                                                                                                                                                                                                                    if( Object.keys(params).length>0 && params.x!="" ) {
+                                                                                                                                                                                                                                                                                                        document.title = params.x+" cm to inches conversion";
+                                                                                                                                                                                                                                                                                                        SetLinks(params);
+                                                                                                                                                                                                                                                                                                        document.getElementById("x").value = params.x;
+                                                                                                                                                                                                                                                                                                        calc0();
+                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                };*/
+        function SetLinks(params) {
+            var p1 = document.getElementById("p1");
+            var p2 = document.createElement('p');
+            var p3 = document.createElement('p');
+            var x = parseInt(params.x);
+            var x1 = x - 1;
+            var x2 = x + 1;
+            if (x1 >= 0)
+                p2.innerHTML = "<a href='cm-to-inch.html?x=" + x1 + "'>" + x1 + " cm to inches &#9658;</a>";
+            p3.innerHTML = "<a href='cm-to-inch.html?x=" + x2 + "'>" + x2 + " cm to inches &#9658;</a>";
+            p1.parentNode.insertBefore(p2, p1);
+            p1.parentNode.insertBefore(p3, p1);
+        }
+
+        function GetURLParams() {
+            var url = window.location.href;
+            var regex = /[?&]([^=#]+)=([^&#]*)/g,
+                //url = "www.domain.com/?v=123&p=hello",
+                params = {},
+                match;
+            while (match = regex.exec(url)) {
+                params[match[1]] = match[2];
+            }
+            return params;
+        }
+
+        function unitchange1() {
+            var i = document.getElementById("unitsel1").selectedIndex;
+            if (i == 0) location.href = 'mm-to-inch.html';
+            if (i == 2) location.href = 'ft-to-inch.html';
+            if (i == 3) location.href = 'm-to-inch.html';
+        }
+
+        function unitchange2() {
+            var i = document.getElementById("unitsel2").selectedIndex;
+            if (i == 0) location.href = 'cm-to-mm.html';
+            if (i == 2) location.href = 'cm-to-feet.html';
+        }
+
+        function getFracString(num, den) {
+            var s = "";
+            num = num.toString();
+            den = den.toString();
+            ulook = ["\u2070", "\u00B9", "\u00B2", "\u00B3", "\u2074", "\u2075", "\u2076", "\u2077", "\u2078", "\u2079"];
+            dlook = ["\u2080", "\u2081", "\u2082", "\u2083", "\u2084", "\u2085", "\u2086", "\u2087", "\u2088", "\u2089"];
+            for (var i = 0; i < num.length; i++)
+                s += ulook[num[i]];
+            s += "/";
+            for (var i = 0; i < den.length; i++)
+                s += dlook[den[i]];
+            return s;
+        }
+
+        function dec2frac(x) {
+            var y = parseFloat(x);
+            y = Math.round(y * 64) / 64;
+            var absy = Math.abs(y);
+            var yy = Math.floor(absy);
+            var frac = roundresult(absy - yy);
+            //if( x2<0 ) sign = sign2 = '-';
+            d = digits_after_period(absy);
+            den = Math.round(Math.pow(10, d));
+            num = Math.round(frac * den);
+            var len = num.toString().length;
+            var f = false;
+            if (len > 8) f = true;
+            g = gcd2(num, den, f);
+            num2 = Math.round(num / g);
+            den2 = Math.round(den / g);
+            y = yy;
+            //if( num2!=0 ) y+=" "+num2+"/"+den2;
+            if (num2 != 0) y += " " + getFracString(num2, den2);
+            return (y);
+        }
+
+        function OnCalc() {
+            var x = document.calcform.x.value;
+            if (x == "") return;
+            var y = (parseFloat(x) / 2.54);
+            var y = roundresult(y);
+            if (y < 0) {
+                x = -x;
+                y = -y;
+            }
+            var y1 = dec2frac(y);
+            var y2 = Math.floor(y / 12);
+            var y3 = roundresult(y - y2 * 12);
+            var txt = x + "cm / 2.54\n";
+            txt += "= " + y + '\"';
+            document.getElementById("y").value = y;
+            document.getElementById("y1").value = y1;
+            document.getElementById("y2").value = y2;
+            document.getElementById("y3").value = y3;
+            document.getElementById("TA").value = txt;
+        }
+    </script>
+    <!-- #EndEditable -->
+
+    </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

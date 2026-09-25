@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <title>GST Calculator</title>
+
+
+    <meta name="keywords" content="gst calculator,gst calculator india,gst calclator online,gst calculator formula,gst calculator reverse">
+    <meta name="description" content="Gst calculator- calculate your goods and service tax online.">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GST Calculator" />
+    <meta property="og:description" content="Gst calculator- calculate your goods and service tax online." />
+    <meta property="og:url" content="https://www.calculatorfind.com/gst-calculator.html" />
+
+
+
+
+
+    <script async src="tagmng3.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+    <style>
+        .calc2 input[type=text] {
+            width: 130px;
+        }
+        
+        .calc2 input[type=number] {
+            width: 130px;
+        }
+        
+        .calc2 button img {
+            vertical-align: middle;
+        }
+        
+        .calc2 tr:nth-child(2) button img {
+            vertical-align: top;
+            margin-top: 5px;
+        }
+        
+        @media all and (max-width: 576px) {
+            .calc2 {
+                width: 100%;
+            }
+            .calc2 select {
+                padding: 7px;
+            }
+            .calc2 input[type=text] {
+                width: 200px;
+                padding: 7px;
+            }
+            .calc2 input[type=number] {
+                width: 200px;
+                padding: 7px;
+            }
+            .calc2 tr:nth-child(2) button {
+                width: 40px;
+                height: 40px;
+                vertical-align: top;
+                margin-top: 3px;
+            }
+            .calc2 tr:nth-child(4) td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .calc2 td:nth-child(2) {
+                padding-top: 20px;
+            }
+        }
+        
+        @media all and (min-width: 577px) {
+            .calc2 tr:nth-child(2) button {
+                width: 30px;
+                height: 30px;
+                vertical-align: top;
+                margin-top: 3px;
+            }
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+       <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h2>GST Calculator</h2>
+                <p>Goods and services tax (GST) calculator online.</p>
+                <br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Country:</td>
+                            <td>&nbsp;</td>
+                            <td><select name="Select1" onchange="OnCountryChange()" class="form-control">
+				<option>Australia</option>
+				<option selected="selected">Canada</option>
+				<option>Hong Kong</option>
+				<option>India</option>
+				<option>Malaysia</option>
+				<option>New Zealand</option>
+				<option>Singapore</option>
+				<option>- other country -</option>
+			</select></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Initial amount:</td>
+                            <td class="math" id="cur1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">$</td>
+                            <td class="math">
+                                <input id="Text1" name="Text1" type="number" class="intext form-control" style="width:130px">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Rate of GST:</td>
+                            <td class="math">&nbsp;</td>
+                            <td class="math" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px; width: 130px;"><input id="Text2" name="Text2" type="number" class="intext form-control" value="20"> %</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <button type="button" title="Add GST" class="btn btn-success" onclick="OnCalcGST(1)"><b>+</b>Add GST</button>
+                                <button type="button" title="Subtract GST" class="btn btn-danger" onclick="OnCalcGST(0)"><b>-</b>Subtract GST</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Net amount:</td>
+                            <td class="math" id="cur2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">$</td>
+                            <td class="math"><input id="Text5" name="Text5" type="text" class="form-control outtext" readonly style="color: green; font-weight: bold; background-color: white;width: 130px;"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">GST amount:</td>
+                            <td class="math" id="cur3" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">$</td>
+                            <td class="math"><input id="Text6" name="Text6" type="text" class="form-control outtext" readonly style="color: green; font-weight: bold; background-color: white;width: 130px;"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Gross amount:</td>
+                            <td class="math" id="cur4" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">$</td>
+                            <td class="math"><input id="Text7" name="Text7" type="text" class="form-control outtext" readonly style="color: green; font-weight: bold; background-color: white;width: 130px;"></td>
+                        </tr>
+                    </table>
+                    <h2 style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">GST tax calculation</h2>
+                    <p>&nbsp;</p>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>GST </h2>
+                <p>Goods and Services Tax is an indirect tax used in India on the supply of goods and services. It is a comprehensive, multistage, destination-based tax: comprehensive because it has subsumed almost all the indirect taxes except a few state
+                    taxes </p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+    <script>
+        function OnClear() {
+            document.getElementById("Text1").value = '';
+            document.getElementById("Text5").value = '';
+            document.getElementById("Text6").value = '';
+            document.getElementById("Text7").value = '';
+        }
+
+        function OnCountryChange() {
+            gst_look = [10, 5, 5, 13.5, 6, 15, 7, ''];
+            c_look = ['$', '$', '$', 'R', 'RM', '$', '$', ''];
+            i = document.calcform.Select1.selectedIndex;
+            c = c_look[i];
+            document.getElementById("cur1").innerHTML = c;
+            document.getElementById("cur2").innerHTML = c;
+            document.getElementById("cur3").innerHTML = c;
+            document.getElementById("cur4").innerHTML = c;
+            document.getElementById("Text2").value = gst_look[i];
+        }
+
+        function OnCalcGST(op) {
+            i = document.calcform.Select1.selectedIndex;
+            amount = document.calcform.Text1.value;
+            if (amount == '') amount = '0';
+            amount = parseFloat(amount);
+            gst = document.calcform.Text2.value;
+            if (gst == '') gst = '0';
+            gst = parseFloat(gst);
+            if (op == 1) {
+                net_amount = amount;
+                gst_amount = amount * gst / 100;
+                gross_amount = parseFloat(net_amount) + parseFloat(gst_amount);
+            } else {
+                gross_amount = amount;
+                net_amount = 100 * amount / (100.0 + parseFloat(gst));
+                gst_amount = parseFloat(gross_amount) - parseFloat(net_amount);
+            }
+            net_amount = net_amount.toFixed(2);
+            gst_amount = gst_amount.toFixed(2);
+            gross_amount = gross_amount.toFixed(2);
+            document.calcform.Text5.value = net_amount;
+            document.calcform.Text6.value = gst_amount;
+            document.calcform.Text7.value = gross_amount;
+        }
+    </script>
+
+</body>
+
+
+
+</html>

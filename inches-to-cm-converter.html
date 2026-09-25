@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="tagmng3.js"></script>
+    <title>Inches to CM conversion calculator</title>
+
+    <meta name="keywords" content="inches to cm, cm to inches, conversion cm to inches, cm to inches conversion, inches to cm conversion, inches to cm conversion inches in cm, inches to cm chart">
+    <meta name="description" content="To find the exact value of centimeter value into an inch's value it is a useful calculator. You can easily convert the inches value into centimeters value with the help of this tool.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Inches to CM conversion calculator" />
+    <meta property="og:description" content="To find the exact value of centimeter value into an inch's value it is a useful calculator. You can easily convert the inches value into centimeters value with the help of this tool." />
+    <meta property="og:url" content="https://www.calculatorfind.com/inches-to-cm-converter.html" />
+   
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-size: 1.6rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+        }
+        
+        .btn i {
+            vertical-align: middle;
+        }
+        
+        #ndspan {
+            padding: .5rem 1rem;
+            font-size: 1.25rem;
+        }
+        
+        @media all and (max-width: 375px) {
+            .btn {
+                padding: 8px;
+            }
+        }
+        
+        @media all and (max-width: 320px) {
+            .btn {
+                padding: 8px 16px;
+            }
+            .btn i {
+                display: none;
+            }
+        }
+        
+        @media all and (max-width: 576px) {
+            .btn {
+                padding: 8px 6px;
+            }
+        }
+        
+        @media all and (max-width:320px) {
+            .calc button img {
+                display: none;
+            }
+        }
+        
+        .ntable td:nth-child(1),
+        .ntable td:nth-child(2) {
+            width: 100px
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Inches to Centimeters Converter</h1>
+                <br><br>
+                <form name="calcform" id="calcform" class="box float" autocomplete="off">
+
+                    <div class="form-group grid">
+                        <div class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+            <input type="radio" name="insel" id="insel-inch" value="u" checked>Inches
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="insel" id="insel-feetinch" value="m">Feet+Inches
+         </label>
+                        </div>
+                    </div>
+                    <div class="form-group grid">
+                        <div class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+            <input type="radio" name="fracsel" id="fracsel-inch" value="u" checked>Decimal
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="fracsel" id="fracsel-feetinch" value="m">Fraction
+         </label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="feetdiv">
+                        <label for="x" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter feet</label>
+                        <div class="input-group">
+                            <!--<input type="number" min="0" step="any" id="f" name="f" class="form-control">-->
+                            <input type="text" id="f" name="f" class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">ft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="x" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter inches</label>
+                        <div class="input-group">
+                            <!--
+      <input type="number" min="0" step="any" id="x" name="x" class="form-control" autofocus>
+      <input type="number" min="0" step="any" id="n" name="n" class="form-control">
+      -->
+                            <input type="text" id="x" name="x" class="form-control" autofocus>
+                            <input type="text" id="n" name="n" class="form-control">
+                            <span id="ndspan">/</span>
+                            <!--<input type="number" min="1" step="any" id="d" name="d" class="form-control mr-2">-->
+                            <input type="text" id="d" name="d" class="form-control mr-2">
+                            <div class="input-group-append">
+                                <select id="unitsel1" onchange="unitchange1()" class="input-group-text">
+            <option>mm</option>
+            <option selected>in</option>
+            <option>ft</option>
+         </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Convert" onclick="calc0()" class="btn btn-success"><i class="material-icons">autorenew</i> Convert</button>
+                        <button type="reset" title="Reset" onclick="OnReset()" class="btn btn-danger"><i class="material-icons">clear</i> Reset</button>
+                        <button type="button" title="Swap conversion" class="btn btn-secondary" onclick="location.href='cm-to-inches-converter.html';"><i class="material-icons">swap_vert</i> Swap</button>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Centimeters result</label>
+                        <div class="input-group">
+                            <input type="text" id="y" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <select id="unitsel2" onchange="unitchange2()" class="input-group-text">
+            <option>mm</option>
+            <option selected>cm</option>
+            <option>ft</option>
+            <option>m</option>
+         </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Meters+centimeters result</label>
+                        <div class="input-group">
+                            <input type="text" id="y2" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append mr-2">
+                                <span class="input-group-text">m</span>
+                            </div>
+                            <input type="text" id="y3" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <span class="input-group-text">cm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="TA" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation</label>
+                        <textarea id="TA" rows="3" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2> Inches to CM Converter</h2>
+                <p style="font-size:16px; text-align:justify;">Inches to cm converter is a free online tool that displays the conversion of inches to the centimeters value. Here you can easily convert any inch value into cemtimeters whether it is a decimal value or an integer value. There are formulas
+                    also mentioned below. These formulas help you for learning the method of calculation. </p>
+
+                <h2>
+                    <a id="how"></a>How to convert inches to centimeters</h2>
+                <p>1 inch is equal to 2.54 centimeters:</p>
+                <p class="math">1&Prime; = 2.54cm</p>
+                <p>The distance <em>d</em> in centimeters (cm) is equal to the distance <i>d</i> in inches (&Prime;) times 2.54:</p>
+                <p class="math"><em>d</em><sub>(cm)</sub> = <em>d</em><sub>(inch)</sub> &times; 2.54 </p>
+                <h4>Example</h4>
+                <p>Convert 20 inches to centimeters:</p>
+                <p class="math"><em>d</em><sub>(cm)</sub> = 20&Prime; &times; 2.54 = 50.8cm</p>
+                <h2>
+                    <a id="table"></a>Inches to centimeters conversion table</h2>
+                <table class="ntable">
+                    <thead>
+                        <tr>
+                            <th>Inches (")</th>
+                            <th>Centimeters (cm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0.01 in</td>
+                            <td>0.0254000 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1/64 in</td>
+                            <td>0.0396875 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1/32 in</td>
+                            <td>0.0793750 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1/16 in</td>
+                            <td>0.15875 cm</td>
+                        </tr>
+                        <tr>
+                            <td>0.1 in</td>
+                            <td>0.2540 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1/8 in</td>
+                            <td>0.3175 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1/4 in</td>
+                            <td>0.635 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1/2 in</td>
+                            <td>1.27 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1 in</td>
+                            <td>2.54 cm</td>
+                        </tr>
+                        <tr>
+                            <td>2 in</td>
+                            <td>5.08 cm</td>
+                        </tr>
+                        <tr>
+                            <td>3 in</td>
+                            <td>7.62 cm</td>
+                        </tr>
+                        <tr>
+                            <td>4 in</td>
+                            <td>10.16 cm</td>
+                        </tr>
+                        <tr>
+                            <td>5 in</td>
+                            <td>12.70 cm</td>
+                        </tr>
+                        <tr>
+                            <td>6 in</td>
+                            <td>15.24 cm</td>
+                        </tr>
+                        <tr>
+                            <td>7 in</td>
+                            <td>17.78 cm</td>
+                        </tr>
+                        <tr>
+                            <td>8 in</td>
+                            <td>20.32 cm</td>
+                        </tr>
+                        <tr>
+                            <td>9 in</td>
+                            <td>22.86 cm</td>
+                        </tr>
+                        <tr>
+                            <td>10 in</td>
+                            <td>&nbsp;25.40 cm</td>
+                        </tr>
+                        <tr>
+                            <td>20 in</td>
+                            <td>50.80 cm</td>
+                        </tr>
+                        <tr>
+                            <td>30 in</td>
+                            <td>76.20 cm</td>
+                        </tr>
+                        <tr>
+                            <td>40 in</td>
+                            <td>101.60 cm</td>
+                        </tr>
+                        <tr>
+                            <td>50 in</td>
+                            <td>127.00 cm</td>
+                        </tr>
+                        <tr>
+                            <td>60 in</td>
+                            <td>152.40 cm</td>
+                        </tr>
+                        <tr>
+                            <td>70 in</td>
+                            <td>177.80 cm</td>
+                        </tr>
+                        <tr>
+                            <td>80 in</td>
+                            <td>203.20 cm</td>
+                        </tr>
+                        <tr>
+                            <td>90 in</td>
+                            <td>228.60 cm</td>
+                        </tr>
+                        <tr>
+                            <td>100 in</td>
+                            <td>254.00 cm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
+    <script src="convert.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#feetdiv").hide();
+            $("#n").hide();
+            $("#d").hide();
+            $("#ndspan").hide();
+            $("input[name=insel]").change(function() {
+                var radioButtons = $("input:radio[name='insel']");
+                var i = radioButtons.index(radioButtons.filter(':checked'));
+                if (i)
+                    $("#feetdiv").show();
+                else
+                    $("#feetdiv").hide();
+                $("#f").val("");
+            });
+            $("input[name=fracsel]").change(function() {
+                var radioButtons = $("input:radio[name='fracsel']");
+                var i = radioButtons.index(radioButtons.filter(':checked'));
+                if (i) {
+                    $("#n").show();
+                    $("#d").show();
+                    $("#ndspan").show();
+                } else {
+                    $("#n").hide();
+                    $("#d").hide();
+                    $("#ndspan").hide();
+                }
+                $("#n").val("");
+                $("#d").val("");
+                $("#x").toggleClass("mr-4");
+            });
+            var params = GetURLParams();
+            if (Object.keys(params).length > 0) {
+                if (params.x != "") {
+                    document.title = params.x + " inches to cm conversion";
+                    $('#dec').click();
+                    document.getElementById("x").value = params.x;
+                    calc0();
+                } else if (params.n != "" && params.d != "") {
+                    document.title = params.n + "/" + params.d + " inch to cm conversion";
+                    document.getElementById("n").value = params.n;
+                    document.getElementById("d").value = params.d;
+                    calc0();
+                }
+                if (params.x != "" && params.n != "" && params.d != "") {
+                    document.title = params.x + " " + params.n + "/" + params.d + " inch to cm conversion";
+                    document.getElementById("x").value = params.x;
+                    document.getElementById("n").value = params.n;
+                    document.getElementById("d").value = params.d;
+                    calc0();
+                }
+                SetLinks(params);
+                //document.getElementById("x").value = params.x;
+                convert();
+            }
+        });
+
+        function SetLinks(params) {
+            var p1 = document.getElementById("p1");
+            var p2 = document.createElement('p');
+            var p3 = document.createElement('p');
+            var x = parseInt(params.x);
+            var x1 = x - 1;
+            var x2 = x + 1;
+            if (x1 >= 0)
+                p2.innerHTML = "<a href='inch-to-cm.html?x=" + x1 + "&n=&d='>" + x1 + " inches to cm &#9658;</a>";
+            p3.innerHTML = "<a href='inch-to-cm.html?x=" + x2 + "&n=&d='>" + x2 + " inches to cm &#9658;</a>";
+            p1.parentNode.insertBefore(p2, p1);
+            p1.parentNode.insertBefore(p3, p1);
+        }
+
+        function GetURLParams() {
+            var url = window.location.href;
+            var regex = /[?&]([^=#]+)=([^&#]*)/g,
+                //url = "www.domain.com/?v=123&p=hello",
+                params = {},
+                match;
+            while (match = regex.exec(url)) {
+                params[match[1]] = match[2];
+            }
+            return params;
+        }
+
+
+
+        //    function unitchange1() {
+        //     var i=document.getElementById("unitsel1").selectedIndex;
+        //    if( i==0 ) location.href='mm-to-inch.html';
+        //    if( i==2 ) location.href='ft-to-inch.html';
+        //  if( i==3 ) location.href='m-to-inch.html';
+        //   }
+        //  function unitchange2() {
+        //     var i=document.getElementById("unitsel2").selectedIndex;
+        //   if( i==0 ) location.href='cm-to-mm.html';
+        //  if( i==2 ) location.href='cm-to-feet.html';
+
+
+
+        function unitchange1() {
+            var i = document.getElementById("unitsel1").selectedIndex;
+            if (i == 0) location.href = 'mm-to-cm.html';
+            if (i == 2) location.href = 'feet-to-cm.html';
+        }
+
+        function unitchange2() {
+            var i = document.getElementById("unitsel2").selectedIndex;
+            if (i == 0) location.href = 'inch-to-mm.html';
+            if (i == 2) location.href = 'inch-to-feet.html';
+            if (i == 3) location.href = 'inch-to-meter.html';
+        }
+
+        function OnReset() {
+            $("#calcform .btn-group label").removeClass("active");
+            $("#calcform .btn-group label:first-child").addClass("active");
+        }
+
+        function calc0() {
+            var f = $("#f").val();
+            var x = $("#x").val();
+            var n = $("#n").val();
+            var d = $("#d").val();
+            if ($.isNumeric(f))
+                f = parseFloat(f);
+            else
+                f = 0;
+            if ($.isNumeric(x))
+                x = parseFloat(x);
+            else
+                x = 0;
+            if ($.isNumeric(n) && $.isNumeric(d)) {
+                n = parseInt(n);
+                d = parseInt(d);
+                if (d != 0)
+                    x += n / d;
+            }
+            x += f * 12;
+
+            var y = roundresult(x * 2.54);
+            var y2 = Math.floor(y / 100);
+            var y3 = roundresult(y - y2 * 100);
+            var txt = x + "\" \u00D7 2.54\n";
+            txt += "= " + y + 'cm';
+            $("#y").val(y);
+            $("#y2").val(y2);
+            $("#y3").val(y3);
+            $("#TA").val(txt);
+        }
+    </script>
+    <!-- #EndEditable -->
+
+    </div>
+
+    </div>
+
+</body>
+
+
+</html>

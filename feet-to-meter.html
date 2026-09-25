@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Feet to Meters (ft to m) conversion and calculator</title>
+
+    <meta name="keywords" content="feet to meter,meter to feet,how many feet in a meter, meter to feet converter,meter to feet conversion,square meter to squre feet,square feet to meter">
+    <meta name="description" content="Feet to meter converter- Meters to Feet (m to ft) conversion calculator for Length conversions with additional tables and formulas.">
+
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Feet to Meters (ft to m) conversion and calculator" />
+    <meta property="og:description" content="Feet to meter converter- Meters to Feet (m to ft) conversion calculator for Length conversions with additional tables and formulas." />
+    <meta property="og:url" content="https://www.calculatorfind.com/feet-to-meter.html" />
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .btn span {
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        @media all and (max-width: 576px) {
+            h1 {
+                font-size: 20px;
+            }
+            .calc2 button {
+                padding: 7px 5px;
+            }
+            .calc2 input[type=text],
+            .calc2 input[type=number] {
+                width: 100%;
+                padding: 5px;
+            }
+            .calc2 tr td:nth-child(2) {
+                width: 240px;
+                width: calc(100% - 50px);
+            }
+        }
+        
+        .calc2 td textarea {
+            font-size: large;
+            width: 100%;
+        }
+        
+        .ntable td:nth-child(1),
+        .ntable td:nth-child(2) {
+            width: 100px
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h2>Feet to Meters conversion or converter with formulas</h2><br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td><label for="x" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter feet:</label></td>
+                            <td class="math"><input type="text" id="x" name="x" class="intext form-control" autofocus></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">ft</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2">
+                                <button type="button" id="calc" title="Convert" class="btn btn-success" tabindex="2" onclick="calc0()"><img src="glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+                                <button type="reset" id="reset" title="Reset" class="btn btn-danger" tabindex="3"><img src="glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+                                <button type="button" title="Swap conversion" class="btn btn-secondary" tabindex="4" onclick="location.href='meters-to-feet.html';"><img src="glyphicons_halflings_114_retweet.png" alt=""> Swap</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Meters result:</td>
+                            <td class="math"><input type="text" id="y" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">m</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Meters+cm result:</td>
+                            <td class="math"><input type="text" id="y2" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">cm</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr id="pf1">
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation:</td>
+                            <td><textarea id="TA" rows="3" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br>
+
+                <h2>
+                    <a></a>How to convert feet to meters with table and chart</h2>
+                <p>1 foot is equal to 0.3048 meters:</p>
+                <p class="math">1 ft = 0.3048 m</p>
+                <p>The distance <em>d</em> in meters (m) is equal to the distance <i>d</i> in feet (ft) times 0.3048:</p>
+                <p class="math"><em>d</em><sub>(m)</sub> = <em>d</em><sub>(ft)</sub> &times; 0.3048</p>
+                <h4>Example</h4>
+                <p>Convert 2 feet to meters:</p>
+                <p class="math"><em>d</em><sub>(m)</sub> = 2ft &times; 0.3048 = 0.6096m</p>
+                <h2>
+                    <a name="table"></a>Feet to meters conversion table</h2>
+                <table class="ntable">
+                    <thead>
+                        <tr>
+                            <th>Feet (ft)</th>
+                            <th>Meters (m)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0.01 ft</td>
+                            <td>0.0030 m</td>
+                        </tr>
+                        <tr>
+                            <td>0.1 ft</td>
+                            <td>0.0305 m</td>
+                        </tr>
+                        <tr>
+                            <td>1 ft</td>
+                            <td>0.3048 m</td>
+                        </tr>
+                        <tr>
+                            <td>2 ft</td>
+                            <td>0.6096 m</td>
+                        </tr>
+                        <tr>
+                            <td>3 ft</td>
+                            <td>0.9144 m</td>
+                        </tr>
+                        <tr>
+                            <td>4 ft</td>
+                            <td>1.2192 m</td>
+                        </tr>
+                        <tr>
+                            <td>5 ft</td>
+                            <td>1.5240 m</td>
+                        </tr>
+                        <tr>
+                            <td>6 ft</td>
+                            <td>1.8288 m</td>
+                        </tr>
+                        <tr>
+                            <td>7 ft</td>
+                            <td>2.1336 m</td>
+                        </tr>
+                        <tr>
+                            <td>8 ft</td>
+                            <td>2.4384 m</td>
+                        </tr>
+                        <tr>
+                            <td>9 ft</td>
+                            <td>2.7432 m</td>
+                        </tr>
+                        <tr>
+                            <td>10 ft</td>
+                            <td>3.0480 m</td>
+                        </tr>
+                        <tr>
+                            <td>20 ft</td>
+                            <td>6.0960 m</td>
+                        </tr>
+                        <tr>
+                            <td>30 ft</td>
+                            <td>9.1440 m</td>
+                        </tr>
+                        <tr>
+                            <td>40 ft</td>
+                            <td>12.1920 m</td>
+                        </tr>
+                        <tr>
+                            <td>50 ft</td>
+                            <td>15.2400 m</td>
+                        </tr>
+                        <tr>
+                            <td>60 ft</td>
+                            <td>18.2880 m</td>
+                        </tr>
+                        <tr>
+                            <td>70 ft</td>
+                            <td>21.3360 m</td>
+                        </tr>
+                        <tr>
+                            <td>80 ft</td>
+                            <td>24.3840 m</td>
+                        </tr>
+                        <tr>
+                            <td>90 ft</td>
+                            <td>27.4320 m</td>
+                        </tr>
+                        <tr>
+                            <td>100 ft</td>
+                            <td>30.4800 m</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso">
+                
+                </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+
+    <script src="convert.js"></script>
+    <script async src="tagmng3.js"></script>
+    <script>
+        function calc0() {
+            var x = document.calcform.x.value;
+            var y = (parseFloat(x) * 0.3048);
+            var y = roundresult(y);
+            var y2 = Math.floor(y);
+            var y3 = roundresult((y - y2) * 100);
+            var txt = x + "ft / 0.3048\n";
+            txt += "= " + y + 'm';
+            document.calcform.y.value = y;
+            document.calcform.y2.value = y2 + "m " + y3;
+            document.calcform.TA.value = txt;
+        }
+    </script>
+</body>
+
+</html>

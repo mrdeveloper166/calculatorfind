@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Watt-hours (Wh) to mAh conversion calculator</title>
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="wh to mAh, mah to wh, wh vs mah, mah vs wh, wh in mah converter, 100wh to mah, wh to mah converter, wh to mah calculator, onlike wh to mah converter.">
+    <meta name="description" content="wh to mah converter convert the watt hour into milliamp hour. It calculate a particular watts value and give you the exact answer in milliamp hour. mAh = 1000 × Wh / V">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Watt-hours (Wh) to mAh conversion calculator" />
+    <meta property="og:description" content="wh to mah converter convert the watt hour into milliamp hour. It calculate a particular watts value and give you the exact answer in milliamp hour. mAh = 1000 × Wh / V" />
+    <meta property="og:url" content="https://www.calculatorfind.com/watt-hours-to-milliamp-hours.html" />
+   
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Wh to mAh conversion calculator and formulas</h1>
+                <p>Energy in Watt-hours (Wh) to electric charge in milliamp-hours (mAh) calculator.</p>
+                <p><b>How to convert :- </b>Enter the energy in watt-hours (Wh) and voltage in volts (V) and press the <em>Calculate</em> button:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <tr>
+                            <td>Enter energy in watt-hours:</td>
+                            <td class="math"><input type="number" min="0" step="any" name="x1" min="0" class="intext form-control" autofocus></td>
+                            <td class="mathsymbol">Wh</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Enter voltage in volts:</td>
+                            <td class="math"><input type="number" min="0" step="any" name="x2" min="0" class="intext form-control"></td>
+                            <td class="mathsymbol">V</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input onclick="calc3()" type="button" value="Calculate" class="btn btn-success"> <input onclick="setfocus()" type="reset" value="Reset" class="btn btn-danger"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Charge result in milliamp-hours:</td>
+                            <td class="math"><input type="text" name="y" class="outtext form-control" readonly></td>
+                            <td class="mathsymbol">mAh</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h3>Watt-hours to milliamp-hours calculation formula</h3>
+                <p>The electric charge <i>Q</i><sub>(mAh)</sub> in milliamp-hours (mAh) is equal to 1000 times the energy <i>E</i><sub>(Wh)</sub> in watt-hours (Wh) divided by the voltage <i>V</i><sub>(V)</sub> in volts (V):</p>
+                <p class="math"><i>Q</i><sub>(mAh)</sub> = 1000 &times; <i>E</i><sub>(Wh)</sub> / <i>V</i><sub>(V)</sub></p>
+                <p>So milliamp-hours is equal to 1000 times watt-hours divided by volts:</p>
+                <p class="math">milliamp-hours = 1000 &times; watt-hours / volts</p>
+                <p>or</p>
+                <p class="math">mAh = 1000 &times; Wh / V</p>
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function convert(x1, x2) {
+            var mah = 1000 * x1 / x2;
+            return mah;
+        }
+    </script>
+
+</body>
+
+</html>

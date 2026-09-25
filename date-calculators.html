@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Date Calculator</title>
+
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="date calculator,due date calculator,date calculator for today,date calculator online,date calculator difference,date calculator age,date calculator in days,date calculator pregnancy,date calculator today,date calculator months,date calculator for birth,date calculator between two dates,date calculator online,date calculator years">
+    <meta name="description" content="Date Calculator in Expression. Use this calculator to add or subtract two or more date values in the form of an expression. ... Like other numbers, time can be added or subtracted. However, due to how date is defined, there exist differences in how calculations must be computed when compared to decimal numbers.">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Date Calculator" />
+    <meta property="og:description" content="Date Calculator in Expression. Use this calculator to add or subtract two or more date values in the form of an expression. ... Like other numbers, time can be added or subtracted. However, due to how date is defined, there exist differences in how calculations must be computed when compared to decimal numbers."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/date-calculators.html" />
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <style>
+        * {
+            font-size: 16px;
+        }
+        
+        .calc {
+            padding: 20px;
+            max-width: 500px;
+            background: #eee8d5;
+        }
+        
+        .calc button i {
+            vertical-align: middle;
+            font-size: 18px;
+        }
+        
+        #datediv1 i,
+        #datediv2 i {
+            color: #666;
+            font-size: 42px;
+        }
+        
+        #wrapper TD {
+            padding-left: unset;
+            padding-right: unset;
+        }
+        
+        .ui-datepicker-trigger {
+            display: inline;
+            padding: 0px;
+            padding-left: 3px;
+            vertical-align: baseline;
+            position: relative;
+        }
+        
+        @media all and (max-width: 800px) {
+            .calc {
+                padding: 10px;
+            }
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Date Calculator or converter</h1><br>
+                <p><b> Date calculator :- </b> (+) add or (-) subtract (date duration, date difference)</p>
+                <br><br>
+                <form id="calcform" class="box float" autocomplete="off">
+                    <div class="form-group grid">
+                        <label class="row ml-0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Date format</label>
+                        <div id="fmtdiv" class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+      <input type="radio" name="fmt" id="fmt1" checked> MM/DD/YYYY
+   </label>
+                            <label class="btn btn-secondary">
+      <input type="radio" name="fmt" id="fmt2"> DD/MM/YYYY
+   </label>
+                        </div>
+                    </div>
+                    <div id="datediv1" class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">First date</label>
+                        <div class="form-row">
+                            <div class="col-4 order-1">
+                                <select id="m1" class="form-control form-control-lg">
+         <option>month</option>
+         <option>January</option>
+         <option>February</option>
+         <option>March</option>
+         <option>April</option>
+         <option>May</option>
+         <option>June</option>
+         <option>July</option>
+         <option>August</option>
+         <option>September</option>
+         <option>October</option>
+         <option>November</option>
+         <option>December</option>
+      </select>
+                            </div>
+                            <div id="daysdiv1" class="col-3 order-2">
+                                <select id="d1" class="form-control form-control-lg">
+         <option>day</option>
+      </select>
+                            </div>
+                            <div class="col-3 order-3">
+                                <input type="number" id="y1" placeholder="year" class="form-control form-control-lg">
+                            </div>
+                            <div class="col order-4">
+                                <a href="" id="picker1"><i class="material-icons">calendar_today</i></a>
+                            </div>
+                        </div>
+                        <div id="dp1"></div>
+                    </div>
+                    <div class="form-group">
+                        <select id="opsel" class="form-control form-control-lg">
+         <option>+ Add time duration</option>
+         <option>- Subtract time duration</option>
+         <option>- Subtract date</option>
+      </select>
+                    </div>
+                    <div id="timediv1" class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Time duration</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="number" min="0" id="yt1" placeholder="years" class="form-control form-control-lg">
+                            </div>
+                            <div class="col">
+                                <input type="number" min="0" id="mt1" placeholder="months" class="form-control form-control-lg">
+                            </div>
+                            <div class="col">
+                                <input type="number" min="0" id="wt1" placeholder="weeks" class="form-control form-control-lg">
+                            </div>
+                            <div class="col">
+                                <input type="number" min="0" id="dt1" placeholder="days" class="form-control form-control-lg">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="datediv2" class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Second date</label>
+                        <div class="form-row">
+                            <div class="col-4 order-1">
+                                <select id="m2" class="form-control form-control-lg">
+         <option>month</option>
+         <option>January</option>
+         <option>February</option>
+         <option>March</option>
+         <option>April</option>
+         <option>May</option>
+         <option>June</option>
+         <option>July</option>
+         <option>August</option>
+         <option>September</option>
+         <option>October</option>
+         <option>November</option>
+         <option>December</option>
+      </select>
+                            </div>
+                            <div id="daysdiv2" class="col-3 order-2">
+                                <select id="d2" class="form-control form-control-lg">
+         <option>day</option>
+      </select>
+                            </div>
+                            <div class="col-3 order-3">
+                                <input type="number" id="y2" placeholder="year" class="form-control form-control-lg">
+                            </div>
+                            <div class="col order-4">
+                                <a href="" id="picker2"><i class="material-icons">calendar_today</i></a>
+                            </div>
+                        </div>
+                        <div id="dp2"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="calcdate()" class="btn btn-lg btn-primary"><i class="material-icons">settings</i> Calculate</button>
+                        <button type="reset" onclick="OnReset()" class="btn btn-lg btn-secondary"><i class="material-icons">clear</i> Reset</button>
+                    </div>
+                    <div id="datediv3" class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Date result</label>
+                        <div class="form-row">
+                            <div class="col-4 order-1">
+                                <select id="m3" disabled class="form-control form-control-lg">
+         <option>month</option>
+         <option>January</option>
+         <option>February</option>
+         <option>March</option>
+         <option>April</option>
+         <option>May</option>
+         <option>June</option>
+         <option>July</option>
+         <option>August</option>
+         <option>September</option>
+         <option>October</option>
+         <option>November</option>
+         <option>December</option>
+      </select>
+                            </div>
+                            <div id="daysdiv3" class="col-3 order-2">
+                                <input type="number" id="d3" placeholder="day" disabled class="form-control form-control-lg">
+                            </div>
+                            <div class="col-3 order-3">
+                                <input type="number" id="y3" placeholder="year" disabled class="form-control form-control-lg">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="timediv2" class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Time duration result (years/months/days)</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="number" min="0" id="yt2" placeholder="years" disabled class="form-control form-control-lg">
+                            </div>
+                            <div class="col">
+                                <input type="number" min="0" id="mt2" placeholder="months" disabled class="form-control form-control-lg">
+                            </div>
+                            <!--
+      <div class="col">
+         <input type="number" min="0" id="wt2" placeholder="weeks" disabled class="form-control form-control-lg">
+      </div>
+      -->
+                            <div class="col">
+                                <input type="number" min="0" id="dt2" placeholder="days" disabled class="form-control form-control-lg">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is Date Calculator and how to work it ?</h2><br>
+                <p>Date Calculator in Expression. Use this calculator to add or subtract two or more date values in the form of an expression. ... Like other numbers, time can be added or subtracted. However, due to how date is defined, there exist differences
+                    in how calculations must be computed when compared to decimal numbers.</p>
+                <p>Use this calculator to add or subtract date (month, date, year, seconds) from a starting time and date. The result will be the new time and date based on the subtracted or added period of date. To calculate the amount of date (month, date,
+                    year, seconds) between dates on two different times</p>
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#datediv2").hide();
+            $("#timediv2").hide();
+            $("#dp1").hide();
+            $("#dp2").hide();
+            $("#now1").click(function() {
+                onnow(1);
+            });
+            $("#now2").click(function() {
+                onnow(2);
+            });
+            $("#picker1").click(function(e) {
+                e.preventDefault();
+                onpicker(1);
+            });
+            $("#picker2").click(function(e) {
+                e.preventDefault();
+                onpicker(2);
+            });
+            $("#fmt1, #fmt2").on("change", function() {
+                onformatselchange();
+            });
+            $("#opsel").on("change", function() {
+                onopselchange();
+            });
+            var obj = $("#d1");
+            setDays(obj, 31);
+            var obj = $("#d2");
+            setDays(obj, 31);
+            onnow(1);
+            onnow(2);
+            $("#dp1").datepicker({
+                changeMonth: true,
+                changeYear: true,
+            });
+            $("#dp2").datepicker({
+                changeMonth: true,
+                changeYear: true,
+            });
+            $("#dp1").change(function() {
+                var date = $("#dp1").val();
+                $("#m1")[0].selectedIndex = parseInt(date.substring(0, 2));
+                $("#d1")[0].selectedIndex = parseInt(date.substring(3, 5));
+                $("#y1").val(date.substring(6, 10));
+            });
+            $("#dp2").change(function() {
+                var date = $("#dp2").val();
+                $("#m2")[0].selectedIndex = parseInt(date.substring(0, 2));
+                $("#d2")[0].selectedIndex = parseInt(date.substring(3, 5));
+                $("#y2").val(date.substring(6, 10));
+            });
+        });
+
+        function OnReset() {
+            $("#calcform .btn-group label").removeClass("active");
+            $("#calcform .btn-group label:first-child").addClass("active");
+        }
+
+        function setDays(obj, n) {
+            for (var i = 1; i <= n; i++)
+                $(obj).append('<option>' + i + '</option>');
+        }
+
+        function onnow(n) {
+            var now = moment();
+            var y = now.year();
+            var m = now.month() + 1;
+            var d = now.date();
+            if (n == 1) {
+                $("#m1")[0].selectedIndex = m;
+                $("#d1")[0].selectedIndex = d;
+                $("#y1").val(y);
+            } else {
+                $("#m2")[0].selectedIndex = m;
+                $("#d2")[0].selectedIndex = d;
+                $("#y2").val(y);
+            }
+        }
+
+        function onpicker(n) {
+            if (n == 1) {
+                if ($("#dp1").is(":visible"))
+                    $("#dp1").hide();
+                else {
+                    var y = $("#y1").val();
+                    var m = $("#m1")[0].selectedIndex - 1;
+                    var d = $("#d1")[0].selectedIndex;
+                    if (y == "" || m <= 0 || d == 0) {
+                        y = 2019;
+                        m = 1;
+                        d = 1;
+                    }
+                    $("#dp1").datepicker("setDate", new Date(y, m, d));
+                    $("#dp1").show();
+                }
+            } else {
+                if ($("#dp2").is(":visible"))
+                    $("#dp2").hide();
+                else {
+                    var y = $("#y2").val();
+                    var m = $("#m2")[0].selectedIndex - 1;
+                    var d = $("#d2")[0].selectedIndex;
+                    if (y == "" || m <= 0 || d == 0) {
+                        y = 2019;
+                        m = 1;
+                        d = 1;
+                    }
+                    $("#dp2").datepicker("setDate", new Date(y, m, d));
+                    $("#dp2").show();
+                }
+            }
+        }
+
+        function onformatselchange() {
+            //var i = $("input[name=fmt]:checked").val();
+            var fmtRadio = $("#fmtdiv input:radio[name='fmt']");
+            var i = fmtRadio.index(fmtRadio.filter(':checked'));
+            if (i == 1) {
+                $("#daysdiv1").removeClass("order-2");
+                $("#daysdiv2").removeClass("order-2");
+                $("#daysdiv3").removeClass("order-2");
+            } else {
+                $("#daysdiv1").addClass("order-2");
+                $("#daysdiv2").addClass("order-2");
+                $("#daysdiv3").addClass("order-2");
+            }
+        }
+
+        function onopselchange() {
+            var i = $("#opsel")[0].selectedIndex;
+            if (i == 2) {
+                $("#datediv2").show();
+                $("#timediv2").show();
+                $("#datediv3").hide();
+                $("#timediv1").hide();
+            } else {
+                $("#datediv3").show();
+                $("#timediv1").show();
+                $("#datediv2").hide();
+                $("#timediv2").hide();
+            }
+        }
+
+        function calcdate() {
+            var y1 = $("#y1").val();
+            var m1 = $("#m1")[0].selectedIndex - 1;
+            var d1 = $("#d1").val();
+            var t = moment().year(y1).month(m1).date(d1);
+            var y2 = $("#yt1").val();
+            var m2 = $("#mt1").val();
+            var w2 = $("#wt1").val();
+            var d2 = $("#dt1").val();
+            var i = $("#opsel")[0].selectedIndex;
+            if (i == 0) {
+                t.add(y2, 'years').add(m2, 'months').add(w2, 'weeks').add(d2, 'days');
+            } else if (i == 1) {
+                t.subtract(y2, 'years').subtract(m2, 'months').subtract(w2, 'weeks').subtract(d2, 'days');
+            } else if (i == 2) {
+                y2 = $("#y2").val();
+                m2 = $("#m2")[0].selectedIndex - 1;
+                d2 = $("#d2").val();
+                var t2 = moment().year(y2).month(m2).date(d2);
+            }
+            if (i < 2) {
+                var y = t.year();
+                var m = t.month() + 1;
+                var d = t.date();
+                $("#y3").val(y);
+                $("#m3")[0].selectedIndex = m;
+                $("#d3").val(d);
+            } else {
+                var d = d1 - d2;
+                var m = m1 - m2;
+                var y = y1 - y2;
+                if (d < 0) {
+                    d = t2.endOf("month").date() - d2 + parseInt(d1);
+                    m--;
+                    m2++
+                }
+                if (m < 0) {
+                    m = 12 - m2 + m1;
+                    y--;
+                }
+                $("#yt2").val(y);
+                $("#mt2").val(m);
+                $("#dt2").val(d);
+            }
+        }
+    </script>
+    <!-- #EndEditable -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

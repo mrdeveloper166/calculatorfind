@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="euc-kr">
+
+
+    <title>Length Conversion | converter</title>
+
+    <meta name="keywords" content="length conversion,conversion length,conversion of length table,conversion table of length,length conversion units, centimeters to decmeters, feet to inch,kilometer to metre,miles to kilometres,nautical miles, yards converter">
+    <meta name="description" content="Length and Distance converter calculator for converting units including Kilometers, Miles, Meters, Feet and Inches,yard,millimeters,decimeters,etc.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Length Conversion | converter" />
+    <meta property="og:description" content="Length and Distance converter calculator for converting units including Kilometers, Miles, Meters, Feet and Inches,yard,millimeters,decimeters,etc." />
+    <meta property="og:url" content="https://www.calculatorfind.com/length-converter.html" />
+
+
+
+
+    <script async src="tagmng3.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        @media all and (max-width: 576px) {
+            .calc2 input[type=text],
+            .calc2 input[type=number] {
+                width: 100%;
+                padding: 5px;
+            }
+            .calc2 tr td:nth-child(2) {
+                width: 240px;
+                width: calc(100% - 130px);
+            }
+            .calc2 tr td:nth-child(3) {
+                width: 30px;
+            }
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Length converter calculator</h1>
+                <p><b>How to converte :- </b>Enter the length in one of the text boxes and press the <i>Convert</i> button:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td><label for="cm" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Centimeters:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="cm" name="cm" autofocus class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">cm</td>
+                            <td><input onclick="ConvertCm()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dm" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Decimeters:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="dm" name="dm" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">dm</td>
+                            <td><input onclick="ConvertDm()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ft" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Feet:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="ft" name="ft" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">ft</td>
+                            <td><input onclick="ConvertFt()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="in" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Inches:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="in" name="in" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">in</td>
+                            <td><input onclick="ConvertIn()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="km" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Kilometers:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="km" name="km" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">km</td>
+                            <td><input onclick="ConvertKm()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="m" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Meters:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="m" name="m" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">m</td>
+                            <td><input onclick="ConvertM()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mi" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Miles:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="mi" name="mi" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">mi</td>
+                            <td><input onclick="ConvertMi()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mm" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Millimeters:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="mm" name="mm" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">mm</td>
+                            <td><input onclick="ConvertMm()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="nmi" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Nautical miles:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="nmi" name="nmi" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">nmi</td>
+                            <td><input onclick="ConvertNMi()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="yd" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Yards:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="yd" name="yd" class="form-control" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">yd</td>
+                            <td><input onclick="ConvertYd()" type="button" value="Convert" class="btn btn-success"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><input type="reset" value="Reset" class="btn btn-danger"></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+
+<br><br><br>
+
+                <p>Length and Distance conversion calculator for metric and imperial units including Kilometers, Miles, Meters, Feet and Inches.</p>
+<br><br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function ConvertMm() {
+            d = document.calcform.mm.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d, 6);
+            document.calcform.cm.value = roundnum(d / 10, 6);
+            document.calcform.dm.value = roundnum(d / 100, 6);
+            document.calcform.m.value = roundnum(d / 1000, 6);
+            document.calcform.km.value = roundnum(d / 1e6, 6);
+            document.calcform.in.value = roundnum(d / 25.4, 6);
+            document.calcform.ft.value = roundnum(d / 25.4 / 12, 6);
+            document.calcform.yd.value = roundnum(d / 25.4 / 36, 6);
+            document.calcform.mi.value = roundnum(d / 1609344, 6);
+            document.calcform.nmi.value = roundnum(d / 1852000, 6);
+        }
+
+        function ConvertCm() {
+            d = document.calcform.cm.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 10, 6);
+            document.calcform.cm.value = roundnum(d, 6);
+            document.calcform.dm.value = roundnum(d / 10, 6);
+            document.calcform.m.value = roundnum(d / 100, 6);
+            document.calcform.km.value = roundnum(d / 1e5, 6);
+            document.calcform.in.value = roundnum(d / 2.54, 6);
+            document.calcform.ft.value = roundnum(d / 2.54 / 12, 6);
+            document.calcform.yd.value = roundnum(d / 2.54 / 36, 6);
+            document.calcform.mi.value = roundnum(d / 160934.4, 6);
+            document.calcform.nmi.value = roundnum(d / 185200, 6);
+        }
+
+        function ConvertDm() {
+            d = document.calcform.dm.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 100, 6);
+            document.calcform.cm.value = roundnum(d * 10, 6);
+            document.calcform.dm.value = roundnum(d, 6);
+            document.calcform.m.value = roundnum(d / 10, 6);
+            document.calcform.km.value = roundnum(d / 1e4, 6);
+            document.calcform.in.value = roundnum(d / 0.254, 6);
+            document.calcform.ft.value = roundnum(d / 0.254 / 12, 6);
+            document.calcform.yd.value = roundnum(d / 0.254 / 36, 6);
+            document.calcform.mi.value = roundnum(d / 16093.44, 6);
+            document.calcform.nmi.value = roundnum(d / 18520, 6);
+        }
+
+        function ConvertM() {
+            d = document.calcform.m.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 1000, 6);
+            document.calcform.cm.value = roundnum(d * 100, 6);
+            document.calcform.dm.value = roundnum(d * 10, 6);
+            document.calcform.m.value = roundnum(d, 6);
+            document.calcform.km.value = roundnum(d / 1e3, 6);
+            document.calcform.in.value = roundnum(d / 0.0254, 6);
+            document.calcform.ft.value = roundnum(d / 0.0254 / 12, 6);
+            document.calcform.yd.value = roundnum(d / 0.0254 / 36, 6);
+            document.calcform.mi.value = roundnum(d / 1609.344, 6);
+            document.calcform.nmi.value = roundnum(d / 1852, 6);
+        }
+
+        function ConvertKm() {
+            d = document.calcform.km.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 1e6, 6);
+            document.calcform.cm.value = roundnum(d * 1e5, 6);
+            document.calcform.dm.value = roundnum(d * 1e4, 6);
+            document.calcform.m.value = roundnum(d * 1e3, 6);
+            document.calcform.km.value = roundnum(d, 6);
+            document.calcform.in.value = roundnum(d / 2.54e-5, 6);
+            document.calcform.ft.value = roundnum(d / 2.54e-5 / 12, 6);
+            document.calcform.yd.value = roundnum(d / 2.54e-5 / 36, 6);
+            document.calcform.mi.value = roundnum(d / 1.609344, 6);
+            document.calcform.nmi.value = roundnum(d / 1.852, 6);
+        }
+
+        function ConvertIn() {
+            d = document.calcform.in.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 25.4, 6);
+            document.calcform.cm.value = roundnum(d * 2.54, 6);
+            document.calcform.dm.value = roundnum(d * 0.254, 6);
+            document.calcform.m.value = roundnum(d * 0.0254, 6);
+            document.calcform.km.value = roundnum(d * 2.54e-5, 6);
+            document.calcform.in.value = roundnum(d, 6);
+            document.calcform.ft.value = roundnum(d / 12, 6);
+            document.calcform.yd.value = roundnum(d / 36, 6);
+            document.calcform.mi.value = roundnum(d / 63360, 6);
+            document.calcform.nmi.value = roundnum(d / 185200 * 2.54, 6);
+        }
+
+        function ConvertFt() {
+            d = document.calcform.ft.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 304.8, 6);
+            document.calcform.cm.value = roundnum(d * 30.48, 6);
+            document.calcform.dm.value = roundnum(d * 3.048, 6);
+            document.calcform.m.value = roundnum(d * 0.3048, 6);
+            document.calcform.km.value = roundnum(d * 3.048e-4, 6);
+            document.calcform.in.value = roundnum(d * 12, 6);
+            document.calcform.ft.value = roundnum(d, 6);
+            document.calcform.yd.value = roundnum(d / 3, 6);
+            document.calcform.mi.value = roundnum(d / 5280, 6);
+            document.calcform.nmi.value = roundnum(d / 185200 * 2.54 * 12, 6);
+        }
+
+        function ConvertYd() {
+            d = document.calcform.yd.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 25.4 * 36, 6);
+            document.calcform.cm.value = roundnum(d * 2.54 * 36, 6);
+            document.calcform.dm.value = roundnum(d * 0.254 * 36, 6);
+            document.calcform.m.value = roundnum(d * 0.0254 * 36, 6);
+            document.calcform.km.value = roundnum(d * 2.54e-5 * 36, 6);
+            document.calcform.in.value = roundnum(d * 36, 6);
+            document.calcform.ft.value = roundnum(d * 3, 6);
+            document.calcform.yd.value = roundnum(d, 6);
+            document.calcform.mi.value = roundnum(d / 5280 * 3, 6);
+            document.calcform.nmi.value = roundnum(d / 185200 * 2.54 * 36, 6);
+        }
+
+        function ConvertMi() {
+            d = document.calcform.mi.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 1609344, 6);
+            document.calcform.cm.value = roundnum(d * 160934.4, 6);
+            document.calcform.dm.value = roundnum(d * 16093.44, 6);
+            document.calcform.m.value = roundnum(d * 1609.344, 6);
+            document.calcform.km.value = roundnum(d * 1.609344, 6);
+            document.calcform.in.value = roundnum(d * 63360, 6);
+            document.calcform.ft.value = roundnum(d * 5280, 6);
+            document.calcform.yd.value = roundnum(d * 1760, 6);
+            document.calcform.mi.value = roundnum(d, 6);
+            document.calcform.nmi.value = roundnum(d * 1609.344 / 1852, 6);
+        }
+
+        function ConvertNMi() {
+            d = document.calcform.nmi.value;
+            if (d == '') return;
+            d = parseFloat(d);
+            document.calcform.mm.value = roundnum(d * 1852000, 6);
+            document.calcform.cm.value = roundnum(d * 185200, 6);
+            document.calcform.dm.value = roundnum(d * 18520, 6);
+            document.calcform.m.value = roundnum(d * 1852, 6);
+            document.calcform.km.value = roundnum(d * 1.852, 6);
+            document.calcform.in.value = roundnum(d * 1852 / 0.0254, 6);
+            document.calcform.ft.value = roundnum(d * 1852 / 0.0254 / 12, 6);
+            document.calcform.yd.value = roundnum(d * 1852 / 0.0254 / 36, 6);
+            document.calcform.mi.value = roundnum(d * 1852 / 1609.344, 6);
+            document.calcform.nmi.value = roundnum(d, 6);
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

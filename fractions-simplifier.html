@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <title>Fraction simplifier</title>
+    <meta name="keywords" content="fraction simplifier,algebraic fraction simplifier,fraction simplifier algebra,fraction simplifier with exponents,fraction simplifier with variabels,mixed fraction simplifier calculator,mixed fraction simplifier,mixed fraction simplifier calculator">
+    <meta name="description" content="Fraction simplifier is in simplest form when the top and bottom cannot be any smaller, while still being whole numbers. To simplify a fraction: divide the top and bottom by the greatest number that will divide both numbers exactly">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fraction simplifier" />
+    <meta property="og:description" content="Fraction simplifier is in simplest form when the top and bottom cannot be any smaller, while still being whole numbers. To simplify a fraction: divide the top and bottom by the greatest number that will divide both numbers exactly">
+
+    <meta property="og:url" content="https://www.calculatorfind.com/fractions-simplifier.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        h1 {
+            font-size: 1.6rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+        }
+        
+        #calcform .btn img {
+            filter: invert(1);
+        }
+        
+        #calcform td input[type=text] {
+            width: 70px;
+            text-align: center;
+        }
+        
+        #calcform td input[type=number] {
+            width: 70px;
+            text-align: center;
+        }
+        
+        #calcform .btn span {
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        #td12,
+        #td31,
+        #td34 {
+            padding-bottom: 0px;
+        }
+        
+        #td21,
+        #td41,
+        #td42 {
+            border-top: #888 2px solid;
+            padding-top: 1px;
+        }
+        
+        #frac {
+            border: 0px #ccc solid;
+            padding: 10px 20px;
+            max-width: 180px;
+            max-height: 80px;
+        }
+        
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        
+        @media all and (max-width: 800px) {
+            .adslot_1,
+            .adslot_2,
+            .adslot_3 {
+                display: none;
+            }
+        }
+        
+        * {
+            font-size: 17px;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Fraction Simplifier</h1>
+                <br><br>
+                <form class="box float" id="calcform" name="calcform" autocomplete="off">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+         <input type="radio" name="fractype" id="sf" checked> Simple Fraction
+      </label>
+                        <label class="btn btn-secondary">
+         <input type="radio" name="fractype" id="mf"> Mixed Fraction
+      </label>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="n" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter fraction</label>
+                        <table id="tbl1">
+                            <tr>
+                                <td id="td11" rowspan="2"><input type="text" id="x" class="form-control form-control-lg"></td>
+                                <td id="td12"><input type="number" step="1" id="n" class="form-control" autofocus></td>
+                                <td id="td13" rowspan="2"><canvas id="frac"></canvas></td>
+                            </tr>
+                            <tr>
+                                <td id="td21"><input type="number" step="1" id="d" class="form-control"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Calculate" onclick="fcalc()" class="btn btn-success"><span>=</span> Calculate</button>
+                        <button type="reset" title="Reset" onclick="freset()" class="btn btn-danger"><span>&times;</span> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Simplified fraction result</label>
+                        <table>
+                            <tr>
+                                <td id="td31"><input type="text" id="n3" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                                <td id="td32" rowspan="2">=</td>
+                                <td id="td33" rowspan="2"><input type="text" id="x3" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                                <td id="td34"><input type="text" id="n4" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                            </tr>
+                            <tr>
+                                <td id="td41"><input type="text" id="d3" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                                <td id="td42"><input type="text" id="d4" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <label for="area" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation</label>
+                        <textarea rows="7" id="area" tabindex="11" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></textarea>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is Fractions Calculator</h2><br>
+                <p>A fraction is in simplest form when the top and bottom cannot be any smaller, while still being whole numbers. To simplify a fraction: divide the top and bottom by the greatest number that will divide both numbers exactly</p><br>
+                <h2>
+                    <a id="table"></a>Fraction to simplified fraction table</h2>
+                <table align="center" class="table table-striped">
+                    <tr>
+                        <th>Fraction</th>
+                        <th>Simplifed<br>Fraction</th>
+                    </tr>
+                    <tr>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                    </tr>
+                    <tr>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>2/3</td>
+                        <td>2/3</td>
+                    </tr>
+                    <tr>
+                        <td>1/4</td>
+                        <td>1/4</td>
+                    </tr>
+                    <tr>
+                        <td>2/4</td>
+                        <td>1/2</td>
+                    </tr>
+                    <tr>
+                        <td>3/4</td>
+                        <td>3/4</td>
+                    </tr>
+                    <tr>
+                        <td>1/5</td>
+                        <td>1/5</td>
+                    </tr>
+                    <tr>
+                        <td>2/5</td>
+                        <td>2/5</td>
+                    </tr>
+                    <tr>
+                        <td>3/5</td>
+                        <td>3/5</td>
+                    </tr>
+                    <tr>
+                        <td>4/5</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>1/6</td>
+                        <td>1/6</td>
+                    </tr>
+                    <tr>
+                        <td>2/6</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>3/6</td>
+                        <td>1/2</td>
+                    </tr>
+                    <tr>
+                        <td>4/6</td>
+                        <td>2/3</td>
+                    </tr>
+                    <tr>
+                        <td>5/6</td>
+                        <td>5/6</td>
+                    </tr>
+                    <tr>
+                        <td>1/7</td>
+                        <td>1/7</td>
+                    </tr>
+                    <tr>
+                        <td>2/7</td>
+                        <td>2/7</td>
+                    </tr>
+                    <tr>
+                        <td>3/7</td>
+                        <td>3/7</td>
+                    </tr>
+                    <tr>
+                        <td>4/7</td>
+                        <td>4/7</td>
+                    </tr>
+                    <tr>
+                        <td>5/7</td>
+                        <td>5/7</td>
+                    </tr>
+                    <tr>
+                        <td>6/7</td>
+                        <td>6/7</td>
+                    </tr>
+                    <tr>
+                        <td>1/8</td>
+                        <td>1/8</td>
+                    </tr>
+                    <tr>
+                        <td>2/8</td>
+                        <td>1/4</td>
+                    </tr>
+                    <tr>
+                        <td>3/8</td>
+                        <td>3/8</td>
+                    </tr>
+                    <tr>
+                        <td>4/8</td>
+                        <td>1/2</td>
+                    </tr>
+                    <tr>
+                        <td>5/8</td>
+                        <td>5/8</td>
+                    </tr>
+                    <tr>
+                        <td>6/8</td>
+                        <td>3/4</td>
+                    </tr>
+                    <tr>
+                        <td>7/8</td>
+                        <td>7/8</td>
+                    </tr>
+                    <tr>
+                        <td>1/9</td>
+                        <td>1/9</td>
+                    </tr>
+                    <tr>
+                        <td>2/9</td>
+                        <td>2/9</td>
+                    </tr>
+                    <tr>
+                        <td>3/9</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>4/9</td>
+                        <td>4/9</td>
+                    </tr>
+                    <tr>
+                        <td>5/9</td>
+                        <td>5/9</td>
+                    </tr>
+                    <tr>
+                        <td>6/9</td>
+                        <td>2/3</td>
+                    </tr>
+                    <tr>
+                        <td>7/9</td>
+                        <td>7/9</td>
+                    </tr>
+                    <tr>
+                        <td>8/9</td>
+                        <td>8/9</td>
+                    </tr>
+                    <tr>
+                        <td>1/10</td>
+                        <td>1/10</td>
+                    </tr>
+                    <tr>
+                        <td>2/10</td>
+                        <td>1/5</td>
+                    </tr>
+                    <tr>
+                        <td>3/10</td>
+                        <td>3/10</td>
+                    </tr>
+                    <tr>
+                        <td>4/10</td>
+                        <td>2/5</td>
+                    </tr>
+                    <tr>
+                        <td>5/10</td>
+                        <td>1/2</td>
+                    </tr>
+                    <tr>
+                        <td>6/10</td>
+                        <td>3/5</td>
+                    </tr>
+                    <tr>
+                        <td>7/10</td>
+                        <td>7/10</td>
+                    </tr>
+                    <tr>
+                        <td>8/10</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="calc2.js"></script>
+    <script src="number.js"></script>
+    <script src="mathview.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#td11').hide();
+            $('#td32').hide();
+            $('#td33').hide();
+            $('#td34').hide();
+            $('#td42').hide();
+            $('#mf').toggleClass("active");
+            $('#sf').click(function() {
+                $('#td11').hide();
+                $('#x').val('');
+            });
+            $('#mf').click(function() {
+                $('#td11').show();
+            });
+        });
+
+        function freset() {
+            var obj = document.getElementById("frac");
+            ClearView(obj);
+        }
+
+        function fcalc() {
+            var out1 = out2 = '';
+            var s = 1;
+            var w = $('#x').val();
+            var n = $('#n').val();
+            var d = $('#d').val();
+            if (n == '' || d == '') {
+                alert("Please enter fraction values");
+                return;
+            }
+            if (w == '-') {
+                s = -1;
+                w = '0';
+            }
+            if (w == '') w = '0';
+            w = parseInt(w);
+            n = parseInt(n);
+            d = parseInt(d);
+            if (w == 0 && (n / d) < 0) s = -1;
+            n = Math.abs(n);
+            d = Math.abs(d);
+            if (w != 0) {
+                $('#n').val(n);
+                $('#d').val(d);
+            }
+            if (w < 0) {
+                s = -1;
+                w = -w;
+            }
+            //y = s*(w+n/d);
+            n1 = n + d * w;
+            g = gcd(n1, d);
+            sign = '';
+            if (s == -1) sign = '-';
+
+            out = 'gcd = ' + g;
+            out += '\n';
+            if (w != 0) out += w + ' ';
+            out += n + '/' + d;
+            if (w != 0) {
+                out += '\n= ';
+                out += sign + n1 + '/' + d;
+            }
+            n2 = n1;
+            d2 = d;
+            $('#td32').hide();
+            $('#td33').hide();
+            $('#td34').hide();
+            $('#td42').hide();
+            if (g > 1) {
+                out += '\n= ';
+                out += sign + '(' + n1 + '/' + g + ')/(' + d + '/' + g + ')';
+                n2 = n1 / g;
+                d2 = d / g;
+                out += '\n= ';
+                out += sign + n2 + '/' + d2;
+            }
+            if (n1 > d) {
+                i = Math.floor(n1 / d);
+                j = Math.abs(n2) - Math.abs(i * d2);
+                if (j != 0) {
+                    out += '\n= ';
+                    out += sign + i + ' ' + j + '/' + d2;
+                    $('#td32').show();
+                    $('#td33').show();
+                    $('#td34').show();
+                    $('#td42').show();
+                    t = sign + i;
+                    $('#td33 input').val(t);
+                    $('#td34 input').val(j);
+                    $('#td42 input').val(d2);
+                }
+            }
+            $('#td31 input').val(sign + n2);
+            $('#td41 input').val(d2);
+            out += '\n= ';
+            out += sign + roundresult(n2 / d2);
+            out += '\n= ';
+            out += sign + roundresult(n2 / d2 * 100) + '%';
+            $('#area').val(out);
+
+            var obj = document.getElementById("frac");
+            CircNumber(obj, {
+                n: w,
+                num: n,
+                den: d,
+                radius: 20,
+                fillColor: "rgb(80,192,0)",
+                lineWidth: 1
+            });
+        }
+    </script>
+    <!-- #EndEditable -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

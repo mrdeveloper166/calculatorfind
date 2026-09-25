@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="euc-kr">
+
+    <title>Sine calculator | sin(x) calculator</title>
+
+    <script async src="tagmng3.js"></script>
+
+
+    <meta name="keywords" content="sine calculator,moon sine calculator,sine rule calculator,sine law calculator,inverse sine calculator,inverse of sine calculator,sin inverse x calculator,calculator with sine">
+    <meta name="description" content="Sine Calculator is an online tool that helps to calculate the sine value for a given angle theta. Cuemath's online Sine Calculator helps you to calculate the sine value for a given angle theta in a few seconds.inverse sine of the given value in radians and degrees. The inverse sine y=sin−1(x) or y=asin(x) or y=arcsin(x) is such a function that sin(y)=x. The domain of the inverse sine is [−1,1], the range is [−π2,π2].">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sine calculator | sin(x) calculator" />
+    <meta property="og:description" content="Sine Calculator is an online tool that helps to calculate the sine value for a given angle theta. Cuemath's online Sine Calculator helps you to calculate the sine value for a given angle theta in a few seconds.inverse sine of the given value in radians and degrees. The inverse sine y=sin−1(x) or y=asin(x) or y=arcsin(x) is such a function that sin(y)=x. The domain of the inverse sine is [−1,1], the range is [−π2,π2].">
+
+    <meta property="og:url" content="https://www.calculatorfind.com/sine-calculator.html" />
+ 
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        .calc td {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .calc span {
+            font-size: xx-large;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .calc select {
+            font-size: x-large;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .calc input {
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .calc input[type=text] {
+            width: 100%;
+        }
+        
+        .calc input[type=button],
+        .calc input[type=reset] {
+            font-size: large;
+        }
+        
+        .calc textarea {
+            width: 100%;
+            font-size: large;
+        }
+        
+        @media all and (max-width: 576px) {
+            .calc {
+                width: 100%;
+                padding: 8px;
+            }
+            .calc input[type=number] {
+                width: 100px;
+            }
+            #y2 {
+                width: 190px;
+            }
+        }
+        
+        @media all and (min-width: 577px) {
+            .calc {
+                padding: 20px;
+            }
+            .calc input[type=number] {
+                width: 200px;
+            }
+            #y2 {
+                width: 280px;
+            }
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+    <header id="myheader"></header>
+
+
+
+
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Sine Convert Calculator</h1>
+                <p>Trigonometric sine calculator.</p>
+                <h3>Sine calculator</h3>
+                <p><b>How to use :- </b> In order to calculate sin(x) on the calculator:</p>
+                <ol>
+                    <li>Enter the input angle.</li>
+                    <li>Select angle type of degrees (&deg;) or radians (rad) in the combo box.</li>
+                    <li>Press the <span style="font-size: 1.5em">=</span>&nbsp;button to calculate the result.</li>
+                </ol>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"><span>sin</span></td>
+                                <td><input type="number" step="any" name="x" class="intext form-control" autofocus tabindex="1"></td>
+                                <td>
+                                    <select id="degtype" class="form-control">
+			<option selected="selected">&deg;</option>
+			<option>rad</option>
+		</select></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <!--<td colspan="4"><input onclick="calc()" type="button" value="Calculate" class="btn"> <input onclick="setfocus()" type="reset" value=" &times; " class="btn"></td>-->
+                                <td colspan="4">
+                                    <button type="button" title="Calculate" class="btn btn-success" tabindex="2" onclick="calc()"><b>=</b> Calculate</button>
+                                    <button type="reset" title="Reset" class="btn btn-danger" tabindex="3" onclick="setfocus()"><b>X</b> Reset</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Result:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><input type="text" name="y" class="outtext form-control" readonly tabindex="4"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <br><br>
+                <h3>Inverse sine calculator</h3>
+                <p><b>How to use :- </b> Enter the sine value, select degrees (&deg;) or radians (rad) and press the <span style="font-size: 1.5em">=</span> button:</p>
+                <br><br>
+                <form name="calcform2" class="box float" id="calcform">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"><span style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">sin<sup style="font-size: 0.8em">-1</sup></span></td>
+                                <td><input type="number" step="any" name="x" class="intext form-control" tabindex="5"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <!--<td colspan="3"><input onclick="calc_a()" type="button" value="Calculate" class="btn"> <input onclick="setfocus()" type="reset" value=" &times; " class="btn"></td>-->
+                                <td colspan="4">
+                                    <button type="button" title="Calculate" class="btn btn-success" tabindex="6" onclick="calc_a()"><b>=</b> Calculate</button>
+                                    <button type="reset" title="Reset" class="btn btn-danger" tabindex="7" onclick="setfocus()"><b>X</b> Reset</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Result:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><input type="text" id="y2" name="y" class="outtext form-control" readonly tabindex="8">
+                                    <select id="degtypea" onchange="OnSelChange()" name="D1" class="form-control">
+			<option selected>&deg;</option>
+			<option>rad</option>
+		</select></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>What is Sine Calculator ? </h2><br>
+                <p>The sine function is defined as the ratio of the length of the perpendicular to that of the length of the hypotenuse in a right-angled triangle. The sign is a trigonometric function of an angle.</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="calc2.js"></script>
+    <script>
+        function calcfunc(x) {
+            var degtype = document.getElementById("degtype");
+            var i = degtype.selectedIndex;
+            if (i == 0)
+                x *= Math.PI / 180;
+            y = Math.sin(x);
+            y = roundnum2(y, 8);
+            return y;
+        }
+
+        function calcfunc_a(x) {
+            var degtype = document.getElementById("degtypea");
+            var i = degtype.selectedIndex;
+            var y = Math.asin(x);
+            if (i == 0)
+                y *= 180 / Math.PI;
+            y = roundnum2(y, 8);
+            return y;
+        }
+
+        function OnSelChange() {
+            calc_a();
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

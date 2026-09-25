@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator | Calculate Your BMI</title>
+
+    <script async src="tagmng3.js"></script>
+    <meta name="keywords" content="bmi calculator,calculate bmi,bmi calculator for women
+        ,bmi calculator for men,bmi,bmi calculator for kids,bmi calculator with age">
+    <meta name="description" content="BMI Calculator- This Free BMI Calculator is used to calculate your body mass index in different categories for an individuals body. Body Mass Index (BMI) is a persons weight in kilograms divided by the square of height in meters.BMI can be used to screen for weight categories that may lead to health problems"
+    />
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:locale" content="en_US" />
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BMI Calculator | Calculate Your BMI " />
+    <meta property="og:description" content="BMI Calculator- This Free BMI Calculator is used to calculate your body mass index in different categories for an individuals body. Body Mass Index (BMI) is a persons weight in kilograms divided by the square of height in meters.BMI can be used to screen for weight categories that may lead to health problems"
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/bmi-calculator.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        #wrapper td {
+            padding: .75rem;
+        }
+        
+        #cmdiv,
+        #kgdiv {
+            display: none;
+        }
+        
+        .btn i {
+            vertical-align: middle;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+       <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+
+
+
+
+                <h2>BMI Calculator and chart</h2><br>
+                <form id="calcform" autocomplete="off" class="box float">
+                    <div class="form-group grid">
+                        <label class="row ml-0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Units Type</label>
+                        <div class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+            <input type="radio" name="ut" id="ut-us" onchange="OnUnitUS()" value="u" checked>US/UK Units
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="ut" id="ut-metric" onchange="OnUnitMetric()" value="m">Metric Units
+         </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Height</label>
+                        <div class="input-group" id="ftdiv">
+                            <input type="number" min="0" class="form-control" id="ft" placeholder="feet">
+                            <div class="input-group-append mr-2">
+                                <span class="input-group-text">ft</span>
+                            </div>
+                            <input type="number" min="0" class="form-control" id="in" placeholder="inches">
+                            <div class="input-group-append">
+                                <span class="input-group-text">in</span>
+                            </div>
+                        </div>
+                        <div class="input-group" id="cmdiv">
+                            <input type="number" min="0" class="form-control" id="cm" placeholder="centimeters">
+                            <div class="input-group-append">
+                                <span class="input-group-text">cm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Weight</label>
+                        <div class="input-group" id="lbdiv">
+                            <input type="number" min="0" class="form-control" id="lb" placeholder="pounds">
+                            <div class="input-group-append">
+                                <span class="input-group-text">lb</span>
+                            </div>
+                        </div>
+                        <div class="input-group" id="kgdiv">
+                            <input type="number" min="0" class="form-control" id="kg" placeholder="kilograms">
+                            <div class="input-group-append">
+                                <span class="input-group-text">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Calculate" onclick="OnCalc()" class="btn btn-success"><i class="material-icons">settings</i> Calculate</button>
+                        <button type="reset" title="Reset" onclick="OnReset()" class="btn btn-danger"><i class="material-icons">clear</i> Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="bmi" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">BMI</label>
+                        <div class="input-group">
+                            <input type="number" min="0" class="form-control" id="bmi" readonly style="color: green; font-weight: bold; background-color: white;">
+                            <div class="input-group-append">
+                                <span class="input-group-text">kg/m<sup>2</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="risk" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">BMI category</label>
+                        <input type="text" class="form-control" id="category" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                    <div class="form-group">
+                        <label for="risk" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Health risk</label>
+                        <input type="text" class="form-control" id="risk" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                </form>
+                <br>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+
+
+
+
+
+                <h2>BMI categories table</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">BMI Category</th>
+                            <th scope="col">BMI Range<br>(kg/m<sup>2</sup>)</th>
+                            <th scope="col">Health risk</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Underweight</td>
+                            <td>18.4 and below</td>
+                            <td>Malnutrition risk</td>
+                        </tr>
+                        <tr>
+                            <td>Normal weight</td>
+                            <td>18.5 - 24.9</td>
+                            <td>Low risk</td>
+                        </tr>
+                        <tr>
+                            <td>Overweight</td>
+                            <td>25 - 29.9</td>
+                            <td>Enchanced risk</td>
+                        </tr>
+                        <tr>
+                            <td>Moderately obese</td>
+                            <td>30 - 34.9</td>
+                            <td>Medium risk</td>
+                        </tr>
+                        <tr>
+                            <td>Severely obese</td>
+                            <td>35 - 39.9</td>
+                            <td>High risk</td>
+                        </tr>
+                        <tr>
+                            <td>Very severely obese</td>
+                            <td>40 and above</td>
+                            <td>Very high risk</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+                <h2>BMI formula</h2>
+                <p>The BMI (Body Mass Index) in (kg/m<sup>2</sup>) is equal to the mass in kilograms (kg) divided by the square height in meters (m):</p>
+                <p class="math">BMI<sub>(kg/m<sup>2</sup>)</sub> = mass<sub>(kg)</sub> / height<sup>2</sup><sub>(m)</sub></p>
+                <p>The BMI (Body Mass Index) in (kg/m<sup>2</sup>) is equal to the mass in pounds (lbs) divided by the square height in inches (in) times 703:</p>
+                <p class="math">BMI<sub>(kg/m<sup>2</sup>)</sub> = mass<sub>(lb)</sub> / height<sup>2</sup><sub>(in)</sub> &times; 703</p>
+                <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+
+<div id="myseealso"></div>
+
+<br><br>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        "use strict"
+        var isMetric = false;
+        window.onload = function() {};
+
+        function OnReset() {
+            $("#calcform .btn-group label").removeClass("active");
+            $("#calcform .btn-group label:first-child").addClass("active");
+        }
+
+        function OnUnitMetric() {
+            document.getElementById("ftdiv").style.display = "none";
+            document.getElementById("lbdiv").style.display = "none";
+            document.getElementById("cmdiv").style.display = "flex";
+            document.getElementById("kgdiv").style.display = "flex";
+            isMetric = true;
+        }
+
+        function OnUnitUS() {
+            document.getElementById("ftdiv").style.display = "flex";
+            document.getElementById("lbdiv").style.display = "flex";
+            document.getElementById("cmdiv").style.display = "none";
+            document.getElementById("kgdiv").style.display = "none";
+            isMetric = false;
+        }
+
+        function OnCalc() {
+            if (isMetric) {
+                var cm = document.getElementById("cm").value;
+                var kg = document.getElementById("kg").value;
+                if (cm == "") cm = "0";
+                if (kg == "") kg = "0";
+                cm = parseFloat(cm);
+                kg = parseFloat(kg);
+                var m = cm / 100.0;
+                var bmi = kg / (m * m);
+                document.getElementById("bmi").value = bmi.toFixed(1);
+            } else {
+                var ft = document.getElementById("ft").value;
+                var inch = document.getElementById("in").value;
+                var lbs = document.getElementById("lb").value;
+                if (ft == "") ft = "0";
+                if (inch == "") inch = "0";
+                if (lbs == "") lbs = "0";
+                ft = parseFloat(ft);
+                inch = parseFloat(inch);
+                lbs = parseFloat(lbs);
+                inch += 12.0 * ft;
+                //var bmi=703.069*lbs/(inch*inch);
+                var bmi = 703 * lbs / (inch * inch);
+                document.getElementById("bmi").value = bmi.toFixed(1);
+            }
+            var risk = "",
+                cat = "";
+            if (bmi < 18.5) {
+                cat = "Underweight";
+                risk = "Malnutrition risk";
+            } else if (bmi < 25) {
+                cat = "Normal weight";
+                risk = "Low risk";
+            } else if (bmi < 30) {
+                cat = "Overweight";
+                risk = "Enchanced risk";
+            } else if (bmi < 35) {
+                cat = "Moderately obese";
+                risk = "Medium risk";
+            } else if (bmi < 40) {
+                cat = "Severely obese";
+                risk = "High risk";
+            } else if (bmi >= 40) {
+                cat = "Very severely obese";
+                risk = "Very high risk";
+            }
+            document.getElementById("category").value = cat;
+            document.getElementById("risk").value = risk;
+        }
+    </script>
+
+</body>
+
+</html>

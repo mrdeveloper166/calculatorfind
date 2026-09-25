@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electron-volts (eV) to volts (V) conversion calculator</title>
+
+    <meta name="keywords" content="electron volt to volt, what is an electron volt, electron volt to watt how to convert to electron volt, electron volt to volt convert, electron volt  to volt conversion.">
+    <meta name="description" content="Electron volt to volt converter convert the volt of electron volts to volts. V(V) = E(eV) / Q(e).">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Electron-volts (eV) to volts (V) conversion calculator" />
+    <meta property="og:description" content="Electron volt to volt converter convert the volt of electron volts to volts. V(V) = E(eV) / Q(e)." />
+    <meta property="og:url" content="https://www.calculatorfind.com/electron-volts-to-volts.html" />
+    <script async src="tagmng3.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Electron-volts to volts calculator or converter with help of this calc</h1>
+                <p>Energy in electron-volts (eV) to electrical voltage in volts (V) calculator.</p>
+                <p>Enter the energy in electron-volts, charge in elementary charge or coulombs and press the <i>Calculate</i> button:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="float box" id="calcform">
+                    <table class="calc2">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter energy in electron-volts:</td>
+                                <td class="math"><input type="number" step="any" name="x1" class="intext form-control" autofocus></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">eV</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select charge unit type:</td>
+                                <td><select name="charge_type" onchange="OnChargeTypeChange()" class="form-control">
+					<option>Elementary charge unit</option>
+					<option>Coulomb unit</option>
+				</select></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="pf1">
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter elementary charge:</td>
+                                <td class="math"><input type="number" step="any" name="x2" class="intext form-control"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">e</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="pf3" style="display:none">
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter charge in coulombs:</td>
+                                <td class="math"><input type="number" step="any" name="x3" class="intext form-control"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">C</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="xcalc4()" type="button" value="= Calculate" class="btn btn-success"> <input onclick="setfocus()" type="reset" value="X Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Result in volts:</td>
+                                <td class="math"><input type="text" name="y" class="outtext form-control" readonly="readonly"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">V</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <p>Volts to eV calculator with formulas and how to convert </p>
+                <h3>eV to volts calculation with elementary charge</h3>
+                <p>The voltage <i>V</i> in volts (V) is equal to the energy E in electron-volts (eV), divided by the electric charge
+                    <i>Q</i> in elementary charge or proton/electron charge (e):</p>
+                <p class="math"> <i>V</i><sub>(V)</sub> = <i>E</i><sub>(eV)</sub><i> </i>/<i> Q</i><sub>(e)</sub></p>
+                <h3>eV to volts to calculation with coulombs</h3>
+                <p>The voltage V in volts (V) is equal to 1.602176565&times;10<sup>-19</sup> times the energy E in electron-volts (eV), divided by the electrical charge Q in coulombs (C):</p>
+                <p class="math"> <i>V</i><sub>(V)</sub> = 1.602176565&times;10<sup>-19</sup> &times; <i>E</i><sub>(eV)</sub><i> </i>/<i> Q</i><sub>(C)</sub>&nbsp; </p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnChargeTypeChange() {
+            var ictype = document.calcform.charge_type.selectedIndex;
+            var row1 = document.getElementById("pf1");
+            var row3 = document.getElementById("pf3");
+            if (ictype == 0) {
+                row1.style.display = '';
+                row3.style.display = 'none';
+            } else {
+                row1.style.display = 'none';
+                row3.style.display = '';
+            }
+        }
+
+        function convert(x1, x2, x3) {
+            var ictype = document.calcform.charge_type.selectedIndex;
+            var v, y;
+            if (ictype == 0)
+                v = x1 / x2;
+            else
+                v = 1.602176565e-19 * x1 / x3;
+            return v;
+        }
+
+        function xcalc4() {
+            var x1 = document.calcform.x1.value;
+            var x2 = document.calcform.x2.value;
+            var x3 = document.calcform.x3.value;
+            var ictype = document.calcform.charge_type.selectedIndex;
+            var v, y;
+            if (ictype == 0)
+                v = x1 / x2;
+            else
+                v = 1.602176565e-19 * x1 / x3;
+            y = roundresult(v);
+            yy = y.toString();
+            if (yy.length > 12) {
+                y = parseFloat(y);
+                y = y.toPrecision(10);
+            }
+            document.calcform.y.value = y;
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>

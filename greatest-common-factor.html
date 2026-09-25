@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+    <title>Greatest Common Factor Calculator - GCF Calculator</title>
+
+
+
+    <meta name="keywords" content="greatest common factor calculator,the greatest common factor calculator,gcf calculator,gcf calculator polynomials">
+    <meta name="description" content="The greatest number that is a factor of two (or more) other numbers. When we find all the factors of two or more numbers, and some factors are the same , then the largest of those common factors is the Greatest Common Factor.">
+    <meta charset="UTF-8">
+
+    <script async src="tagmng3.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Greatest Common Factor Calculator - GCF Calculator" />
+    <meta property="og:description" content="The greatest number that is a factor of two (or more) other numbers. When we find all the factors of two or more numbers, and some factors are the same , then the largest of those common factors is the Greatest Common Factor."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/greatest-common-factor.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        .calc {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>Greatest Common Factor Calculator or formulas</h1>
+                <p>Greatest common factor (GCF) calculator. Is also known as greateset common divisor (GCD).</p>
+                <h2>GCF calculator</h2> <br>
+
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc">
+                        <tr>
+                            <td>First number:</td>
+                            <td><input type="number" step="any" name="a" class="intext form-control" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Second number:</td>
+                            <td><input type="number" step="any" name="b" class="intext form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="button" value="Calculate" class="btn btn-success" onclick="gcfcalc()"> <input type="reset" value="&#10007;" class="btn btn-danger"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Greatest common factor (gcf):</td>
+                            <td><input type="text" name="gcf" class="outtext form-control" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Least common multiple (lcm):</td>
+                            <td><input type="text" name="lcm" class="outtext form-control" readonly></td>
+                        </tr>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>What is the Greatest Common Factor and how calculate with formulas</h2><br>
+                <p>The greatest common factor (GCF or GCD or HCF) of a set of whole numbers is the largest positive integer that divides evenly into all numbers with zero remainder. For example, for the set of numbers 18, 30 and 42 the GCF = 6.
+
+                </p>
+                <br>
+                <h2>GCF example</h2><br>
+                <p>Find GCF for numbers 8 and 12:</p><br>
+                <p>The divisors of 8 are:</p><br>
+                <p class="math">8 = 2&times;2&times;2</p><br>
+                <p>The divisors of 12 are:</p><br>
+                <p class="math">12 = 2&times;2&times;3</p><br>
+                <p>So the common divisors of 8 and 12 are:</p><br>
+                <p class="math">gcf = 2&times;2 = 4</p><br>
+                <p>So 8/12 fraction, can be reduced to 2/3:</p><br>
+                <p class="math">8 / 12 = (8/4) / (12/4) = 2 / 3</p><br>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="calc2.js"></script>
+    <script>
+        function gcfcalc() {
+            var a = document.calcform.a.value;
+            var b = document.calcform.b.value;
+            if (a != Math.floor(a) || b != Math.floor(b)) {
+                alert("Please enter integer numbers");
+                return;
+            }
+            if (a == '' || b == '') {
+                alert("Please enter integer numbers");
+                return;
+            }
+            if (a == 0 && b == 0) {
+                alert("Please enter at least one non zero integer");
+                return;
+            }
+            var g = gcd(a, b);
+            if (g < 0) g = -g;
+            a = parseInt(a);
+            b = parseInt(b);
+            g = parseInt(g);
+            var lcm = (a * b) / g;
+            document.calcform.gcf.value = g;
+            document.calcform.lcm.value = lcm;
+        }
+    </script>
+
+</body>
+
+
+
+</html>

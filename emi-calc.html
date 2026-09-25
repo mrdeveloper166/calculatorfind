@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html ng-app="calculator">
+
+<head>
+    <title>EMI Calculator | Calculate Your EMI </title>
+
+    <meta name="keywords" content="emi calculator,emi calculator usa,emi calculator india,emi calculator for home loan,emi calculator for car loan,emi calculator personal loan,emi calculator online,emi calculator for bike">
+    <meta name="description" content="EMI Calculator - Calculate Equated Monthly Installment (EMI) for Home Loan / Housing Loan, Car Loan , Personal Loan and Bike loan An Equated Monthly Installment is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. Equated monthly installments are applied to both interest and principal each month so that over a specified number of years, the loan is paid off in full.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:locale" content="en_US" />
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EMI Calculator | Calculate Your EMI " />
+    <meta property="og:description" content="EMI Calculator - Calculate Equated Monthly Installment (EMI) for Home Loan / Housing Loan, Car Loan , Personal Loan and Bike loan An Equated Monthly Installment is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. Equated monthly installments are applied to both interest and principal each month so that over a specified number of years, the loan is paid off in full.">
+
+    <meta property="og:url" content="https://www.calculatorfind.com/emi-calc.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+
+    <style>
+        #mycalcform {
+            padding: 20px;
+            width: 85%;
+            background: #20aea8;
+            border-radius: 7px;
+            border: solid 1px black;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body ng-controller="emicalculator" class="">
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+      <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h2>EMI Calculator or conversion</h2>
+                <br><br>
+                <form name="formEmiCalculator" class="box float" id="mycalcform">
+                    <table>
+                        <tr>
+                            <td> <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Please set Loan Amount:- </label></td>
+                            <td>
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-inr"></i></span>
+                                    <input type="number" name="loanAmount" style="font-size: 20px;" ng-model="loanAmount" class="form-control" placeholder="Enter Loan Amount" required ng-change="update()">
+                                </div>
+
+                                <div ng-messages="formEmiCalculator.loanAmount.$error" style="color: maroon" role="alert">
+                                    <div ng-message="required">Please set Loan Amount</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Please set Interest Rate:- </label>
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-percent"></i></span>
+                                    <input type="number" name="interestRate" style="font-size: 20px;" ng-model="interestRate" class="form-control" placeholder="Enter Interest Rate" required ng-change="update()" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01">
+                                </div>
+                                <div ng-messages="formEmiCalculator.interestRate.$error" style="color: maroon" role="alert">
+                                    <div ng-message="required">Please set Interest Rate</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"> set loan duration in Years:- </label></td>
+                            <td>
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-clock-o"></i></span>
+                                    <input type="number" name="durationYear" style="font-size: 20px;" ng-model="durationYear" class="form-control" placeholder="Enter loan duration in Years" required ng-change="update()">
+                                </div>
+                                <div ng-messages="formEmiCalculator.durationYear.$error" style="color: maroon" role="alert">
+                                    <div ng-message="required">Please set loan duration in Years</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr colspan="2">
+                            <td>
+                                <div ng-messages="formEmiCalculator.summary.$error" style="color: maroon" role="alert">
+                                    <div ng-message="error">Please set all required value to calculate EMI.</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td> <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">EMI : </label></td>
+                            <td> <input type="text" value="{{EMI}}" class="form-control" style="font-weight: bolder;font-size: 20px;color: green;" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Total Interest : </label></td>
+                            <td> <input type="text" value="{{TotalInterest}}" class="form-control" style="font-weight: bolder;font-size: 20px;color: green;" readonly></td>
+                        </tr>
+                        <tr>
+                            <td> <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Total Loan : </label></td>
+                            <td> <input type="text" value="{{TotalLoan}}" class="form-control" style="font-weight: bolder;font-size: 20px;color: green;" readonly></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>What is EMI calculator and how to calculate emi</h2>
+
+
+                <p style="font-size:16px; text-align:justify;"> An equated monthly installment (EMI) as "A fixed payment amount made by a borrower to a lender at a specified date each calendar month. Equated monthly installments are used to pay off both interest and principal each month, so that over
+                    a specified number of years, the loan is fully paid off along with interest</p>
+
+
+                <br>
+                <br>
+                <b>formula to calculate EMI:</b><br>
+                <img src="emiformula.png" alt="emi formula"> where
+
+                <b>E</b> is EMI
+
+                <b>P</b> is Principal Loan Amount
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var angularModule = angular.module('calculator', ['ngMessages']);
+
+        angularModule.controller("emicalculator", function($scope) {
+            $scope.loanAmount = 100;
+            $scope.interestRate = 10;
+            $scope.durationYear = 5;
+            $scope.durationMonth = 12;
+            var Multiplier = 12;
+            $scope.update = function() {
+
+                if ($scope.loanAmount != undefined && $scope.interestRate != undefined && $scope.durationYear != undefined) {
+                    var numerator = $scope.loanAmount * Math.pow((1 + $scope.interestRate / (Multiplier * 100)), $scope.durationYear * Multiplier);
+                    var denominator = 100 * Multiplier * (Math.pow((1 + $scope.interestRate / (Multiplier * 100)), $scope.durationYear * Multiplier) - 1) / $scope.interestRate;
+                    var EMI = 12 * (numerator / (denominator * 12));
+                    $scope.EMI = EMI.toFixed(2); // Math.round(EMI);
+                    $scope.TotalInterest = ((Math.round(EMI) * ($scope.durationYear * 12)) - $scope.loanAmount);
+                    $scope.TotalLoan = (Math.round(EMI) * ($scope.durationYear * 12));
+                } else {
+                    formEmiCalculator.summary.$error = {
+                        "error": true
+                    }
+                }
+
+            };
+            $scope.update();
+
+            $scope.toggleDuration = function(duration) {
+                if (duration == 'year') {
+                    Multiplier = 1;
+                } else if ('months') {
+                    Multiplier = 12;
+                }
+                $scope.multiplier = Multiplier;
+            };
+
+            function get_round(X) {
+                return Math.round(X * 100) / 100
+            }
+        });
+
+        function showpay() {
+            if ((document.calc.loan.value == null || document.calc.loan.value.length == 0) ||
+                (document.calc.months.value == null || document.calc.months.value.length == 0) ||
+                (document.calc.rate.value == null || document.calc.rate.value.length == 0)) {
+                document.calc.pay.value = "Incomplete data";
+                document.calc.tot_amount.value = "Incomplete data";
+                document.calc.tot_interest.value = "Incomplete data";
+                document.calc.yearly_interest.value = "Incomplete data";
+                document.calc.interest_pa.value = "Incomplete data";
+                document.calc.interest_pm.value = "Incomplete data";
+            } else {
+                var princ = document.calc.loan.value;
+                var term = document.calc.months.value;
+                var intr = document.calc.rate.value / 1200;
+                var yrs = document.calc.months.value / 12;
+                document.calc.pay.value = get_round(princ * intr / (1 - (Math.pow(1 / (1 + intr), term))));
+                document.calc.tot_amount.value = get_round(document.calc.pay.value * term);
+                document.calc.tot_interest.value = get_round(document.calc.tot_amount.value - princ);
+                document.calc.yearly_interest.value = get_round(document.calc.tot_interest.value / yrs);
+                document.calc.interest_pa.value = get_round(document.calc.yearly_interest.value / princ * 100);
+                document.calc.interest_pm.value = get_round((document.calc.yearly_interest.value / princ * 100) / 12);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Watts to VA conversion calculator</title>
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="watts to VA, watts in VA, watts to VA converter, watts and VA, watts to VA conversion, watts to Va calculator, watts and VA, how to get watts to VA.">
+    <meta name="description" content="Watts to va converter convert the watts into volt amps. It calculate a particular watts value and give you the exact answer in volt amps.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Watts to VA conversion calculator" />
+    <meta property="og:description" content="Watts to volt amps converter convert the watts into volt amps. It calculate a particular watts value and give you the exact answer in volt amps." />
+    <meta property="og:url" content="https://www.calculatorfind.com/watts-to-volt-amps.html" />
+ 
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Watts to VA calculator or conversion</h1>
+                <p>Watts (W) to volt-amps (VA)</p>
+                <p><b>How to calculate :- </b>Enter real power in watts and power factor and press the <i>Calculate</i> button to get the apparent power in volt-amps:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td>Enter watts:</td>
+                                <td class="math"><input type="number" min="0" step="any" name="x1" class="intext form-control" autofocus></td>
+                                <td class="mathsymbol">W</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter power factor:</td>
+                                <td class="math"><input type="number" min="0" step="0.01" name="x2" class="intext form-control"></td>
+                                <td class="mathsymbol">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="calc3()" type="button" value="Calculate" class="btn btn-success"> <input onclick="setfocus()" type="reset" value="Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Result in volt-amps:</td>
+                                <td class="math"><input type="text" name="y" class="outtext form-control" readonly></td>
+                                <td class="mathsymbol">VA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Watts to VA calculation and formulas</h2>
+                <p>The apparent power S in volt-amps (VA) is equal to the real power P in watts (W), divided by the power factor PF:</p>
+                <p class="math"><i>S</i><sub>(VA)</sub> = <i>&nbsp;P</i><sub>(W)</sub> / <i>PF</i></p>
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function convert(x1, x2) {
+            if (x2 > 1 || x2 < 0) {
+                alert('Enter power factor from 0 to 1');
+                document.calcform.x2.value = '';
+                return Number.NaN;
+            } else
+                return x1 / x2;
+        }
+    </script>
+
+
+</body>
+
+
+</html>

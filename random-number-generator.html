@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>Random Number Generator</title>
+
+    <meta name="keywords" content="random number generator,random number generator in python,random number generator python,random number generator excel,random number generator java,random number generator wheel,random number generator list,random number generator online,random number generator in js,random number generator in c,random number generator calculator">
+    <meta name="description" content="Random number generator with numbers list, range and step.random number generator (RNG) is a mathematical construct, either computational or as a hardware device, that is designed to generate a random set of numbers that should not display any distinguishable patterns in their appearance or generation, hence the word random.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Random Number Generator" />
+    <meta property="og:description" content="Random number generator with numbers list, range and step.random number generator (RNG) is a mathematical construct, either computational or as a hardware device, that is designed to generate a random set of numbers that should not display any distinguishable patterns in their appearance or generation, hence the word random."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/random-number-generator.html" />
+    
+    <script async src="tagmng3.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        * {
+            font-size: 17px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+
+
+
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Random Number Generator conversion calculator </h1>
+                <p>Generate random numbers between min and max with step:</p>
+                <br><br>
+                <form id="calcform" name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <div class="form-group ml-3">
+                        <label class="row" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Preset</label>
+                        <div id="prebtn" class="btn-group row" role="group" aria-label="Preset buttons">
+                            <button type="button" class="btn btn-secondary">1-2</button>
+                            <button type="button" class="btn btn-secondary">1-3</button>
+                            <button type="button" class="btn btn-secondary">1-4</button>
+                            <button type="button" class="btn btn-secondary">1-10</button>
+                            <button type="button" class="btn btn-secondary">1-100</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="min" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Min</label>
+                        <input type="number" step="any" id="min" name="min" value="1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="max" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Max</label>
+                        <input type="number" step="any" id="max" name="max" value="10" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="step" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Step</label>
+                        <input type="number" min="0" step="any" id="step" placeholder="1" class="form-control">
+                    </div>
+                    <div class="form-group" id="div6">
+                        <label for="len" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">List length</label>
+                        <input type="number" min="1" max="16384" step="1" id="len" placeholder="1000" class="form-control">
+                    </div>
+                    <div class="form-group" id="div7">
+                        <label for="del" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">List delimiter</label>
+                        <select id="del" class="form-control">
+         <option value=" " selected>Space</option>
+         <option value="">New line</option>
+         <option value=",">Comma</option>
+      </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="calc" title="Generate random numbers" class="btn btn-success" onclick="calc1()"><i class="material-icons">settings</i> Generate</button>
+                        <button type="reset" id="reset" title="Reset" class="btn btn-danger" onclick="clearform()"><i class="material-icons">clear</i> Reset</button>
+                        <br><br>
+                        <button type="button" id="more" class="btn btn-secondary"><i class="material-icons">expand_more</i> More options</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="area" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Result</label>
+                        <textarea id="area" rows="3" readonly class="form-control form-control-lg"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="select" title="Copy result" class="btn btn-secondary" onclick="copy()"><i class="material-icons">content_copy</i> Copy</button>
+                    </div>
+                    <div class="form-group" id="div11">
+                        <div id="chart_div"></div>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <h3>Random number generation conversion calculator</h3><br>
+                <p>
+                    A random number generator (RNG) is a mathematical construct, either computational or as a hardware device, that is designed to generate a random set of numbers that should not display any distinguishable patterns in their appearance or generation, hence
+                    the word random.</p>
+                <br>
+                <ul>
+                    <li>Random number generator uses cryptographically secure pseudorandom number generator with all recent browsers, except Opera and for list length of up to 16384.</li><br>
+                    <li>The random numbers are generated locally in the browser and are not sent to the server.</li><br>
+                    <li>The web page is loaded with HTTPS and SSL encryption.</li><br>
+                    <li>The distribution graph shows the number of occurences of each number and is not normalized.</li><br>
+                    <li>You can view close to uniform distribution graph by setting large list length.</li><br>
+                </ul>
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="jquery.min.js"></script>
+    <script src="calc2.js"></script>
+    <script src="loader.js"></script>
+    <script>
+        var dist, xdist;
+        var optionsstate = false;
+        $(document).ready(function() {
+            $("#div6").hide();
+            $("#div7").hide();
+            $("#prebtn button").click(function() {
+                var i = $(this).index();
+                var min = 1,
+                    max = 2;
+                if (i == 1) max = 3;
+                else if (i == 2) max = 4;
+                else if (i == 3) max = 10;
+                else if (i == 4) max = 100;
+                $("#min").val(min);
+                $("#max").val(max);
+                $("#step").val(1);
+            });
+            $("#more").click(function() {
+                if (!optionsstate) {
+                    optionsstate = true;
+                    $("#more").html("<i class='material-icons'>expand_less</i> Less options");
+                    $("#div6").show();
+                    $("#div7").show();
+                    $("#div11").show();
+                } else {
+                    optionsstate = false;
+                    $("#more").html("<i class='material-icons'>expand_more</i> More options");
+                    $("#div6").hide();
+                    $("#div7").hide();
+                    $("#div11").hide();
+                }
+            });
+            var params = GetURLParams();
+            if (Object.keys(params).length > 0 && params.min != "" && params.max != "") {
+                document.title = "Random number generator " + params.min + "-" + params.max;
+                //SetLinks(params);
+                document.getElementById("min").value = params.min;
+                document.getElementById("max").value = params.max;
+                calc1();
+            }
+        });
+
+        function GetURLParams() {
+            var url = window.location.href;
+            var regex = /[?&]([^=#]+)=([^&#]*)/g,
+                //url = "www.domain.com/?v=123&p=hello",
+                params = {},
+                match;
+            while (match = regex.exec(url)) {
+                params[match[1]] = match[2];
+            }
+            return params;
+        }
+
+        function calc1() {
+            $('#doc').css('cursor', 'progress');
+            var min = $("#min").val();
+            var max = $("#max").val();
+            var step = $("#step").val();
+            var len = $("#len").val();
+            var del = $("#del").val();
+            if (del == "") del = "\u000d\u000a";
+            if (step == "") step = 1.0;
+            if (len == "") len = 1000;
+            if (optionsstate == false) len = 1;
+            min = parseFloat(min);
+            max = parseFloat(max);
+            if (max < min) {
+                $("#min").val(max);
+                $("#max").val(min);
+                min = max;
+                max = parseFloat($("#max").val());
+            }
+            step = parseFloat(step);
+            if (step > max - min) step = max - min;
+            max = max - (max - min) % step;
+            num = getrandom(min, max, step, len);
+            var txt = "";
+            for (var i = 0; i < len; i++) {
+                txt += num[i];
+                if (i < len - 1) txt += del;
+            }
+            $("#area").val(txt);
+            if (optionsstate == false) return;
+            CalcDist(min, max, step);
+            DrawGraph();
+        }
+
+        function getrandom(min, max, step, len) {
+            var num = [];
+            var n = Math.round((max - min) / step + 1);
+            var bits = Math.log2(n) + 1;
+            //if(0) {
+            if ((len <= 16384) && //byte length up to 65536 bytes
+                ((typeof window.crypto.getRandomValues === "function") ||
+                    (typeof window.msCrypto.getRandomValues === "function"))) {
+                var crypto = window.crypto || window.msCrypto; // for IE 11
+                var array = new Uint32Array(len);
+                //window.crypto.getRandomValues(array);
+                crypto.getRandomValues(array);
+                for (var i = 0; i < len; i++) {
+                    num[i] = Math.floor(array[i] / Math.pow(2, 32) * n) * step + min;
+                    num[i] = roundresult(num[i]);
+                }
+            } else {
+                //min = Math.ceil(min);
+                //max = Math.floor(max);
+                for (var i = 0; i < len; i++) {
+                    //num[i] = Math.floor(Math.random() * (max - min + 1)) + min;
+                    num[i] = Math.floor(Math.random() * n) * step + min;
+                    num[i] = roundresult(num[i]);
+                }
+            }
+            return num;
+        }
+
+        function copy() {
+            $("#area").select();
+            var v = $("#area").val();
+            if (typeof navigator.clipboard === "object")
+                if (typeof navigator.clipboard.writeText === "function") {
+                    navigator.clipboard.writeText(v);
+                    v = null;
+                }
+            if (v != null) {
+                $("#area").select();
+                document.execCommand('copy');
+            }
+            //$("#area").select();
+            document.execCommand('copy');
+        }
+
+        function DrawGraph() {
+            google.charts.load('current', {
+                'packages': ['corechart']
+            });
+            google.charts.setOnLoadCallback(drawVisualization);
+        }
+
+        function CalcDist(min, max, step) {
+            dist = [];
+            xdist = [];
+            var n = 1;
+            //if( step>max-min ) step=max-min;
+            if (step > 0)
+                n = (max - min) / step + 1;
+            for (var i = 0; i < n; i++) {
+                dist[i] = 0;
+                xdist[i] = min + i * step;
+            }
+            for (var i = 0; i < num.length; i++) {
+                var k = Math.round((num[i] - min) / step);
+                dist[k]++;
+            }
+        }
+
+        function drawVisualization() {
+            var d = [
+                ['', '', {
+                    role: 'style'
+                }]
+            ];
+            for (var i = 0; i < dist.length; i++)
+            //d.push(['',  dist[i], '']);
+                d.push([xdist[i], dist[i], '']);
+            //d.push([xdist[i].toString(),  dist[i], '']);
+            var data = google.visualization.arrayToDataTable(d);
+
+            var options = {
+                //width: 408,
+                legend: {
+                    position: 'none'
+                },
+                title: 'Random Numbers Distribution',
+                vAxis: {
+                    title: '# of occurrences',
+                    viewWindow: {
+                        min: 0
+                    }
+                },
+                hAxis: {
+                    title: 'Number'
+                },
+                seriesType: 'bars',
+            };
+            /*
+            var viewportWidth = $(window).width(); //$("body").innerWidth();
+            if( viewportWidth<=320 )
+               options.width=245;
+            if( viewportWidth<=800 )
+               options.width=292;
+            */
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+            //$("#tbl tr:nth-last-child(2)").show();
+            //$("#tbl tr:last-child").show();
+            $("#chart_div").show();
+            $("#doc").css("cursor", "default");
+        }
+
+        function clearform() {
+            $("#chart_div").hide();
+        }
+    </script>
+
+
+</body>
+
+
+
+</html>

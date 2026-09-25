@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <title>Exponents Calculator | Online Exponents Calculator</title>
+
+
+    <meta name="keywords" content="exponents calculator,calculator for exponents,fractions with exponents calculator,exponents calculator fractions,exponents calculator simplify,exponents on a calculator,exponents on calculator,exponents calculator multiplication">
+    <meta name="description" content="Exponentiation is a mathematical operation, written as an, involving the base a and an exponent n. In the case where n is a positive integer, exponentiation corresponds to repeated multiplication of the base, n times.">
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Exponents Calculator | Online Exponents Calculator" />
+    <meta property="og:description" content="Exponentiation is a mathematical operation, written as an, involving the base a and an exponent n. In the case where n is a positive integer, exponentiation corresponds to repeated multiplication of the base, n times."
+    />
+    <script async src="tagmng3.js"></script>
+    <meta property="og:url" content="https://www.calculatorfind.com/exponents-calc.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        .calc {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .tx {
+            font-weight: bolder;
+            color: green;
+            background-color: white;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+
+                <h1>Exponents calculator or converter</h1>
+                <p>Online exponents calculator with negative numbers support and steps.</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td>Enter<br>Base:</td>
+                                <td>Enter<br>Exponent:</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="math" style="width:220px; vertical-align:bottom;"><input type="text" id="x1" name="x1" class="intext form-control"></td>
+                                <td class="mathsymbol" style="width:220px; padding-left:5px;"><input type="text" id="x2" name="x2" class="intext form-control"></td>
+                                <td>&nbsp;
+                                    <select style="display:none">
+						<option>&nbsp;</option>
+						<option>+</option>
+						<option>-</option>
+						<option>&times;</option>
+						<option>&divide;</option>
+					</select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <button type="button" title="Calculate" class="btn btn-success" onclick="calc()"><b>=</b> Calculate</button>
+                                    <button type="reset" title="Reset" class="btn btn-danger" onclick="resetb()"><b>X</b> Reset</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Result:</td>
+                            </tr>
+                            <tr>
+                                <td class="math" colspan="3"><input type="text" name="y" class="outtext form-control tx" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Calculation:</td>
+                            </tr>
+                            <tr id="pf1">
+                                <td colspan="3"><textarea rows="3" name="TA1" class="outtext form-control tx" readonly></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <h2>Exponents laws and rules and how to apply these rules.</h2><br>
+                <p>When exponents that share the same base are multiplied, the exponents are added. When an exponent is negative, the negative sign is removed by reciprocating the base and raising it to the positive exponent. ... When exponents are raised
+                    to another exponent, the exponents are multiplied.</p><br>
+                <p>The exponent formula is:</p><br>
+                <p class="math"><b><i>a<sup><span style="font-size: 0.8em"> </span>n</sup></i> =
+                    <i>a</i>&times;<i>a</i>&times;<i>...</i>&times;<i>a</i></b></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n times</p><br>
+                <p>The base a is raised to the power of n, is equal to n times multiplication of a.</p><br>
+                <p>For example:</p><br>
+                <p class="math">2<sup>5</sup> = 2&times;2&times;2&times;2&times;2 = 32</p><br>
+                <h5>Multiplying exponents</h5><br>
+                <p class="math"><i>a</i><sup><i>n</i> </sup>&sdot; <i>a</i><sup><i>m</i><br>
+	</sup>= <i>a</i><sup><i>n</i>+<i>m</i></sup></p><br>
+                <p class="mathsymbol">Example: 2<sup>3 </sup>&sdot; 2<sup>4 </sup>= 2<sup>(3+4) </sup>= 2<sup>7 </sup>= 128</p><br>
+                <p>&nbsp;</p><br>
+                <p class="math"><i>a</i><sup><i>n</i> </sup>&sdot; <i>b<sup>n</sup></i><sup><br>
+	</sup>= (<i>a </i>&sdot;<i> b</i>)<sup><i> n</i></sup></p><br>
+                <p class="mathsymbol">Example: 3<sup>2 </sup>&sdot; 4<sup>2 </sup>= (3&sdot;4)<sup>2 </sup>= 12<sup>2 </sup>= 144</p><br>
+                <p>&nbsp;</p><br>
+                <h5>Dividing exponents</h5><br>
+                <p class="math"><i>a</i><sup><i>n</i> </sup>/ <i>a</i><sup><i>m</i> </sup>= <i>a</i><sup><i>n</i>-<i>m</i></sup></p><br>
+                <p class="mathsymbol">Example: 2<sup>5 </sup>/ 2<sup>3 </sup>= 2<sup>(5-3) </sup>= 2<sup>2 </sup>= 4</p><br>
+                <p>&nbsp;</p><br>
+                <p class="math"><i>a</i><sup><i>n</i> </sup>/ <i>b<sup>n</sup></i><sup> </sup>= (<i>a </i>/<i> b</i>)<sup><i> n</i></sup></p><br>
+                <p class="mathsymbol">Example: 8<sup>2 </sup>/ 2<sup>2 </sup>= (8/2<sup>)2 </sup>= 4<sup>2 </sup>= 16</p><br>
+                <p>&nbsp;</p><br>
+                <h5>Power of exponent</h5><br>
+                <p class="math">(<i>a</i><sup><i>n</i></sup>)<sup><i>m</i> </sup>= <i>a</i><sup><i>n</i>&sdot;<i>m</i></sup></p><br>
+                <p class="mathsymbol">Example: (2<sup>3</sup>)<sup>4 </sup>= 2<sup>(3 &sdot; 4) </sup>= 2<sup>12 </sup>= 4096</p><br>
+                <p>&nbsp;</p><br>
+                <h5>Radical of exponent</h5><br>
+                <p class="math"><sup><i>m</i></sup>&#8730;(<i>a</i><sup><i>n</i></sup>) = <i>a</i><sup><i>n</i>/<i>m</i></sup></p><br>
+                <p class="mathsymbol">Example: <sup>2</sup>&#8730;(2<sup>6</sup>) = 2<sup>(6 / 2) </sup>= 2<sup>3 </sup>= 8</p><br>
+                <p>&nbsp;</p>
+                <h5>Negative exponent</h5><br>
+                <p class="math"><i>a</i><sup><i> -n</i> </sup>= 1 / <i>a</i><sup><i> n</i></sup></p><br>
+                <p class="mathsymbol">Example: 2<sup>-3 </sup>= 1 / 2<sup>3 </sup>= 1 / 8 = 0.125</p><br>
+                <p>&nbsp;</p>
+                <h5>Zero exponent</h5><br>
+                <p class="math"><i>a</i><sup><i> </i>0 </sup>= 1</p><br>
+                <p class="mathsymbol">Example: 4<sup>0 </sup>= 1</p>
+                <br>
+                <h2>What is an exponent?</h2><br>
+                <p>Exponentiation is a mathematical operation, written as an, involving the base a and an exponent n. In the case where n is a positive integer, exponentiation corresponds to repeated multiplication of the base, n times.</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+                <div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="calc2.js"></script>
+    <script src="decimal.min.js"></script>
+    <script>
+        function resetb() {
+            document.calcform.x1.focus();
+            document.getElementById("x1").style.backgroundColor = "white";
+            document.getElementById("x2").style.backgroundColor = "white";
+        }
+
+        function calc() {
+            var b = document.calcform.x1.value;
+            var e = document.calcform.x2.value;
+            document.getElementById("x1").style.backgroundColor = "white";
+            document.getElementById("x2").style.backgroundColor = "white";
+            if (b == "") {
+                document.calcform.y.value = "";
+                document.getElementById("x1").style.backgroundColor = "#fff0f0";
+                return;
+            }
+            if (e == "") {
+                document.calcform.y.value = "";
+                document.getElementById("x2").style.backgroundColor = "#fff0f0";
+                return;
+            }
+            var y = Decimal.pow(b, e);
+            document.calcform.y.value = y;
+
+
+            ee = e.toString();
+            len = ee.length;
+            p = '';
+            for (i = 0; i < len; i++) {
+                d = ee.charCodeAt(i) - 0x30;
+                if (ee.charCodeAt(i) == 0x2e)
+                    code = 0xb7;
+                else if (d == 1)
+                    code = 0xb9;
+                else if (d > 1 && d < 4)
+                    code = (d + 0xb0);
+                else
+                    code = (d + 0x2070);
+                p += String.fromCharCode(code);
+            }
+            sb = b.toString();
+            if (b < 0) sb = '(' + b + ')';
+            out = sb;
+            if (e < 0) out += String.fromCharCode(8315);
+            out += p;
+            out += ' = ';
+            if (e < 0) {
+                out += '1/';
+                out += sb;
+                out += p;
+                out += ' = ';
+            }
+
+            abse = Math.abs(e);
+            if (abse >= 2 && abse <= 30 && (abse == Math.floor(abse))) {
+                if (e < 0) out += '1/(';
+                for (i = 0; i < abse; i++) {
+                    if (b < 0) out += '(';
+                    out += b;
+                    if (b < 0) out += ')';
+                    if (i < abse - 1) out += String.fromCharCode(215);
+                }
+                if (e < 0) out += ')';
+                out += ' = ';
+            }
+            out += y;
+            document.calcform.TA1.value = out;
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

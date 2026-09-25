@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="euc-kr">
+    <title>Base64 to Image Decode (jpg,png,gif)</title>
+
+    <script async src="tagmng3.js"></script>
+    <meta name="keywords" content="base64 decode,base64 decode online,base64 decode to image,base64 decode javascript,base64 decode convert,base64 decode converter,base64 decode image">
+    <meta name="description" content="Base64 is a way of representing binary data in an ASCII string. 'Base64 decoding' is the process of transforming a base64 representation — a string of odd-looking text — back into the original binary or text data. ... Alternatively, type or paste in the text you want to base64–decode, then press the 'Decode' button.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Base64 to Image Decode (jpg,png,gif)" />
+    <meta property="og:description" content="Base64 is a way of representing binary data in an ASCII string. 'Base64 decoding' is the process of transforming a base64 representation — a string of odd-looking text — back into the original binary or text data. ... Alternatively, type or paste in the text you want to base64–decode, then press the 'Decode' button."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/base64-to-imagedecode.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 1.6rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+        }
+        
+        #calcform button i {
+            vertical-align: middle;
+        }
+        
+        #imgdiv {
+            border: 4px solid white;
+            min-height: 120px;
+        }
+        
+        @media all and (max-width: 576px) {
+            #calcform {
+                padding: 8px;
+            }
+        }
+        
+        @media all and (min-width: 577px) {}
+        
+        .codebg {
+            padding: 5px;
+            border: 1px #e0e0e0 solid;
+        }
+        
+        #fileElem {
+            padding: 5px;
+        }
+        
+        #msg {
+            color: red;
+        }
+        
+        .cursor {
+            cursor: progress !important;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>Base64 to Image Decode</h1>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" href="base64-decode.html">Base64 Decode</a></li>
+                    <li class="nav-item"><a class="nav-link" href="base64-encode.html">Base64 Encode</a></li>
+                    <li class="nav-item"><a class="nav-link" href="image-to-base64-encode.html">Image to Base64</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Base64 to Image</a></li>
+                </ul>
+                <br>
+                <form class="box float" id="calcform" name="calcform" autocomplete="off">
+                    <div class="form-group">
+                        <label for="ta1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Base64 string <span id="msg"></span></label>
+                        <textarea id="txt" name="txt" rows="5" cols="60" class="form-control" placeholder="Base64 input ..." spellcheck="false" autofocus></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="typesel" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Image type</label>
+                        <select id="typesel" class="form-control">
+         <option>GIF image</option>
+         <option selected>JPEG image</option>
+         <option>PNG image</option>
+         <option>WEBP image</option>
+      </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="imgname" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Image name</label>
+                        <input type="text" id="imgname" class="form-control" placeholder="image">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" title="Decode" class="btn btn-success" onclick="OnDecode()"><i class="material-icons">settings</i> Decode</button>
+                        <button type="reset" title="Reset" class="btn btn-danger" onclick="OnReset()"><i class="material-icons">clear</i> Reset</button>
+                        <button type="button" title="Swap" class="btn btn-secondary" onclick="location.href='image-to-base64-encode.html';"><i class="material-icons">swap_vert</i> Swap</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="out" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Image preview</label>
+                        <div id="imgdiv"><img id="image1" src=""></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="OnImageSave()" class="btn btn-secondary" title="Save Image"><i class="material-icons">save_alt</i> Save</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="out1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Image HTML code</label>
+                        <textarea id="out1" name="out1" rows="4" cols="60" readonly class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="OnSelect(1)" class="btn btn-secondary"><i class="material-icons">select_all</i> Select</button>
+                        <button type="button" onclick="OnSave(1)" class="btn btn-secondary" title="Save to File"><i class="material-icons">save_alt</i> Save</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="out2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Image CSS background code</label>
+                        <textarea id="out2" name="out2" rows="4" cols="60" readonly class="form-control"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" onclick="OnSelect(2)" class="btn btn-secondary"><i class="material-icons">select_all</i> Select</button>
+                        <button type="button" onclick="OnSave(2)" class="btn btn-secondary" title="Save to File"><i class="material-icons">save_alt</i> Save</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="utils.js"></script>
+    <script src="Blob.js"></script>
+    <script src="FileSaver.js"></script>
+    <script src="jquery.min55.js"></script>
+
+    <script>
+        var width, height;
+
+        function OnReset() {}
+
+        function OnChange() {
+            var file = document.getElementById("fileElem").files[0];
+            document.getElementById("fileElem").value = "";
+            var filename = file.name;
+            if (filename) {
+                var reader = new FileReader();
+                var ext = GetFileExt(filename);
+                ext = ext.toLowerCase();
+                if (ext == ".jpg" || ext == ".jpeg" || ext == ".png" || ext == ".gif" || ext == ".bmp") {
+                    $("#msg").html("Please wait while reading file ...");
+                    setInterval(function() {
+                        document.body.style.cursor = "progress";
+                    }, 1000);
+                    reader.onloadend = function(event) {
+                        $("#msg").html("");
+                        document.calcform.style.cursor = 'auto';
+                        img = document.getElementById("image1");
+                        img.src = event.target.result;
+                        txt = img.src;
+                        txt = txt.substring(txt.lastIndexOf(";base64,") + 8);
+                        document.calcform.txt.value = "";
+                        document.calcform.out.value = img.src;
+                        img.onload = function(event) {
+                            if (img.width > 50)
+                                img.width = 50;
+                            document.getElementById("tr1").style.display = "";
+                        };
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    document.getElementById("tr1").style.display = "none";
+                    reader.onloadend = function(event) {
+                        txt = event.target.result;
+                        document.calcform.txt.value = txt;
+                        document.calcform.out.value = "";
+                    };
+                    reader.readAsText(file);
+                }
+            }
+        }
+
+        function OnDecode() {
+            txt = $("#txt").val();
+            if (txt != "") {
+                var prefix = "data:image/";
+                if (txt.substring(0, 11) != prefix) {
+                    var i = $("#typesel")[0].selectedIndex;
+                    if (i == 0) txt = "data:image/gif;base64," + txt;
+                    else if (i == 1) txt = "data:image/jpeg;base64," + txt;
+                    else if (i == 2) txt = "data:image/png;base64," + txt;
+                    else if (i == 3) txt = "data:image/webp;base64," + txt;
+                }
+                $("#image1").on("load", function() {
+                    width = $("#image1")[0].naturalWidth;
+                    height = $("#image1")[0].naturalHeight;
+                    $("#image1").prop("width", Math.round(120.0 / height * width));
+                    $("#image1").prop("height", 120);
+                    var w = width.toString();
+                    var h = height.toString();
+                    $("#out1").val("<img width=\"" + w + "\" height=\"" + h + "\" alt=\"\" src=\"" + txt + "\">");
+                    $("#out2").val("background-image: url(\"" + txt + "\");");
+                });
+                $("#image1").attr("src", txt);
+            }
+        }
+
+        function OnSelect(n) {
+            if (n == 1)
+                $("#out1").select();
+            if (n == 2)
+                $("#out2").select();
+        }
+
+        function OnImageSave() {
+            var mimetype;
+            var i = $("#typesel")[0].selectedIndex;
+            var name = $("#imgname").val();
+            if (name == "") name = "image";
+            if (i == 0) {
+                name += ".gif";
+                mimetype = "image/gif";
+            }
+            if (i == 1) {
+                name += ".jpg";
+                mimetype = "image/jpeg";
+            }
+            if (i == 2) {
+                name += ".png";
+                mimetype = "image/png";
+            }
+            if (i == 3) {
+                name += ".webp";
+                mimetype = "image/webp";
+            }
+            var image = document.getElementById("image1");
+            var canvas = document.createElement('canvas');
+            canvas.id = "canvas1";
+            canvas.width = image.naturalWidth;
+            canvas.height = image.naturalHeight;
+            var body = document.getElementsByTagName("body")[0];
+            body.appendChild(canvas);
+            var ctx = canvas.getContext('2d');
+            ctx.drawImage(image, 0, 0);
+            canvas.toBlob(function(blob) {
+                saveAs(blob, name);
+                canvas.remove();
+            }, mimetype);
+        }
+
+        function OnSave(n) {
+            var file = "";
+            if (n == 1) s = $("#out1").val();
+            if (n == 2) s = $("#out2").val();
+            //var OSName = GetOS();
+            //if( OSName=="Windows" )
+            //	s = s.replace(/\n/g,'\r\n');
+            if (file == "") file = "out.txt";
+            var blob = new Blob([s], {
+                type: "text/plain;charset=utf-8"
+            });
+            name = GetFileName(file);
+            if (n == 1) name += '_html.txt';
+            if (n == 2) name += '_css.txt';
+            saveAs(blob, name);
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

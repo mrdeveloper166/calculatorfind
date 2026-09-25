@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="euc-kr">
+    <title>VAT Conversion Calculator</title>
+    <meta name="keywords" content="vat calculator, the vat calculator,with vat calculator,online vat calculator,vat calculator online">
+    <meta name="description" content="Vat calculator- calculate your vat online using this calculator.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VAT Calculator" />
+    <meta property="og:description" content="Vat calculator- calculate your vat online using this calculator." />
+    <meta property="og:url" content="https://www.calculatorfind.com/vat-calculator.html" />
+ 
+    <script async src="tagmng3.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>VAT Conversion Calculator</h1>
+                <p>Value added tax (VAT) calculator online.</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Country:</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><select name="Select1" onchange="OnCountryChange()" class="form-control">
+				<option>Australia</option>
+				<option>Belgium</option>
+				<option>Denmark</option>
+				<option>France</option>
+				<option>Germany</option>
+				<option>Greece</option>
+				<option>India</option>
+				<option>Ireland</option>
+				<option>Israel</option>
+				<option>Italy</option>
+				<option>Malaysia</option>
+				<option>Mexico</option>
+				<option>Netherlands</option>
+				<option>New Zealand</option>
+				<option>Norway</option>
+				<option>Pakistan</option>
+				<option>Phillipine</option>
+				<option>Poland</option>
+				<option>Romania</option>
+				<option>Singapore</option>
+				<option>South Africa</option>
+				<option>Spain</option>
+				<option>Sweden</option>
+				<option>Turkey</option>
+				<option selected="selected">United Kingdom</option>
+				<option>Other country</option>
+			</select></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Initial amount:</td>
+                            <td class="math" id="cur1" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&pound;</td>
+                            <td>&nbsp;</td>
+                            <td class="math">
+                                <input id="Text1" name="Text1" type="text" class="intext form-control" autofocus>
+                                <!--<input type="button" value="&times;" style="font-size:medium" onclick="OnClear()">-->
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Rate of VAT:</td>
+                            <td class="math">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="math" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                <input id="Text2" name="Text2" type="text" class="intext form-control" value="20"> %</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="3">
+
+                                <button type="button" title="Add VAT" class="btn btn-success" onclick="OnCalcVAT(1)"><b>+</b> Add VAT</button>
+                                <button type="button" title="Subtract VAT" class="btn btn-danger" onclick="OnCalcVAT(0)"><b>-</b> Subtract VAT</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Net amount:</td>
+                            <td class="math" id="cur2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&pound;</td>\
+                            <td>&nbsp;</td>
+                            <td class="math"><input id="Text5" name="Text5" type="text" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">VAT amount:</td>
+                            <td class="math" id="cur3" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&pound;</td>
+                            <td>&nbsp;</td>
+                            <td class="math"><input id="Text6" name="Text6" type="text" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Gross amount:</td>
+                            <td class="math" id="cur4" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&pound;</td>
+                            <td>&nbsp;</td>
+                            <td class="math">
+                                <input id="Text7" name="Text7" type="text" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is Vat ?</h2>
+                <p>A value-added tax, known in some countries as a goods and services tax, is a type of tax that is assessed incrementally</p>
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script>
+        function OnClear() {
+            document.getElementById("Text1").value = '';
+            document.getElementById("Text5").value = '';
+            document.getElementById("Text6").value = '';
+            document.getElementById("Text7").value = '';
+        }
+
+        function OnCountryChange() {
+            vat_look = [10, 21, 25, 19.6, 19, 23, 13.5, 23, 18, 22, 10, 16, 21, 15, 25, 16, 12, 23, 24, 7, 14, 21, 25, 18, 20, ''];
+            c_look = ['$', '&euro;', 'kr', '&euro;', '&euro;', '&euro;', 'R', '&euro;', '&#8362;', '&euro;', 'RM', '$', '&euro;', '$', 'kr', 'Rs', 'P', 'zl', 'L', '$', 'R', '&euro;', 'kr', 't', '&pound;', ''];
+            i = document.calcform.Select1.selectedIndex;
+            c = c_look[i];
+            document.getElementById("cur1").innerHTML = c;
+            document.getElementById("cur2").innerHTML = c;
+            document.getElementById("cur3").innerHTML = c;
+            document.getElementById("cur4").innerHTML = c;
+            document.getElementById("Text2").value = vat_look[i];
+        }
+
+        function OnCalcVAT(op) {
+            i = document.calcform.Select1.selectedIndex;
+            amount = document.calcform.Text1.value;
+            if (amount == '') amount = '0';
+            amount = parseFloat(amount);
+            vat = document.calcform.Text2.value;
+            if (vat == '') vat = '0';
+            vat = parseFloat(vat);
+            if (op == 1) {
+                net_amount = amount;
+                vat_amount = amount * vat / 100;
+                gross_amount = parseFloat(net_amount) + parseFloat(vat_amount);
+            } else {
+                gross_amount = amount;
+                net_amount = 100 * amount / (100.0 + parseFloat(vat));
+                vat_amount = parseFloat(gross_amount) - parseFloat(net_amount);
+            }
+            net_amount = net_amount.toFixed(2);
+            vat_amount = vat_amount.toFixed(2);
+            gross_amount = gross_amount.toFixed(2);
+            document.calcform.Text5.value = net_amount;
+            document.calcform.Text6.value = vat_amount;
+            document.calcform.Text7.value = gross_amount;
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>Watts/Volts/Amps/Ohms conversion calculator</title>
+
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="watts converter, volt into ohms, resistance into kilohms, megaohs, current in amps, milliamps, microamps,  voltage in volts, megavolts, microvolts.">
+    <meta name="description" content="Watts/Volts/Amps/Ohms law calculator is used to convert resistance, current, voltage, power into ohms, apms,, watts, volts and so on. This calculator is easy to use . You can learn ohm's formulas also here.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Watts/Volts/Amps/Ohms conversion calculator" />
+    <meta property="og:description" content="Watts/Volts/Amps/Ohms law calculator is used to convert resistance, current, voltage, power into ohms, apms,, watts, volts and so on. This calculator is easy to use . You can learn ohm's formulas also here." />
+    <meta property="og:url" content="https://www.calculatorfind.com/watts-volts-amps-ohms-conversion.html" />
+    
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {
+            font-size: 1.6rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+        }
+        
+        .calc {
+            padding: 15px;
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        #calc-dc tr td:nth-child(2) {
+            width: 200px;
+        }
+        
+        #calc-ac tr td:nth-child(2) {
+            width: 90px;
+        }
+        
+        #calc-ac tr td:nth-child(4) {
+            width: 100px;
+        }
+        
+        .calc button {
+            margin-top: 10px;
+        }
+        
+        .btn img {
+            filter: invert(1)
+        }
+        
+        #wrapper td {
+            padding-left: unset;
+            padding-right: unset;
+        }
+        
+        @media all and (max-width: 576px) {
+            #calc-dc tr td:nth-child(1) {
+                width: 100px;
+            }
+            #calc-dc tr td:nth-child(2) {
+                width: 100px;
+            }
+            #calc-ac tr td {
+                float: left;
+            }
+            #calc-ac tr:nth-child(2) td:nth-child(1) {
+                width: 100px;
+            }
+            #calc-ac tr:nth-child(4) td:nth-child(1) {
+                width: 100px;
+            }
+            #calc-ac tr:nth-child(6) td:nth-child(1) {
+                width: 100px;
+            }
+            #calc-ac tr:nth-child(8) td:nth-child(1) {
+                width: 100px;
+            }
+            #calc-ac tr:nth-child(2) td:nth-child(6) {
+                clear: left;
+            }
+            #calc-ac tr:nth-child(8) td:nth-child(6) {
+                clear: left;
+            }
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Watts / Volts / Amps / Ohms calculator and conversion</h1>
+                <p>Enter <b>2 <i>values</i></b> to get the other values and press the <i>Calculate </i>button:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+
+                    <table style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <tr>
+                            <td>Resistance (<i>R</i>):</td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" min="0" step="any" name="r" onclick="ondata(this)" onkeyup="ondata(this)" autofocus class="form-control"></td>
+                            <td>
+                                <select name="cr" onchange="onselchange(this,0);" class="form-control">
+				<option selected>ohms (&Omega;)</option>
+				<option>kiloohms (k&Omega;)</option>
+				<option>megaohms (M&Omega;)</option>
+			</select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Current (<i>I</i>):</td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" min="0" step="any" name="i" onclick="ondata(this)" onkeyup="ondata(this)" class="form-control"></td>
+                            <td>
+                                <select name="ci" onchange="onselchange(this,1);" class="form-control">
+				<option>microamps (&mu;A)</option>
+				<option>milliamps (mA)</option>
+				<option selected>amps (A)</option>
+				<option>kiloamps (kA)</option>
+				<option>megaamps (MA)</option>
+			</select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Voltage (<i>V</i>):</td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" min="0" step="any" name="v" onclick="ondata(this)" onkeyup="ondata(this)" class="form-control"></td>
+                            <td>
+                                <select name="cv" onchange="onselchange(this,2);" class="form-control">
+				<option>microvolts (&mu;V)</option>
+				<option>millivolts (mV)</option>
+				<option selected>volts (V)</option>
+				<option>kilovolts (kV)</option>
+				<option>megavolts (MV)</option>
+			</select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>Power (<i>P</i>):</td>
+                            </tr>
+                            <td><input type="number" min="0" step="any" name="p" onclick="ondata(this)" onkeyup="ondata(this)" class="form-control"></td>
+                            <td>
+                                <select name="cp" onchange="onselchange(this,3);" class="form-control">
+				<option>microwatts (&mu;W)</option>
+				<option>milliwatts (mW)</option>
+				<option selected>watts (W)</option>
+				<option>kilowatts (kW)</option>
+				<option>megawatts (MW)</option>
+			</select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <button type="button" name="bcalc" title="Calculate" class="btn btn-success" onclick="oncalc()" disabled="disabled"><b>=</b> Calculate</button>
+                                <button type="reset" title="Reset" class="btn btn-danger" onclick="onbtnreset()"><b>X</b> Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        var prevIndex = ["0", "2", "2", "2"];
+
+        function oninit() {
+            setfocus();
+        }
+
+        function setfocus() {
+            document.calcform.r.focus();
+        }
+
+        function ondata(obj) {
+            r = document.calcform.r.value;
+            i = document.calcform.i.value;
+            v = document.calcform.v.value;
+            p = document.calcform.p.value;
+            count = 0;
+            if (r != "") count++;
+            if (i != "") count++;
+            if (v != "") count++;
+            if (p != "") count++;
+            if (count < 2)
+                document.calcform.bcalc.disabled = true;
+            else
+                document.calcform.bcalc.disabled = false;
+            if (obj.value != "") return;
+            if (count >= 2) calc();
+        }
+
+        function onselchange(sel, i) {
+            if (i == 0) txt = document.calcform.r;
+            else if (i == 1) txt = document.calcform.i;
+            else if (i == 2) txt = document.calcform.v;
+            else if (i == 3) txt = document.calcform.p;
+            if (txt.value == '') return;
+            di = sel.selectedIndex - prevIndex[i];
+            txt.value = roundnum(txt.value / Math.pow(1000, di), 8);
+            prevIndex[i] = sel.selectedIndex;
+        }
+
+        function oncalc() {
+            fr = Math.pow(10, 3 * document.calcform.cr.selectedIndex);
+            fi = Math.pow(10, 3 * document.calcform.ci.selectedIndex - 6);
+            fv = Math.pow(10, 3 * document.calcform.cv.selectedIndex - 6);
+            fp = Math.pow(10, 3 * document.calcform.cp.selectedIndex - 6);
+            r = fr * document.calcform.r.value;
+            i = fi * document.calcform.i.value;
+            v = fv * document.calcform.v.value;
+            p = fp * document.calcform.p.value;
+            if (r != "" && v != "") {
+                i = v / r;
+                p = v * i;
+            } else if (r != "" && i != "") {
+                v = i * r;
+                p = v * i;
+            } else if (r != "" && p != "") {
+                v = Math.sqrt(p * r);
+                i = p / v;
+            } else if (i != "" && v != "") {
+                r = v / i;
+                p = v * i;
+            } else if (i != "" && p != "") {
+                v = p / i;
+                r = v / i;
+            } else if (v != "" && p != "") {
+                i = p / v;
+                r = v / i;
+            }
+            r /= fr;
+            i /= fi;
+            v /= fv;
+            p /= fp;
+            document.calcform.r.value = roundnum(r, 8);
+            document.calcform.i.value = roundnum(i, 8);
+            document.calcform.v.value = roundnum(v, 8);
+            document.calcform.p.value = roundnum(p, 8);
+        }
+
+        function onbtnreset() {
+            document.calcform.r.focus();
+            document.calcform.bcalc.disabled = true;
+            var img = document.getElementById('cog');
+            img.style.opacity = "0.5";
+            img.style.filter = 'alpha(opacity=50)'; // IE fallback
+        }
+    </script>
+
+</body>
+
+
+</html>

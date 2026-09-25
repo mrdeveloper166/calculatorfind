@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <title>Lux to watts (W) conversion calculator</title>
+
+
+
+    <meta name="keywords" content="lux to watts, lux into watts, convert from lux to watts, lux vs watts, lux to watts converter, lux to watts conversion, lux to watts conversion calculator." />
+    <meta name="description" content="Illuminance in lux (lx) to electric power in watts (W) calculator and how to calculate.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lux to watts (W) conversion calculator" />
+    <meta property="og:description" content="Illuminance in lux (lx) to electric power in watts (W) calculator and how to calculate." />
+    <meta property="og:url" content="https://www.calculatorfind.com/lux-to-watts.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+                <h1>Lux to watts convert calculator with formulas</h1>
+                <p>Illuminance in lux (lx) to electric power in watts (W) calculator and how to calculate.</p>
+                <p>Enter the illuminance in lux, luminous efficacy in lumens per watt, surface area in square feet / meters or spherical radius in feet / meters and press the <i>
+	Calculate</i> button to get the power in watts:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc">
+                        <tbody>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter illuminance in lux:</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="0" step="any" name="x1" class="intext form-control" autofocus></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">lx</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Select light source:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <select name="type" onchange="OnTypeChange()" class="form-control">
+				<option>-- select light source --</option>
+				<option>Tungsten incandescent light bulb</option>
+				<option>Halogen lamp</option>
+				<option>Fluorescent lamp</option>
+				<option>LED lamp</option>
+				<option>Metal halide lamp</option>
+				<option>High pressure sodium vapor lamp</option>
+				<option>Low pressure sodium vapor lamp</option>
+				<option>Mercury vapor lamp</option>
+			</select></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Or enter luminous efficacy in lumens per watt:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="0" step="any" name="x2" class="intext form-control"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">lm/W</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter surface area:</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="0" step="any" name="x3" class="intext form-control" onchange="OnAreaChange()"></td>
+                                <td>
+                                    <select name="cb1" class="mathsymbol form-control" style="width:50px" onchange="OnUnitChange1()">
+			<option>ft&sup2;</option>
+			<option>m&sup2;</option>
+		</select></td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Or enter spherical radius:</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="0" step="any" name="x4" class="intext form-control" onchange="OnRadiusChange()"></td>
+                                <td>
+                                    <select class="mathsymbol form-control" name="cb2" style="width:50px" onchange="OnUnitChange2()">
+			<option>ft</option>
+			<option>m</option>
+		</select></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input onclick="calc4()" type="button" value="= Calculate" class="btn btn-success">
+                                    <input onclick="setfocus()" type="reset" value="X Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Power&nbsp; result in watts:</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="y" class="outtext form-control" readonly="readonly"></td>
+                                <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">W</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+
+                <p>* the predefined luminous efficacy values are typical / average values.</p>
+                <h2>Lux to watts calculation formula and use</h2>
+                <h4>Lux to watts calculation with area in square feet</h4>
+                <p>The power P in watts (W) is equal to the 0.09290304 times the illuminance <i>E</i><sub>v</sub> in lux (lx) times the surface area <i>A</i> in square feet (ft<sup>2</sup>), divided by the luminous efficacy <i> &#951;</i> in lumens per watt
+                    (lm/W):
+                </p>
+                <p class="math"> <i>P</i><sub>(W)</sub> = 0.09290304<i> </i>&times;<i> E</i><sub>v(lx)</sub><i> </i>&times;<i> A</i><sub>(ft</sub>2<sub>)</sub> /<i> &#951;</i><sub>(lm/W)</sub></p>
+                <h4>Lux to watts calculation with area in square meters</h4>
+                <p>The power P in watts (W) is equal to the illuminance <i>E</i><sub>v</sub> in lux (lx) times the surface area <i>A</i> in square meters (m<sup>2</sup>), divided by the luminous efficacy <i> &#951;</i> in lumens per watt (lm/W):</p>
+                <p class="math"> <i>P</i><sub>(W)</sub> = <i>E</i><sub>v(lx)</sub><i> </i>&times;<i> A</i><sub>(m</sub>2<sub>)</sub> /<i> &#951;</i><sub>(lm/W)</sub></p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnTypeChange() {
+            var type = document.calcform.type.selectedIndex;
+            switch (type) {
+                case 0:
+                    document.calcform.x2.value = '';
+                    break;
+                case 1:
+                    document.calcform.x2.value = 15;
+                    break;
+                case 2:
+                    document.calcform.x2.value = 20;
+                    break;
+                case 3:
+                    document.calcform.x2.value = 60;
+                    break;
+                case 4:
+                    document.calcform.x2.value = 90;
+                    break;
+                case 5:
+                    document.calcform.x2.value = 87;
+                    break;
+                case 6:
+                    document.calcform.x2.value = 117;
+                    break;
+                case 7:
+                    document.calcform.x2.value = 150;
+                    break;
+                case 8:
+                    document.calcform.x2.value = 50;
+                    break;
+            }
+        }
+
+        function OnAreaChange() {
+            x3 = document.calcform.x3.value;
+            x4 = Math.sqrt(x3 / (4 * Math.PI));
+            document.calcform.x4.value = roundresult(x4);
+        }
+
+        function OnRadiusChange() {
+            x4 = document.calcform.x4.value;
+            x3 = 4 * Math.PI * x4 * x4;
+            document.calcform.x3.value = roundresult(x3);
+        }
+
+        function OnUnitChange1() {
+            u1 = document.calcform.cb1.selectedIndex;
+            document.calcform.cb2.selectedIndex = u1;
+        }
+
+        function OnUnitChange2() {
+            u2 = document.calcform.cb2.selectedIndex;
+            document.calcform.cb1.selectedIndex = u2;
+        }
+
+        function convert(x1, x2, x3) {
+            u1 = document.calcform.cb1.selectedIndex;
+            y = x1 * x3 / x2;
+            if (u1 == 0) y *= 0.09290304;
+            return (y);
+        }
+    </script>
+
+
+</body>
+
+
+
+</html>

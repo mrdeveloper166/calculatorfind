@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <title>Test Calculator | Score Calculator</title>
+
+    <meta name="keywords" content="test grade calculator, grade calculator for test, how to fugure out test grade, how to calculate exam grade, test grade curve calculator, test grade calculator points.">
+    <meta name="description" content="Test grade calculator is used to calculate your text grades from the score you get.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Test Calculator | Score Calculator" />
+    <meta property="og:description" content="Test grade calculator is used to calculate your text grades from the score you get." />
+    <meta property="og:url" content="https://www.calculatorfind.com/test-grade-calculator.html" />
+    
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #tbl {
+            color: white;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+       <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h2>Test Conversion Calculator</h2>
+                <br>
+                <form id="calcform" class="box float">
+                    <div class="form-group">
+                        <label for="qnum" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Number of questions</label>
+                        <input type="number" min="1" step="1" id="qnum" placeholder="10" class="form-control form-control-lg" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="qnum" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Number of wrong answers</label>
+                        <input type="number" min="0" step="any" id="wnum" value="0" class="form-control form-control-lg">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="OnWrong()">+ Wrong</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-danger btn-lg btn-block" onclick="OnReset()">&times; Reset</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <label for="percent" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Percentage grade</label>
+                            <div class="input-group">
+                                <input type="text" id="percent" class="form-control form-control-lg" readonly style="color: green; font-weight: bold; background-color: white;">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="letter" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Letter grade</label>
+                            <input type="text" id="letter" class="form-control form-control-lg" readonly style="color: green; font-weight: bold; background-color: white;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="frac" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Fraction grade</label>
+                        <input type="text" id="frac" class="form-control form-control-lg" readonly style="color: green; font-weight: bold; background-color: white;">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Grade options table</label>
+                        <table id="tbl" class="table">
+                            <tr style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                <td>Number of<br>Questions</td>
+                                <td>Number of<br>Wrong Answers</td>
+                                <td>Grade (%)</td>
+                                <td>Grade<br>(letter)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+
+            </div>
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var irow = 0;
+        $(document).ready(function() {
+            $("#qnum").on("blur", function() {
+                OnCalc()
+            });
+            $("#wnum").on("input", function() {
+                OnCalc()
+            });
+            OnCalc();
+        });
+
+        function OnReset() {
+            document.getElementById("wnum").value = "0";
+            OnCalc();
+        }
+
+        function OnWrong() {
+            var qnum = document.getElementById("qnum").value;
+            if (qnum == "") qnum = 10;
+            var wnum = document.getElementById("wnum").value;
+            qnum = parseInt(qnum);
+            wnum = parseFloat(wnum);
+            if (wnum >= qnum) return;
+            wnum++;
+            document.getElementById("wnum").value = wnum;
+            OnCalc();
+        }
+
+        function OnCalc() {
+            var qnum = document.getElementById("qnum").value;
+            if (qnum == "") qnum = 10;
+            var wnum = document.getElementById("wnum").value;
+            qnum = parseInt(qnum);
+            wnum = parseFloat(wnum);
+            var rnum = qnum - wnum;
+            document.getElementById("frac").value = rnum + "/" + qnum;
+            var per = (100 * rnum / qnum).toString();
+            if (per.indexOf(".") !== -1) {
+                per = parseFloat(per);
+                per = per.toFixed(2)
+            };
+            document.getElementById("percent").value = per;
+            var letter;
+            if (per >= 90) letter = "A";
+            else if (per >= 80) letter = "B";
+            else if (per >= 70) letter = "C";
+            else if (per >= 60) letter = "D";
+            else letter = "F";
+            document.getElementById("letter").value = letter;
+            DrawTable(qnum);
+        }
+
+        function DrawTable(qnum) {
+            var grade, letter;
+            $("#tbl").find("tr:gt(0)").remove();
+            for (var i = qnum; i >= 0; i--) {
+                grade = 100 * (qnum - i) / qnum;
+                grade = grade.toFixed(0);
+                if (grade >= 90) letter = "A";
+                else if (grade >= 80) letter = "B";
+                else if (grade >= 70) letter = "C";
+                else if (grade >= 60) letter = "D";
+                else letter = "F";
+                $('#tbl tr').eq(qnum - i).after("<tr>\
+            <td>" + qnum + "</td>\
+            <td>" + i + "</td>\
+            <td>" + grade + "</td>\
+            <td>" + letter + "</td>\
+         </tr>");
+            }
+            $("#tbl").show();
+        }
+    </script>
+    <!-- #EndEditable -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

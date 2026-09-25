@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Volts to kilowatts (kW) conversion calculator</title>
+
+    <script async src="tagmng3.js"></script>
+
+    <meta name="keywords" content="volt to kilowatts, volt to kilowatts conversion, volt to kilowatts conversion calculator, volt to kilowatts converter, volt in kilowatts, how many kilowatts in a volt. ">
+    <meta name="description" content="volt to kilowatts conversion is used to convert volt value into kilowatts. With the help of this calculator you can find the answer the result.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Volts to Watts (W) conversion calculator" />
+    <meta property="og:description" content="volt to kilowatts conversion is used to convert volt value into kilowatts. With the help of this calculator you can find the answer the result." />
+    <meta property="og:url" content="https://www.calculatorfind.com/volts-to-kilowatts.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Volts to kilowatts conversion calculator</h1>
+                <p>Volts (V) to kilowatts (kW) calculator.</p>
+                <p><b>How to calculate :- </b>Enter the voltage in volts, current in amps and press the <i>
+			Calculate</i> button to get the power in watts:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                        <tbody>
+                            <tr>
+                                <td>Select current type:</td>
+                                <td><select name="phase" onchange="OnPhaseChange()" class="form-control">
+					<option>DC</option>
+					<option>AC - Single phase</option>
+					<option>AC - Three phase</option>
+				</select></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter voltage in volts:</td>
+                                <td class="math"><input type="number" step="any" name="x1" class="intext form-control"></td>
+                                <td class="mathsymbol">V</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Enter current in amps:</td>
+                                <td class="math"><input type="number" step="any" name="x2" class="intext form-control"></td>
+                                <td class="mathsymbol">A</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr id="pf1" style="display:none">
+                                <td>Enter power factor:</td>
+                                <td class="math"><input type="text" name="pf" class="intext form-control" disabled="disabled" style="background-color:#f0f0f0"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input onclick="calc3()" type="button" value="Calculate" class="btn btn-success"> <input onclick="setfocus()" type="reset" value="Reset" class="btn btn-danger"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Power result in kilowatts:</td>
+                                <td class="math"><input type="text" name="y" class="outtext form-control" readonly></td>
+                                <td class="mathsymbol">kW</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>DC volts to kilowatts calculation formula</h2>
+                <p>The power <em>P</em> in kilowatts (kW) is equal to the voltage <em>V</em> in volts (V), times the current <em>I</em> in amps (A) divided by 1000:</p>
+                <p class="math"><i>P</i><sub>(kW)</sub> = <i> V</i><sub>(V)</sub><i> </i>&times;<i> I</i><sub>(A)</sub> / 1000</p>
+                <h3>AC single phase volts to kilowatts calculation formula</h3>
+                <p>The power <em>P</em> in kilowatts (kW) is equal to the power factor<em>PF</em> times the current I in amps (A), times the voltage <em>V</em> in volts (V) divided by 1000:</p>
+                <p class="math"><i>P</i><sub>(kW)</sub> = <i> PF </i>&times;<i> I</i><sub>(A)</sub><i> </i>&times;<i> V</i><sub>(V)</sub> / 1000</p>
+                <h3>AC three phase volts to kilowatts calculation formula</h3>
+                <p>The power <em>P</em> in kilowatts (kW) is equal to square root of 3 times the power factor <em>PF</em> times the current <em>I</em> in amps (A), times the line to line RMS voltage <em>V</em><sub>L-L</sub> in volts (V) divided by 1000:</p>
+                <p class="math"><i>P</i><sub>(kW)</sub> = <i>&#8730;</i><span style="text-decoration: overline">3</span> &times; <i> PF </i>&times;<i> I</i><sub>(A)</sub><i> </i>&times;<i> V</i><sub>L-L(V)</sub> / 1000</p>
+                <p class="math">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8776; 1.732 &times; <i> PF </i>&times;<i> I</i><sub>(A)</sub><i> </i>&times;<i> V</i><sub>L-L(V)</sub> / 1000</p>
+
+
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+        </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function OnPhaseChange() {
+            var iphase = document.calcform.phase.selectedIndex;
+            var row1 = document.getElementById("pf1");
+            if (iphase == 0) {
+                document.calcform.pf.disabled = true;
+                document.calcform.pf.style.backgroundColor = "#f0f0f0";
+                row1.style.display = 'none';
+            } else {
+                document.calcform.pf.disabled = false;
+                document.calcform.pf.style.backgroundColor = "#ffffff";
+                row1.style.display = '';
+            }
+        }
+
+        function convert(x1, x2) {
+            var iphase = document.calcform.phase.selectedIndex;
+            var pf = document.calcform.pf.value;
+            var kw = x1 * x2 / 1000;
+            if (pf < 0 || pf > 1) {
+                alert('Please enter power factor from 0 to 1');
+                document.calcform.pf.focus();
+                return;
+            }
+            if (iphase == 1)
+                kw *= pf;
+            else if (iphase == 2)
+                kw *= (pf * Math.sqrt(3));
+            return kw;
+        }
+    </script>
+
+</body>
+
+</html>

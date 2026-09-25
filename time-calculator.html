@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="euc-kr">
+    <script async src="tagmng3.js"></script>
+    <title>Time Calculator</title>
+    <meta name="keywords" content="time calculator,time card calculator,time calculator duration,overtime calculator,time calculator for hours,time zone calculator,time calculator work,time calculator hours,time calculator in hours,time calculator minutes,time calculator subtract,time calculator addition,time calculator running,time calculator between two dates,time calculator online">
+    <meta name="description" content="Time Calculator in Expression. Use this calculator to add or subtract two or more time values in the form of an expression. ... Like other numbers, time can be added or subtracted. However, due to how time is defined, there exist differences in how calculations must be computed when compared to decimal numbers.">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Time Calculator" />
+    <meta property="og:description" content="Time Calculator in Expression. Use this calculator to add or subtract two or more time values in the form of an expression. ... Like other numbers, time can be added or subtracted. However, due to how time is defined, there exist differences in how calculations must be computed when compared to decimal numbers."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/time-calculator.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        #mycalcform {
+            padding: 20px;
+            background: #20aea8;
+            border-radius: 7px;
+            border: solid 1px black;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>Time Calculator</h1>
+                <p><b>Time calculator :- </b> (+) add or (-) subtract (time duration, time difference):</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" id="mycalcform" class="box float">
+                    <table class="calc">
+                        <tbody>
+                            <tr style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">
+                                <td>Years</td>
+                                <td>&nbsp;</td>
+                                <td>Months</td>
+                                <td>&nbsp;</td>
+                                <td>Days</td>
+                                <td>&nbsp;</td>
+                                <td>Hours</td>
+                                <td>&nbsp;</td>
+                                <td>Minutes</td>
+                                <td>&nbsp;</td>
+                                <td>Seconds</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="y1" name="y1" placeholder="YYYY" class="form-control form-control-lg" autofocus></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="mon1" name="mon1" placeholder="MM" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="d1" name="d1" placeholder="DD" class="form-control form-control-lg"></td>
+                                <td>&nbsp;</td>
+                                <td><input type="number" min="0" id="h1" name="h1" placeholder="hh" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="m1" name="m1" placeholder="mm" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="s1" name="s1" placeholder="ss" class="form-control form-control-lg"></td>
+                                <td><button type="button" id="now1" class="btn btn-default">Now</button></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="11">
+                                    <select id="op" class="form-control form-control-lg">
+               <option>+ Add</option>
+               <option>- Subtract</option>
+         </select>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="y2" name="y2" placeholder="YYYY" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="mon2" name="mon2" placeholder="MM" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="d2" name="d2" placeholder="DD" class="form-control form-control-lg"></td>
+                                <td>&nbsp;</td>
+                                <td><input type="number" min="0" id="h2" name="h2" placeholder="hh" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="m2" name="m2" placeholder="mm" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="s2" name="s2" placeholder="ss" class="form-control form-control-lg"></td>
+                                <td><button type="button" id="now2" class="btn btn-default">Now</button></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="12">
+                                    <button type="button" title="Calculate" class="btn btn-success" onclick="calc()"><img src="glyphicons_halflings_018_cog.png" alt=""> Calculate</button>
+                                    <button type="reset" title="Reset" class="btn btn-danger"><img src="glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" min="0" id="y" name="y" placeholder="YYYY" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="mon" name="mon" placeholder="MM" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="d" name="d" placeholder="DD" class="form-control form-control-lg"></td>
+                                <td>&nbsp;</td>
+                                <td><input type="number" min="0" id="h" name="h" placeholder="hh" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="m" name="m" placeholder="mm" class="form-control form-control-lg"></td>
+                                <td>:</td>
+                                <td><input type="number" min="0" id="s" name="s" placeholder="ss" class="form-control form-control-lg"></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>What is Time Calculator ? </h2>
+                <br>
+                <p>Time Calculator in Expression. Use this calculator to add or subtract two or more time values in the form of an expression. ... Like other numbers, time can be added or subtracted. However, due to how time is defined, there exist differences
+                    in how calculations must be computed when compared to decimal numbers.</p>
+                <p>Use this calculator to add or subtract time (days, hours, minutes, seconds) from a starting time and date. The result will be the new time and date based on the subtracted or added period of time. To calculate the amount of time (days,
+                    hours, minutes, seconds) between times on two different dates</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+
+
+    <!-- #BeginEditable "docscript" -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#now1").click(function() {
+                onnow(1);
+            });
+            $("#now2").click(function() {
+                onnow(2);
+            });
+        });
+
+        function onnow(n) {
+            var now = moment();
+            var y = now.year();
+            var mon = now.month() + 1;
+            //var d=now.dayOfYear();
+            var d = now.day() + 2;
+            var h = now.hour();
+            var m = now.minute();
+            var s = now.second();
+            if (n == 1) {
+                $("#y1").val(y);
+                $("#mon1").val(mon);
+                $("#d1").val(d);
+                $("#h1").val(h);
+                $("#m1").val(m);
+                $("#s1").val(s);
+            } else {
+                $("#y2").val(y);
+                $("#mon2").val(mon);
+                $("#d2").val(d);
+                $("#h2").val(h);
+                $("#m2").val(m);
+                $("#s2").val(s);
+            }
+        }
+
+        function calc() {
+            var y1 = $("#y1").val();
+            var mon1 = $("#mon1").val();
+            var d1 = $("#d1").val();
+            var h1 = $("#h1").val();
+            var m1 = $("#m1").val();
+            var s1 = $("#s1").val();
+            var y2 = $("#y2").val();
+            var mon2 = $("#mon2").val();
+            var d2 = $("#d2").val();
+            var h2 = $("#h2").val();
+            var m2 = $("#m2").val();
+            var s2 = $("#s2").val();
+            if (y1 == '') y1 = '0';
+            if (mon1 == '') mon1 = '0';
+            if (d1 == '') d1 = '0';
+            if (h1 == '') h1 = '0';
+            if (m1 == '') m1 = '0';
+            if (s1 == '') s1 = '0';
+            if (y2 == '') y2 = '0';
+            if (mon2 == '') mon2 = '0';
+            if (d2 == '') d2 = '0';
+            if (h2 == '') h2 = '0';
+            if (m2 == '') m2 = '0';
+            if (s2 == '') s2 = '0';
+            y1 = parseFloat(y1);
+            mon1 = parseFloat(mon1);
+            d1 = parseFloat(d1);
+            h1 = parseFloat(h1);
+            m1 = parseFloat(m1);
+            s1 = parseFloat(s1);
+            y2 = parseFloat(y2);
+            mon2 = parseFloat(mon2);
+            d2 = parseFloat(d2);
+            h2 = parseFloat(h2);
+            m2 = parseFloat(m2);
+            s2 = parseFloat(s2);
+            var d1 = moment.duration({
+                seconds: s1,
+                minutes: m1,
+                hours: h1,
+                days: d1,
+                months: mon1,
+                years: y1
+            });
+            var d2 = moment.duration({
+                seconds: s2,
+                minutes: m2,
+                hours: h2,
+                days: d2,
+                months: mon2,
+                years: y2
+            });
+            var dur;
+            if ($("#op")[0].selectedIndex == 0)
+                dur = d1.add(d2);
+            else
+                dur = d1.subtract(d2);
+            var y = dur.years();
+            var mon = dur.months();
+            var d = dur.days();
+            var h = dur.hours();
+            var m = dur.minutes();
+            var s = dur.seconds();
+            $("#y").val(y);
+            $("#mon").val(mon);
+            $("#d").val(d);
+            $("#h").val(h);
+            $("#m").val(m);
+            $("#s").val(s);
+        }
+    </script>
+    <!-- #EndEditable -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

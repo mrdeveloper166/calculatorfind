@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <script async src="tagmng3.js"></script>
+    <title>RGB to CMYK conversion | color conversion</title>
+    <meta name="keywords" content="rgb to cmyk conversion,rgb to cmyk,rgb to cmyk converter,rgb vs cmyk,rgb or cmyk for print,how convert rgb to cmyk,rgb to cmyk color code converter">
+    <meta name="description" content="RGB to CMYK color code converter and conversion formula.RGB refers to the primary colors of light, Red, Green and Blue, that are used in monitors, television screens, digital cameras and scanners. CMYK refers to the primary colors of pigment: Cyan, Magenta, Yellow, and Black. ... The combination of RGB light creates white, while the combination of CMYK inks creates black.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RGB to CMYK conversion | color conversion" />
+    <meta property="og:description" content="RGB to CMYK color code converter and conversion formula.RGB refers to the primary colors of light, Red, Green and Blue, that are used in monitors, television screens, digital cameras and scanners. CMYK refers to the primary colors of pigment: Cyan, Magenta, Yellow, and Black. ... The combination of RGB light creates white, while the combination of CMYK inks creates black."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/rgb-to-cmyk.html" />
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="convert.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <style>
+        * {
+            font-size: 17px;
+        }
+        
+        #red,
+        #green,
+        #blue {
+            float: left;
+            clear: left;
+            width: 300px;
+            margin: 15px;
+        }
+        
+        #swatch {
+            width: 390px;
+            height: 60px;
+            margin-top: 5px;
+            margin-left: 0px;
+            background-image: none;
+        }
+        
+        #red .ui-slider-range {
+            background: #ef2929;
+        }
+        
+        #red .ui-slider-handle {
+            border-color: #ef2929;
+        }
+        
+        #green .ui-slider-range {
+            background: #8ae234;
+        }
+        
+        #green .ui-slider-handle {
+            border-color: #8ae234;
+        }
+        
+        #blue .ui-slider-range {
+            background: #729fcf;
+        }
+        
+        #blue .ui-slider-handle {
+            border-color: #729fcf;
+        }
+        
+        .calc2 input[type=text] {
+            width: 390px;
+            padding-left: 8px;
+        }
+        
+        .calc2 input[type=number] {
+            width: 70px;
+            padding-left: 8px;
+        }
+        
+        @media all and (max-width: 576px) {
+            #swatch {
+                width: 258px;
+            }
+            .calc2 button {
+                padding: 7px 4px;
+                margin-bottom: 10px;
+            }
+            .calc2 input[type=number] {
+                padding: 5px;
+                font-size: x-large;
+                width: 100%;
+            }
+            .calc2 input[type=text] {
+                padding: 5px;
+                font-size: x-large;
+                width: calc(100% - 20px);
+            }
+            .calc2 {
+                width: 100%;
+                padding: 20px;
+            }
+            .calc2 tr:nth-child(4) td {
+                margin-top: -5px;
+                padding-bottom: 8px;
+            }
+            .calc2 td:nth-child(3) {
+                display: none;
+            }
+        }
+        
+        @media all and (min-width: 577px) {
+            .calc2 tr:nth-child(5) {
+                line-height: 60px;
+            }
+        }
+        
+        #mycalcform {
+            padding: 20px;
+            background: #20aea8;
+            border-radius: 7px;
+            border: solid 1px black;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+
+        <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h1>RGB to CMYK color conversion calculator </h1>
+                <!--
+	<p>RGB to CMYK color code converter and conversion formula.</p>
+	<h2>RGB to CMYK converter</h2>
+	-->
+                <p><b>How to convert : </b> Enter red, green and blue color levels (0..255) and press the <i>Convert</i> button:</p>
+                <br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="mycalcform">
+                    <table class="calc2">
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Red color (R):</td>
+                            <td><input type="number" min="0" max="255" step="1" name="r" id="r" class="intext form-control" placeholder="0" autofocus oninput="onnumber(this,1)"></td>
+                            <td>
+                                <div id="red"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;padding-right: 100px;">Green color (G):</td>
+                            <td><input type="number" min="0" max="255" step="1" name="g" id="g" class="intext form-control" placeholder="0" oninput="onnumber(this,2)"></td>
+                            <td>
+                                <div id="green"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Blue color (B):</td>
+                            <td><input type="number" min="0" max="255" step="1" name="b" id="b" class="intext form-control" placeholder="0" oninput="onnumber(this,3)"></td>
+                            <td>
+                                <div id="blue"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2">
+                                <button type="button" title="Convert" class="btn btn-success" onclick="calc()"><img src="glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+                                <button type="reset" title="Reset" class="btn btn-danger" onclick="clr()"><img src="glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+                                <button type="button" title="Swap conversion" class="btn btn-default" onclick="location.href='cmyk-to-rgb.html';"><img src="glyphicons_halflings_114_retweet.png" alt=""> Swap</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Cyan color (C):</td>
+                            <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"><input type="text" name="c" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"> %</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Magenta color (M):</td>
+                            <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"><input type="text" name="m" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"> %</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"> Yellow color (Y):</td>
+                            <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"><input type="text" name="y" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"> %</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Black key color (K):</td>
+                            <td colspan="2" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;"><input type="text" name="k" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"> %</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Hex:</td>
+                            <td colspan="2"><input type="text" name="hex" class="outtext form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Color preview:</td>
+                            <td colspan="2"><input id="swatch" name="swatch" class="form-control" readonly style="color: green; font-weight: bold; background-color: white;"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+                <h2>RGB to CMYK conversion formula and chart</h2><br><br>
+                <p>The R,G,B values are divided by 255 to change the range from 0..255 to 0..1:</p>
+                <b></b>
+                <p class="math"><b><i>R</i>' = <i>R</i>/255</b></p>
+                <p class="math"><b><i>G</i>' = <i>G</i>/255</b></p>
+                <p class="math"><b><i>B</i>' = B/255</b></p>
+                <br>
+                <p>The black key (K) color is calculated from the red (R'), green (G') and blue (B') colors:</p>
+                <br>
+                <p class="math"><b><i>K</i> = 1-max(<i>R</i>', <i>G</i>', <i>B</i>')</b></p>
+                <br>
+                <p>The cyan color (C) is calculated from the red (R') and black (K) colors:</p>
+                <br>
+                <p class="math"><b><i>C</i> = (1-<i>R</i>'-<i>K</i>) / (1-<i>K</i>)</b></p>
+                <br>
+                <p>The magenta color (M) is calculated from the green (G') and black (K) colors:</p>
+                <br>
+                <p class="math"><b><i>M</i> = (1-<i>G</i>'-<i>K</i>) / (1-<i>K</i>)</b></p>
+                <br>
+                <p>The yellow color (Y) is calculated from the blue (B') and black (K) colors:</p>
+                <br>
+                <p class="math"><b><i>Y</i> = (1-<i>B</i>'-<i>K</i>) / (1-<i>K</i>)</b></p>
+                <br><br>
+                <h2>RGB to CMYK table</h2>
+                <br>
+                <table align="center" class="table table-striped">
+                    <tr>
+                        <th>Color</th>
+                        <th>Color
+                            <p>name</th>
+                        <th>(R,G,B)</th>
+                        <th>Hex</th>
+                        <th>(C,M,Y,K)</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#000000">&nbsp;</td>
+                        <td>Black</td>
+                        <td>(0,0,0)</td>
+                        <td>#000000</td>
+                        <td>(0,0,0,1)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FFFFFF">&nbsp;</td>
+                        <td>White</td>
+                        <td>(255,255,255)</td>
+                        <td>#FFFFFF</td>
+                        <td>(0,0,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FF0000">&nbsp;</td>
+                        <td>Red</td>
+                        <td>(255,0,0)</td>
+                        <td>#FF0000</td>
+                        <td>(0,1,1,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#00FF00">&nbsp;</td>
+                        <td>Green</td>
+                        <td>(0,255,0)</td>
+                        <td>#00FF00</td>
+                        <td>(1,0,1,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#0000FF">&nbsp;</td>
+                        <td>Blue</td>
+                        <td>(0,0,255)</td>
+                        <td>#0000FF</td>
+                        <td>(1,1,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FFFF00">&nbsp;</td>
+                        <td>Yellow</td>
+                        <td>(255,255,0)</td>
+                        <td>#FFFF00</td>
+                        <td>(0,0,1,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#00FFFF">&nbsp;</td>
+                        <td>Cyan</td>
+                        <td>(0,255,255)</td>
+                        <td>#00FFFF</td>
+                        <td>(1,0,0,0)</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#FF00FF">&nbsp;</td>
+                        <td>Magenta</td>
+                        <td>(255,0,255)</td>
+                        <td>#FF00FF</td>
+                        <td>(0,1,0,0)</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+<div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        //var Slider1,Slider2,Slider3;
+        $(function() {
+            function refreshSwatch() {
+                var red = $("#red").slider("value"),
+                    green = $("#green").slider("value"),
+                    blue = $("#blue").slider("value"),
+                    hex = hexFromRGB(red, green, blue);
+                $("#swatch").css("background-color", "#" + hex);
+                $("#r").val(red);
+                $("#g").val(green);
+                $("#b").val(blue);
+            }
+
+            $("#red, #green, #blue").slider({
+                orientation: "horizontal",
+                range: "min",
+                max: 255,
+                value: 127,
+                slide: refreshSwatch,
+                change: refreshSwatch
+            });
+            clr();
+        });
+
+        function hexFromRGB(r, g, b) {
+            var hex = [
+                r.toString(16),
+                g.toString(16),
+                b.toString(16)
+            ];
+            $.each(hex, function(nr, val) {
+                if (val.length === 1) {
+                    hex[nr] = "0" + val;
+                }
+            });
+            return hex.join("").toUpperCase();
+        }
+
+        function onnumber(obj, n) {
+            var r = $("#r").val();
+            var g = $("#g").val();
+            var b = $("#b").val();
+            if (n == 1)
+                $("#red").slider("value", r);
+            else if (n == 2)
+                $("#green").slider("value", g);
+            else
+                $("#blue").slider("value", b);
+            //refreshSwatch();
+            //calc();
+        }
+
+        function clr() {
+            $("#red").slider("value", 0);
+            $("#green").slider("value", 0);
+            $("#blue").slider("value", 0);
+            $("#swatch").css("background-color", "white");
+            document.calcform.reset();
+        }
+
+        function calc() {
+            var c, m, y, k, hex;
+            var r = document.calcform.r.value;
+            var g = document.calcform.g.value;
+            var b = document.calcform.b.value;
+            if (r == "") r = 0;
+            if (g == "") g = 0;
+            if (b == "") b = 0;
+            if (r < 0) r = 0;
+            if (g < 0) g = 0;
+            if (b < 0) b = 0;
+            if (r > 255) r = 255;
+            if (g > 255) g = 255;
+            if (b > 255) b = 255;
+            rr = parseInt(r);
+            gg = parseInt(g);
+            bb = parseInt(b);
+            r = parseFloat(r) / 255.0;
+            g = parseFloat(g) / 255.0;
+            b = parseFloat(b) / 255.0;
+            k = 1 - Math.max(r, g, b);
+            if (k == 1)
+                c = m = y = 0;
+            else {
+                c = (1 - r - k) / (1 - k);
+                m = (1 - g - k) / (1 - k);
+                y = (1 - b - k) / (1 - k);
+            }
+            c = Math.round(100 * c);
+            m = Math.round(100 * m);
+            y = Math.round(100 * y);
+            k = Math.round(100 * k);
+            hex = hexFromRGB(rr, gg, bb);
+            document.calcform.c.value = roundnum(c, 2);
+            document.calcform.m.value = roundnum(m, 2);
+            document.calcform.y.value = roundnum(y, 2);
+            document.calcform.k.value = roundnum(k, 2);
+            document.calcform.hex.value = "#" + hex;
+            document.calcform.swatch.style.backgroundColor = 'rgb(' + rr + ',' + gg + ',' + bb + ')';
+        }
+    </script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

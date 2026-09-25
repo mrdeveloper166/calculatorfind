@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Base64 Decode and Encode</title>
+    <script async src="tagmng3.js"></script>
+    <meta name="keywords" content="base64 decode,base64 decode online,base64 decode to image,base64 decode javascript,base64 decode convert,base64 decode converter,base64 decode image">
+    <meta name="description" content="Base64 is a way of representing binary data in an ASCII string. 'Base64 decoding' is the process of transforming a base64 representation — a string of odd-looking text — back into the original binary or text data. ... Alternatively, type or paste in the text you want to base64–decode, then press the 'Decode' button.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Base64 Decode and Encode" />
+    <meta property="og:description" content="Base64 is a way of representing binary data in an ASCII string. 'Base64 decoding' is the process of transforming a base64 representation — a string of odd-looking text — back into the original binary or text data. ... Alternatively, type or paste in the text you want to base64–decode, then press the 'Decode' button."
+    />
+    <meta property="og:url" content="https://www.calculatorfind.com/base64-decode.html" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        code {
+            background: #f0f0f0;
+            padding: 5px;
+            border: 1px #e0e0e0 solid;
+        }
+        
+        h1 {
+            font-size: 1.6rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+        }
+        
+        #calcform button i {
+            vertical-align: bottom;
+        }
+        
+        #calcform .btn-group label i {
+            vertical-align: bottom;
+        }
+        
+        #txt {
+            font-family: monospace;
+            font-size: 0.875em;
+            padding: 6px;
+        }
+        
+        #num {
+            font-family: monospace;
+            font-size: 0.875em;
+            padding: 6px;
+        }
+        
+        #out {
+            font-family: arial;
+            font-size: 0.875em;
+            padding: 6px;
+        }
+        
+        #txt.draghover {
+            border: 10px dashed #888;
+        }
+        
+        #imgdiv {
+            border: 4px solid #ccc;
+            min-height: 120px;
+        }
+        
+        #fileElem {
+            visibility: hidden;
+            width: 30px;
+        }
+        
+        @media all and (max-width: 576px) {
+            #calcform {
+                padding: 8px;
+            }
+            /*#calcform button:nth-child(3) { display:none; }*/
+            #doc>p {
+                width: 100%;
+                word-wrap: break-word;
+            }
+            .intext,
+            .outtext {
+                width: 100%;
+            }
+        }
+        
+        @media all and (min-width: 577px) {
+            #calcform {
+                width: calc(100% - 10px);
+            }
+        }
+        
+        .codebg {
+            padding: 5px;
+            border: 1px #e0e0e0 solid;
+        }
+        
+        #msg {
+            color: red;
+        }
+        
+        .cursor {
+            cursor: progress !important;
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+        <h2 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h2>
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <br>
+
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>&#8592; Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+                <h1>Base64 Decoder</h1>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" href="#">Base64 Decoder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="base64-encode.html">Base64 Encoder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="image-to-base64-encode.html">Image to Base64</a></li>
+                    <li class="nav-item"><a class="nav-link" href="base64-to-imagedecode.html">Base64 to Image</a></li>
+                </ul>
+                <br>
+                <form id="calcform" class="box float" name="calcform">
+                    <div class="form-group">
+                        <button type="button" title="Open File" aria-label="Open File" onclick="OnOpen()" class="btn btn-secondary"><i class="material-icons">folder_open</i> Open File</button>
+                        <input type="file" id="fileElem" name="fileElem[]" multiple onchange="OnFile()">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Or paste/drop base64 data here <span id="msg"></span></label>
+                        <textarea id="txt" name="txt" rows="5" cols="60" spellcheck="false" class="form-control" placeholder="Base64 input ..." autofocus tabindex="2"></textarea>
+                    </div>
+                    <div class="form-group grid">
+                        <label class="row ml-0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Output type</label>
+                        <div class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+            <input type="radio" name="outtype" id="outtype1" checked> Text string
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="outtype" id="outtype2"> Image file
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="outtype" id="outtype3"> Hex
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="outtype" id="outtype4"> Binary
+         </label>
+                        </div>
+                    </div>
+                    <div id="imagetypediv" class="form-group grid">
+                        <label class="row ml-0">Image type</label>
+                        <div class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+            <input type="radio" name="imtype" id="imtype1" checked> JPG
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="imtype" id="imtype2"> GIF
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="imtype" id="imtype3"> PNG
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="imtype" id="imtype4"> WEBP
+         </label>
+                        </div>
+                    </div>
+                    <div id="deldiv" class="form-group grid">
+                        <label class="row ml-0" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Output numbers delimiter</label>
+                        <div class="btn-group btn-group-toggle row ml-0" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+            <input type="radio" name="delop" id="delop1" checked><i class="material-icons">space_bar</i>   Space
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="delop" id="delop2"><i>,</i> Comma
+         </label>
+                            <label class="btn btn-secondary">
+            <input type="radio" name="delop" id="delop3"><i class="material-icons">clear</i> None
+         </label>
+                        </div>
+                    </div>
+                    <div id="encdiv" class="form-group">
+                        <label for="charsel" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Character encoding</label>
+                        <select class="form-control" id="charsel">
+         <option value="utf-8" selected>ASCII/UTF-8</option>
+         <option value="utf-16le">UTF-16</option>
+         <option value="utf-16le">UTF-16 little endian</option>
+         <option value="utf-16be">UTF-16 big endian</option>
+         <option value="windows-1252">ASCII</option>
+         <option value="windows-1252">Windows-1252</option>
+         <option value="big5">Big5 (Chinese)</option>
+         <option value="ibm866">CP866 (Russian)</option>
+         <option value="euc-jp">EUC-JP (Japanese)</option>
+         <option value="euc-kr">EUC-KR (Korean)</option>
+         <option value="gb18030">GB 18030 (Chinese)</option>
+         <option value="hz-gb-2312">GB 2312 (Chinese)</option>
+         <option value="replacement">ISO-2022-CN (Chinese)</option>
+         <option value="iso-2022-jp">ISO-2022-JP (Japanese)</option>
+         <option value="windows-1252">ISO-8859-1 (Latin1/Western European)</option>
+         <option value="iso-8859-2">ISO-8859-2 (Latin2/Eastern European)</option>
+         <option value="iso-8859-3">ISO-8859-3 (Latin3/South European)</option>
+         <option value="iso-8859-4">ISO-8859-4 (Latin4/North European)</option>
+         <option value="iso-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
+         <option value="iso-8859-6">ISO-8859-6 (Latin/Arabic)</option>
+         <option value="iso-8859-7">ISO-8859-7 (Latin/Greek)</option>
+         <option value="iso-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
+         <option value="iso-8859-8-i">ISO-8859-8-I (Latin/Hebrew)</option>
+         <option value="iso-8859-10">ISO-8859-10 (Latin6/Nordic)</option>
+         <option value="iso-8859-13">ISO-8859-13 (Latin7/Baltic Rim)</option>
+         <option value="iso-8859-14">ISO-8859-14 (Latin8/Celtic)</option>
+         <option value="iso-8859-15">ISO-8859-15 (Latin9/Western European)</option>
+         <option value="iso-8859-16">ISO-8859-16 (Latin10/South-Eastern European)</option>
+         <option value="koi8-r">KOI8-R (Russian)</option>
+         <option value="koi8-u">KOI8-U (Ukrainian)</option>
+         <option value="macintosh">Macintosh (x-mac-roman)</option>
+         <option value="x-mac-cyrillic">Mac OS Cyrillic (x-mac-cyrillic)</option>
+         <!--<option value="replacement">Replacement (Chinese)</option>-->
+         <option value="shift_jis">Shift JIS (Japanese)</option>
+         <option value="windows-874">Windows-874 (Thai)</option>
+         <option value="windows-1250">Windows-1250 (Eastern European)</option>
+         <option value="windows-1251">Windows-1251 (Cyrillic)</option>
+         <option value="windows-1252">Windows-1252 (Western European)</option>
+         <option value="windows-1253">Windows-1253 (Greek)</option>
+         <option value="windows-1254">Windows-1254 (Turkish)</option>
+         <option value="windows-1255">Windows-1255 (Hebrew)</option>
+         <option value="windows-1256">Windows-1256 (Arabic)</option>
+         <option value="windows-1257">Windows-1257 (Baltic)</option>
+         <option value="windows-1258">Windows-1258 (Vietnamese)</option>
+         <option value="x-user-defined">X-User-Defined</option>
+      </select>
+                    </div>
+                    <div class="form-group mt-4">
+                        <button type="button" title="Decode" class="btn btn-success" onclick="OnDecode()"><i class="material-icons">settings</i> Decode</button>
+                        <button type="reset" title="Reset" class="btn btn-danger" onclick="OnReset()"><i class="material-icons">clear</i> Reset</button>
+                        <button type="button" title="Swap conversion" class="btn btn-secondary" onclick="location.href='base64-encode.html';"><i class="material-icons">swap_vert</i> Swap</button>
+
+                    </div>
+                    <div id="numdiv" class="form-group">
+                        <label id="hexout" for="num" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Hex dump output</label>
+                        <label id="binout" for="num" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Binary dump output</label>
+                        <textarea id="num" rows="5" cols="60" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;"></textarea>
+                    </div>
+                    <div id="outdiv" class="form-group">
+                        <label for="out" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Text string output</label>
+                        <textarea id="out" rows="5" cols="60" readonly class="form-control" style="color: green; font-weight: bold; background-color: white;"></textarea>
+                    </div>
+                    <div id="imgviewdiv" class="form-group">
+                        <label style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Image preview</label>
+                        <div id="imgdiv"><img id="image1" src="data:," alt></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="OnCopy()" class="btn btn-secondary"><i class="material-icons">content_copy</i> Copy</button>
+                        <button type="button" onclick="OnSave()" class="btn btn-secondary" title="Save to File"><i class="material-icons">save_alt</i> Save</button>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide ">
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>What is Base64 Decode ?</h2><br>
+                <p style="font-size:16px;">Base64 is a way of representing binary data in an ASCII string. 'Base64 decoding' is the process of transforming a base64 representation — a string of odd-looking text — back into the original binary or text data. ... Alternatively, type
+                    or paste in the text you want to base64–decode, then press the 'Decode' button.</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12" id="myseealso">
+
+
+            </div>
+            
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+    <script>
+        window.TextEncoder = window.TextDecoder = null;
+    </script>
+    <!--<script src="/lib/text-encoding/encoding.min.js"></script>-->
+    <script src="encoding-indexes.js"></script>
+    <script src="encoding.js"></script>
+    <script src="base64js.min.js"></script>
+
+
+
+    <script src="utils.js" defer></script>
+    <script src="Blob.js" defer></script>
+    <script src="FileSaver.js" defer></script>
+    <script src="jquery.min55.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        "use strict"
+        $(document).ready(function() {
+            $("#deldiv").hide();
+            $("#imagetypediv").hide();
+            $("#numdiv").hide();
+            $("#imgviewdiv").hide();
+            $("#calcform input[name=outtype]").change(function() {
+                OnOutTypeChange();
+            });
+            $("#txt").on("dragover", function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).addClass('draghover');
+                return false;
+            });
+            $("#txt").on("dragleave dragend", function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).removeClass('draghover');
+                return false;
+            });
+            $("#txt").on("drop", function(event) {
+                event.preventDefault();
+                //event.stopPropagation();
+                $(this).removeClass('draghover');
+                var file = event.originalEvent.dataTransfer.files[0]
+                fileLoad(file);
+            });
+        });
+
+        function OnReset() {
+            $("#image1").hide();
+            $("#image1").prop("src", "");
+            $("#calcform .btn-group label").removeClass("active");
+            $("#calcform .btn-group label:first-child").addClass("active");
+            $("#encdiv").show();
+            $("#deldiv").hide();
+            $("#imagetypediv").hide();
+            $("#imgviewdiv").hide();
+            $("#hexout").hide();
+            $("#binout").hide();
+            $("#numdiv").hide();
+            $("#outdiv").show();
+            $("#imgviewdiv").hide();
+        }
+
+        function OnOpen() {
+            $("#fileElem").click();
+        }
+
+        function OnFile() {
+            var file = document.getElementById("fileElem").files[0];
+            document.getElementById("fileElem").value = "";
+            fileLoad(file);
+        }
+
+        function OnSave() {
+            //var file=$("#file").val();
+            //if( file=="" ) file="outtext.txt";
+            var radioButtons = $("#calcform input:radio[name='outtype']");
+            var i = radioButtons.index(radioButtons.filter(':checked'));
+            if (i == 0) {
+                var txt = $("#out").val();
+                if (txt.length == 0) return;
+                fileSave("text-out.txt", txt);
+            } else if (i == 1)
+                OnImageSave();
+            else if (i == 2) {
+                var txt = $("#num").val();
+                if (txt.length == 0) return;
+                fileSave("hex-out.txt", txt);
+            } else if (i == 3) {
+                var txt = $("#num").val();
+                if (txt.length == 0) return;
+                fileSave("bin-out.txt", txt);
+            }
+        }
+
+        function fileLoad(file) {
+            var reader = new FileReader();
+            reader.onloadend = function(e) {
+                if (e.target.readyState == FileReader.DONE) {
+                    var txt = e.target.result;
+                    $("#txt").val(txt);
+                    $("#txt").focus();
+                }
+            };
+            reader.readAsText(file, "UTF-8");
+        }
+
+        function fileSave(filename, txt) {
+            //var txt=$("#txt").val();
+            if (txt == "") return;
+            var blob = new Blob([txt], {
+                type: "text/plain;charset=utf-8"
+            });
+            //FileSaver.saveAs(blob, "file.txt");
+            saveAs(blob, filename);
+        }
+
+        function OnImageSave() {
+            var mimetype;
+            var imButtons = $("#calcform input:radio[name='imtype']");
+            var iimtype = imButtons.index(imButtons.filter(':checked'));
+            //var name=$("#imgname").val();
+            //if( name=="" ) name="image";
+            var name = "image";;
+            if (iimtype == 0) {
+                name += ".jpg";
+                mimetype = "image/jpg";
+            }
+            if (iimtype == 1) {
+                name += ".gif";
+                mimetype = "image/gif";
+            }
+            if (iimtype == 2) {
+                name += ".png";
+                mimetype = "image/png";
+            }
+            if (iimtype == 3) {
+                name += ".webp";
+                mimetype = "image/webp";
+            }
+            var image = document.getElementById("image1");
+            var canvas = document.createElement('canvas');
+            canvas.id = "canvas1";
+            canvas.width = image.naturalWidth;
+            canvas.height = image.naturalHeight;
+            var body = document.getElementsByTagName("body")[0];
+            body.appendChild(canvas);
+            var ctx = canvas.getContext('2d');
+            ctx.drawImage(image, 0, 0);
+            canvas.toBlob(function(blob) {
+                saveAs(blob, name);
+                canvas.remove();
+            }, mimetype);
+        }
+
+        function OnOutTypeChange() {
+            var radioButtons = $("#calcform input:radio[name='outtype']");
+            var i = radioButtons.index(radioButtons.filter(':checked'));
+            if (i == 0) {
+                $("#encdiv").show();
+                $("#deldiv").hide();
+                $("#imagetypediv").hide();
+                $("#imgviewdiv").hide();
+                $("#hexout").hide();
+                $("#binout").hide();
+                $("#numdiv").hide();
+                $("#outdiv").show();
+                $("#imgviewdiv").hide();
+            } else if (i == 1) {
+                $("#encdiv").hide();
+                $("#deldiv").hide();
+                $("#imagetypediv").show();
+                $("#imgviewdiv").hide();
+                $("#numdiv").hide();
+                $("#outdiv").hide();
+                $("#imgviewdiv").show();
+                $("#image1").hide();
+            } else if (i == 2) {
+                $("#encdiv").hide();
+                $("#deldiv").show();
+                $("#imagetypediv").hide();
+                $("#imgviewdiv").hide();
+                $("#hexout").show();
+                $("#binout").hide();
+                $("#numdiv").show();
+                $("#outdiv").hide();
+                $("#imgviewdiv").hide();
+            } else {
+                $("#encdiv").hide();
+                $("#deldiv").show();
+                $("#imagetypediv").hide();
+                $("#imgviewdiv").hide();
+                $("#hexout").hide();
+                $("#binout").show();
+                $("#numdiv").show();
+                $("#outdiv").hide();
+                $("#imgviewdiv").hide();
+            }
+            $("#num").val("");
+            $("#out").val("");
+        }
+
+        function OnDecode() {
+            var base64 = $("#txt").val();
+            if (base64.length == 0) return;
+            //var test=base64.replace(/[0-9a-z+/=]/gi, '');
+            //if( test.length>0 ) ...
+            //if( base64.length%4>0 ) alert("Invalid string. Length must be a multiple of 4"); 
+            var radioButtons = $("#calcform input:radio[name='outtype']");
+            var itype = radioButtons.index(radioButtons.filter(':checked'));
+            //base64="z\xA2\u6C34\uD834\uDD1E\uDBFF\uDFFD";
+            //base64="YWJjZGVmZw==";
+            //base64='4pyTIMOgIGxhIG1vZGU=';
+            base64 = base64.replace(/(\r\n|\n|\r)/gm, "");
+            if (itype == 0) {
+                var encoding = $("#charsel").val();
+                //base64 = base64.replace(/(\r\n\t|\n|\r\t)/gm,"");
+                base64 = pad(base64);
+                var txt = Base64Decode(base64, encoding);
+                //console.log(txt);
+                $("#out").val(txt);
+            } else if (itype == 1) {
+                var txt = base64;
+                var imButtons = $("#calcform input:radio[name='imtype']");
+                var iimtype = imButtons.index(imButtons.filter(':checked'));
+                var prefix = "data:image/";
+                if (txt.substring(0, 11) != prefix) {
+                    if (iimtype == 0) txt = "data:image/gif;base64," + txt;
+                    else if (iimtype == 1) txt = "data:image/jpeg;base64," + txt;
+                    else if (iimtype == 2) txt = "data:image/png;base64," + txt;
+                    else if (iimtype == 3) txt = "data:image/webp;base64," + txt;
+                }
+                $("#image1").show();
+                $("#image1").on("load", function() {
+                    var width = $("#image1")[0].naturalWidth;
+                    var height = $("#image1")[0].naturalHeight;
+                    $("#image1").prop("width", Math.round(120.0 / height * width));
+                    $("#image1").prop("height", 120);
+                    var w = width.toString();
+                    var h = height.toString();
+                    //$("#out1").val("<img width=\""+w+"\" height=\""+h+"\" alt=\"\" src=\""+txt+"\">");
+                    //$("#out2").val("background-image: url(\""+txt+"\");");
+                });
+                $("#image1").attr("src", txt);
+            } else {
+                var delButtons = $("#calcform input:radio[name='delop']");
+                var idel = delButtons.index(delButtons.filter(':checked'));
+                var del = "";
+                if (idel == 0) del = " ";
+                if (idel == 1) del = ",";
+                base64 = pad(base64);
+                var bytes = base64js.toByteArray(base64);
+                //console.log(bytes[2]);
+                var txt = "";
+                var base, num, numlen;
+                if (itype == 2) {
+                    base = 16;
+                    numlen = 2;
+                } else {
+                    base = 2;
+                    numlen = 8;
+                }
+                for (var i = 0; i < bytes.length; i++) {
+                    num = bytes[i].toString(base);
+                    var d = numlen - num.length;
+                    if (d > 0) num = "0".repeat(d) + num;
+                    txt += num + del;
+                }
+                txt = txt.toUpperCase();
+                txt = txt.substring(0, txt.length - del.length);
+                $("#num").val(txt);
+            }
+        }
+
+        function OnCopy() {
+            var radioButtons = $("#calcform input:radio[name='outtype']");
+            var itype = radioButtons.index(radioButtons.filter(':checked'));
+            if (itype == 0)
+                $("#out").select();
+            //if( itype==1 )
+            //   $("#image1").select();
+            else if (itype >= 2)
+                $("#num").select();
+            document.execCommand("copy");
+        }
+
+        function pad(base64) {
+            var pads = base64.length % 4;
+            if (pads != 0)
+                base64 += "=".repeat(4 - pads);
+            return base64;
+        }
+
+        function Base64Decode(str, encoding) {
+            var bytes = base64js.toByteArray(str);
+            //return new TextDecoder(encoding).decode(bytes);
+            return new TextDecoder(encoding, {
+                NONSTANDARD_allowLegacyEncoding: true
+            }).decode(bytes);
+            //return new TextDecoder('utf-8').decode(bytes);
+        }
+    </script>
+    <!-- #EndEditable -->
+
+    </div>
+
+    </div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

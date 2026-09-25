@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Feet to Inches (ft to in) conversion calculator</title>
+
+
+    <meta name="keywords" content="feet to inch, inch to feet, feet to inches, feet and inch calculator, feet to inches chart, inch in feet,feet or inch, feet to inch converter, feet to inch conversion">
+    <meta name="description" content="Feet conversion is a useful tool to convert the feet value in inches. It tells how many inches in a particular foot's value. Feet value * 12 = inches value. ">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="106053564989593" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Feet to Inches (ft to in) conversion calculator" />
+    <meta property="og:description" content="Feet conversion is a useful tool to convert the feet value in inches. It tells how many inches in a particular foot's value. Feet value * 12 = inches value." />
+    <meta property="og:url" content="https://www.calculatorfind.com/ft-to-inch.html" />
+    <script async src="tagmng3.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        @media all and (max-width: 576px) {
+            h1 {
+                font-size: 20px;
+            }
+            .calc2 button {
+                padding: 7px 5px;
+            }
+            .calc2 input[type=text],
+            .calc2 input[type=number] {
+                width: 100%;
+            }
+            .calc2 tr td:nth-child(2) {
+                width: 240px;
+                width: calc(100% - 50px);
+            }
+        }
+        
+        .calc2 td textarea {
+            font-size: large;
+            width: 100%;
+        }
+        
+        .ntable td:nth-child(1),
+        .ntable td:nth-child(2) {
+            width: 100px
+        }
+    </style>
+    <!-- #EndEditable -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129405892-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129405892-5');
+    </script>
+</head>
+
+<body>
+
+
+
+    <header id="myheader"></header>
+
+
+    <div class="container">
+        <br>
+       <h1 style="border-bottom: black solid 1px; "> <i class="fa fa-home "></i> Online Calculators & Tools</h1>
+
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        <a href="index.html" title="Back to Home">
+            <button type="button" class="btn btn-dark"><b>← Back to Home</b></button>
+        </a>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12">
+
+
+                <h2>Feet to Inches conversion with chart</h2><br><br>
+                <form name="calcform" autocomplete="off" class="box float" id="calcform">
+                    <table class="calc2">
+                        <tr>
+                            <td><label for="x" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Enter feet:</label></td>
+                            <td class="math"><input type="number" min="0" step="any" id="x" name="x" class="intext form-control" autofocus tabindex="1"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">ft</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2">
+                                <button type="button" id="calc" title="Convert" class="btn btn-success" tabindex="2" onclick="calc0()"><img src="glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+                                <button type="reset" id="reset" title="Reset" class="btn btn-danger" tabindex="3"><img src="glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+                                <button type="button" title="Swap conversion" class="btn btn-secondary" tabindex="4" onclick="location.href='inch-to-feet.html';"><img src="glyphicons_halflings_114_retweet.png" alt=""> Swap</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Inches result:</td>
+                            <td class="math"><input type="text" name="y" class="outtext form-control" readonly tabindex="5" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Feet+inches result:</td>
+                            <td class="math"><input type="text" name="y2" class="outtext form-control" readonly tabindex="6" style="color: green; font-weight: bold; background-color: white;"></td>
+                            <td class="mathsymbol" style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">&Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr id="pf1">
+                            <td style="color: white;font-size: 20px; font-weight: bold;margin-bottom: 15px;">Calculation:</td>
+                            <td><textarea name="TA" rows="3" class="outtext form-control" readonly tabindex="7" style="color: green; font-weight: bold; background-color: white;"></textarea></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12 ad_hide "><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- first for calculator -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="3612998959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+
+
+        <div class="row ">
+
+
+            <div class="col-md-7 col-lg-7 col-xl-7 col-sm-12 ">
+                <br><br><br>
+
+                <h2>Feet to inch conversion or calcualtor</h2>
+
+                <p style="font-size:16px; text-align:justify;">Feet to inches calculator use for converting the feet value in inches value. This is a common and basic need to measure the the things in our daily life like measure the height , measure the distance, measure length and such other things.</p>
+                <p style="font-size:16px; text-align:justify;"> The units are used in schools, daily life, art, and some areas of science and engineering. When you convert the feet into inches you just need to feet multiply by 12 and get the answer. You can know here how to convert or change feet into
+                    inches. </p>
+
+                <h2>
+                    <a></a>How to convert feet to inches with formulas </h2>
+                <p>1 foot is equal to 12 inches:</p>
+                <p class="math">1ft = 12&#8243;</p>
+                <p>The distance <em>d</em> in inches (&Prime;) is equal to the distance <i>d</i> in feet (ft) times 12:</p>
+                <p class="math"><em>d</em><sub>(&Prime;)</sub> = <em>d</em><sub>(ft)</sub> &times; 12</p>
+                <h4>Example</h4>
+                <p>Convert 2 feet to inches:</p>
+                <p class="math"><em>d</em><sub>(&Prime;)</sub> = 2ft &times; 12 = 24&#8243;</p>
+                <h2>
+                    <a id="table"></a>Feet to inches conversion table</h2>
+                <table class="ntable">
+                    <thead>
+                        <tr>
+                            <th>Feet (ft)</th>
+                            <th>Inches (")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0.01 ft</td>
+                            <td>0.12 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.1 ft</td>
+                            <td>1.2 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.2 ft</td>
+                            <td>2.4 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.3 ft</td>
+                            <td>3.6 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.4 ft</td>
+                            <td>4.8 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.5 ft</td>
+                            <td>6.0 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.6 ft</td>
+                            <td>7.2 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.7 ft</td>
+                            <td>8.4 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.8 ft</td>
+                            <td>9.6 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>0.9 ft</td>
+                            <td>10.8 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>1 ft</td>
+                            <td>12 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>2 ft</td>
+                            <td>24 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>3 ft</td>
+                            <td>36 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>4 ft</td>
+                            <td>48 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>5 ft</td>
+                            <td>60 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>6 ft</td>
+                            <td>72 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>7 ft</td>
+                            <td>84 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>8 ft</td>
+                            <td>96 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>9 ft</td>
+                            <td>108 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>10 ft</td>
+                            <td>120 &Prime;</td>
+                        </tr>
+                        <tr>
+                            <td>100 ft</td>
+                            <td>1200 &Prime;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+
+            <div class="col-md-5 col-lg-5 col-xl-5 col-sm-12">
+<div id="myseealso"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7144402668220123"
+     crossorigin="anonymous"></script>
+<!-- vertical big -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:450px;height:900px"
+     data-ad-client="ca-pub-7144402668220123"
+     data-ad-slot="2543034832"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <footer id="myfooter"></footer>
+    <script src="myload.js"></script>
+
+
+
+
+
+
+
+    <script src="convert.js"></script>
+    <script>
+        function calc0() {
+            var x = document.calcform.x.value;
+            var y = (parseFloat(x) * 12);
+            var y = roundresult(y);
+            var y2 = Math.floor(y / 12);
+            var y3 = roundresult(y - y2 * 12);
+            var txt = x + "ft \u00D7 12\n";
+            txt += "= " + y + '\"';
+            document.calcform.y.value = y;
+            document.calcform.y2.value = y2 + "ft " + y3;
+            document.calcform.TA.value = txt;
+        }
+    </script>
+    <!-- #EndEditable -->
+
+    </div>
+
+    </div>
+
+</body>
+
+
+</html>
